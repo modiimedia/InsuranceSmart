@@ -11,6 +11,7 @@ fields:
 - type: file
   name: background_image
   label: Background Image
+  default: https://res.cloudinary.com/modii/v1530413573/insurancesmart/pregnant-couple.jpg
 - type: select
   name: style
   config:
