@@ -1,5 +1,5 @@
 ---
-title: Testing 123
+title: InsuranceSmart
 banner_heading: We Provide Affordable Insurance For Texas Residents!
 banner_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
   varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
@@ -17,4 +17,5 @@ components:
   heading: Get In Touch With Us
   background_image: https://res.cloudinary.com/modii/v1530413573/insurancesmart/pregnant-couple.jpg
   style: dark
+
 ---
