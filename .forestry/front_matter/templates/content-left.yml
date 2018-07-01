@@ -10,18 +10,42 @@ fields:
     schema:
       format: markdown
     required: true
-- type: select
-  name: image_mask
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - large to small
-    - small to large
-  label: Image Mask
-  default: large to small
-- type: file
-  name: image
-  label: Image
-  default: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
+- type: field_group
+  name: image_settings
+  label: Image Settings
+  fields:
+  - type: select
+    name: mask
+    config:
+      source:
+        type: simple
+      required: true
+      options:
+      - large to small
+      - small to large
+    label: Image Mask
+    default: large to small
+  - type: file
+    default: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
+- type: field_group
+  name: button_settings
+  label: Button Settings
+  fields:
+  - type: boolean
+    name: show
+    label: Show Button
+    default: true
+  - type: text
+    name: text
+    label: Button Text
+    config:
+      required: true
+    default: Learn More
+  - type: select
+    name: link
+    config:
+      source:
+        type: pages
+      required: false
+    label: Button Link
+    description: Choose where you want the button to link to.
