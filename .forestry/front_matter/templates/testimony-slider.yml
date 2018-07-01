@@ -1,0 +1,34 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  label: Heading
+  name: heading
+  description: Large heading to go at the top
+  default: What People Are Saying
+  config:
+    required: true
+- type: select
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - most recent
+    - custom
+  label: Testimonies to Show
+  name: show
+  description: Choosing "custom" will defer to the testimonies you feature below.
+- type: list
+  config:
+    use_select: true
+    source:
+      type: pages
+  label: Custom Testimony Order
+  name: custom_order
+  description: Choose the testimonies you want to feature. This must be filled out
+    if "custom order" is selected above.
+- type: file
+  name: background_image
+  label: Background Image
