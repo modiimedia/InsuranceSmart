@@ -14,8 +14,6 @@ components:
   background_image: https://res.cloudinary.com/modii/v1530413573/insurancesmart/pregnant-couple.jpg
   style: dark
 - template: content-left
-  image_mask: large to small
-  image: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
   content: "![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)\n\n#
     Experience You Can Trust\n\nLorem ipsum dolor sit amet, consectetur adipiscing
     elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
@@ -24,7 +22,7 @@ components:
     risus tristique posuere.  "
   image_settings:
     mask: large to small
-    undefined: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
+    image: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
   button_settings:
     text: Shop Insurance
     show: true

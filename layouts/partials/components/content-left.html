@@ -1,0 +1,19 @@
+<section class="section-light">
+    {{ $m := .image_settings.mask }}
+    <div {{ if eq $m "large to small" -}}class="polygon-large-to-small"{{- end }} style="background-image: url({{ .image_settings.image }})">
+        <div class="div-block _2"></div>
+    </div>
+    <div class="container">
+        <div class="flex-row">
+            <div class="hero-content-copy">
+                {{ .content | markdownify }}
+                {{ if eq .button_settings.show true }}
+                {{ $l := replace .button_settings.link ".md" "" }}
+                <a href="{{ $l }}" class="hero-button w-inline-block">
+                    <div class="text-block">{{ .button_settings.text }}</div>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

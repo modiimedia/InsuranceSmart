@@ -448,9 +448,10 @@ img {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  background-size: cover;
   background-color: #ffbc00;
   background-image: none;
-  background-position: 0px 0px;
+  background-position: center;
 }
 
 .div-block-3 {
@@ -886,6 +887,28 @@ img {
   width: 640px;
   padding-right: 20px;
   padding-left: 20px;
+}
+.hero-content-copy h1 {
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 10px;
+}
+.hero-content-copy p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.hero-content-copy .hero-button {
+  margin-top: 40px;
+}
+.hero-content-copy img {
+  max-width: 100%;
+  width: 400px;
+}
+@media (max-width: 767px) {
+  .hero-content-copy h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .contact-section {

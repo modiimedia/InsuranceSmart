@@ -96,5 +96,8 @@
     {{- if eq $t "contact-form-company-info" -}}
         {{- partial "components/contact-component.html" . -}} 
     {{- end -}}
+    {{- if eq $t "content-left" -}}
+        {{- partial "components/content-left.html" . -}}
+    {{ end }}
 {{- end -}} 
 {{- end -}}
