@@ -27,6 +27,8 @@ fields:
     default: large to small
   - type: file
     default: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
+    label: Image
+    name: image
 - type: field_group
   name: button_settings
   label: Button Settings
