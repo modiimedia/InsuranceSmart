@@ -11,7 +11,7 @@ sections:
   label: Products
   create: all
 upload_dir: insurancesmart
-public_path: ''
+public_path: https://res.cloudinary.com/modii
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
