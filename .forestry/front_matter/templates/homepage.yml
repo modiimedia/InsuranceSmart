@@ -40,3 +40,5 @@ fields:
   template_types:
   - contact-form-company-info
   - testimony-slider
+pages:
+- content/_index.md
