@@ -1,0 +1,5 @@
+{{ $d := seq "01" "31" }}
+<option value="">Select a day...</option>
+{{ range $d }}
+<option value="{{ . }}">{{ . }}</option>
+{{ end }}

@@ -1,10 +1,11 @@
-{{ define "title"}}{{ .Site.Title }}{{ end }} {{ define "main" }}
+{{- define "title" -}}{{ .Site.Title }} | {{ .Site.Params.description }}{{- end -}} 
+{{- define "main" -}}
 <section class="hero-banner">
     <div class="container">
         <div class="flex-row">
             <div class="hero-content">
-                <h1 class="heading">{{ .Params.header }}</h1>
-                <p class="paragraph">{{ .Params.bannerText }}</p>
+                <h1 class="heading">{{- .Params.banner_heading -}}</h1>
+                <p class="paragraph">{{- .Params.banner_text -}}</p>
                 <a href="/products" class="hero-button w-inline-block">
                     <div class="text-block">Shop Insurance</div>
                 </a>
@@ -14,22 +15,24 @@
                 </a>
             </div>
             <div class="hero-content flex-grow hero-video-container">
-                <a href="#" class="lightbox-link w-inline-block w-lightbox">
+                {{- if eq .Params.banner_media.video_type "youtube" -}} {{- $v := replace .Params.banner_media.youtube_url "https://www.youtube.com/watch?v=" "" -}} {{- $v2 := replace $v "https://youtu.be/" "" -}}
+                <a href="#" class="lightbox-link w-inline-block w-lightbox" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://img.youtube.com/vi/{{ $v2 }}/maxresdefault.jpg')">
                     <div class="play-icon"></div>
                     <script type="application/json" class="w-json">
-                  {
-                    "items": [{
-                      "type": "video",
-                      "originalUrl": "https://www.youtube.com/watch?v=u1ZB_rGFyeU",
-                      "url": "https://www.youtube.com/watch?v=u1ZB_rGFyeU",
-                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fu1ZB_rGFyeU%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Du1ZB_rGFyeU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fu1ZB_rGFyeU%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>",
-                      "thumbnailUrl": "https://i.ytimg.com/vi/u1ZB_rGFyeU/hqdefault.jpg",
-                      "width": 940,
-                      "height": 528
-                    }]
-                  }
-                </script>
+                          {
+                            "items": [{
+                              "type": "video",
+                              "originalUrl": "https://www.youtube.com/watch?v={{ $v2 }}",
+                              "url": "https://www.youtube.com/watch?v={{ $v2 }}",
+                              "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F{{ $v2 }}%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D{{ $v2 }}&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F{{ $v2 }}%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>",
+                              "thumbnailUrl": "https://i.ytimg.com/vi/{{ $v2 }}/hqdefault.jpg",
+                              "width": 940,
+                              "height": 528
+                            }]
+                          }
+                        </script>
                 </a>
+                {{- end -}}
             </div>
         </div>
     </div>
@@ -56,4 +59,42 @@
     <div class="photo _3"></div>
     <div class="photo"></div>
 </section>
-{{ end }}
+{{- range .Params.components -}} 
+    {{- $t := .template -}} 
+    {{- if eq $t "testimony-slider" -}}
+        <section class="section-dark" style="background-image: url({{ .background_image }})">
+            <div class="image-overlay"></div>
+            <div class="container">
+                <h1 class="dark-heading">{{ .heading }}</h1>
+                <div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
+                    <div class="mask w-slider-mask">
+                        {{- if eq .show "most recent" -}} 
+                            {{- range first 10 (where $.Site.RegularPages "Section" "testimonies") -}} 
+                                {{- partial "components/testimony-slider.html" . -}} 
+                            {{- end -}} 
+                        {{- else -}}
+                            <div>Hi</div>
+                        {{- end -}}
+                    </div>
+                    <div class="left-arrow w-slider-arrow-left">
+                        <div class="arrow-icon w-icon-slider-left"></div>
+                    </div>
+                    <div class="right-arrow w-slider-arrow-right">
+                        <div class="arrow-icon w-icon-slider-right"></div>
+                    </div>
+                    <div class="slide-nav w-slider-nav w-round">
+                        <div class="w-slider-dot w-active" data-wf-ignore=""></div>
+                        <div class="w-slider-dot" data-wf-ignore=""></div>
+                    </div>
+                    <a href="#" class="button-gold w-inline-block">
+                        <div>VIEW&nbsp;ALL</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    {{- end -}} 
+    {{- if eq $t "contact-form-company-info" -}}
+        {{- partial "components/contact-component.html" . -}} 
+    {{- end -}}
+{{- end -}} 
+{{- end -}}
