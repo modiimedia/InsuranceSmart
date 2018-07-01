@@ -1,0 +1,27 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: textarea
+  name: content
+  label: Content
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+    required: true
+- type: select
+  name: image_mask
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - large to small
+    - small to large
+  label: Image Mask
+  default: large to small
+- type: file
+  name: image
+  label: Image
+  default: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
