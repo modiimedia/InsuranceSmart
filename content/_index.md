@@ -14,5 +14,13 @@ banner_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
+components:
+- template: testimony-slider
+  heading: What People Are Saying
+  show: most recent
+- template: contact-form-company-info
+  heading: Get In Touch With Us
+  background_image: https://res.cloudinary.com/modii/v1530413573/insurancesmart/pregnant-couple.jpg
+  style: dark
 
 ---
