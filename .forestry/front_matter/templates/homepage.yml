@@ -44,6 +44,7 @@ fields:
   name: components
   label: Components
   template_types:
+  - content-left
   - contact-form-company-info
   - testimony-slider
 pages:
