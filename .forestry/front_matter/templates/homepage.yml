@@ -3,6 +3,12 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
+  label: Title
+  name: title
+  description: ''
+  config:
+    required: true
+- type: text
   name: banner_heading
   label: Banner Heading
   description: Main heading for the homepage
