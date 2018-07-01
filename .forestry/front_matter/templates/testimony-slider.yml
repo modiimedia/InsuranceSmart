@@ -20,6 +20,7 @@ fields:
   label: Testimonies to Show
   name: show
   description: Choosing "custom" will defer to the testimonies you feature below.
+  default: most recent
 - type: list
   config:
     use_select: true
