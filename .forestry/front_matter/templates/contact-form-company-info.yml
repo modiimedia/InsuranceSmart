@@ -1,0 +1,24 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  name: heading
+  label: Heading
+  default: Get In Touch With Us
+  config:
+    required: true
+- type: file
+  name: background_image
+  label: Background Image
+- type: select
+  name: style
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - dark
+    - light
+  label: Style
+  default: dark
