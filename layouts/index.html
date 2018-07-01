@@ -1,0 +1,59 @@
+{{ define "title"}}{{ .Site.Title }}{{ end }} {{ define "main" }}
+<section class="hero-banner">
+    <div class="container">
+        <div class="flex-row">
+            <div class="hero-content">
+                <h1 class="heading">{{ .Params.header }}</h1>
+                <p class="paragraph">{{ .Params.bannerText }}</p>
+                <a href="/products" class="hero-button w-inline-block">
+                    <div class="text-block">Shop Insurance</div>
+                </a>
+                <a href="#" class="ghost-button w-inline-block">
+                    <div class="text-block-2"></div>
+                    <div class="text-block"> Contact Us</div>
+                </a>
+            </div>
+            <div class="hero-content flex-grow hero-video-container">
+                <a href="#" class="lightbox-link w-inline-block w-lightbox">
+                    <div class="play-icon"></div>
+                    <script type="application/json" class="w-json">
+                  {
+                    "items": [{
+                      "type": "video",
+                      "originalUrl": "https://www.youtube.com/watch?v=u1ZB_rGFyeU",
+                      "url": "https://www.youtube.com/watch?v=u1ZB_rGFyeU",
+                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fu1ZB_rGFyeU%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Du1ZB_rGFyeU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fu1ZB_rGFyeU%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>",
+                      "thumbnailUrl": "https://i.ytimg.com/vi/u1ZB_rGFyeU/hqdefault.jpg",
+                      "width": 940,
+                      "height": 528
+                    }]
+                  }
+                </script>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="html-embed w-embed">
+        <svg width="1200px" height="1200px" viewBox="0 0 10014 10330" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3512.86 3067.18C3878.7 3067.18 4239.95 3320.78 4541.66 3266.22C4860.34 3208.58 5029.02 2696.32 5266.01 2584.1C5526.96 2460.53 5966.45 2640.8 6207.82 2509.87C6541.13 2329.08 6646.31 2015.01 6923.76 1778.41C7097.35 1630.38 7729.35 1702.02 7897.02 1574.39C8064.69 1446.76 8412.15 924.255 8591.23 815.613C8868.64 647.314 9093.2 763.937 9380.09 611.129C9558.44 516.135 9955.76 3.71859e-05 10288 0C10738.2 -5.04018e-05 11213.1 145.655 11316 181.858C11335.7 187.97 11351.1 193.416 11362.7 198.318L12854.6 723.701L12849.4 739.353L12801.1 885.003L10961.6 6099.43L9441.45 10416.1L1864.55 7747.89L0 7091.29L1248.91 3544.76C1248.91 3544.76 1845.6 3840.52 2347.75 3650.61C2849.9 3460.69 3065.16 3067.18 3512.86 3067.18Z"
+                transform="translate(-2354.87 3640.83) rotate(-19.3997)" fill="#FFCC19" />
+        </svg>
+    </div>
+    <div class="polygon-small-to-large">
+        <div class="banner-photo"></div>
+        <div class="banner-photo _1"></div>
+        <div class="banner-photo _2"></div>
+        <div class="banner-photo _3"></div>
+        <div class="banner-photo _4"></div>
+        <div class="banner-photo _5"></div>
+        <div class="banner-photo _6"></div>
+        <div class="div-block _2"></div>
+    </div>
+    <div class="gradient-screen"></div>
+    <div class="photo _2"></div>
+    <div class="photo _4"></div>
+    <div class="photo _3-copy"></div>
+    <div class="photo _3"></div>
+    <div class="photo"></div>
+</section>
+{{ end }}
