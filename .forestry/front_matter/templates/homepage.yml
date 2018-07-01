@@ -1,0 +1,42 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: banner_heading
+  label: Banner Heading
+  description: Main heading for the homepage
+  config:
+    required: true
+- type: textarea
+  label: Banner Text
+  name: banner_text
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
+- type: field_group
+  name: banner_media
+  label: Banner Video
+  description: Video for you homepage
+  fields:
+  - type: select
+    name: video_type
+    config:
+      source:
+        type: simple
+      required: true
+      options:
+      - youtube
+    label: Video Type
+    default: youtube
+  - type: text
+    name: youtube_url
+    label: Youtube Url
+    description: Copy and paste the youtube video URL
+- type: blocks
+  name: components
+  label: Components
+  template_types:
+  - contact-form-company-info
+  - testimony-slider
