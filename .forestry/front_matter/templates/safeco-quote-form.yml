@@ -1,0 +1,27 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: list
+  config:
+    use_select: true
+    source:
+      type: simple
+      file: 
+      path: website_settings
+    options:
+    - auto
+    - home
+  label: Options to Display
+  name: options
+  description: Which products do you want to display on the form?
+- type: select
+  name: default_option
+  config:
+    source:
+      type: simple
+    options:
+    - auto
+    - home
+  label: Default Option
+  description: Which option will be selected by default?

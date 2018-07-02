@@ -11,5 +11,32 @@ fields:
   template: seo
   label: SEO
   name: seo
+- type: field_group_list
+  name: faqs
+  label: Frequently Asked Questions
+  fields:
+  - type: text
+    name: question
+    label: Question
+    config:
+      required: true
+  - type: textarea
+    name: answer
+    label: Answer
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+  config:
+    labelField: question
+- type: blocks
+  name: resources
+  label: Resources
+  description: If you have any additional resources regarding the product (i.e. brochures,
+    graphs, images, information websites) you can upload/link them here.
+  template_types:
+  - resource-external-link
+  - resource-document-image
 pages:
 - content/products/auto/test.md
