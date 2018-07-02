@@ -33,7 +33,8 @@ fields:
 - type: blocks
   name: resources
   label: Resources
-  description: ''
+  description: If you have any additional resources regarding the product (i.e. brochures,
+    graphs, images, information websites) you can upload/link them here.
   template_types:
   - resource-external-link
   - resource-document-image
