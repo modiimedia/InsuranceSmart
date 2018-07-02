@@ -1,0 +1,172 @@
+<form name="gaqList" id="gaqList" onsubmit="return submitForm();">
+    <div class="quote-form-wrap" onload="setProduct();">
+        <input id="zip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
+        <select id="subMenu" required="" name="subMenu" class="insurance-select w-select">
+            {{ if .Params.default }}{{ else }}<option id="defaultoption" value="">Select Insurance Type</option>{{ end }}
+            {{ range $.Site.Data.quote_forms.safeco }}
+                <option id="{{ .id }}" value="{{ .value }}" data-zip="zip">{{ .display }}</option>
+            {{ end }}
+            <!--<option id = "subMenuHome" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Home' data-zip='zip'>Home</option>  
+            <option id = "subMenuRenters" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Rent' data-zip='zip'>Renters</option>
+            <option id = "subMenuCondo" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Condo' data-zip='zip'>Condo</option>
+            <option id="subMenuBoat" value="https://tools.safeco.com/BPS/bps.aspx/boatquoterq" data-zip="zip">Boat or Watercraft</option>
+            <option id="subMenuMotorcycle" value="https://tools.safeco.com/BPS/bps.aspx/mcquoterq" data-zip="zip">Motorcycle</option>
+            <option id="subMenuRV" value="https://tools.safeco.com/BPS/bps.aspx/rvquoterq" data-zip="zip">RV</option>
+            <option id = "subMenuUmbrella" value='https://tools.safeco.com/BPS/bps.aspx/umbquoterq' data-zip='zip'>Umbrella</option> 
+            <option id = "subMenuLandlordProtection" value='https://tools.safeco.com/BPS/bps.aspx/firequoterq' data-zip='zip'>Landlord Protection</option>-->
+        </select>
+        <input type="submit" value="Get a Quote" id="fakeBtn" class="get-a-quote w-button">
+        <input type="submit" value="Get a Quote" id="startBtn" onclick="submitForm();" class="get-a-quote w-button" style="display:none">
+    </div>
+</form>
+
+
+<!--SAFECO FORM-->
+<script type="text/javascript">
+    var fakebtn = document.getElementById('fakeBtn');
+    var realbtn = document.getElementById('startBtn');
+    var defoption = document.getElementById('defaultoption');
+    var input = document.getElementById('subMenu');
+    input.onchange = function () {
+        fakebtn.style = 'display:none';
+        realbtn.style = 'display:block';
+        defoption.style = 'display:none';
+    };
+</script>
+
+<script>
+    // loads the query string variables into urlParams
+    var isid = '346236'
+    var urlParams;
+
+    (window.onpopstate = function () {
+        var match,
+            pl = /\+/g, // Regex for replacing addition symbol with a space
+            search = /([^&=]+)=?([^&]*)/g,
+            decode = function (s) {
+                return decodeURIComponent(s.replace(pl, " "));
+            },
+            query = window.location.search.substring(1);
+        urlParams = {};
+        while (match = search.exec(query))
+            urlParams[decode(match[1])] = decode(match[2]);
+    })();
+
+
+    function setProduct() // sets the selected product in #subMenu based on the iframe parameter 'product'
+    {
+        var selectedProduct = "";
+        if (urlParams["product"] != "null" && urlParams["product"] != undefined) {
+            selectedProduct = urlParams["product"].toLowerCase();
+        }
+        switch (selectedProduct) {
+            case "home":
+                document.getElementById("subMenuHome").selected = true;
+                break;
+            case "renters":
+                document.getElementById("subMenuRenters").selected = true;
+                break;
+            case "condo":
+                document.getElementById("subMenuCondo").selected = true;
+                break;
+            case "boat":
+                document.getElementById("subMenuBoat").selected = true;
+                break;
+            case "motorcycle":
+                document.getElementById("subMenuMotorcycle").selected = true;
+                break;
+            case "rv":
+                document.getElementById("subMenuRV").selected = true;
+                break;
+            case "umbrella":
+                document.getElementById("subMenuUmbrella").selected = true;
+                break;
+            case "landlordprotection":
+                document.getElementById("subMenuLandlordProtection").selected = true;
+                break;
+            default:
+                document.getElementById("subMenuAuto").selected = true;
+                break;
+        }
+
+    }
+
+
+    function submitForm() // builds the url and opens the appropriate quoting tool (passing the stat, dc code, and zip)
+    {
+
+        var list = document.getElementById("subMenu");
+
+        if (list.options[list.selectedIndex].text == "Auto") {
+            var stat = "id=" + isid;
+        } else {
+            var stat = "agentnum=" + isid;
+        }
+
+        var dc = "dc=GAQag";
+        var page = list.options[list.selectedIndex].value;
+        var pattern = ".*\\?.*";
+        var exp = new RegExp(pattern);
+        var zip_field_id = list.options[list.selectedIndex].getAttribute('data-zip');
+        if (exp.test(page)) {
+            page += "&";
+        } else {
+            page += "?";
+        }
+
+        page += zip_field_id + "=" + document.getElementById("zip").value + "&" + dc + "&" + stat;
+        window.open(page, 'GetQuote', 'history=no,top=0,toolbar=1,location=1,directories=0,status=1,menubar=1,scrollbars=1,resizable=1,maximize=no,width=1100,height=700');
+        return false;
+    }
+
+
+    function removeProducts() // removes products from #subMenu desinated in the iframe src parameter 'hide'
+    {
+
+        var hideArray = new Array();
+        if (urlParams["hide"] != "null" && urlParams["hide"] != undefined) {
+            var hideStr = urlParams["hide"].toLowerCase();
+            hideArray = hideStr.split(',');
+        }
+
+        for (var i in hideArray) //  loop though products and remove the options from #subMenu
+        {
+            var optionID = "";
+            switch (hideArray[i]) {
+                case "auto":
+                    optionID = "subMenuAuto";
+                    break;
+                case "home":
+                    optionID = "subMenuHome";
+                    break;
+                case "renters":
+                    optionID = "subMenuRenters";
+                    break;
+                case "condo":
+                    optionID = "subMenuCondo";
+                    break;
+                case "boat":
+                    optionID = "subMenuBoat";
+                    break;
+                case "motorcycle":
+                    optionID = "subMenuMotorcycle";
+                    break;
+                case "rv":
+                    optionID = "subMenuRV";
+                    break;
+                case "umbrella":
+                    optionID = "subMenuUmbrella";
+                    break;
+                case "landlordprotection":
+                    optionID = "subMenuLandlordProtection";
+                    break;
+                default:
+                    break;
+            }
+
+            var myChild = document.getElementById(optionID);
+            document.getElementById("subMenu").removeChild(myChild);
+
+        }
+    }
+</script>
