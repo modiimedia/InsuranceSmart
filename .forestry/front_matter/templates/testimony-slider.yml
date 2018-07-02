@@ -26,6 +26,7 @@ fields:
     use_select: true
     source:
       type: pages
+      section: testimonies
   label: Custom Testimony Order
   name: custom_order
   description: Choose the testimonies you want to feature. This must be filled out
