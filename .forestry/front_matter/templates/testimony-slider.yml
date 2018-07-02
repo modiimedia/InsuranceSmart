@@ -2,6 +2,9 @@
 hide_body: false
 is_partial: true
 fields:
+- type: boolean
+  name: hide
+  label: Hide Component
 - type: text
   label: Heading
   name: heading
