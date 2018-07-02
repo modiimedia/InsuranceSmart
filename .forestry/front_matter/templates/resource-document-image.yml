@@ -4,11 +4,11 @@ is_partial: true
 fields:
 - type: text
   name: name
-  label: Name
+  label: Filename
   config:
-    required: true
-  description: enter a name for the file you are uploading
+    required: false
+  description: Enter a name for the file you are uploading
 - type: file
   name: file
   label: File / Image
-  description: upload the file
+  description: ''
