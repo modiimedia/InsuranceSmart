@@ -11,3 +11,5 @@ fields:
   template: seo
   label: SEO
   name: seo
+pages:
+- content/products/auto/test.md
