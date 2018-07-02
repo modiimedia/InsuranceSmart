@@ -6,22 +6,19 @@ fields:
   config:
     use_select: true
     source:
-      type: simple
+      type: pages
       file: 
       path: website_settings
-    options:
-    - auto
-    - home
+      section: safeco-form
+    options: []
   label: Options to Display
   name: options
   description: Which products do you want to display on the form?
 - type: select
-  name: default_option
+  name: default
   config:
     source:
-      type: simple
-    options:
-    - auto
-    - home
+      type: pages
+      section: safeco-form
   label: Default Option
-  description: Which option will be selected by default?
+  description: ''

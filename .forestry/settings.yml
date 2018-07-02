@@ -4,15 +4,15 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- path: content/safeco-form
+  label: Safeco form
+  create: all
 - path: content/testimonies
   label: Testimonies
   create: all
 - path: content
   label: Pages
   create: all
-- path: content/safeco-forms
-  lable: SafeCo Form
-  create: none
 - path: content/products
   label: Products
   create: all
