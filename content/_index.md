@@ -12,7 +12,7 @@ components:
 - template: testimony-slider
   heading: What People Are Saying
   show: most recent
-  background_image: "/v1530419500/insurancesmart/joshua-rodriguez-583392-unsplash.jpg"
+  background_image: "/v1530419490/insurancesmart/couple-smiling.jpg"
 - template: content-left
   content: "![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)\n\n#
     Experience You Can Trust\n\nLorem ipsum dolor sit amet, consectetur adipiscing
@@ -35,7 +35,7 @@ components:
   hide: false
 - template: contact-form-company-info
   heading: Get In Touch With Us
-  background_image: "/v1530419489/insurancesmart/49545_kill_la_kill.jpg"
+  background_image: "/v1530419506/insurancesmart/eye-for-ebony-340137-unsplash.jpg"
   style: dark
 
 ---
