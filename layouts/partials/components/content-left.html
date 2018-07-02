@@ -14,6 +14,32 @@
                 </a>
                 {{ end }}
             </div>
+            {{ if ne .cLeft.media.media_type "none" }}
+            <div class="hero-content flex-grow hero-video-container">
+                {{ if eq .cLeft.media.media_type "image" }}
+                    <img {{ if eq .cLeft.media._3d true -}}class="_3d"{{- end }} src="{{ .cUrl }}w_700,q_80{{ .cLeft.style.background_image }}"/>
+                {{ end }}
+                {{ if eq .cLeft.media.media_type "youtube video"}}
+                {{- $v := replace .cLeft.media.youtube_url "https://www.youtube.com/watch?v=" "" -}} {{- $v2 := replace $v "https://youtu.be/" "" -}}
+                <a href="#" class="lightbox-link {{ if eq .cLeft.media._3d true -}}_3d{{- end }} w-inline-block w-lightbox" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://img.youtube.com/vi/{{ $v2 }}/maxresdefault.jpg')">
+                    <div class="play-icon"></div>
+                    <script type="application/json" class="w-json">
+                          {
+                            "items": [{
+                              "type": "video",
+                              "originalUrl": "https://www.youtube.com/watch?v={{ $v2 }}",
+                              "url": "https://www.youtube.com/watch?v={{ $v2 }}",
+                              "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F{{ $v2 }}%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D{{ $v2 }}&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F{{ $v2 }}%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>",
+                              "thumbnailUrl": "https://i.ytimg.com/vi/{{ $v2 }}/hqdefault.jpg",
+                              "width": 940,
+                              "height": 528
+                            }]
+                          }
+                        </script>
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
         </div>
     </div>
 </section>

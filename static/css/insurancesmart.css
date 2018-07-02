@@ -824,17 +824,9 @@ img {
   margin-bottom: 100px;
   margin-left: -10px;
 }
-
-.lightbox-link {
-  position: relative;
-  width: 100%;
+.lightbox-link._3d, img._3d {
   margin-right: 50px;
   margin-left: 20px;
-  padding-top: 50%;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/texas-alamo.adapt.945.1.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/texas-alamo.adapt.945.1.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
   box-shadow: 6px 6px 25px 0 rgba(0, 0, 0, .5);
   -webkit-transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
   transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg);
@@ -842,14 +834,23 @@ img {
   transition: box-shadow 300ms ease, -webkit-transform 300ms ease;
   transition: transform 300ms ease, box-shadow 300ms ease;
   transition: transform 300ms ease, box-shadow 300ms ease, -webkit-transform 300ms ease;
-  color: #fff;
-  font-size: 100px;
-  line-height: 100px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+.lightbox-link {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/texas-alamo.adapt.945.1.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/texas-alamo.adapt.945.1.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  color: #fff;
+  font-size: 100px;
+  line-height: 100px;
+}
 
-.lightbox-link:hover {
+.lightbox-link._3d:hover {
   box-shadow: 6px 6px 25px 0 rgba(0, 0, 0, .5);
   -webkit-transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg) translate3d(0px, -2px, 5px) scale(1.01);
   transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg) translate3d(0px, -2px, 5px) scale(1.01);
@@ -2597,7 +2598,7 @@ address {
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
   }
-  .lightbox-link {
+  .lightbox-link._3d, img._3d {
     margin-right: 0px;
     margin-left: 0px;
     -webkit-transform: none;
@@ -2606,7 +2607,7 @@ address {
     -webkit-transition: none 0ms ease;
     transition: none 0ms ease;
   }
-  .lightbox-link:hover {
+  .lightbox-link._3d:hover {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
