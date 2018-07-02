@@ -22,12 +22,16 @@ components:
     risus tristique posuere.  "
   image_settings:
     mask: large to small
-    undefined: /v1530419492/insurancesmart/woman-hiking-compressor.jpg
-    image: /v1530419492/insurancesmart/woman-hiking-compressor.jpg
+    undefined: "/v1530419492/insurancesmart/woman-hiking-compressor.jpg"
+    image: "/v1530419492/insurancesmart/woman-hiking-compressor.jpg"
   button_settings:
     text: Shop Insurance
     show: true
     link: products/health/health-protectorguard.md
+  style:
+    mask: large to small
+    background_style: light
+    background_image: "/v1530419500/insurancesmart/joshua-rodriguez-583392-unsplash.jpg"
 - template: contact-form-company-info
   heading: Get In Touch With Us
   background_image: "/v1530419489/insurancesmart/49545_kill_la_kill.jpg"
