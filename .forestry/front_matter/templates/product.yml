@@ -34,5 +34,12 @@ fields:
   name: resources
   label: Resources
   description: Upload resources like brochures, graphs, and other documents here.
+  fields:
+  - type: blocks
+    template_types:
+    - resource-external-link
+    - resource-document-image
+    label: Resource List
+    name: resources
 pages:
 - content/products/auto/test.md
