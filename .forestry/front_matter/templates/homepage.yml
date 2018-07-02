@@ -8,8 +8,25 @@ fields:
   description: ''
   config:
     required: true
-- type: include
-  template: seo
+- type: field_group
+  label: SEO
+  name: seo
+  description: Search Engine Optimization
+  fields:
+  - type: text
+    name: social_title
+    label: Social Title
+    description: Page title to display when shared on social media sites (Will fall
+      back to regular page title if not set.)
+  - type: textarea
+    name: social_description
+    label: Social Description
+    description: Short description to display when shared on social media sites.
+  - type: file
+    name: open_graph_image
+    label: Open Graph Image
+    description: Image to display when shared on social media sites and other places
+      like RSS feed readers
 - type: text
   name: banner_heading
   label: Banner Heading
