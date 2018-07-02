@@ -4,11 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- path: data/forms
-  hidden: true
 - path: content/testimonies
   label: Testimonies
   create: all
+  hidden: true
 - path: content
   label: Pages
   create: all
