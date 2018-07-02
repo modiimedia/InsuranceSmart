@@ -30,7 +30,7 @@ components:
     link: products/health/health-protectorguard.md
 - template: contact-form-company-info
   heading: Get In Touch With Us
-  background_image: https://res.cloudinary.com/modii/v1530413573/insurancesmart/pregnant-couple.jpg
+  background_image: "/v1530419489/insurancesmart/49545_kill_la_kill.jpg"
   style: dark
 
 ---
