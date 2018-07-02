@@ -2,6 +2,9 @@
 hide_body: false
 is_partial: true
 fields:
+- type: boolean
+  label: Hide Component
+  name: hide
 - type: textarea
   name: content
   label: Content
@@ -93,6 +96,3 @@ fields:
       required: false
     label: Button Link
     description: Choose where you want the button to link to.
-- type: boolean
-  label: Hide Component
-  name: hide
