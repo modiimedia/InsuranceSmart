@@ -34,6 +34,7 @@ components:
     background_image: "/v1530419500/insurancesmart/joshua-rodriguez-583392-unsplash.jpg"
   media:
     media_type: none
+  hide: false
 - template: contact-form-company-info
   heading: Get In Touch With Us
   background_image: "/v1530419489/insurancesmart/49545_kill_la_kill.jpg"
