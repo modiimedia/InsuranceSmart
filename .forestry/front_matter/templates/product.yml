@@ -11,5 +11,28 @@ fields:
   template: seo
   label: SEO
   name: seo
+- type: field_group_list
+  name: faqs
+  label: Frequently Asked Questions
+  fields:
+  - type: text
+    name: question
+    label: Question
+    config:
+      required: true
+  - type: textarea
+    name: answer
+    label: Answer
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+  config:
+    labelField: question
+- type: field_group_list
+  name: resources
+  label: Resources
+  description: Upload resources like brochures, graphs, and other documents here.
 pages:
 - content/products/auto/test.md
