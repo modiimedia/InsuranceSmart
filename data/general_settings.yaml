@@ -6,11 +6,13 @@ website_settings:
   favicon: 
 contact_info:
   business_name: InsuranceSmart
-  phone: 210-111-1111
+  phone: 210-699-0281
+  fax: 111-111-1111
   email: info@getinsurancesmart.com
-  street_address: 1111 some address street
+  address: 1111 some address street
+  address_line2: Suite 600
   city: San Antonio
-  State: TX
+  state: TX
   zip: 78230
 social_media:
   - platform: facebook

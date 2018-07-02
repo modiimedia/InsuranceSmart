@@ -220,7 +220,9 @@ img {
   font-size: 45px;
   line-height: 55px;
 }
-
+.section-light .hero-button {
+  margin-bottom: 20px;
+}
 .hero-button {
   margin-right: 10px;
   padding: 15px 20px;
@@ -313,8 +315,8 @@ img {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  background-image: none;
-  background-position: 0px 0px;
+  background-position: center;
+  background-size: cover;
 }
 
 .polygon-small-to-large.blog {
@@ -349,8 +351,7 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 150px 0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -527,8 +528,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   min-height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 150px 0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -910,7 +910,9 @@ img {
     line-height: 40px;
   }
 }
-
+address {
+  font-style: normal
+}
 .contact-section {
   padding-top: 100px;
   padding-bottom: 100px;

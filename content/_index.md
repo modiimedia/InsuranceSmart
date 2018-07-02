@@ -22,8 +22,8 @@ components:
     risus tristique posuere.  "
   image_settings:
     mask: large to small
-    undefined: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
-    image: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
+    undefined: /v1530419492/insurancesmart/woman-hiking-compressor.jpg
+    image: /v1530419492/insurancesmart/woman-hiking-compressor.jpg
   button_settings:
     text: Shop Insurance
     show: true

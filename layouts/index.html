@@ -1,4 +1,4 @@
-{{- define "title" -}}{{ .Site.Title }} | {{ .Site.Params.description }}{{- end -}} 
+{{- define "title" -}}{{ $.Site.Data.general_settings.website_settings.site_title }} | {{ $.Site.Data.general_settings.website_settings.site_slogan }}{{- end -}} 
 {{- define "main" -}}
 <section class="hero-banner">
     <div class="container">
@@ -59,45 +59,60 @@
     <div class="photo _3"></div>
     <div class="photo"></div>
 </section>
-{{- range .Params.components -}} 
-    {{- $t := .template -}} 
-    {{- if eq $t "testimony-slider" -}}
-        <section class="section-dark" style="background-image: url({{ .background_image }})">
-            <div class="image-overlay"></div>
-            <div class="container">
-                <h1 class="dark-heading">{{ .heading }}</h1>
-                <div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
-                    <div class="mask w-slider-mask">
-                        {{- if eq .show "most recent" -}} 
-                            {{- range first 10 (where $.Site.RegularPages "Section" "testimonies") -}} 
-                                {{- partial "components/testimony-slider.html" . -}} 
-                            {{- end -}} 
-                        {{- else -}}
-                            <div>Hi</div>
-                        {{- end -}}
+{{- range .Params.components -}}
+    {{- $t := .template -}}
+    {{ if ne .hide true }}
+        {{- if eq $t "testimony-slider" -}}
+            <section class="section-dark" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1600,q_40{{ .background_image }})">
+                <div class="image-overlay"></div>
+                <div class="container">
+                    <h1 class="dark-heading">{{ .heading }}</h1>
+                    <div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
+                        <div class="mask w-slider-mask">
+                            {{- if eq .show "most recent" -}} 
+                                {{- range first 10 (where $.Site.RegularPages "Section" "testimonies") -}} 
+                                    {{- partial "components/testimony-slider.html" . -}} 
+                                {{- end -}} 
+                            {{- else -}}
+                                <div>Hi</div>
+                            {{- end -}}
+                        </div>
+                        <div class="left-arrow w-slider-arrow-left">
+                            <div class="arrow-icon w-icon-slider-left"></div>
+                        </div>
+                        <div class="right-arrow w-slider-arrow-right">
+                            <div class="arrow-icon w-icon-slider-right"></div>
+                        </div>
+                        <div class="slide-nav w-slider-nav w-round">
+                            <div class="w-slider-dot w-active" data-wf-ignore=""></div>
+                            <div class="w-slider-dot" data-wf-ignore=""></div>
+                        </div>
+                        <a href="#" class="button-gold w-inline-block">
+                            <div>VIEW&nbsp;ALL</div>
+                        </a>
                     </div>
-                    <div class="left-arrow w-slider-arrow-left">
-                        <div class="arrow-icon w-icon-slider-left"></div>
-                    </div>
-                    <div class="right-arrow w-slider-arrow-right">
-                        <div class="arrow-icon w-icon-slider-right"></div>
-                    </div>
-                    <div class="slide-nav w-slider-nav w-round">
-                        <div class="w-slider-dot w-active" data-wf-ignore=""></div>
-                        <div class="w-slider-dot" data-wf-ignore=""></div>
-                    </div>
-                    <a href="#" class="button-gold w-inline-block">
-                        <div>VIEW&nbsp;ALL</div>
-                    </a>
                 </div>
-            </div>
-        </section>
-    {{- end -}} 
-    {{- if eq $t "contact-form-company-info" -}}
-        {{- partial "components/contact-component.html" . -}} 
-    {{- end -}}
-    {{- if eq $t "content-left" -}}
-        {{- partial "components/content-left.html" . -}}
+            </section>
+        {{- end -}} 
+        {{- if eq $t "contact-form-company-info" -}}
+            {{ $cUrl := $.Site.Params.cloudinary_url }}
+            {{ $phone := $.Site.Data.general_settings.contact_info.phone }}
+            {{ $fax := $.Site.Data.general_settings.contact_info.fax }}
+            {{ $email := $.Site.Data.general_settings.contact_info.email }}
+            {{ $street := $.Site.Data.general_settings.contact_info.address }}
+            {{ $street2 := $.Site.Data.general_settings.contact_info.address_line2 }}
+            {{ $city := $.Site.Data.general_settings.contact_info.city }}
+            {{ $state := $.Site.Data.general_settings.contact_info.state }}
+            {{ $zip := $.Site.Data.general_settings.contact_info.zip }}
+            
+            {{ $p := print $street "<br>" $street2 "<br>" $city ", " $state " " $zip }}
+            
+            {{- partial "components/contact-component.html" (dict "Params" . "cUrl" $cUrl "phone" $phone "fax" $fax "email" $email "address" $p ) -}} 
+        {{- end -}}
+        {{- if eq $t "content-left" -}}
+            {{ $cUrl := $.Site.Params.cloudinary_url }}
+            {{- partial "components/content-left.html" (dict "cLeft" . "cUrl" $cUrl) -}}
+        {{ end }}
     {{ end }}
 {{- end -}} 
 {{- end -}}

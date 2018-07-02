@@ -83,15 +83,15 @@
                             <div class="dropdown-secondary-content">
                                 <div class="link-copy">
                                     <div>For questions call
-                                        <a href="tel:210-699-0281" class="text-link">
-                                            <strong>210-699-0281</strong>
+                                        <a href="tel:{{ $.Site.Data.general_settings.contact_info.phone }}" class="text-link">
+                                            <strong>{{ $.Site.Data.general_settings.contact_info.phone }}</strong>
                                         </a>
                                         <strong>
                                             <br>
                                         </strong>or email
-                                        <a href="mailto:info@getinsurancesmart.com?subject=Question%20About%20Insurance"
+                                        <a href="mailto:{{ $.Site.Data.general_settings.contact_info.email }}?subject=Question%20About%20Insurance"
                                             class="text-link">
-                                            <strong>info@getinsurancesmart.com</strong>
+                                            <strong>{{ $.Site.Data.general_settings.contact_info.email }}</strong>
                                         </a>
                                     </div>
                                 </div>

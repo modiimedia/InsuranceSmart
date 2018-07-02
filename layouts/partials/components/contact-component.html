@@ -1,4 +1,4 @@
-<section class="section-dark" style="background-image: url({{.background_image}})">
+<section class="section-dark" style="background-image: url({{ .cUrl }}{{ .Params.background_image }})">
     <div class="image-overlay"></div>
     <div class="container contact-form">
         <div class="flex-row reverse">
@@ -56,25 +56,18 @@
                     <input type="submit" data-wait="Please wait..." class="submit-button w-button">
                 </form>
             </div>
-            <div class="flex-grow contact">
-                <h1 class="dark-heading">Get In Touch</h1>
+            <address class="flex-grow contact">
+                <h1 class="dark-heading">{{ .Params.heading }}</h1>
                 <div class="text-block-5">
-                    <strong>Phone: </strong>210-699-0281
-                    <strong>
-                        <br>Fax:</strong>&nbsp;210-111-1111
-                    <br>
-                    <strong>Email:</strong>&nbsp;info@getinsurancesmart.com
-                    <br>
+                    {{- if .phone -}}<strong>Phone: </strong>{{- .phone -}}<br>{{- end -}}
+                    {{- if .fax -}}<strong>Fax:</strong>&nbsp;{{- .fax -}}<br>{{- end -}}
+                    {{- if .email -}}<strong>Email:</strong>&nbsp;{{- .email -}}<br>{{- end -}}
                 </div>
                 <div class="text-block-5">
-                    <strong>InsuranceSmart&nbsp;Office:
-                        <br>
-                    </strong>8000 I-H 10 west
-                    <br>Suite 600
-                    <br>San Antonio, TX 78230
-                    <br>
+                    <strong>InsuranceSmart&nbsp;Office:</strong><br>
+                    {{ .address | safeHTML }}
                 </div>
-            </div>
+            </address>
         </div>
     </div>
 </section>

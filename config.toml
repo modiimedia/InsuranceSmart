@@ -1,3 +1,6 @@
 baseURL = "https://getinsurancesmart.com"
 languageCode = "en-us"
 title = "InsuranceSmart"
+
+[params]
+    cloudinary_url = "https://res.cloudinary.com/modii/"

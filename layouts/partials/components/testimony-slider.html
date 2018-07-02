@@ -1,7 +1,7 @@
 <div class="testimony-slide w-slide" style="transform: translateX(0px); opacity: 1;">
     <a href="{{ .RelPermalink }}">
         <div class="testimony-slide-content w-clearfix">
-            <div class="div-block-8" style="background-image: URL({{ .Params.photo }})"></div>
+            <div class="div-block-8" style="background-image: URL({{ $.Site.Params.cloudinary_url }}w_100,h_100,c_fill,g_faces,q_80{{ .Params.photo }})"></div>
             <p class="testimony-slide-text">"{{ .Params.testimony }}"</p>
             <div class="div-block-9">
                 <h2 class="testimony-name">{{ .Title }} ({{ .Params.age }})</h2>
