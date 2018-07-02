@@ -20,10 +20,6 @@ components:
     viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
     Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
     risus tristique posuere.  "
-  image_settings:
-    mask: large to small
-    undefined: "/v1530419492/insurancesmart/woman-hiking-compressor.jpg"
-    image: "/v1530419492/insurancesmart/woman-hiking-compressor.jpg"
   button_settings:
     text: Shop Insurance
     show: true
