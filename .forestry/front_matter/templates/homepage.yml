@@ -8,6 +8,8 @@ fields:
   description: ''
   config:
     required: true
+- type: include
+  template: seo
 - type: text
   name: banner_heading
   label: Banner Heading
