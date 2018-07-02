@@ -14,6 +14,32 @@ fields:
   name: media
   label: Media
   description: Media for the right side of the section.
+  fields:
+  - type: select
+    name: media_type
+    config:
+      source:
+        type: simple
+      required: true
+      options:
+      - none
+      - photo
+      - youtube video
+    label: Media Type
+    default: none
+  - type: file
+    label: Image
+    name: image
+    description: Be sure to select "image" in the dropdown above to display this.
+  - type: text
+    name: youtube_url
+    label: Youtube Video URL
+    description: Copy and Paste your youtube video URL here. Be sure to select "youtube
+      video" in the dropdown above to display this.
+  - type: boolean
+    name: 3d
+    label: 3d Effect
+    default: false
 - type: field_group
   name: style
   label: Style Settings
