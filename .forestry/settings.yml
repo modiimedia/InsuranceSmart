@@ -7,10 +7,12 @@ sections:
 - path: content/testimonies
   label: Testimonies
   create: all
-  hidden: true
 - path: content
   label: Pages
   create: all
+- path: content/safeco-forms
+  lable: SafeCo Form
+  create: none
 - path: content/products
   label: Products
   create: all
