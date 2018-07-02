@@ -11,9 +11,17 @@ fields:
       format: markdown
     required: true
 - type: field_group
-  name: image_settings
-  label: Image Settings
+  name: media
+  label: Media
+  description: Media for the right side of the section.
+- type: field_group
+  name: style
+  label: Style Settings
   fields:
+  - type: file
+    default: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
+    label: Background Image
+    name: background_image
   - type: select
     name: mask
     config:
@@ -23,12 +31,20 @@ fields:
       options:
       - large to small
       - small to large
-    label: Image Mask
+    label: Background Image Mask
     default: large to small
-  - type: file
-    default: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
-    label: Image
-    name: image
+    description: Only applies to light background style
+  - type: select
+    name: background_style
+    config:
+      source:
+        type: simple
+      required: true
+      options:
+      - light
+      - dark
+    label: Background Style
+    default: light
 - type: field_group
   name: button_settings
   label: Button Settings
@@ -36,7 +52,7 @@ fields:
   - type: boolean
     name: show
     label: Show Button
-    default: true
+    default: false
   - type: text
     name: text
     label: Button Text
@@ -51,3 +67,6 @@ fields:
       required: false
     label: Button Link
     description: Choose where you want the button to link to.
+- type: boolean
+  label: Hide Component
+  name: hide
