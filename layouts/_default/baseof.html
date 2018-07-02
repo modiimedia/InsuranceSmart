@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/is.css">
     <title>{{ block "title" . }}{{ .Title }} | {{ $.Site.Title }}{{ end }}</title>
-    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ $.Site.Params.Description }}{{ end }}"></meta>
+    <meta name="description" content="{{- block "description" . -}}{{ if .Description }}{{ .Description }}{{ else }}{{ .Params.meta_description }}{{ end }}{{- end -}}"></meta>
 </head>
 <body>
     {{ partial "header.html" . }}

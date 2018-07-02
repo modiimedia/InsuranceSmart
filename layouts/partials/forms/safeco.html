@@ -3,7 +3,7 @@
         <input id="zip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
         <select id="subMenu" required="" name="subMenu" class="insurance-select w-select">
             {{ if .Params.default }}{{ else }}<option id="defaultoption" value="">Select Insurance Type</option>{{ end }}
-            {{ range $.Site.Data.quote_forms.safeco }}
+            {{ range $.Site.Data.forms.quote_forms.safeco }}
                 <option id="{{ .id }}" value="{{ .value }}" data-zip="zip">{{ .display }}</option>
             {{ end }}
             <!--<option id = "subMenuHome" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Home' data-zip='zip'>Home</option>  
