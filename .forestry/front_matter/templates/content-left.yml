@@ -40,7 +40,7 @@ fields:
     description: Copy and Paste your youtube video URL here. Be sure to select "youtube
       video" in the dropdown above to display this.
   - type: boolean
-    name: 3d
+    name: _3d
     label: 3d Effect
     default: false
 - type: field_group
