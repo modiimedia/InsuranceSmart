@@ -30,16 +30,12 @@ fields:
         format: markdown
   config:
     labelField: question
-- type: field_group_list
+- type: blocks
   name: resources
   label: Resources
-  description: Upload resources like brochures, graphs, and other documents here.
-  fields:
-  - type: blocks
-    template_types:
-    - resource-external-link
-    - resource-document-image
-    label: Resource List
-    name: resources
+  description: ''
+  template_types:
+  - resource-external-link
+  - resource-document-image
 pages:
 - content/products/auto/test.md
