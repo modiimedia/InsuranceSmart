@@ -13,6 +13,8 @@ sections:
 - path: content/products
   label: Products
   create: all
+  templates:
+    - product
 upload_dir: insurancesmart
 public_path: https://res.cloudinary.com/modii
 front_matter_path: ''
