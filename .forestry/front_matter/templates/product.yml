@@ -7,6 +7,14 @@ fields:
   label: Title
   config:
     required: true
+- type: blocks
+  name: quote
+  label: Quote Block
+  template_types:
+  - safeco-quote-form
+  description: Choose what quote form to display on this page. You want to choose
+    whichever one is relevant to the product. (Only the first item in the list will
+    be displayed)
 - type: include
   template: seo
   label: SEO
