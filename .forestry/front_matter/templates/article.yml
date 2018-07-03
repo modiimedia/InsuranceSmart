@@ -44,5 +44,3 @@ fields:
   template_types:
   - safeco-quoter
   name: form
-pages:
-- content/test.md
