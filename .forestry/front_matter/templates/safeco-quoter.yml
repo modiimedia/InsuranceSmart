@@ -1,0 +1,11 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: include
+  template: safeco-quote-form
+  label: SafeCo Form Fields
+  name: safeco_fields
+- type: file
+  label: Background Image
+  name: background_image
