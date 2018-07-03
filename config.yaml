@@ -8,10 +8,13 @@ params:
 menu:
     shop_menu:
     - identifier: column-1
+      name: column-1
     - identifier: life
       name: life
       parent: column-1
     - identifier: column-2
+      name: column-2
     - identifier: column-3
+      name: column-3
 
 
