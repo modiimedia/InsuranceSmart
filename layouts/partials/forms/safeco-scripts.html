@@ -1,26 +1,3 @@
-<form name="gaqList" id="gaqList" onsubmit="return submitForm();">
-    <div class="quote-form-wrap" onload="setProduct();">
-        <input id="zip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
-        <select id="subMenu" required="" name="subMenu" class="insurance-select w-select">
-            {{ if .Params.default }}{{ else }}<option id="defaultoption" value="">Select Insurance Type</option>{{ end }}
-            {{ range $.Site.Data.forms.quote_forms.safeco }}
-                <option id="{{ .id }}" value="{{ .value }}" data-zip="zip">{{ .display }}</option>
-            {{ end }}
-            <!--<option id = "subMenuHome" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Home' data-zip='zip'>Home</option>  
-            <option id = "subMenuRenters" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Rent' data-zip='zip'>Renters</option>
-            <option id = "subMenuCondo" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Condo' data-zip='zip'>Condo</option>
-            <option id="subMenuBoat" value="https://tools.safeco.com/BPS/bps.aspx/boatquoterq" data-zip="zip">Boat or Watercraft</option>
-            <option id="subMenuMotorcycle" value="https://tools.safeco.com/BPS/bps.aspx/mcquoterq" data-zip="zip">Motorcycle</option>
-            <option id="subMenuRV" value="https://tools.safeco.com/BPS/bps.aspx/rvquoterq" data-zip="zip">RV</option>
-            <option id = "subMenuUmbrella" value='https://tools.safeco.com/BPS/bps.aspx/umbquoterq' data-zip='zip'>Umbrella</option> 
-            <option id = "subMenuLandlordProtection" value='https://tools.safeco.com/BPS/bps.aspx/firequoterq' data-zip='zip'>Landlord Protection</option>-->
-        </select>
-        <input type="submit" value="Get a Quote" id="fakeBtn" class="get-a-quote w-button">
-        <input type="submit" value="Get a Quote" id="startBtn" onclick="submitForm();" class="get-a-quote w-button" style="display:none">
-    </div>
-</form>
-
-
 <!--SAFECO FORM-->
 <script type="text/javascript">
     var fakebtn = document.getElementById('fakeBtn');

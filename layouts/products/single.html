@@ -3,13 +3,37 @@
     class="page-banner-copy2-copy">
     <div class="container">
         <div class="product-quote-box">
-            <h1 class="quote-box-heading">Auto</h1>
+            <h1 class="quote-box-heading">{{ .Title }}</h1>
             <p class="quote-box-text">Minus possimus voluptatem quo mollitia sapiente. Ea soluta iusto et possimus impedit. Nemo animi veniam est.
                 Quaerat vel totam vel molestias</p>
-            <div class="w-embed w-script">
-                {{ partial "forms/safeco.html" . }}
-            </div>
-            <div class="quote-box-disclaimer w-condition-invisible">Insurance quoting provided by UnitedHealthCare</div>
+            {{ if .Params.quote }}
+            {{ range first 1 .Params.quote }}
+                {{ if eq .template "safeco-quote-form" }}
+                {{ $d := .default }}
+                <div class="w-embed w-script">
+                        <form name="gaqList" id="gaqList" onsubmit="return submitForm();">
+                            <div class="quote-form-wrap" onload="setProduct();">
+                                <input id="zip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
+                                <select id="subMenu" required="" name="subMenu" class="insurance-select w-select">
+                                    {{ if $d }}{{ else }}<option id="defaultoption" value="">Select Insurance Type</option>{{ end }}
+                                    {{- range .options -}}
+                                        {{ $id := . }}
+                                        {{ range $.Site.Data.forms.quote_forms.safeco }}
+                                            {{ $l := .display | lower }}
+                                            {{ if eq $id $l }}
+                                            <option id="{{ .id }}" {{ if eq $d $l }}selected{{ end }} value="{{ .value }}" data-zip="zip">{{ .display }}</option>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                </select>
+                                <input type="submit" value="Get a Quote" id="fakeBtn" class="get-a-quote w-button">
+                                <input type="submit" value="Get a Quote" id="startBtn" onclick="submitForm();" class="get-a-quote w-button" style="display:none">
+                            </div>
+                        </form>
+                </div>
+                {{ end }}
+            {{ end }}
+            {{ end }}
             <div class="quote-box-disclaimer">Insurance quoting provided by SafeCo</div>
         </div>
     </div>
@@ -132,90 +156,46 @@
                             <a data-w-tab="Tab 4" class="tab-link-tab-2 w-inline-block w-tab-link w--current">
                                 <div>Product Details</div>
                             </a>
+                            {{ if .Params.faqs }}
                             <a data-w-tab="Tab 2" class="tab-link-tab-2 w-inline-block w-tab-link">
                                 <div>Frequently Asked Questions</div>
                             </a>
+                            {{ end }}
+                            {{ if .Params.resources }}
                             <a data-w-tab="Tab 3" class="tab-link-tab-2 w-inline-block w-tab-link">
                                 <div>Resources</div>
                             </a>
+                            {{ end }}
                         </div>
                         <div class="product-details w-tab-content">
                             <div data-w-tab="Tab 4" class="w-tab-pane w--tab-active">
                                 <div class="w-richtext">
-                                    <p>Eveniet aliquam architecto dolores ipsam et. Odio sed sit qui nulla vel excepturi. Quaerat
-                                        et est. Minima hic aut magnam dicta ipsam sint quo eum. Et molestiae eos tempore
-                                        sed corrupti qui omnis. Asperiores adipisci est ratione odio iure aut dolor et et.</p>
-                                    <h3>Sit atque voluptates maiores et voluptas dolorum sit dolor.</h3>
-                                    <blockquote>Repellat ea quibusdam quis quibusdam dolorem et. Quos dolorem quo officia. Qui sunt amet
-                                        error est consequuntur omnis labore. Rerum et distinctio.</blockquote>
-                                    <p>Voluptatem enim accusantium occaecati. Aliquam culpa quisquam voluptatum sunt repudiandae
-                                        qui. Consequatur odio dolor sunt. Autem nulla iusto. Vero eum odio ea odit.</p>
-                                    <p>Velit dolor dolore neque laboriosam inventore dolore officiis. Aperiam laborum voluptas.
-                                        Delectus qui ut et voluptatem culpa.</p>
-                                    <h2>Ad in ratione velit quis.</h2>
-                                    <p>Animi qui ut ullam quam sint dolor aut aperiam aspernatur. Ipsam amet error consequuntur.
-                                        Nesciunt deleniti voluptates totam ut.</p>
-                                    <h3>Sunt voluptatem alias sint.</h3>
-                                    <blockquote>Qui nulla consequuntur rerum. Placeat earum ipsam ut inventore. Ut voluptatem excepturi
-                                        quas autem.</blockquote>
-                                    <p>Sit maxime qui ad laborum autem dolores rem voluptatem aliquam. Harum officiis corrupti
-                                        ut vitae nisi minima earum quidem. Illo cum in corporis illo libero inventore sed
-                                        corporis sed. Quo inventore exercitationem eum. Rerum totam nisi. Modi et magnam
-                                        provident maiores culpa est.</p>
-                                    <p>Laboriosam perspiciatis repellat adipisci ipsum quia ab dolor maiores sit. Animi recusandae
-                                        nisi. Voluptas aut omnis optio corrupti officiis provident quod. Saepe necessitatibus
-                                        ipsa in maiores.</p>
+                                    {{ .Content }}
                                 </div>
                             </div>
                             <div data-w-tab="Tab 2" class="w-tab-pane">
+                                {{ range .Params.faqs }}
                                 <div class="faq">
                                     <div class="faq-header">
                                         <div data-w-id="94a06d86-bc4f-914f-9cb9-8d9c03c02281" class="chevron-left"> </div>
                                         <div data-w-id="f4f7c5ff-a87c-2c48-4b52-14b3686cea13" class="chevron-down"> </div>
-                                        <h2 class="heading-11">What is your name?</h2>
+                                        <h2 class="heading-11">&nbsp;&nbsp;{{ .question }}</h2>
                                     </div>
                                     <div data-w-id="3b799c54-f87c-8b9c-e79b-14ae54789f5d" class="faq-answer">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                                            in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                                            interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                                            cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                                        {{ .answer | markdownify }}
                                     </div>
                                 </div>
-                                <div class="faq">
-                                    <div class="faq-header">
-                                        <div class="chevron-left"> </div>
-                                        <div class="chevron-down"> </div>
-                                        <h2 class="heading-11">What is your quest?</h2>
-                                    </div>
-                                    <div class="faq-answer">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                                            in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                                            interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                                            cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                    </div>
-                                </div>
-                                <div class="faq">
-                                    <div class="faq-header">
-                                        <div class="chevron-left"> </div>
-                                        <div class="chevron-down"> </div>
-                                        <h2 class="heading-11">What is your favorite color?</h2>
-                                    </div>
-                                    <div class="faq-answer">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                                            in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                                            interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                                            cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                    </div>
-                                </div>
+                                {{ end }}
                             </div>
                             <div data-w-tab="Tab 3" class="w-tab-pane">
                                 <ul class="unordered-list">
+                                    {{ range .Params.resources }}
                                     <li>
-                                        <a target="_blank" href="https://uploads-ssl.webflow.com/5b15b5ea5e7a8541a9fd052a/5b2ecc90e1801d335800e4aa_1929176%20(1).jpg"
-                                            class="w-inline-block">
-                                            <div>SafeCo Boat &amp; Watercraft Brochure</div>
+                                        <a target="_blank" class="w-inline-block" {{ if .file -}}href="{{- $.Site.Params.cloudinary_url -}}{{- .file -}}" {{ else -}}href="{{- .url -}}"{{- end -}}>
+                                            <div>{{- if .name -}}{{- .name -}}{{- else -}}{{- .file -}}{{- end -}}</div>
                                         </a>
                                     </li>
+                                    {{ end }}
                                 </ul>
                             </div>
                         </div>
@@ -225,4 +205,8 @@
         </div>
     </div>
 </section>
+{{ end }}
+
+{{ define "addscripts" }}
+    {{ partial "forms/safeco-scripts.html" . }}
 {{ end }}
