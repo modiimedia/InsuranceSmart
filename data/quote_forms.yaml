@@ -28,3 +28,12 @@ safeco:
   - display: "Landlord Protection" 
     id: "subMenuLandlordProtection" 
     value: 'https://tools.safeco.com/BPS/bps.aspx/firequoterq'
+unitedhealthcare:
+  - display: "Health ProtectorGuard (Fixed Indemnity)"
+    value: "https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&amp;ProductType=Fixed%20Indemnity"
+  - display: "Critical Illness"
+    value: "https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&amp;ProductType=Critical%20Illness"
+  - display: "Term Life Safeguard"
+    value: "https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&amp;ProductType=Term%20Life"
+  - display: "Dental"
+    value: "https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&amp;ProductType=Dental"

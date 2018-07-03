@@ -2,7 +2,7 @@ website_settings:
   site_title: InsuranceSmart
   site_slogan: Affordable Insurance Coverage for Texas Residents
   site_description: InsuranceSmart is the best insurance company every! We are super rad.
-  logo: https://res.cloudinary.com/modii/image/upload/v1530419506/insurancesmart/eye-for-ebony-340137-unsplash.jpg
+  logo: /v1530419506/insurancesmart/eye-for-ebony-340137-unsplash.jpg
   favicon: 
 contact_info:
   business_name: InsuranceSmart

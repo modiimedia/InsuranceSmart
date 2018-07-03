@@ -1,0 +1,20 @@
+<script>    
+    var input = document.getElementById('uhZip');
+    var product = document.getElementById('uhProduct');
+    var fake = document.getElementById('uhFakeBtn');
+    var quote = document.getElementById('uhQuoteBtn');
+
+    input.onkeyup = function () {
+        quote.style = "display: flex";
+        fake.style = "display: none";
+        quote.href = product.value + '&zipcode=' + input.value;
+    };
+    product.onchange = function () {
+        quote.href = product.value + '&zipcode=' + input.value;
+    };
+
+    function getquote() {
+        var url = product.value + '&zipcode=' + input.value;
+        window.open(url);
+    }
+</script>

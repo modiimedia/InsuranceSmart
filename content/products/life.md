@@ -21,7 +21,7 @@ seo:
 quote:
 - template: call-for-a-quote
   heading: 'Call for a Free Quote:'
-  phone_number: 210-111-1111
+  phone_number: 
 faqs: []
 resources: []
 mikes_take: ''

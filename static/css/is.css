@@ -32,3 +32,8 @@ header,
 section {
   max-width: 1600px;
 }
+
+a.w-button {
+  white-space: nowrap;
+  align-items: center;
+}
