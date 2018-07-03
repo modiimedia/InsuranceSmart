@@ -1,5 +1,5 @@
 {{ define "main"}}
-<section style="background-image:url(&quot;https://uploads-ssl.webflow.com/5b161991122bed2b364e911a/5b2d4e30525acce3704fe325_cam-bowers-124438-unsplash%20(1).jpg&quot;)"
+<section style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_80{{ .Params.Featured_Image }})"
     class="page-banner-copy2-copy">
     <div class="container">
         <div class="product-quote-box">
@@ -18,7 +18,7 @@
                                     {{ if $d }}{{ else }}<option id="defaultoption" value="">Select Insurance Type</option>{{ end }}
                                     {{- range .options -}}
                                         {{ $id := . | lower }}
-                                        {{ range $.Site.Data.forms.quote_forms.safeco }}
+                                        {{ range $.Site.Data.quote_forms.safeco }}
                                             {{ $l := .display | lower }}
                                             {{ if eq $id $l }}
                                             <option id="{{ .id }}" {{ if eq $d $l }}selected{{ end }} value="{{ .value }}" data-zip="zip">{{ .display }}</option>

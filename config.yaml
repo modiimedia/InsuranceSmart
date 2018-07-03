@@ -1,0 +1,17 @@
+baseURL: "https://getinsurancesmart.com"
+languageCode: "en-us"
+title: "InsuranceSmart"
+
+params:
+    cloudinary_url: "https://res.cloudinary.com/modii/"
+
+menu:
+    shop_menu:
+    - identifier: column-1
+    - identifier: life
+        name: life
+        parent: column-1
+    - identifier: column-2
+    - identifier: column-3
+
+
