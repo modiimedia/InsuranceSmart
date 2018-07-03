@@ -16,6 +16,29 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: blocks
+  name: quote
+  label: Quote Form
+  template_types:
+  - safeco-quote-form
+  description: Quote form for customers to fill out
+- type: file
+  name: featured_image
+  label: Banner Image
+  description: Banner image to appear on category page
+- type: number
+  name: weight
+  label: Category Weight
+  description: Decides priority in category lists. (I.E. 1 will be listed before 5)
+  config:
+    step: '1'
+    required: true
+  default: '5'
+- type: text
+  name: fa_icon
+  label: Font Awesome Icon
+  description: Icon name for this category (Uses the font awesome icon library found
+    at https://fontawesome.com/icons)
 - name: menu
   label: Menu
   type: field_group
@@ -48,20 +71,3 @@ fields:
     default: ''
   hidden: true
   default: ''
-- type: file
-  name: featured_image
-  label: Banner Image
-  description: Banner image to appear on category page
-- type: number
-  name: weight
-  label: Category Weight
-  description: Decides priority in category lists. (I.E. 1 will be listed before 5)
-  config:
-    step: '1'
-    required: true
-  default: '5'
-- type: text
-  name: fa_icon
-  label: Font Awesome Icon
-  description: Icon name for this category (Uses the font awesome icon library found
-    at https://fontawesome.com/icons)
