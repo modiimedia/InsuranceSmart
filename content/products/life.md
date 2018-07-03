@@ -1,6 +1,6 @@
 ---
 title: Life Insurance
-category: "insurancecategories/life.md"
+category: insurancecategories/life.md
 subheading: Get insurance for your home, condo, rental, and more!
 menu:
   shop_menu:
@@ -8,6 +8,10 @@ menu:
     weight: 1
     parent: Column 1
     post: <i class="fas fa-heartbeat"></i>
+recommended_articles: choose automatically
+description: Ubi Stymphalide ignem officioque ad totum gaudebat fonti at, dea. Achilles
+  singula habeto.
+featured_image: "/v1530419500/insurancesmart/joshua-rodriguez-583392-unsplash.jpg"
 
 ---
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
