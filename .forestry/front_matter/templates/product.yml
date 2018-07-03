@@ -7,6 +7,10 @@ fields:
   label: Title
   config:
     required: true
+- type: file
+  name: featured_image
+  label: Banner Image
+  description: Large image to be featured on the page.
 - type: blocks
   name: quote
   label: Quote Block
@@ -46,5 +50,25 @@ fields:
   template_types:
   - resource-external-link
   - resource-document-image
+- type: select
+  name: recommended_articles
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - choose automatically
+    - let me choose
+  label: Recommended Articles
+  default: choose automatically
+- type: list
+  name: article_selection
+  label: Article Selection
+  description: Manually select the articles you want to feature (must select "let
+    me choose" above for these articles to display.
+  config:
+    use_select: true
+    source:
+      type: pages
 pages:
 - content/products/auto/test.md
