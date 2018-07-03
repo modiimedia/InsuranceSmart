@@ -71,4 +71,5 @@ fields:
     source:
       type: pages
 pages:
+- content/products/other/asdf.md
 - content/products/auto/test.md
