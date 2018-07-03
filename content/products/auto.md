@@ -1,6 +1,6 @@
 ---
 title: Auto Insurance
-category: "insurancecategories/auto.md"
+category: insurancecategories/auto.md
 recommended_articles: choose automatically
 featured_image: "/v1530577861/insurancesmart/5b2d4e30525acce3704fe325_cam-bowers-124438-unsplash%20%281%29.jpg"
 quote:
@@ -13,6 +13,10 @@ quote:
   default: Auto
 seo:
   meta_title: Affordable Auto Insurance For Texas Residence
+  meta_description: ''
+  social_title: ''
+  social_description: ''
+  open_graph_image: ''
 faqs:
 - answer: Example Answer
   question: Example Question
@@ -23,6 +27,9 @@ menu:
     name: Auto
     weight: 1
     parent: Personal Auto & Vehicle
+resources: []
+mikes_take: ''
+custom_article_list: []
 
 ---
 Lorem markdownum remotam Oleniae contempsere tela patruo ardeat, numina [aures](http://mi.io/per.aspx). Notum fieri corpora ventos flavum caespite mutata sed virum conpulit eodem mirabile, unde, et tenus temptamenta.
