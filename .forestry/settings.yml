@@ -8,7 +8,7 @@ sections:
   label: Product Categories
   create: all
   templates:
-    - Product Category
+  - product-category
 - path: content/posts
   label: Posts
   create: all
@@ -20,6 +20,8 @@ sections:
 - path: content
   label: Homepage
   create: none
+  templates:
+  - homepage
 - path: content/products
   label: Products
   create: all
