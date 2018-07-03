@@ -2,7 +2,6 @@
 custom_article_list = []
 date = "2018-07-03T03:25:56+00:00"
 description = "Get insurance for your home and have peace of mind."
-draft = true
 faqs = []
 featured_image = "/v1530588475/insurancesmart/jesse-roberts-146556-unsplash%20%281%29.jpg"
 recommended_articles = "choose automatically"
