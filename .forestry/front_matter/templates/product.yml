@@ -62,7 +62,7 @@ fields:
   label: Recommended Articles
   default: choose automatically
 - type: list
-  name: article_selection
+  name: custom_article_list
   label: Article Selection
   description: Manually select the articles you want to feature (must select "let
     me choose" above for these articles to display.
