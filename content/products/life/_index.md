@@ -1,9 +1,13 @@
 ---
 title: Life Insurance
 subheading: Get insurance for your home, condo, rental, and more!
+menu:
+  shop_menu:
+    name: Life
+    weight: 1
+    parent: Column 1
 
 ---
-
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
 
 Static and dynamic content editing

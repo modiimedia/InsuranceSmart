@@ -1,9 +1,14 @@
 ---
 title: Auto & Vehicle Insurance
-subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+  enim
+menu:
+  shop_menu:
+    name: Personal Auto & Vehicle
+    weight: 1
+    parent: Column 2
 
 ---
-
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
 
 Static and dynamic content editing
