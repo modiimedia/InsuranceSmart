@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- path: content/posts
+  label: Posts
+  create: all
 - path: content/testimonies
   label: Testimonies
   create: all
