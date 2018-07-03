@@ -1,5 +1,5 @@
 ---
-title: Personal Property
+title: Home & Property Insurance
 subheading: Get insurance for your home, condo, rental, and more!
 menu:
   shop_menu:
@@ -14,7 +14,7 @@ quote:
   - Condo
   - Landlord Protection
 featured_image: "/v1530588475/insurancesmart/jesse-roberts-146556-unsplash%20%281%29.jpg"
-weight: 5
+weight: 2
 fa_icon: home
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: Other
+title: Other Insurance
 quote:
 - template: safeco-quote-form
   options:

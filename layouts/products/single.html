@@ -4,8 +4,7 @@
     <div class="container">
         <div class="product-quote-box">
             <h1 class="quote-box-heading">{{ .Title }}</h1>
-            <p class="quote-box-text">Minus possimus voluptatem quo mollitia sapiente. Ea soluta iusto et possimus impedit. Nemo animi veniam est.
-                Quaerat vel totam vel molestias</p>
+            <p class="quote-box-text">{{ .Params.Description }}</p>
             {{ if .Params.quote }}
             {{ range first 1 .Params.quote }}
                 {{ if eq .template "safeco-quote-form" }}

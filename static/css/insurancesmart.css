@@ -232,6 +232,11 @@ img {
 .section-light .hero-button {
   margin-bottom: 20px;
 }
+.section-dark .hero-button {
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+}
 .hero-button {
   margin-right: 10px;
   padding: 15px 20px;

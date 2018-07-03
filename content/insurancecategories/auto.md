@@ -14,7 +14,7 @@ quote:
   - Boat or Watercraft
   - Motorcycle
   - RV
-  default: Auto
+  default: 
 featured_image: "/v1530419488/insurancesmart/jon-flobrant-230583-unsplash-1.jpg"
 weight: 1
 fa_icon: car
