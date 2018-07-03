@@ -8,12 +8,12 @@ sections:
   label: Product Categories
   create: all
   templates:
-    - product-category
+  - product-category
 - path: content/posts
   label: Posts
   create: all
   templates:
-    - article
+  - article
 - path: content/testimonies
   label: Testimonies
   create: all

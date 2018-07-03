@@ -10,7 +10,13 @@ menu:
 quote: []
 featured_image: "/v1530578684/insurancesmart/arms-care-check-905874%20%281%29.jpg"
 weight: 5
-fa_icon: hospital
+fa_icon: medkit
+seo:
+  meta_title: ''
+  meta_description: ''
+  social_title: ''
+  social_description: ''
+  open_graph_image: ''
 
 ---
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.

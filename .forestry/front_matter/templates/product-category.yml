@@ -72,8 +72,8 @@ fields:
   hidden: true
   default: ''
 pages:
-- content/insurancecategories/auto.md
-- content/insurancecategories/health.md
 - content/insurancecategories/life.md
 - content/insurancecategories/other.md
+- content/insurancecategories/health.md
 - content/insurancecategories/property.md
+- content/insurancecategories/auto.md
