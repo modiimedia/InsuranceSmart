@@ -2,32 +2,6 @@ baseURL = "https://getinsurancesmart.com"
 languageCode = "en-us"
 title = "InsuranceSmart"
 [[menu.shop_menu]]
-name = "Umbrella Insurance"
-parent = "Column 3"
-url = "/products/other/umbrella"
-weight = 2
-[[menu.shop_menu]]
-name = "Personal Property"
-parent = "Column 3"
-url = "/products/home/"
-weight = 1
-[[menu.shop_menu]]
-name = "Personal Auto & Vehicle"
-parent = "Column 2"
-url = "/products/auto"
-weight = 1
-[[menu.shop_menu]]
-name = "Health"
-parent = "Column 1"
-url = "/products/health"
-weight = 2
-[[menu.shop_menu]]
-identifier = "life"
-name = "Life"
-parent = "Column 1"
-url = "/products/life"
-weight = 1
-[[menu.shop_menu]]
 identifier = "column-3"
 name = "Column 3"
 weight = 3

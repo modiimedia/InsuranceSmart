@@ -13,7 +13,7 @@ quote:
 menu:
   shop_menu:
     name: Boat or Watercraft
-    weight: 2
+    weight: 1
     parent: Personal Auto & Vehicle
 
 ---
