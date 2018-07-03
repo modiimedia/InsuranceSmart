@@ -1,26 +1,20 @@
 ---
-title: Auto Insurance
+title: Boat & Watercraft Insurance
+category: "insurancecategories/vehicle.md"
 recommended_articles: choose automatically
-featured_image: "/v1530577861/insurancesmart/5b2d4e30525acce3704fe325_cam-bowers-124438-unsplash%20%281%29.jpg"
+featured_image: "/v1530578065/insurancesmart/5b2d4a57f91bff2929497ac9_eric-ward-346232-unsplash%20%281%29.jpg"
 quote:
 - template: safeco-quote-form
   options:
-  - Auto
-  - Boat or Watercraft
-  - Motorcycle
   - RV
-  default: Auto
-seo:
-  meta_title: Affordable Auto Insurance For Texas Residence
-faqs:
-- answer: Example Answer
-  question: Example Question
-description: Drive with peace of mind. We offer affordable and comprehensive plans
-  to fit your needs.
+  - Motorcycle
+  - Boat or Watercraft
+  - Auto
+  default: Boat or Watercraft
 menu:
   shop_menu:
-    name: Auto
-    weight: 1
+    name: Boat or Watercraft
+    weight: 2
     parent: Personal Auto & Vehicle
 
 ---

@@ -1,5 +1,6 @@
 ---
 title: Life Insurance
+category: "insurancecategories/life.md"
 subheading: Get insurance for your home, condo, rental, and more!
 menu:
   shop_menu:

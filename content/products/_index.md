@@ -1,3 +1,3 @@
 ---
-title: "Insurance Products"
+title: "Product List"
 ---

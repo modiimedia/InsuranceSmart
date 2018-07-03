@@ -1,13 +1,12 @@
 ---
-title: Auto & Vehicle Insurance
-subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-  enim
+title: Health Insurance
+subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse variusenim
 menu:
   shop_menu:
-    name: Personal Auto & Vehicle
-    weight: 1
-    parent: Column 2
-    post: <i class="fas fa-car"></i>
+    name: Health
+    weight: 2
+    parent: Column 1
+    post: <i class="fas fa-medkit"></i>
 
 ---
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.

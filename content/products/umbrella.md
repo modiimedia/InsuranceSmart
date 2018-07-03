@@ -1,5 +1,6 @@
 ---
 title: Umbrella Insurance
+category: "insurancecategories/other.md"
 menu:
   shop_menu:
     name: Umbrella

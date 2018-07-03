@@ -1,5 +1,6 @@
 ---
 title: Health ProtectorGuard
+category: "insurancecategories/health.md"
 recommended_articles: choose automatically
 resources:
 - template: resource-document-image
