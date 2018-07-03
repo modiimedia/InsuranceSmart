@@ -1,0 +1,27 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: list
+  name: options
+  label: options
+  config:
+    use_select: true
+    source:
+      type: simple
+    options:
+    - Health ProtectorGuard (Fixed Indemnity)
+    - Critical Illness
+    - Dental
+    - Term Life Safeguard
+- type: select
+  name: default
+  config:
+    source:
+      type: simple
+    options:
+    - Health ProtectorGuard (Fixed Indemnity)
+    - Critical Illness
+    - Dental
+    - Term Life Safeguard
+  label: Default Option
