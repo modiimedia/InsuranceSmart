@@ -1,5 +1,5 @@
 ---
-title: InsuranceSmart
+title: Home
 banner_heading: We Provide Affordable Insurance For Texas Residents
 banner_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
   varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
@@ -37,5 +37,9 @@ components:
   heading: Get In Touch With Us
   background_image: "/v1530419506/insurancesmart/eye-for-ebony-340137-unsplash.jpg"
   style: dark
+seo:
+  social_title: ''
+  social_description: ''
+  open_graph_image: ''
 
 ---

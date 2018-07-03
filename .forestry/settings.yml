@@ -8,12 +8,12 @@ sections:
   label: Product Categories
   create: all
   templates:
-    - "product-category"
+  - product-category
 - path: content/posts
   label: Posts
   create: all
   templates:
-    - "article"
+  - article
 - path: content/testimonies
   label: Testimonies
   create: all
@@ -21,12 +21,12 @@ sections:
   label: Homepage
   create: none
   templates:
-    - "homepage"
+  - homepage
 - path: content/products
   label: Products
   create: all
   templates:
-    - "product"
+  - product
 upload_dir: insurancesmart
 public_path: https://res.cloudinary.com/modii
 front_matter_path: ''
