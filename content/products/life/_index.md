@@ -1,5 +1,5 @@
 ---
-title: Personal Property
+title: Life Insurance
 subheading: Get insurance for your home, condo, rental, and more!
 
 ---
