@@ -1658,20 +1658,30 @@ address {
   font-size: 16px;
   line-height: 26px;
   cursor: pointer;
+  padding-left: 25px;
 }
 
 .chevron-down {
   display: none;
-  font-family: 'Fa solid 900', sans-serif;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: auto;
+  bottom: auto;
 }
 
 .chevron-left {
   display: inline-block;
-  font-family: 'Fa solid 900', sans-serif;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: auto;
+  bottom: auto;
 }
 
 .faq-answer {
   display: none;
+  padding-left: 25px;
 }
 
 .faq {
@@ -2966,6 +2976,7 @@ address {
     padding-left: 20px;
     font-size: 14px;
     line-height: 20px;
+    text-align: left;
   }
   .tab-link-tab-2.w--current {
     padding-right: 19px;
