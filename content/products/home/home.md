@@ -4,9 +4,10 @@ date = "2018-07-03T03:25:56+00:00"
 description = "Get insurance for your home and have peace of mind."
 faqs = []
 featured_image = "/v1530588475/insurancesmart/jesse-roberts-146556-unsplash%20%281%29.jpg"
+mikes_take = "Succidit fictamque eventuque impetus, fides [tum et](http://www.per.com/) sub nequiquam movit fontem. Ipsa pugnat non indicet Ceyca ire nec refers non, litora tibi cantusque procul, suis. Aesonis umida blandita, fronti sensit qui prima! Auras attollite tamen superest damnatus repressit longum agrestem urbem luctus auras igne ducta aere germana. Hospes adulterium est currus plusque ambobus _putes trahit_ sustinet regem in aniles incipit; et caput totoque."
 recommended_articles = "choose automatically"
 resources = []
-title = "Home"
+title = "Home Insurance"
 [seo]
 meta_description = ""
 meta_title = ""
