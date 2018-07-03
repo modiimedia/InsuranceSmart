@@ -5,7 +5,7 @@ title = "InsuranceSmart"
 name = "Umbrella Insurance"
 parent = "Column 3"
 url = "/products/other/umbrella"
-weight = 1
+weight = 2
 [[menu.shop_menu]]
 name = "Personal Property"
 parent = "Column 3"
@@ -20,7 +20,7 @@ weight = 1
 name = "Health"
 parent = "Column 1"
 url = "/products/health"
-weight = 1
+weight = 2
 [[menu.shop_menu]]
 identifier = "life"
 name = "Life"
