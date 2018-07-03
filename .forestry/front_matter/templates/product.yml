@@ -94,6 +94,7 @@ fields:
     source:
       type: pages
 pages:
+- content/products/umbrella.md
 - content/products/auto.md
 - content/products/fixed-indemnity.md
 - content/products/home.md
