@@ -10,11 +10,6 @@ quote:
   - Boat or Watercraft
   - Auto
   default: Boat or Watercraft
-menu:
-  shop_menu:
-    name: Boat or Watercraft
-    weight: 1
-    parent: Personal Auto & Vehicle
 
 ---
 Lorem markdownum remotam Oleniae contempsere tela patruo ardeat, numina [aures](http://mi.io/per.aspx). Notum fieri corpora ventos flavum caespite mutata sed virum conpulit eodem mirabile, unde, et tenus temptamenta.

@@ -1,0 +1,80 @@
+<div class="nav-items">
+    <a href="/" class="nav-link w-inline-block w--current">
+        <div class="nav-link-text">Home</div>
+    </a>
+    <div class="nav-link dropdown-trigger">
+        <a href="/products" class="nav-link w-inline-block">
+            <div class="nav-link-text">Shop Insurance &nbsp;</div>
+            <div class="nav-link-text">--</div>
+        </a>
+        <div class="dropdown shop hide" style="display: none;">
+            
+            <div class="dropdown-columns">
+                {{ range .Site.Menus.shop_menu }}
+                {{ if .HasChildren }}
+                    <div class="dropdown-column">
+                        {{ range .Children }}
+                        <a href="{{ .URL }}" class="nav-heading w-inline-block">
+                            <div class="text-block-10">{{ .Name }}</div>
+                            <div class="text-block-11">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heartbeat"></i></div>
+                        </a>
+                        {{ if .HasChildren }}
+                            <a href="/products/fixed-indemnity" class="shop-link w-inline-block">
+                                <div class="nav-link-text">Health Protector Guard</div>
+                            </a>
+                            <a href="#" class="shop-link w-inline-block">
+                                <div class="nav-link-text">Critical Illness</div>
+                            </a>
+                            <a href="#" class="shop-link w-inline-block">
+                                <div class="nav-link-text">Dental</div>
+                            </a>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                {{ end }}
+                {{ end }}
+            </div>
+            <div class="dropdown-secondary-content">
+                <div class="link-copy">
+                    <div>For questions call
+                        <a href="tel:{{ $.Site.Data.general_settings.contact_info.phone }}" class="text-link">
+                            <strong>{{ $.Site.Data.general_settings.contact_info.phone }}</strong>
+                        </a>
+                        <strong>
+                            <br>
+                        </strong>or email
+                        <a href="mailto:{{ $.Site.Data.general_settings.contact_info.email }}?subject=Question%20About%20Insurance" class="text-link">
+                            <strong>{{ $.Site.Data.general_settings.contact_info.email }}</strong>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="link w-inline-block">
+                    <div>View All Products</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <a href="/blog" class="nav-link w-inline-block">
+        <div class="nav-link-text">Get Smart</div>
+    </a>
+    <div class="nav-link dropdown-trigger">
+        <div class="nav-link">
+            <div class="nav-link-text">Explore&nbsp;&nbsp;</div>
+            <div class="nav-link-text">--</div>
+        </div>
+        <div data-w-id="6714678d-cb9c-b655-5209-6473232315ae" class="dropdown" style="display: none;">
+            <a href="#" class="nav-link w-inline-block">
+                <div class="nav-link-text">About Us</div>
+            </a>
+            <a href="/testimonies" class="nav-link w-inline-block">
+                <div class="nav-link-text">Testimonials</div>
+            </a>
+            <a href="#" class="nav-link w-inline-block">
+                <div class="nav-link-text">FAQ</div>
+            </a>
+            <a href="#" class="nav-link w-inline-block">
+                <div class="nav-link-text">Contact</div>
+            </a>
+        </div>
+    </div>
+</div>

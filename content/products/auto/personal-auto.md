@@ -15,11 +15,6 @@ seo:
 faqs:
 - answer: Example Answer
   question: Example Question
-menu:
-  shop_menu:
-    name: Auto
-    weight: 1
-    parent: Personal Auto & Vehicle
 
 ---
 Lorem markdownum remotam Oleniae contempsere tela patruo ardeat, numina [aures](http://mi.io/per.aspx). Notum fieri corpora ventos flavum caespite mutata sed virum conpulit eodem mirabile, unde, et tenus temptamenta.

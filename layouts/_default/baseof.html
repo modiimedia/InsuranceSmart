@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/is.css">
     <title>{{ block "title" . }}{{ .Title }} | {{ $.Site.Title }}{{ end }}</title>
     <meta name="description" content="{{- block "description" . -}}{{ if .Description }}{{ .Description }}{{ else }}{{ .Params.meta_description }}{{ end }}{{- end -}}"></meta>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
     {{ partial "header.html" . }}

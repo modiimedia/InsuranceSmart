@@ -7,31 +7,31 @@ params:
 
 menu:
     shop_menu:
-    - identifier: column-1
+    - identifier: Column 1
       name: Column 1
+      - identifier: life
+        name: Life
+        parent: Column 1
+        post: '<i class="fas fa-heartbeat"></i>'
+      - identifier: health
+        name: Health
+        post: '<i class="fas fa-notes-medical"></i>'
+        parent: Column 1
     - identifier: column-2
       name: Column 2
+      - identifier: auto
+        name: Personal Auto & Vehicle
+        post: '<i class="fas fa-car"></i>'
+        parent: Column 2
     - identifier: column-3
       name: Column 3
-    - identifier: life
-      name: Life
-      parent: column-1
-      post: '<i class="fas fa-heartbeat"></i>'
-    - identifier: health
-      name: Health
-      post: '<i class="fas fa-notes-medical"></i>'
-      parent: column-1
-    - identifier: auto
-      name: Personal Auto & Vehicle
-      post: '<i class="fas fa-car"></i>'
-      parent: column-2
-    - identifier: home
-      name: Personal Property
-      post: '<i class="fas fa-home"></i>'
-      parent: column-3
-    - identifier: umbrella
-      name: Umbrella Insurance
-      post: '<i class="fas fa-umbrella"></i>'
-      parent: column-3
+      - identifier: home
+        name: Personal Property
+        post: '<i class="fas fa-home"></i>'
+        parent: Column 3
+      - identifier: umbrella
+        name: Umbrella Insurance
+        post: '<i class="fas fa-umbrella"></i>'
+        parent: Column 3
 
 
