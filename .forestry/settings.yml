@@ -21,9 +21,9 @@ sections:
   create: all
   templates:
   - product
-upload_dir: insurancesmart
-public_path: https://res.cloudinary.com/modii
+upload_dir: ''
+public_path: ''
 front_matter_path: ''
-use_front_matter_path: true
+use_front_matter_path: 
 file_template: ":filename:"
 version: 0.42.2
