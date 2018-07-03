@@ -15,6 +15,8 @@ seo:
 faqs:
 - answer: Example Answer
   question: Example Question
+description: Drive with peace of mind. We offer affordable and comprehensive plans
+  to fit your needs.
 
 ---
 Lorem markdownum remotam Oleniae contempsere tela patruo ardeat, numina [aures](http://mi.io/per.aspx). Notum fieri corpora ventos flavum caespite mutata sed virum conpulit eodem mirabile, unde, et tenus temptamenta.
