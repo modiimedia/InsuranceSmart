@@ -71,3 +71,5 @@ fields:
     default: ''
   hidden: true
   default: ''
+pages:
+- content/insurancecategories/auto.md
