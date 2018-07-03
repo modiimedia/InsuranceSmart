@@ -95,3 +95,4 @@ fields:
       type: pages
 pages:
 - content/products/auto.md
+- content/products/fixed-indemnity.md
