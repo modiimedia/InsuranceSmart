@@ -12,6 +12,7 @@ fields:
   name: date
   config:
     required: true
+    time_format: h:mm A
 - type: include
   name: seo
   label: SEO
