@@ -22,7 +22,7 @@
                 {{ if eq .cLeft.media.media_type "youtube video"}}
                 {{- $v := replace .cLeft.media.youtube_url "https://www.youtube.com/watch?v=" "" -}} {{- $v2 := replace $v "https://youtu.be/" "" -}}
                 <a href="#" class="lightbox-link {{ if eq .cLeft.media._3d true -}}_3d{{- end }} w-inline-block w-lightbox" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://img.youtube.com/vi/{{ $v2 }}/maxresdefault.jpg')">
-                    <div class="play-icon"></div>
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
                     <script type="application/json" class="w-json">
                           {
                             "items": [{
