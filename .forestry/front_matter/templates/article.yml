@@ -1,0 +1,39 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: include
+  name: seo
+  label: SEO
+  template: seo
+- type: select
+  name: insurance_category
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - auto
+    - home
+    - life
+    - health
+    - other
+  label: Insurance Category
+  default: auto
+- type: file
+  name: featured_image
+  label: Featured Image
+- type: tag_list
+  label: Tags
+  name: tags
+  description: Choose some keywords related to this article
+- type: blocks
+  label: Conversion Form
+  template_types:
+  - safeco-quote-form
+  name: form

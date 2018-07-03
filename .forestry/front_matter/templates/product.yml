@@ -86,6 +86,5 @@ fields:
       type: pages
 pages:
 - content/products/home/home.md
-- content/products/health/health-protectorguard.md
 - content/products/auto/personal-auto.md
 - content/products/auto/boat.md
