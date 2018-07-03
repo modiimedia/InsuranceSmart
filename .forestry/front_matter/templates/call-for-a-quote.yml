@@ -1,0 +1,14 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  label: heading
+  name: heading
+  config:
+    required: true
+  default: 'Call for a Free Quote:'
+- type: text
+  name: phone_number
+  label: Phone Number
+  description: Leaving blank will display your default number (in General Settings)
