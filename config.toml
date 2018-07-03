@@ -1,10 +1,32 @@
 baseURL = "https://getinsurancesmart.com"
 languageCode = "en-us"
 title = "InsuranceSmart"
-
-[params]
-cloudinary_url = "https://res.cloudinary.com/modii/"
-
+[[menu.explore]]
+URL = "#"
+name = "Contact"
+weight = 3
+[[menu.explore]]
+URL = "/testimonies/"
+name = "Testimonials"
+weight = 2
+[[menu.explore]]
+name = "About Us"
+weight = 1
+[[menu.shop_menu]]
+name = "Home"
+parent = "Personal Property"
+url = "/#"
+weight = 1
+[[menu.shop_menu]]
+name = "RV"
+parent = "Personal Auto & Vehicle"
+url = "/#"
+weight = 4
+[[menu.shop_menu]]
+name = "Motorcycle"
+parent = "Personal Auto & Vehicle"
+url = "/#"
+weight = 4
 [[menu.shop_menu]]
 identifier = "column-3"
 name = "Column 3"
@@ -17,15 +39,5 @@ weight = 2
 identifier = "column-1"
 name = "Column 1"
 weight = 1
-
-[[menu.explore]]
-name = "About Us"
-weight = 1
-[[menu.explore]]
-name = "Testimonials"
-URL = "/testimonies/"
-weight = 2
-[[menu.explore]]
-name = "Contact"
-weight = 3
-URL = "#"
+[params]
+cloudinary_url = "https://res.cloudinary.com/modii/"

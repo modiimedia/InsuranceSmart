@@ -77,6 +77,6 @@ fields:
     source:
       type: pages
 pages:
-- content/products/auto/personal-auto.md
 - content/products/health/health-protectorguard.md
+- content/products/auto/personal-auto.md
 - content/products/auto/boat.md
