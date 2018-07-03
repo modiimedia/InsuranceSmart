@@ -1,28 +1,34 @@
 ---
-date: "2018-07-02T20:45:56+00:00"
-title: "test"
+date: 2018-07-02 20:45:56 +0000
+title: test
 seo:
-    meta_description: ""
-    meta_title: ""
-    open_graph_image: ""
-    social_description: ""
-    social_title: ""
+  meta_description: ''
+  meta_title: ''
+  open_graph_image: ''
+  social_description: ''
+  social_title: ''
 faqs:
-  - answer: "This is my answer!!!!"
-    question: "Question"
-  - answer: "This is my other answer"
-    question: "This is another question"
+- answer: This is my answer!!!!
+  question: Question
+- answer: This is my other answer
+  question: This is another question
 quote:
-  - default: "auto"
-    options: ["auto", "home", "renters", "motorcycle", "rv"]
-    template: "safeco-quote-form"
+- default: Renters
+  options:
+  - Umbrella
+  - Boat or Watercraft
+  - Condo
+  - Renters
+  - Home
+  - Auto
+  template: safeco-quote-form
 resources:
-  - name: "Click me"
-    template: "resource-external-link"
-    url: "https://www.google.com"
-  - file: "/v1530571394/insurancesmart/Reservation%20confirmation.pdf"
-    name: "Awesome Brochure"
-    template: "resource-document-image"
+- name: Click me
+  template: resource-external-link
+  url: https://www.google.com
+- file: "/v1530571394/insurancesmart/Reservation%20confirmation.pdf"
+  name: Awesome Brochure
+  template: resource-document-image
 
 ---
 Lorem markdownum cuspis non capillis possis superamur petii credita Venulus calcavit nepoti prius, quem, superata, et! Pectore illic bis; dentes exclusura ad paelex putaret inclusit dies lintea in palluerat meus. [Exspectatus](http://figuram.org/aves.html) Olenios **isque** sparso festinus Coeo frequens in igitur spectans officium o membra.
