@@ -20,11 +20,6 @@ weight = 2
 name = "About Us"
 weight = 1
 [[menu.shop_menu]]
-name = "Home"
-parent = "Personal Property"
-url = "/#"
-weight = 1
-[[menu.shop_menu]]
 name = "RV"
 parent = "Personal Auto & Vehicle"
 url = "/#"
