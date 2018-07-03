@@ -7,7 +7,7 @@ body {
   font-family: Roboto, sans-serif;
   color: #333;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 a {
@@ -154,6 +154,15 @@ img {
 .nav-link.emphasis {
   font-weight: 700;
   text-decoration: underline;
+}
+.w-richtext p {
+  line-height: 32px;
+}
+.w-richtext h2 {
+  margin-top: 70px;
+}
+.w-richtext h3 {
+  opacity: 0.85;
 }
 
 .hero-banner {
@@ -1829,6 +1838,7 @@ address {
   border-radius: 100px;
   background-position: 50% 50%;
   background-size: cover;
+  background-image: URL('https://res.cloudinary.com/modii/w_150,h_150,c_fill,q_80,g_face/v1530419489/insurancesmart/49545_kill_la_kill.jpg')
 }
 
 .f-blog-title-small {
@@ -1920,6 +1930,7 @@ address {
   border-radius: 100px;
   background-position: 50% 50%;
   background-size: cover;
+  background-image: URL('https://res.cloudinary.com/modii/w_150,h_150,c_fill,q_80,g_face/v1530419489/insurancesmart/49545_kill_la_kill.jpg')
 }
 
 .text-field-2 {

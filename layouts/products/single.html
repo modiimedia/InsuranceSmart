@@ -175,11 +175,11 @@
                                 {{ range .Params.faqs }}
                                 <div class="faq">
                                     <div class="faq-header">
-                                        <div data-w-id="94a06d86-bc4f-914f-9cb9-8d9c03c02281" class="chevron-left"> </div>
-                                        <div data-w-id="f4f7c5ff-a87c-2c48-4b52-14b3686cea13" class="chevron-down"> </div>
+                                        <div class="chevron-left"><i class="fas fa-chevron-right"></i></div>
+                                        <div class="chevron-down"><i class="fas fa-chevron-down"></i> </div>
                                         <h2 class="heading-11">&nbsp;&nbsp;{{ .question }}</h2>
                                     </div>
-                                    <div data-w-id="3b799c54-f87c-8b9c-e79b-14ae54789f5d" class="faq-answer">
+                                    <div class="faq-answer">
                                         {{ .answer | markdownify }}
                                     </div>
                                 </div>
