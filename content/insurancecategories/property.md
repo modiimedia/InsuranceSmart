@@ -6,6 +6,16 @@ menu:
     weight: 1
     parent: Column 3
     post: <i class="fas fa-home"></i>
+quote:
+- template: safeco-quote-form
+  options:
+  - Home
+  - Renters
+  - Condo
+  - Landlord Protection
+featured_image: "/v1530588475/insurancesmart/jesse-roberts-146556-unsplash%20%281%29.jpg"
+weight: 5
+fa_icon: home
 
 ---
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
