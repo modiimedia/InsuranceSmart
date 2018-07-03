@@ -7,31 +7,37 @@ fields:
   label: Title
   config:
     required: true
+- type: datetime
+  label: Date
+  name: date
+  config:
+    required: true
 - type: include
   name: seo
   label: SEO
   template: seo
-- type: select
-  name: insurance_category
+- type: list
+  name: category
+  label: Insurance Category
   config:
+    use_select: true
     source:
       type: simple
-    required: true
     options:
     - auto
     - home
-    - life
     - health
+    - life
     - other
-  label: Insurance Category
-  default: auto
-- type: file
-  name: featured_image
-  label: Featured Image
+  description: Choose a related category (or categories)
+  default: []
 - type: tag_list
   label: Tags
   name: tags
   description: Choose some keywords related to this article
+- type: file
+  name: featured_image
+  label: Featured Image
 - type: blocks
   label: Conversion Form
   template_types:
