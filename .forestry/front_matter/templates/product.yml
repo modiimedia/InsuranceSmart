@@ -56,6 +56,14 @@ fields:
   template_types:
   - resource-external-link
   - resource-document-image
+- type: textarea
+  name: mikes_take
+  label: Mike's Take
+  description: Product advice from the InsuranceSmart founding
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: select
   name: recommended_articles
   config:
