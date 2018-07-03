@@ -11,6 +11,15 @@ fields:
   template: seo
   label: SEO
   name: seo
+- type: select
+  name: category
+  config:
+    source:
+      type: pages
+      section: insurancecategories
+    required: false
+  label: Product Category
+  description: Select the main category for this product
 - type: file
   name: featured_image
   label: Banner Image
