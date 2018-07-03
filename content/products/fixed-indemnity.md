@@ -29,7 +29,14 @@ faqs:
     benefits for a loss that is incurred due to a preexisting condition. After the
     initial 12 month period has passed the preexisting condition limitation will no
     longer apply.
-quote: []
+quote:
+- template: unitedhealthcare-quote-form
+  options:
+  - Term Life Safeguard
+  - Dental
+  - Critical Illness
+  - Health ProtectorGuard (Fixed Indemnity)
+  default: Health ProtectorGuard (Fixed Indemnity)
 seo:
   meta_title: ''
   meta_description: ''
@@ -44,6 +51,7 @@ menu:
     name: Fixed Indemnity
     weight: 1
     parent: Health
+mikes_take: ''
 
 ---
 Health ProtectorGuard is a hospital surgical fixed indemnity plan that pays set benefits for incurred medical expenses. It helps pay for things like hospital stays, inpatient and outpatient surgury, emergency room and doctor visits, annual wellness, prescriptions, x-rays, and much more. Benefits are predictable and simple to understand making it easy for you know exactly what you are getting! Best of all, it's affordable and you don't have to meet any deductible before your benefits begin.
