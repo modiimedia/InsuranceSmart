@@ -7,10 +7,20 @@ fields:
   label: Title
   config:
     required: true
+- type: include
+  template: seo
+  label: SEO
+  name: seo
 - type: file
   name: featured_image
   label: Banner Image
   description: Large image to be featured on the page.
+- type: text
+  name: description
+  label: Short Description
+  description: This is a short description that will appear at the top of the page
+  config:
+    required: true
 - type: blocks
   name: quote
   label: Quote Block
@@ -19,10 +29,6 @@ fields:
   description: Choose what quote form to display on this page. You want to choose
     whichever one is relevant to the product. (Only the first item in the list will
     be displayed)
-- type: include
-  template: seo
-  label: SEO
-  name: seo
 - type: field_group_list
   name: faqs
   label: Frequently Asked Questions
