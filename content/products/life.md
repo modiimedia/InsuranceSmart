@@ -12,6 +12,19 @@ recommended_articles: choose automatically
 description: Ubi Stymphalide ignem officioque ad totum gaudebat fonti at, dea. Achilles
   singula habeto.
 featured_image: "/v1530419500/insurancesmart/joshua-rodriguez-583392-unsplash.jpg"
+seo:
+  meta_title: ''
+  meta_description: ''
+  social_title: ''
+  social_description: ''
+  open_graph_image: ''
+quote:
+- template: call-for-a-quote
+  heading: 'Call for a Free Quote:'
+faqs: []
+resources: []
+mikes_take: ''
+custom_article_list: []
 
 ---
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
