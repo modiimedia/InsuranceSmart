@@ -1,6 +1,7 @@
 baseURL = "https://getinsurancesmart.com"
 languageCode = "en-us"
 title = "InsuranceSmart"
+enableRobotsTXT = true
 [[menu.explore]]
 URL = "#"
 name = "Contact"
