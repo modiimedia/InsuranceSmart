@@ -1,0 +1,203 @@
+{{ define "main" }}
+
+<section style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_50{{ .Params.Featured_image }})" class="blog-banner">
+  <div class="div-block-16-copy"></div>
+  <div class="container"></div>
+</section>
+<section class="main-content">
+  <div class="container blog">
+    <div class="flex-row">
+      <div class="blog-content w-clearfix">
+        <div class="div-block-46">
+          {{ if eq .Params.Featured true }}
+          <a href="#" class="tag w-inline-block">
+            <div>featured</div>
+          </a>
+          {{ end }}
+          {{ range .Params.Categories }}
+          <a href="/categories/{{ . | urlize }}" class="tag w-inline-block">
+            <div>{{ . }}</div>
+          </a>
+          {{ end }}
+        </div>
+        <h1 class="heading-8">{{ .Title }}</h1>
+        <div class="author-photo"></div>
+        <div>{{ .Date.Format "January 02, 2006"}}</div>
+        <div>Michael Sosso</div>
+        <img src="{{ .Site.Params.cloudinary_url }}w_750,q_80{{ .Params.Featured_image }}" />
+        <div class="w-richtext">
+          {{ .Content }}
+        </div>
+      </div>
+      <div class="flex-grow">
+        <div class="div-block-45">
+          <p>Share This:</p>
+          <a href="#" class="share-button w-inline-block">
+            <div>
+              <br/>
+            </div>
+          </a>
+          <a href="#" class="share-button w-inline-block">
+            <div>
+              <br/>
+            </div>
+          </a>
+        </div>
+        <div class="div-block-45">
+          <p>Tags:</p>
+          {{ range .Params.Tags }}
+          <a href="/tags/{{ . | urlize }}" class="tag w-inline-block">
+            <div>{{ . }}</div>
+          </a>
+          {{ end }}
+        </div>
+        <div class="div-block-43-copy">
+          <div class="div-block-44">
+            <h1 class="heading-22-copy">Get Email Updates</h1>
+            <div class="quote-box-copy">
+              <form name="email-form-3" class="form-2-copy">
+                <div class="quote-form-wrap-copy-copy">
+                  <input type="text" class="zip-field-copy-copy w-input" maxlength="256" name="Email-3" data-name="Email 3"
+                    placeholder="Enter email address" id="Email-3" required="" />
+                  <input type="submit" value="Submit" data-wait="Please wait..." class="get-a-quote w-button" />
+                </div>
+              </form>
+            </div>
+            <div class="quote-box-disclaimer">We treat customer information with great care. We never sell information, and we do not spam.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ range .Params.form }}
+        {{ if eq .template "safeco-quoter" }}
+          <div class="div-block-48">
+            <div class="blog-quote-box" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1050,h_400,q_70,c_fill{{ .background_image }})">
+              <div class="image-overlay"></div>
+              <h1 class="quote-box-heading">Get a Free Quote</h1>
+              <p class="quote-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
+              <div class="quote-box">
+                <form id="email-form-3" name="email-form-3" data-name="Email Form 3" class="form-2">
+                  <div class="quote-form-wrap">
+                    <input type="text" class="zip-field w-input" maxlength="256" name="Zip-Code" data-name="Zip Code" placeholder="Enter Zip Code"
+                      id="Zip-Code" required="" />
+                    <select id="field" name="field" required="" data-name="Field" class="insurance-select w-select">
+                      <option value="">Select Insurance Type...</option>
+                      <option value="Auto">Auto</option>
+                      <option value="Motorcycle">Motorcycle</option>
+                      <option value="boat &amp; watercraft">Boat &amp; Watercraft</option>
+                    </select>
+                    <input type="submit" value="Get a Quote" data-wait="Please wait..." class="get-a-quote w-button" />
+                  </div>
+                </form>
+                <div class="w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+              </div>
+              <div class="w-embed">
+                <form name="gaqList" id="gaqList" onsubmit="return submitForm();">
+                  <div class="quote-form-wrap" onload="setProduct();">
+                    <input id="zip" required type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
+                    <select id="subMenu" required name="subMenu" class="insurance-select w-select">
+                      <option id="defaultoption" value=''>Select Insurance Type</option>
+                      <option id="subMenuAuto" value='https://quote.safeco.com/consumer/auto/VPLaunch.aspx' data-zip='zip'>Auto</option>
+                      <!--<option id = "subMenuHome" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Home' data-zip='zip'>Home</option>  
+              <option id = "subMenuRenters" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Rent' data-zip='zip'>Renters</option>
+              <option id = "subMenuCondo" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Condo' data-zip='zip'>Condo</option>-->
+                      <option id="subMenuBoat" value='https://tools.safeco.com/BPS/bps.aspx/boatquoterq' data-zip='zip'>Boat or Watercraft</option>
+                      <option id="subMenuMotorcycle" value='https://tools.safeco.com/BPS/bps.aspx/mcquoterq' data-zip='zip'>Motorcycle</option>
+                      <option id="subMenuRV" value='https://tools.safeco.com/BPS/bps.aspx/rvquoterq' data-zip='zip'>RV</option>
+                      <!--<option id = "subMenuUmbrella" value='https://tools.safeco.com/BPS/bps.aspx/umbquoterq' data-zip='zip'>Umbrella</option>
+              <option id = "subMenuLandlordProtection" value='https://tools.safeco.com/BPS/bps.aspx/firequoterq' data-zip='zip'>Landlord Protection</option>-->
+                    </select>
+                    <input type="submit" value="Get a Quote" id="fakeBtn" class="get-a-quote w-button" />
+                    <input type="submit" value="Get a Quote" id="startBtn" onclick="submitForm();" class="get-a-quote w-button" style="display:none">
+                  </div>
+                </form>
+              </div>
+              <div class="quote-box-disclaimer">Insurance quoting provided by SafeCo</div>
+              <p class="paragraph-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla</p>
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+      <div class="div-block-48">
+        <h1 class="related-articles-heading">Related Articles</h1>
+        <div data-animation="slide" data-duration="500" data-infinite="1" class="related-slider w-slider">
+          <div class="related-slide-mask w-slider-mask">
+            <div class="related-card w-slide">
+              <a href="#" class="card-link w-inline-block">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-content w-clearfix">
+                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
+                  <div class="author-photo-small"></div>
+                  <div class="author-text">by Mike Sosso</div>
+                </div>
+              </a>
+            </div>
+            <div class="related-card w-slide">
+              <a href="#" class="card-link w-inline-block">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-content w-clearfix">
+                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
+                  <div class="author-photo-small"></div>
+                  <div class="author-text">by Mike Sosso</div>
+                </div>
+              </a>
+            </div>
+            <div class="related-card w-slide">
+              <a href="#" class="card-link w-inline-block">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-content w-clearfix">
+                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
+                  <div class="author-photo-small"></div>
+                  <div class="author-text">by Mike Sosso</div>
+                </div>
+              </a>
+            </div>
+            <div class="related-card w-slide">
+              <a href="#" class="card-link w-inline-block">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-content w-clearfix">
+                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
+                  <div class="author-photo-small"></div>
+                  <div class="author-text">by Mike Sosso</div>
+                </div>
+              </a>
+            </div>
+            <div class="related-card w-slide">
+              <a href="#" class="card-link w-inline-block">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-content w-clearfix">
+                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
+                  <div class="author-photo-small"></div>
+                  <div class="author-text">by Mike Sosso</div>
+                </div>
+              </a>
+            </div>
+            <div class="related-card w-slide">
+              <a href="#" class="card-link w-inline-block">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-content w-clearfix">
+                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
+                  <div class="author-photo-small"></div>
+                  <div class="author-text">by Mike Sosso</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="related-arrow-left w-slider-arrow-left">
+            <div class="w-icon-slider-left"></div>
+          </div>
+          <div class="related-arrow-right w-slider-arrow-right">
+            <div class="w-icon-slider-right"></div>
+          </div>
+          <div class="slide-nav-2 w-slider-nav w-round"></div>
+        </div>
+      </div>
+  </div>
+</section>
+{{ end }}

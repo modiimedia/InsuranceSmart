@@ -1,12 +1,9 @@
 ---
 title: My first post
 date: 2018-07-03 05:00:00 +0000
-category:
+categories:
 - auto
-tags:
-- insurance review
-- choosing a plan
-- helpful advice
+tags: ["insurance review", "choosing a plan", "helpful advice"]
 featured_image: "/v1530419489/insurancesmart/49545_kill_la_kill.jpg"
 form:
 - template: safeco-quoter

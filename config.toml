@@ -2,6 +2,12 @@ baseURL = "https://getinsurancesmart.com"
 languageCode = "en-us"
 title = "InsuranceSmart"
 enableRobotsTXT = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+productcategory = "productcategories"
+
 [[menu.explore]]
 URL = "#"
 name = "Contact"

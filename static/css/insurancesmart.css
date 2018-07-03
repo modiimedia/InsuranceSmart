@@ -2405,11 +2405,21 @@ address {
 
 .blog-quote-box {
   padding: 30px;
-  background-image: -webkit-linear-gradient(97deg, rgba(51, 51, 51, .63), rgba(51, 51, 51, .8)), url('../images/jon-flobrant-230583-unsplash-1.jpg');
-  background-image: linear-gradient(353deg, rgba(51, 51, 51, .63), rgba(51, 51, 51, .8)), url('../images/jon-flobrant-230583-unsplash-1.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
+  background-position: center center;
+  background-size: cover;
   color: #fff;
+  position: relative;
+}
+.blog-quote-box * {
+  z-index: 2;
+  position: relative;
+}
+.blog-quote-box .image-overlay {
+  background: -webkit-linear-gradient(97deg, rgba(51, 51, 51, .63), rgba(51, 51, 51, .8));
+  background: linear-gradient(353deg, rgba(51, 51, 51, .63), rgba(51, 51, 51, .8));
+  opacity: 1;
+  z-index: 0 !important;
+  position: absolute;
 }
 
 .div-block-48 {
