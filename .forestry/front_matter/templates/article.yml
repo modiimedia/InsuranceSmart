@@ -35,5 +35,5 @@ fields:
 - type: blocks
   label: Conversion Form
   template_types:
-  - safeco-quote-form
+  - safeco-quoter
   name: form
