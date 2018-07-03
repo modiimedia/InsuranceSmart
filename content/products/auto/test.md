@@ -29,6 +29,12 @@ resources:
 - file: "/v1530571394/insurancesmart/Reservation%20confirmation.pdf"
   name: Awesome Brochure
   template: resource-document-image
+featured_image: "/v1530419491/insurancesmart/texas-alamo.adapt.945.1.jpg"
+recommended_articles: choose automatically
+custom_article_list:
+- safeco-form/renters.md
+- safeco-form/rv.md
+- safeco-form/umbrella.md
 
 ---
 Lorem markdownum cuspis non capillis possis superamur petii credita Venulus calcavit nepoti prius, quem, superata, et! Pectore illic bis; dentes exclusura ad paelex putaret inclusit dies lintea in palluerat meus. [Exspectatus](http://figuram.org/aves.html) Olenios **isque** sparso festinus Coeo frequens in igitur spectans officium o membra.
