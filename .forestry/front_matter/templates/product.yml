@@ -84,7 +84,3 @@ fields:
     use_select: true
     source:
       type: pages
-pages:
-- content/products/home/home.md
-- content/products/auto/personal-auto.md
-- content/products/auto/boat.md
