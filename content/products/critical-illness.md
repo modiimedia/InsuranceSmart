@@ -1,6 +1,6 @@
 ---
 title: Critical Illness Insurance
-category: "insurancecategories/health.md"
+category: insurancecategories/health.md
 recommended_articles: choose automatically
 resources:
 - template: resource-document-image
@@ -9,18 +9,33 @@ resources:
 featured_image: "/v1530578684/insurancesmart/arms-care-check-905874%20%281%29.jpg"
 faqs:
 - question: Does this plan cover regular medical expenses like hospital visits?
-  answer: 'No, the UnitedHealthcare Critical Illness Insurance pays cash benefits directly to you when you suffer a qualifying critical illness. It does pay for regular    medical visits like hospital visits. You should maintain separate comprehensive health coverage for day to day medical expenses. We recommend pairing this product      with a fixed hospital indemnity plan like Health ProtectorGuard to cover regular medical expenses and hospital visits.'
+  answer: No, the UnitedHealthcare Critical Illness Insurance pays cash benefits directly
+    to you when you suffer a qualifying critical illness. It does pay for regular    medical
+    visits like hospital visits. You should maintain separate comprehensive health
+    coverage for day to day medical expenses. We recommend pairing this product      with
+    a fixed hospital indemnity plan like Health ProtectorGuard to cover regular medical
+    expenses and hospital visits.
 - question: Who qualifies for this product?
-  answer: 'The primary insured and spouse must be between the ages of 18-59 at the time of enrollement. Any major medical issues that have occured within the past 10 years could disqualify the applicant from coverage. To see if you qualify click here to get a quote and apply. Applicants must truthfully answer the medical questions in the application. Any misstatement or misrepresentation on the application could result in claims being denied.'
+  answer: The primary insured and spouse must be between the ages of 18-59 at the
+    time of enrollement. Any major medical issues that have occured within the past
+    10 years could disqualify the applicant from coverage. To see if you qualify click
+    here to get a quote and apply. Applicants must truthfully answer the medical questions
+    in the application. Any misstatement or misrepresentation on the application could
+    result in claims being denied.
 - question: Does this policy cover preexisting conditions?
-  answer: 'During the first 12 months of coverage Health ProtectorGuard will not pay
+  answer: During the first 12 months of coverage Health ProtectorGuard will not pay
     benefits for a loss that is incurred due to a preexisting condition. After the
     initial 12 month period has passed the preexisting condition limitation will no
-    longer apply.'
+    longer apply.
 - question: What qualifies as a critical illness?
-  answer: 'Please consult the brochure for specific details regarding qualifications and exemptions.'
+  answer: Please consult the brochure for specific details regarding qualifications
+    and exemptions.
 - question: Are preexisting conditions covered in this plan?
-  answer: 'Benefits will not be paid with the diagnosis of a critical illness that is connected to a preexisting condition during the initial 12 months enrolled in the plan (including any waiting period for coverage eligibility). After the initial 12 month period the preexisting condition limitations will not apply. See brochure for details.'
+  answer: Benefits will not be paid with the diagnosis of a critical illness that
+    is connected to a preexisting condition during the initial 12 months enrolled
+    in the plan (including any waiting period for coverage eligibility). After the
+    initial 12 month period the preexisting condition limitations will not apply.
+    See brochure for details.
 quote: []
 seo:
   meta_title: ''
@@ -38,7 +53,6 @@ menu:
     parent: Health
 
 ---
-
 This critical illness insurance plan by UnitedHealthCare will pay you cash when you suffer from a serious illness. **The money can be spent however you want**. It can used to pay for things like household bills, living expenses, out-of-pocket medical costs, and more. When you purchase UnitedHealthcare's Critical Illness Insurance you don't have to worry about your expenses and can focus on recovering. Maximum lifetime benefits range from $10,000 to $50,000.
 
 ## Get Peace of Mind
