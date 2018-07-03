@@ -4,8 +4,7 @@
     </a>
     <div class="nav-link dropdown-trigger">
         <a href="/products" class="nav-link w-inline-block">
-            <div class="nav-link-text">Shop Insurance &nbsp;</div>
-            <div class="nav-link-text">--</div>
+            <div class="nav-link-text">Shop Insurance &nbsp;<i class="fas fa-chevron-down"></i></div>
         </a>
         <div class="dropdown shop hide" style="display: none;">
             
@@ -16,18 +15,14 @@
                         {{ range .Children }}
                         <a href="{{ .URL }}" class="nav-heading w-inline-block">
                             <div class="text-block-10">{{ .Name }}</div>
-                            <div class="text-block-11">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heartbeat"></i></div>
+                            <div class="text-block-11">&nbsp;&nbsp;&nbsp;&nbsp;{{ .Post }}</div>
                         </a>
                         {{ if .HasChildren }}
-                            <a href="/products/fixed-indemnity" class="shop-link w-inline-block">
-                                <div class="nav-link-text">Health Protector Guard</div>
+                            {{ range .Children }}
+                            <a href="{{ .URL }}" class="shop-link w-inline-block">
+                                <div class="nav-link-text">{{ .Name }}</div>
                             </a>
-                            <a href="#" class="shop-link w-inline-block">
-                                <div class="nav-link-text">Critical Illness</div>
-                            </a>
-                            <a href="#" class="shop-link w-inline-block">
-                                <div class="nav-link-text">Dental</div>
-                            </a>
+                            {{ end }}
                         {{ end }}
                         {{ end }}
                     </div>
@@ -48,7 +43,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="#" class="link w-inline-block">
+                <a href="/products/" class="link w-inline-block">
                     <div>View All Products</div>
                 </a>
             </div>
@@ -59,22 +54,14 @@
     </a>
     <div class="nav-link dropdown-trigger">
         <div class="nav-link">
-            <div class="nav-link-text">Explore&nbsp;&nbsp;</div>
-            <div class="nav-link-text">--</div>
+            <div class="nav-link-text">Explore&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></div>
         </div>
         <div data-w-id="6714678d-cb9c-b655-5209-6473232315ae" class="dropdown" style="display: none;">
-            <a href="#" class="nav-link w-inline-block">
-                <div class="nav-link-text">About Us</div>
+            {{ range .Site.Menus.explore }}
+            <a href="{{ .URL }}" class="nav-link w-inline-block">
+                <div class="nav-link-text">{{ .Name }}</div>
             </a>
-            <a href="/testimonies" class="nav-link w-inline-block">
-                <div class="nav-link-text">Testimonials</div>
-            </a>
-            <a href="#" class="nav-link w-inline-block">
-                <div class="nav-link-text">FAQ</div>
-            </a>
-            <a href="#" class="nav-link w-inline-block">
-                <div class="nav-link-text">Contact</div>
-            </a>
+            {{ end }}
         </div>
     </div>
 </div>

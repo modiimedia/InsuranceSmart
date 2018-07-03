@@ -5,8 +5,9 @@ subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
 menu:
   shop_menu:
     name: Health
-    weight: 1
+    weight: 2
     parent: Column 1
+    post: <i class="fas fa-medkit"></i>
 
 ---
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
