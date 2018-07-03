@@ -94,10 +94,10 @@ fields:
     source:
       type: pages
 pages:
+- content/products/boat.md
+- content/products/home.md
 - content/products/umbrella.md
 - content/products/auto.md
 - content/products/fixed-indemnity.md
-- content/products/home.md
-- content/products/boat.md
 - content/products/critical-illness.md
 - content/products/life.md
