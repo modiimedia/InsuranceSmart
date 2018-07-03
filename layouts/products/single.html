@@ -17,7 +17,7 @@
                                 <select id="subMenu" required="" name="subMenu" class="insurance-select w-select">
                                     {{ if $d }}{{ else }}<option id="defaultoption" value="">Select Insurance Type</option>{{ end }}
                                     {{- range .options -}}
-                                        {{ $id := . }}
+                                        {{ $id := . | lower }}
                                         {{ range $.Site.Data.forms.quote_forms.safeco }}
                                             {{ $l := .display | lower }}
                                             {{ if eq $id $l }}
