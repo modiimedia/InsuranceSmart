@@ -7,6 +7,10 @@ menu:
     weight: 2
     parent: Column 1
     post: <i class="fas fa-medkit"></i>
+quote: []
+featured_image: "/v1530578684/insurancesmart/arms-care-check-905874%20%281%29.jpg"
+weight: 5
+fa_icon: hospital
 
 ---
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
