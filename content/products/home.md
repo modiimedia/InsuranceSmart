@@ -1,6 +1,6 @@
 +++
-custom_article_list = []
 category = "insurancecategories/property.md"
+custom_article_list = []
 date = "2018-07-03T03:25:56+00:00"
 description = "Get insurance for your home and have peace of mind."
 faqs = []
