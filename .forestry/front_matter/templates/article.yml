@@ -18,7 +18,7 @@ fields:
   label: SEO
   template: seo
 - type: list
-  name: category
+  name: categories
   label: Insurance Category
   config:
     use_select: true
