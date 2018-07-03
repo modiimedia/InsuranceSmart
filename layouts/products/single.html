@@ -43,49 +43,7 @@
     <div class="container">
         <div class="flex-row product">
             <aside class="sidebar">
-                <div class="sidebar-content">
-                    <div class="sidebar-category">
-                        <div class="text-block-17">Section: Personal Auto &amp; Vehicle</div>
-                        <div data-w-id="ad87ec45-3c28-7fd1-0a5c-f4a1d4bfc8f2" class="chevron-down">  </div>
-                        <div data-w-id="dd30f1a3-1441-7a02-d9df-c0a920e6b2b8" class="chevron-left">  </div>
-                    </div>
-                    {{ .Parent }}
-                    {{ range where .Site.Pages "Section" "products" }}
-                    {{ .Title }}
-                    <!--<div data-w-id="ad6c370b-e4af-00f1-d09f-50460c02b5ef" class="div-block-18">
-                        <a href="/auto" class="sidebar-heading w-inline-block">
-                            <div class="text-block-17">Personal Auto &amp; Vehicle</div>
-                            <div class="text-block-11">  </div>
-                        </a>
-                        <div class="product-content">
-                            <a href="/products/auto" class="sidebar-heading sublink w-inline-block w--current">
-                                <div>Auto Insurance</div>
-                            </a>
-                            <a href="#" class="sidebar-heading sublink w-inline-block">
-                                <div>Motorcycle Insurance</div>
-                            </a>
-                            <a href="/products/boat" class="sidebar-heading sublink w-inline-block">
-                                <div>Boat &amp; Watercraft Insurance</div>
-                            </a>
-                            <a href="#" class="sidebar-heading sublink w-inline-block">
-                                <div>RV Insurance</div>
-                            </a>
-                        </div>
-                    </div>-->
-                    {{ end }}
-                    <div class="div-block-18">
-                        <a class="sidebar-heading w-inline-block">
-                            <div class="text-block-17">Life</div>
-                            <div class="text-block-11">  </div>
-                        </a>
-                    </div>
-                    <div class="div-block-18">
-                        <a class="sidebar-heading w-inline-block">
-                            <div class="text-block-17">Health</div>
-                            <div class="text-block-11">  </div>
-                        </a>
-                    </div>
-                </div>
+                {{ partial "product-menu.html" . }}
                 <div class="sidebar-section">Suggested Readings</div>
                 <div>
                     <div class="collection-list-wrapper w-dyn-list">
