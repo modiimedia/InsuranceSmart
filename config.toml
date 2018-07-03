@@ -1,34 +1,28 @@
 baseURL = "https://getinsurancesmart.com"
+enableRobotsTXT = true
 languageCode = "en-us"
 title = "InsuranceSmart"
-enableRobotsTXT = true
-
-[taxonomies]
-category = "categories"
-tag = "tags"
-productcategory = "productcategories"
-
-[[menu.explore]]
-URL = "#"
-name = "Contact"
-weight = 3
 [[menu.explore]]
 URL = "/testimonies/"
 name = "Testimonials"
 weight = 2
 [[menu.explore]]
+URL = "#"
+name = "Contact"
+weight = 3
+[[menu.explore]]
 name = "About Us"
 weight = 1
-[[menu.shop_menu]]
-name = "RV"
-parent = "Personal Auto & Vehicle"
-url = "/#"
-weight = 4
 [[menu.shop_menu]]
 name = "Motorcycle"
 parent = "Personal Auto & Vehicle"
 url = "/#"
 weight = 4
+[[menu.shop_menu]]
+name = "RV"
+parent = "Personal Auto & Vehicle"
+url = "/#"
+weight = 3
 [[menu.shop_menu]]
 identifier = "column-3"
 name = "Column 3"
@@ -43,3 +37,7 @@ name = "Column 1"
 weight = 1
 [params]
 cloudinary_url = "https://res.cloudinary.com/modii/"
+[taxonomies]
+category = "categories"
+productcategory = "productcategories"
+tag = "tags"
