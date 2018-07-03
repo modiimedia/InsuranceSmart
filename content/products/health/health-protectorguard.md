@@ -28,6 +28,16 @@ faqs:
     benefits for a loss that is incurred due to a preexisting condition. After the
     initial 12 month period has passed the preexisting condition limitation will no
     longer apply.
+quote: []
+seo:
+  meta_title: ''
+  meta_description: ''
+  social_title: ''
+  social_description: ''
+  open_graph_image: ''
+custom_article_list: []
+description: An affordable Hospital Surgical Indemnity plan provided by United Healthcare
+  that works with any doctor, any hospital, anywhere in the United States.
 
 ---
 Health ProtectorGuard is a hospital surgical fixed indemnity plan that pays set benefits for incurred medical expenses. It helps pay for things like hospital stays, inpatient and outpatient surgury, emergency room and doctor visits, annual wellness, prescriptions, x-rays, and much more. Benefits are predictable and simple to understand making it easy for you know exactly what you are getting! Best of all, it's affordable and you don't have to meet any deductible before your benefits begin.
