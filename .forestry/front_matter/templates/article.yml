@@ -45,4 +45,5 @@ fields:
   - safeco-quoter
   name: form
 pages:
+- content/posts/my-second-post.md
 - content/posts/new-post.md
