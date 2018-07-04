@@ -4,8 +4,13 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- path: content/products
+  label: Products
+  create: all
+  templates:
+  - product
 - path: content/insurancecategories
-  label: Categories
+  label: Product Categories
   create: all
   templates:
   - product-category
@@ -20,13 +25,6 @@ sections:
 - path: content
   label: Homepage
   create: none
-  templates:
-  - homepage
-- path: content/products
-  label: Products
-  create: all
-  templates:
-  - product
 upload_dir: insurancesmart
 public_path: https://res.cloudinary.com/modii
 front_matter_path: ''
