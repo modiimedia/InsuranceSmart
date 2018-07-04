@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - path: content/insurancecategories
-  label: Product Categories
+  label: Categories
   create: all
   templates:
   - product-category
