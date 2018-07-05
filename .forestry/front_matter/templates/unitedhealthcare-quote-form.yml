@@ -14,6 +14,11 @@ fields:
     - Critical Illness
     - Dental
     - Term Life Safeguard
+  default:
+  - Health ProtectorGuard (Fixed Indemnity)
+  - Critical Illness
+  - Term Life Safeguard
+  - Dental
 - type: select
   name: default
   config:
