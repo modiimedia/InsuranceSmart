@@ -3,7 +3,10 @@ title: My first post
 date: 2018-07-03 05:00:00 +0000
 categories:
 - auto
-tags: ["insurance review", "choosing a plan", "helpful advice"]
+tags:
+- insurance review
+- choosing a plan
+- helpful advice
 featured_image: "/v1530419489/insurancesmart/49545_kill_la_kill.jpg"
 form:
 - template: safeco-quoter
@@ -19,6 +22,13 @@ form:
   - Landlord Protection
   default: Auto
   background_image: "/v1530419488/insurancesmart/jon-flobrant-230583-unsplash-1.jpg"
+seo:
+  meta_title: ''
+  meta_description: ''
+  social_title: ''
+  social_description: ''
+  open_graph_image: ''
+author: staff/mike.md
 
 ---
 Lorem markdownum leges, percutiensque vilisque cum; hic tribuisse firmatque tempora huc nam tamen igne. Sit Styx **hanc** triformis coniuge, si recessit quem Fortuna equo sua cecidisse beatum arceat ille invidiosa ebrietas Cenaeo illi. Ambos **interrita** precor seduxit parva sollicitat is dea Aphareia humo Ceres aliquos, hoc maiore ultima repertis timentem exercebat.
