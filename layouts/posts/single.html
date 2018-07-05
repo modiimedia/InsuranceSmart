@@ -20,13 +20,21 @@
           </a>
           {{ end }}
         </div>
+        {{ $date := .Date.Format "January 02, 2006"}}
         <h1 class="heading-8">{{ .Title }}</h1>
-        <div class="author-photo"></div>
-        <div>{{ .Date.Format "January 02, 2006"}}</div>
-        <div>Michael Sosso</div>
+        {{- with .Params.author -}}
+          {{- $a := strings.TrimPrefix "staff/" . -}}
+          {{- range where $.Site.RegularPages "Section" "staff" -}}
+            {{- if eq .File.LogicalName $a -}}
+              <div class="author-photo" style="background-image: URL({{ $.Site.Params.cloudinary_url }}w_50,h_50,q_80,c_fill,g_face{{ .Params.Photo }})"></div>
+              <div>{{- $date -}}</div>
+              <div>{{- .Title -}}</div>
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
         <img src="{{ .Site.Params.cloudinary_url }}w_750,q_80{{ .Params.Featured_image }}" />
         <div class="w-richtext">
-          {{ replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50/" | safeHTML }}
+          {{- replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50/" | safeHTML -}}
         </div>
       </div>
       <div class="flex-grow">
@@ -53,11 +61,11 @@
         </div>
         <div class="div-block-45">
           <p>Tags:</p>
-          {{ range .Params.Tags }}
+          {{- range .Params.Tags -}}
           <a href="/tags/{{ . | urlize }}" class="tag w-inline-block">
             <div>{{ . }}</div>
           </a>
-          {{ end }}
+          {{- end -}}
         </div>
         <div class="div-block-43-copy">
           <div class="div-block-44">
@@ -76,8 +84,8 @@
         </div>
       </div>
     </div>
-    {{ range .Params.form }}
-        {{ if eq .template "safeco-quoter" }}
+    {{- range .Params.form -}}
+        {{- if eq .template "safeco-quoter" -}}
           <div class="div-block-48">
             <div class="blog-quote-box" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1050,h_400,q_70,c_fill{{ .background_image }})">
               <div class="image-overlay"></div>
