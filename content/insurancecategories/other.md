@@ -15,11 +15,5 @@ seo:
   social_description: ''
   open_graph_image: ''
 subheading: ''
-menu:
-  shop_menu:
-    name: ''
-    weight: ''
-    parent: ''
-    post: ''
 
 ---

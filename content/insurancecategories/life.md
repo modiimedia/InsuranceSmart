@@ -17,11 +17,5 @@ quote:
   - Critical Illness
   - Term Life Safeguard
   - Dental
-menu:
-  shop_menu:
-    name: ''
-    weight: ''
-    parent: ''
-    post: ''
 
 ---
