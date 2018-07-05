@@ -20,7 +20,10 @@ fields:
   name: quote
   label: Quote Form
   template_types:
+  - unitedhealthcare-quote-form
   - safeco-quote-form
+  - call-for-a-quote
+  - custom-link
   description: Quote form for customers to fill out
 - type: file
   name: featured_image
