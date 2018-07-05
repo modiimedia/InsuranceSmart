@@ -7,7 +7,13 @@ menu:
     weight: 2
     parent: Column 1
     post: <i class="fas fa-medkit"></i>
-quote: []
+quote:
+- template: safeco-quote-form
+  options:
+  - Home
+  - Condo
+  - Renters
+  - Landlord Protection
 featured_image: "/v1530578684/insurancesmart/arms-care-check-905874%20%281%29.jpg"
 weight: 5
 fa_icon: medkit
