@@ -45,7 +45,7 @@
             </div>
             <div class="flex-grow product">
                 <div class="w-richtext">
-                    {{ .Content }}
+                    {{ replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50/" | safeHTML }}
                 </div>
                 <h1 class="heading-13">Relevant Readings</h1>
                 <div class="w-dyn-list">
