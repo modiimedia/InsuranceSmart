@@ -21,8 +21,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: featured_image
-  label: Featured image
-  type: text
-  hidden: false
-  default: ''
+- type: file
+  name: photo
+  label: photo
