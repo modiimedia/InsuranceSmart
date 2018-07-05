@@ -32,3 +32,5 @@ A rich text element can be used with static or dynamic content. For static conte
 
 How to customize formatting for each rich text
 Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the "When inside of" nested selector system.
+
+![](https://res.cloudinary.com/modii/v1530419491/insurancesmart/texas-alamo.adapt.945.1.jpg)
