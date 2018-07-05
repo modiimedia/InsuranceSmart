@@ -6,7 +6,20 @@ quote:
   - Umbrella
   default: Umbrella
 weight: 10
-featured_image: "/v1530419489/insurancesmart/49545_kill_la_kill.jpg"
+featured_image: "/v1530419492/insurancesmart/woman-hiking-compressor.jpg"
 fa_icon: umbrella
+seo:
+  meta_title: ''
+  meta_description: ''
+  social_title: ''
+  social_description: ''
+  open_graph_image: ''
+subheading: ''
+menu:
+  shop_menu:
+    name: ''
+    weight: ''
+    parent: ''
+    post: ''
 
 ---
