@@ -17,6 +17,14 @@ fields:
   name: seo
   label: SEO
   template: seo
+- type: select
+  name: author
+  config:
+    source:
+      type: pages
+      section: staff
+    required: true
+  label: Author
 - type: list
   name: categories
   label: Insurance Category
