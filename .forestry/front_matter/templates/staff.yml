@@ -1,5 +1,5 @@
 ---
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - name: title
@@ -7,11 +7,15 @@ fields:
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: position
   label: Position
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: description
   label: Description
   type: text
