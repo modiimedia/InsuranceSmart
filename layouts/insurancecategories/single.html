@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="page-banner-copy2-copy" style="background-image: URL({{ .Site.Params.cloudinary_url }}w_1600,q_50{{ .Params.Featured_image }})">
+<section class="page-banner-copy2-copy" style="background-image: URL({{ .Site.Params.cloudinary_url }}w_1600,q_50,f_auto{{ .Params.Featured_image }})">
     <div class="div-block-16"></div>
     <div class="container flex-left">
         <div class="product-quote-box">
@@ -45,7 +45,7 @@
             </div>
             <div class="flex-grow product">
                 <div class="w-richtext">
-                    {{ replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50/" | safeHTML }}
+                    {{ replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50,f_auto/" | safeHTML }}
                 </div>
                 <h1 class="heading-13">Relevant Readings</h1>
                 <div class="w-dyn-list">

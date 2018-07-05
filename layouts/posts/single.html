@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<section style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_50{{ .Params.Featured_image }})" class="blog-banner">
+<section style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_50,f_auto{{ .Params.Featured_image }})" class="blog-banner">
   <div class="div-block-16-copy"></div>
   <div class="container"></div>
 </section>
@@ -26,7 +26,7 @@
           {{- $a := strings.TrimPrefix "staff/" . -}}
           {{- range where $.Site.RegularPages "Section" "staff" -}}
             {{- if eq .File.LogicalName $a -}}
-              <div class="author-photo" style="background-image: URL({{ $.Site.Params.cloudinary_url }}w_50,h_50,q_80,c_fill,g_face{{ .Params.Photo }})"></div>
+              <div class="author-photo" style="background-image: URL({{ $.Site.Params.cloudinary_url }}w_50,h_50,q_80,c_fill,g_face,f_auto{{ .Params.Photo }})"></div>
               <div>{{- $date -}}</div>
               <div>{{- .Title -}}</div>
             {{- end -}}
@@ -34,7 +34,7 @@
         {{- end -}}
         <img src="{{ .Site.Params.cloudinary_url }}w_750,q_80{{ .Params.Featured_image }}" />
         <div class="w-richtext">
-          {{- replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50/" | safeHTML -}}
+          {{- replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50,f_auto/" | safeHTML -}}
         </div>
       </div>
       <div class="flex-grow">
@@ -87,7 +87,7 @@
     {{- range .Params.form -}}
         {{- if eq .template "safeco-quoter" -}}
           <div class="div-block-48">
-            <div class="blog-quote-box" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1050,h_400,q_70,c_fill{{ .background_image }})">
+            <div class="blog-quote-box" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1050,h_400,q_70,c_fill,f_auto{{ .background_image }})">
               <div class="image-overlay"></div>
               <h1 class="quote-box-heading">Get a Free Quote</h1>
               <p class="quote-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>

@@ -1,6 +1,6 @@
 {{ define "main"}}
 {{- $phone := $.Site.Data.general_settings.contact_info.phone -}}
-<section style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_80{{ .Params.Featured_Image }})"
+<section style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_80,f_auto{{ .Params.Featured_Image }})"
     class="page-banner-copy2-copy">
     <div class="container">
         <div class="product-quote-box">
@@ -155,7 +155,7 @@
                         <div class="product-details w-tab-content">
                             <div data-w-tab="Tab 4" class="w-tab-pane w--tab-active">
                                 <div class="w-richtext">
-                                    {{ replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50/" | safeHTML }}
+                                    {{ replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50,f_auto/" | safeHTML }}
                                 </div>
                             </div>
                             <div data-w-tab="Tab 2" class="w-tab-pane">

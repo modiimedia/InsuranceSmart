@@ -44,7 +44,7 @@
     {{- $t := .template -}}
     {{ if ne .hide true }}
         {{- if eq $t "testimony-slider" -}}
-            <section class="section-dark" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1600,q_40{{ .background_image }})">
+            <section class="section-dark" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1600,q_40,f_auto{{ .background_image }})">
                 <div class="image-overlay"></div>
                 <div class="container">
                     <h1 class="dark-heading">{{ .heading }}</h1>
