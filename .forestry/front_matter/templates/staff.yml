@@ -24,3 +24,5 @@ fields:
 - type: file
   name: photo
   label: photo
+pages:
+- content/staff/mike.md
