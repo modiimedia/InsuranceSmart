@@ -14,7 +14,7 @@ quote:
 menu:
   shop_menu:
     name: Boat or Watercraft
-    weight: 2
+    weight: 3
     parent: Personal Auto & Vehicle
 description: Ubi Stymphalide ignem officioque ad totum gaudebat fonti at, dea. Achilles
   singula habeto.

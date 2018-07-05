@@ -14,15 +14,15 @@ weight = 3
 name = "About Us"
 weight = 1
 [[menu.shop_menu]]
-name = "Motorcycle"
+name = "RV"
 parent = "Personal Auto & Vehicle"
 url = "/#"
 weight = 4
 [[menu.shop_menu]]
-name = "RV"
+name = "Motorcycle"
 parent = "Personal Auto & Vehicle"
 url = "/#"
-weight = 3
+weight = 2
 [[menu.shop_menu]]
 identifier = "column-3"
 name = "Column 3"
