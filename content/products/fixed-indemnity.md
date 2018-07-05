@@ -36,7 +36,7 @@ quote:
   - Dental
   - Critical Illness
   - Health ProtectorGuard (Fixed Indemnity)
-  default: ''
+  default: Health ProtectorGuard (Fixed Indemnity)
 seo:
   meta_title: ''
   meta_description: ''
