@@ -3,7 +3,7 @@ category = "insurancecategories/health.md"
 custom_article_list = []
 date = "2018-07-05T18:50:43+00:00"
 description = "A well rounded dental insurance plan, that includes optional add-ons for vision."
-featured_image = "/v1530816707/insurancesmart/5a792163b9b0da0001c3e1d6_woman-smiling-compressor.jpg"
+featured_image = "/v1530819319/insurancesmart/photo-1520813792240-56fc4a3765a7%20%281%29bb%20%281%29.jpg"
 mikes_take = ""
 recommended_articles = "choose automatically"
 title = "Dental Insurance"
@@ -48,4 +48,4 @@ Find your dentist at [**myuhc.com**](https://myuhc.com/).
 
 Bundle vision benefits with your dental plan and start getting coverage for your vision care. From eye exams to contact lenses, we got you covered.
 
-[**GET A FREE QUOTE TODAY**](https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&ProductType=Dental "Get a quote")![](https://res.cloudinary.com/modii/v1530817139/insurancesmart/UHC%20Dental%20-%20Vision%20Brochure.pdf)
+[**GET A FREE QUOTE TODAY**](https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&ProductType=Dental "Get a quote")![](https://res.cloudinary.com/modii/v1530817139/insurancesmart/UHC%20Dental%20-%20Vision%20Brochure.pdf)![](https://res.cloudinary.com/modii/v1530819171/insurancesmart/photo-1520813792240-56fc4a3765a7%20%281%29b%20%281%29.jpg)![](https://res.cloudinary.com/modii/v1530819319/insurancesmart/photo-1520813792240-56fc4a3765a7%20%281%29bb%20%281%29.jpg)
