@@ -8,15 +8,15 @@
                 <div class="nav-link-text">--</div>
             </div>
             <div class="dropdown" style="display: none;">
-                <a href="#" class="nav-link w-inline-block">
-                    <div class="nav-link-text">Life</div>
-                </a>
-                <a href="#" class="nav-link w-inline-block">
-                    <div class="nav-link-text">Health</div>
-                </a>
-                <a href="#" class="nav-link w-inline-block">
-                    <div class="nav-link-text">Dental</div>
-                </a>
+                {{ range .Site.Menus.shop_menu }}
+                    {{ if .HasChildren }}
+                        {{ range .Children }}
+                        <a href="{{ .URL }}" class="nav-link w-inline-block">
+                            <div class="nav-link-text">{{ .Name }}</div>
+                        </a>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
                 <a href="#" class="nav-link emphasis w-inline-block">
                     <div class="nav-link-text">View All</div>
                 </a>

@@ -3,17 +3,16 @@
         <div class="header-content">
             <div class="div-block-3">
                 <a class="logo w-inline-block">
-                    <div>Insurance
-                        <strong class="bold-text">Smart</strong>
+                    <div>Insurance<strong class="bold-text">Smart</strong>
                     </div>
                 </a>
             </div>
             <nav class="nav-wrapper">
                 {{ partial "main-nav.html" . }}
                 {{ partial "mobile-nav.html" . }}
-                <a href="tel:2106990281" class="nav-link phone w-inline-block">
+                <a href="tel:{{ $.Site.Data.general_settings.contact_info.phone }}" class="nav-link phone w-inline-block">
                     <div class="text-block-2"><i class="fas fa-phone"></i></div>
-                    <div class="text-block-3">&nbsp;&nbsp;210-699-0281</div>
+                    <div class="text-block-3">&nbsp;&nbsp;{{ $.Site.Data.general_settings.contact_info.phone }}</div>
                     <div class="text-block-4">&nbsp;&nbsp;call us</div>
                 </a>
                 <div class="social-icons">
