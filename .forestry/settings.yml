@@ -7,6 +7,8 @@ sections:
 - path: content/staff
   label: Staff
   create: all
+  templates:
+  - staff
 - path: content/products
   label: Products
   create: all
