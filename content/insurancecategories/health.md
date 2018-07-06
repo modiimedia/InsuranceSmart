@@ -8,12 +8,12 @@ menu:
     parent: Column 1
     post: <i class="fas fa-medkit"></i>
 quote:
-- template: safeco-quote-form
+- template: unitedhealthcare-quote-form
   options:
-  - Home
-  - Condo
-  - Renters
-  - Landlord Protection
+  - Health ProtectorGuard (Fixed Indemnity)
+  - Critical Illness
+  - Term Life Safeguard
+  - Dental
 featured_image: "/v1530578684/insurancesmart/arms-care-check-905874%20%281%29.jpg"
 weight: 5
 fa_icon: medkit
