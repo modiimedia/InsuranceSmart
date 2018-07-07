@@ -26,6 +26,38 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 41% 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 41% 100%);
 }
+.f-blog-link .image-overlay,
+.small-f-blog-link .image-overlay,
+.card-link .image-overlay {
+  opacity: 0;
+  background: white;
+}
+
+.f-blog-link:hover .image-overlay,
+.small-f-blog-link:hover .image-overlay,
+.card-link:hover .image-overlay {
+  opacity: 0.3;
+}
+
+a:hover .f-blog-content,
+a:hover .small-f-blog-content {
+  transform: scaleY(1.01) scaleX(1.01) translateY(-5px);
+}
+
+.polygon-small-to-large.blog-copy {
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 220% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 0% 0%, 220% 100%, 0% 100%);
+}
+
+.polygon-small-to-large.blog {
+  -webkit-clip-path: polygon(80% 0, 100% 0%, 100% 100%, -135% 100%);
+  clip-path: polygon(80% 0, 100% 0%, 100% 100%, -135% 100%);
+}
+
+.polygon-small-to-large.blog-3 {
+  -webkit-clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%);
+}
 @media (max-width: 991px) {
   .polygon-small-to-large, .polygon-large-to-small {
     width: 90%;
