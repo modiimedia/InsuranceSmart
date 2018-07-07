@@ -11,9 +11,32 @@ body {
 .w-lightbox-backdrop {
   margin: auto;
 }
+.hero-banner {
+  overflow: hidden;
+}
+.hero-banner .polygon-small-to-large {
+  background-position: top right;
+}
 .polygon-small-to-large {
   -webkit-clip-path: polygon(41% 0, 100% 0%, 100% 100%, 0 100%);
   clip-path: polygon(41% 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+.polygon-large-to-small {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 41% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 41% 100%);
+}
+@media (max-width: 991px) {
+  .polygon-small-to-large, .polygon-large-to-small {
+    width: 90%;
+  }
+}
+@media (max-width: 479px) {
+  .polygon-small-to-large, .polygon-large-to-small {
+    width: 100%;
+    /*clip-path: none;
+    -webkit-clip-path: none;*/
+  }
 }
 
 .gradient-screen {
@@ -21,10 +44,6 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 53%, 0 100%);
 }
 
-.polygon-large-to-small {
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 41% 100%);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 41% 100%);
-}
 
 footer,
 header,
