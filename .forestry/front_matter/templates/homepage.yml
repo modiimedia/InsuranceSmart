@@ -42,8 +42,8 @@ fields:
       format: markdown
 - type: field_group
   name: banner_media
-  label: Banner Video
-  description: Video for you homepage
+  label: Banner Media
+  description: Video and Images for your homepage
   fields:
   - type: select
     name: video_type
@@ -59,6 +59,10 @@ fields:
     name: youtube_url
     label: Youtube Url
     description: Copy and paste the youtube video URL
+  - type: file
+    name: background_image
+    label: Background Image
+    description: Background video for the banner section of the homepage
 - type: blocks
   name: components
   label: Components
