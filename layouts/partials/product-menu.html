@@ -21,7 +21,7 @@
             </a>
             {{ if eq $cat $f }}
             <div class="product-content">
-                {{ range where $.Site.RegularPages "Section" "products" }}
+                {{ range sort (where $.Site.RegularPages "Section" "products") ".Title" }}
                     {{ if eq .Params.category $category }}
                     <a href="{{ .RelPermalink }}" class="sidebar-heading sublink w-inline-block">
                         <div>{{ if eq .RelPermalink $link }}<i style="color: #ffbc00" class="fas fa-chevron-right"></i>&nbsp;{{ end }}{{ .Title }}</div>
@@ -49,14 +49,13 @@
     {{ range sort (where .Site.RegularPages.ByTitle "Section" "insurancecategories") "Params.weight" }}
     {{ $f := .File.LogicalName }}
     <div class="div-block-18 {{ if eq $cat $f -}}active{{- end -}}">
-
         <a href="{{ .RelPermalink }}" class="sidebar-heading top w-inline-block">
             <div class="text-block-17">{{ if eq .RelPermalink $link }}<i style="color: #ffbc00" class="fas fa-chevron-right"></i>&nbsp;{{ end }}{{ .Title }}</div>
             <div class="text-block-11"><i style="margin-left: 10px" class="fas fa-{{ .Params.fa_icon }}"></i> </div>
         </a>
         {{ if eq $cat $f }}
         <div class="product-content">
-            {{ range where $.Site.RegularPages.ByTitle "Section" "products" }}
+            {{ range sort (where $.Site.RegularPages.ByTitle "Section" "products") ".Title" }}
                 {{ if eq .Params.category $category }}
                 <a href="{{ .RelPermalink }}" class="sidebar-heading sublink w-inline-block">
                     <div>{{ if eq .RelPermalink $link }}<i class="fas fa-chevron-right"></i>&nbsp;{{ end }}{{ .Title }}</div>
