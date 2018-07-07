@@ -8,7 +8,7 @@ banner_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
-  background_image: "/v1530988746/insurancesmart/homepage%20collage%20%281%29.jpg"
+  background_image: "/v1530989033/insurancesmart/homepage%20collage2%20%281%29.jpg"
 components:
 - template: testimony-slider
   heading: What People Are Saying
