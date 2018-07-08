@@ -33,7 +33,7 @@ components:
     media_type: photo
     youtube_url: https://www.youtube.com/watch?v=8iU8LPEa4o0
     _3d: false
-    image: ''
+    image: "/v1530419487/insurancesmart/5a8b0feab39fc100011f1e5e_photo-1513337915236-364fe3ee1f53-compressor.jpg"
   hide: false
 - template: contact-form-company-info
   heading: Get In Touch With Us
