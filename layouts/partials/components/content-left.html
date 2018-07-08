@@ -17,8 +17,8 @@
             </div>
             {{ if ne .cLeft.media.media_type "none" }}
             <div class="hero-content flex-grow hero-video-container">
-                {{ if eq .cLeft.media.media_type "image" }}
-                    <img {{ if eq .cLeft.media._3d true -}}class="_3d"{{- end }} src="{{ .cUrl }}w_700,q_80,f_auto{{ .cLeft.style.background_image }}"/>
+                {{ if eq .cLeft.media.media_type "photo" }}
+                    <img {{ if eq .cLeft.media._3d true -}}class="_3d"{{- end }} src="{{ .cUrl }}w_700,q_80,f_auto{{ .cLeft.media.image }}"/>
                 {{ end }}
                 {{ if eq .cLeft.media.media_type "youtube video"}}
                 {{- $v := replace .cLeft.media.youtube_url "https://www.youtube.com/watch?v=" "" -}} {{- $v2 := replace $v "https://youtu.be/" "" -}}
