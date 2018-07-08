@@ -54,3 +54,4 @@ fields:
   name: form
 pages:
 - content/posts/new-post.md
+- content/posts/my-second-post.md
