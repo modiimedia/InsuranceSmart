@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- path: content/staff
-  label: Staff
-  create: all
-  templates:
-  - staff
 - path: content/products
   label: Products
   create: all
@@ -27,6 +22,11 @@ sections:
 - path: content/testimonies
   label: Testimonies
   create: all
+- path: content/staff
+  label: Staff
+  create: all
+  templates:
+  - staff
 - path: content
   label: Homepage
   create: none
