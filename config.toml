@@ -39,5 +39,4 @@ weight = 1
 cloudinary_url = "https://res.cloudinary.com/modii/"
 [taxonomies]
 category = "categories"
-productcategory = "productcategories"
 tag = "tags"
