@@ -7,7 +7,9 @@ body {
   background-color: #293b45;
   margin: auto
 }
-
+.tabs-content {
+  width: 100%;
+}
 .w-lightbox-backdrop {
   margin: auto;
 }
@@ -70,7 +72,21 @@ a:hover .small-f-blog-content {
     -webkit-clip-path: none;*/
   }
 }
-
+.card-link.view-more {
+  background: rgba(255, 255, 255, 0.3); 
+  justify-content: center; 
+  align-items: center; 
+  display: flex; 
+  font-size: 22px; 
+  font-weight: bold; 
+  padding: 20px; 
+  text-align: center;
+  position: relative;
+}
+.view-more p {
+  opacity: 0.8;
+  margin: 0px;
+}
 .gradient-screen {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 53%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 53%, 0 100%);
