@@ -13,7 +13,7 @@ components:
 - template: testimony-slider
   heading: What People Are Saying
   show: most recent
-  background_image: "/v1530419490/insurancesmart/couple-smiling.jpg"
+  background_image: "/v1530992901/insurancesmart/helena-lopes-463976-unsplash%20%281%29.jpg"
 - template: content-left
   content: "![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)\n\n#
     Experience You Can Trust\n\nLorem ipsum dolor sit amet, consectetur adipiscing
