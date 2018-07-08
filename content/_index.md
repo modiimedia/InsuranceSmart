@@ -30,10 +30,10 @@ components:
     background_style: light
     background_image: "/v1530419500/insurancesmart/joshua-rodriguez-583392-unsplash.jpg"
   media:
-    media_type: photo
+    media_type: none
     youtube_url: https://www.youtube.com/watch?v=8iU8LPEa4o0
     _3d: false
-    image: "/v1530419487/insurancesmart/5a8b0feab39fc100011f1e5e_photo-1513337915236-364fe3ee1f53-compressor.jpg"
+    image: ''
   hide: false
 - template: contact-form-company-info
   heading: Get In Touch With Us
