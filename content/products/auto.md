@@ -27,9 +27,9 @@ mikes_take: ''
 custom_article_list: []
 
 ---
-Lorem markdownum remotam Oleniae contempsere tela patruo ardeat, numina [aures](http://mi.io/per.aspx). Notum fieri corpora ventos flavum caespite mutata sed virum conpulit eodem mirabile, unde, et tenus temptamenta. 
+Lorem markdownum remotam Oleniae contempsere tela patruo ardeat, numina [aures](http://mi.io/per.aspx). Notum fieri corpora ventos flavum caespite mutata sed virum conpulit eodem mirabile, unde, et tenus temptamenta.
 
-> Guttae et in Cadmus grande, frater domui; deos Luna quoque. Athin parte, et se meum sua nec totiens; territa comitum moderantur, minari quamvis aura. In inmeritae carmina, illa et, pars agi inundet?
+> Guttae et in Cadmus grande, frater domui; deos Luna quoque. Athin parte, et se meum sua nec totiens; territa comitum moderantur, minari quamvis aura. In inmeritae carmina, illa et, pars agi inundet??
 
 ## Petentem Lyrnesia et crinis atque spumisque te
 
