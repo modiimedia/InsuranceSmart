@@ -17,14 +17,17 @@ weight = 1
 identifier = "column-3"
 name = "Column 3"
 weight = 3
+url = "#"
 [[menu.shop_menu]]
 identifier = "column-2"
 name = "Column 2"
 weight = 2
+url = "#"
 [[menu.shop_menu]]
 identifier = "column-1"
 name = "Column 1"
 weight = 1
+url = "#"
 [params]
 cloudinary_url = "https://res.cloudinary.com/modii/"
 [taxonomies]

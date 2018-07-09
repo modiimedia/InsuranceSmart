@@ -18,11 +18,4 @@ quote:
   - Term Life Safeguard
   - Dental
   default: Term Life Safeguard
-menu:
-  shop_menu:
-    name: ''
-    weight: ''
-    parent: ''
-    post: ''
-
 ---
