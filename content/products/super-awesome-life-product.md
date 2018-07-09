@@ -3,6 +3,7 @@ category = "insurancecategories/life.md"
 custom_article_list = []
 date = "2018-07-09T16:05:14+00:00"
 description = "This product is totally awesome"
+draft = true
 faqs = []
 featured_image = "/v1530992759/insurancesmart/rawpixel-703123-unsplash%20%281%29.jpg"
 mikes_take = ""
