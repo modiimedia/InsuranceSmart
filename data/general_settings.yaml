@@ -1,21 +1,23 @@
+---
 website_settings:
   site_title: InsuranceSmart
   site_slogan: Affordable Insurance Coverage for Texas Residents
-  site_description: InsuranceSmart is the best insurance company every! We are super rad.
-  logo: /v1530419506/insurancesmart/eye-for-ebony-340137-unsplash.jpg
+  site_description: InsuranceSmart is the best insurance company every! We are super
+    rad.
+  logo: "/v1530419506/insurancesmart/eye-for-ebony-340137-unsplash.jpg"
   favicon: 
 contact_info:
   business_name: InsuranceSmart
-  phone: 210-699-0281
-  fax: 111-111-1111
+  phone: "(210) 699-0281"
+  fax: "(210) 695-1631"
   email: info@getinsurancesmart.com
-  address: 1111 some address street
+  address: 8000 IH 10 West
   address_line2: Suite 600
   city: San Antonio
   state: TX
   zip: 78230
 social_media:
-  - platform: facebook
-    url: https://facebook.com
-  - platform: instagram
-    url: https://instagram.com
+- platform: facebook
+  url: https://facebook.com
+- platform: instagram
+  url: https://instagram.com
