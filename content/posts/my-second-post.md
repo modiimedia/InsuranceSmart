@@ -2,6 +2,7 @@
 author = "staff/mike.md"
 categories = ["auto"]
 date = "2018-07-08T00:43:36+00:00"
+featured = true
 featured_image = "/v1530577861/insurancesmart/5b2d4e30525acce3704fe325_cam-bowers-124438-unsplash%20%281%29.jpg"
 form = []
 tags = ["cars", "car shopping"]
