@@ -2,12 +2,6 @@
 title: Life Insurance
 category: insurancecategories/life.md
 subheading: Get insurance for your home, condo, rental, and more!
-menu:
-  shop_menu:
-    name: Life
-    weight: 1
-    parent: Column 1
-    post: <i class="fas fa-heartbeat"></i>
 recommended_articles: choose automatically
 description: Ubi Stymphalide ignem officioque ad totum gaudebat fonti at, dea. Achilles
   singula habeto.

@@ -7,10 +7,6 @@ URL = "/testimonies/"
 name = "Testimonials"
 weight = 2
 [[menu.explore]]
-URL = "#"
-name = "Contact"
-weight = 3
-[[menu.explore]]
 name = "About Us"
 weight = 1
 [[menu.shop_menu]]

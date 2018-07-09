@@ -54,11 +54,6 @@ custom_article_list: []
 description: Get paid lump sum cash benefits from $10,000 to $50,000 for qualifying
   critical illnesses
 mikes_take: ''
-menu:
-  shop_menu:
-    name: Critical Illness
-    weight: 2
-    parent: Health
 
 ---
 Below you will see some frequently asked questions. For more complete information please consult the [**brochure**](https://s3.us-east-2.amazonaws.com/insurancesmart/Brochures+and+PDFs/UHC+Critical+Illness+Brochure+40198C1-G201608.pdf) using the link above.

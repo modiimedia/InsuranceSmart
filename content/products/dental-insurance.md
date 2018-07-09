@@ -7,10 +7,6 @@ featured_image = "/v1530819319/insurancesmart/photo-1520813792240-56fc4a3765a7%2
 mikes_take = ""
 recommended_articles = "choose automatically"
 title = "Dental Insurance"
-[menu.shop_menu]
-name = "Dental"
-parent = "Health"
-weight = 5
 [seo]
 meta_description = ""
 meta_title = ""

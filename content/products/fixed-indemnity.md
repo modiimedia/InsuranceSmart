@@ -46,11 +46,6 @@ seo:
 custom_article_list: []
 description: An affordable Hospital Surgical Indemnity plan provided by United Healthcare
   that works with any doctor, any hospital, anywhere in the United States.
-menu:
-  shop_menu:
-    name: Family Medical
-    weight: 1
-    parent: Health
 mikes_take: ''
 
 ---

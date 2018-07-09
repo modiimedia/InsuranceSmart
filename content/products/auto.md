@@ -22,11 +22,6 @@ faqs:
   question: Example Question
 description: Drive with peace of mind. We offer affordable and comprehensive plans
   to fit your needs.
-menu:
-  shop_menu:
-    name: Auto
-    weight: 1
-    parent: Personal Auto & Vehicle
 resources: []
 mikes_take: ''
 custom_article_list: []

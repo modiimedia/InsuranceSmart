@@ -9,10 +9,6 @@ mikes_take = "Succidit fictamque eventuque impetus, fides [tum et](http://www.p
 recommended_articles = "choose automatically"
 resources = []
 title = "Home Insurance"
-[menu.shop_menu]
-name = "Home"
-parent = "Home & Property Insurance"
-weight = 1
 [seo]
 meta_description = ""
 meta_title = ""
