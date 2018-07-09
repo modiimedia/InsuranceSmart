@@ -3,6 +3,9 @@ label: Article
 hide_body: false
 is_partial: false
 fields:
+- type: boolean
+  name: featured
+  label: Featured Post
 - type: text
   name: title
   label: Title
@@ -26,6 +29,7 @@ fields:
       section: staff
     required: true
   label: Author
+  default: staff/mike.md
 - type: list
   name: categories
   label: Insurance Category
