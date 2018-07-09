@@ -3,12 +3,9 @@ enableRobotsTXT = true
 languageCode = "en-us"
 title = "InsuranceSmart"
 [[menu.explore]]
-URL = "/testimonies/"
-name = "Testimonials"
-weight = 2
-[[menu.explore]]
 name = "About Us"
 weight = 1
+url = "#"
 [[menu.shop_menu]]
 identifier = "column-3"
 name = "Column 3"
