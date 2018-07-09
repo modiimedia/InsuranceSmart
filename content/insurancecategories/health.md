@@ -1,12 +1,6 @@
 ---
 title: Health Insurance
 subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse variusenim
-menu:
-  shop_menu:
-    name: Health
-    weight: 2
-    parent: Column 1
-    post: <i class="fas fa-medkit"></i>
 quote:
 - template: unitedhealthcare-quote-form
   options:

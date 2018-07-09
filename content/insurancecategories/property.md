@@ -1,11 +1,6 @@
 ---
 title: Home & Property Insurance
 subheading: Get insurance for your home, condo, rental, and more!
-menu:
-  shop_menu:
-    weight: 1
-    parent: Column 3
-    post: <i class="fas fa-home"></i>
 quote:
 - template: safeco-quote-form
   options:
