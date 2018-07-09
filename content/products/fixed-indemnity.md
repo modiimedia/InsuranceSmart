@@ -48,7 +48,7 @@ description: An affordable Hospital Surgical Indemnity plan provided by United H
   that works with any doctor, any hospital, anywhere in the United States.
 menu:
   shop_menu:
-    name: Fixed Indemnity
+    name: Family Medical
     weight: 1
     parent: Health
 mikes_take: ''
