@@ -10,6 +10,15 @@ body {
 .tabs-content {
   width: 100%;
 }
+.taxonomy-list {
+  column-count: 3;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.8;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
 .w-lightbox-backdrop {
   margin: auto;
 }
@@ -64,12 +73,18 @@ a:hover .small-f-blog-content {
   .polygon-small-to-large, .polygon-large-to-small {
     width: 90%;
   }
+  .taxonomy-list {
+    column-count: 2;
+  }
 }
 @media (max-width: 479px) {
   .polygon-small-to-large, .polygon-large-to-small {
     width: 100%;
     /*clip-path: none;
     -webkit-clip-path: none;*/
+  }
+  .taxonomy-list {
+    column-count: 1;
   }
 }
 .collection-list-7 .collection-item-5:nth-of-type(1) {

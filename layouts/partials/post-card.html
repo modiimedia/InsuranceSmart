@@ -1,0 +1,26 @@
+<div class="card-grid-item-4th w-dyn-item">
+    <a href="{{ .RelPermalink }}" class="card-link w-inline-block">
+        {{ if .Params.featured_image }}
+            <div style="background-image:url({{ $.Site.Params.cloudinary_url }}w_350,q_60,f_auto{{ .Params.featured_image }})"
+                class="blog-card-image">
+                <div class="image-overlay"></div>
+            </div>
+        {{ end }}
+        <div class="blog-card-content w-clearfix">
+            <h1 class="blog-card-title">{{ .Title }}</h1>
+            {{- $a := replace .Params.Author "staff/" "" -}}
+            {{- $date := .Date.Format "January 02, 2006" -}}
+            {{- range where .Site.RegularPages "Section" "staff" -}}
+                {{- if eq $a .File.LogicalName -}}
+                <div class="flexwrap">
+                    <div class="author-photo-small" style="background-image: url({{ .Site.Params.Cloudinary_url }},w_30,h_30,c_fill,g_face,f_auto,q_60{{ .Params.Photo }})"></div>
+                    <div style="display: block">
+                        <div class="author-text">by {{ .Title }}</div>
+                        <div class="author-text">{{ $date }}</div>
+                    </div>    
+                </div>
+                {{- end -}}
+            {{- end -}}
+        </div>
+    </a>
+</div>

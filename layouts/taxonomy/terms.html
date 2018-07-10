@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="main-content blog-home">
+        <div class="polygon-small-to-large blog"></div>
+        <div class="polygon-small-to-large blog-copy"></div>
+        <div class="container">
+            {{ partial "forms/mailchimp-form.html" . }}
+            <h1>All {{ .Title }}</h1>
+            <ul class="taxonomy-list">
+                {{ range .Data.Pages }}
+                    <li><a href="{{ .RelPermalink }}">&bull; {{ .Title }}</a></li>
+                {{ end }}  
+            </ul>
+        </div>
+    </section>
+{{ end }}
