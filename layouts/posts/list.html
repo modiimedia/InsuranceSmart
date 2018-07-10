@@ -140,7 +140,7 @@
                                 {{- range first 5 (where $.Site.RegularPages "Section" "posts") -}}
                                     {{- if in .Params.categories $name -}}
                                     <div class="card-grid-item w-dyn-item">
-                                        <a href="/post/20-myths-about-web-design" class="card-link w-inline-block">
+                                        <a href="{{ .RelPermalink }}" class="card-link w-inline-block">
                                             <div style="background-image:url({{ $.Site.Params.cloudinary_url }},w_350,q_60,f_auto{{ .Params.Featured_image }})"
                                                 class="blog-card-image">
                                                 <div class="image-overlay"></div>
