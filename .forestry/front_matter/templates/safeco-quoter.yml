@@ -7,6 +7,13 @@ fields:
   template: safeco-quote-form
   label: SafeCo Form Fields
   name: safeco_fields
+- type: text
+  name: heading
+  label: Heading
+  default: Get A Free Quote
+- type: text
+  name: subheading
+  label: Subheading
 - type: file
   label: Background Image
   name: background_image
