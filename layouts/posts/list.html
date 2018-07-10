@@ -1,19 +1,10 @@
 {{ define "main" }}
-<section class="page-banner-copy2-copyb">
-    <div class="container flex-left">
-        <div class="heading-6-copy-copy">
-            <h1 class="heading-19">Insurance Articles</h1>
-            <p class="quote-box-text">Resources to help you GetSmart when choosing your insurance.</p>
-            <p class="paragraph-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-                Duis cursus, mi quis viverra ornare, eros dolor interdum nulla</p>
-        </div>
-    </div>
-</section>
 <section class="main-content blog-home">
     <div class="polygon-small-to-large blog"></div>
     <div class="polygon-small-to-large blog-copy"></div>
     <div class="polygon-small-to-large blog-3"></div>
     <div class="container">
+        {{ range first 1 (where .Data.Pages ".Params.featured" "=" true )}}
         <div class="div-block-39">
             <div class="div-block-40">
                 <h1 class="h1-no-margins">Featured Readings</h1>
@@ -22,68 +13,60 @@
                 </a>
             </div>
         </div>
+        {{ end }}
         <div class="flex-row featured-blogs">
-            <div class="flex-grow featured-blog w-dyn-list">
-                <div class="collection-list-5 w-dyn-items">
-                    <div class="collection-item-5 w-dyn-item">
-                        <a href="/post/20-myths-about-web-design" class="f-blog-link w-inline-block">
-                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5b161991122bed2b364e911a/5b318b285e8bb2e0b425ce75_andrew-welch-229148-unsplash.jpg&quot;)"
-                                class="feature-blog-image">
-                                <div class="image-overlay"></div>
+            {{ range first 1 ( where .Data.Pages ".Params.featured" "=" true ) }}
+            {{ $date := .Date.Format "January 02, 2006" }}
+            {{ $author := replace .Params.Author "staff/" "" }}
+            <div class="collection-list-5 w-dyn-items">
+                <div class="collection-item-5 w-dyn-item">
+                    <a href="{{ .RelPermalink }}" class="f-blog-link w-inline-block">
+                        <div style="background-image:url({{ $.Site.Params.cloudinary_url }}w_820,q_70,f_auto{{ .Params.Featured_Image }})"
+                            class="feature-blog-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="f-blog-content w-clearfix">
+                            <h1 class="f-blog-title">{{ .Title }}</h1>
+                            {{ range where $.Site.RegularPages "Section" "staff" }}
+                            {{ if eq $author .File.LogicalName }}
+                            <div class="flexwrap">
+                                <div class="author-photo" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_50,h_50,c_fill,g_face,q_60,f_auto{{ .Params.Photo }})"></div>
+                                <div>
+                                    <div>by {{ .Title }}</div>
+                                    <div>{{ $date }}</div>
+                                </div>
                             </div>
-                            <div class="f-blog-content w-clearfix">
-                                <h1 class="f-blog-title">Picking the Right Life Insurance Plan</h1>
-                                <div class="author-photo"></div>
-                                <div>by Mike Sosso</div>
-                                <div>June 25, 2018</div>
+                            {{ end }}
+                            {{ end }}
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+            <div class="div-block-33">
+                <div class="collection-list-7 w-dyn-items">
+                    {{ range first 4 ( where .Data.Pages ".Params.featured" "=" true ) }}
+                    {{ $author := replace .Params.Author "staff/" "" }}
+                    <div class="collection-item-5 small w-dyn-item">
+                        <a href="{{ .RelPermalink }}" class="small-f-blog-link w-inline-block">
+                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5b161991122bed2b364e911a/5b318b5c1e5234b80fff9fcc_pablo-heimplatz-317359-unsplash.jpg&quot;)"
+                                class="feature-blog-image-small">
+                                <div class="image-overlay"></div>
+                                <div class="small-f-blog-content w-clearfix">
+                                    <h1 class="f-blog-title-small">{{ .Title }}</h1>
+                                    {{ range where $.Site.RegularPages "Section" "staff" }}
+                                    {{ if eq $author .File.LogicalName }}
+                                    <div class="flexwrap">
+                                        <div class="author-photo-small" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_30,h_30,c_fill,g_face,q_60,f_auto{{ .Params.Photo }})"></div>
+                                        <div class="author-text">by {{ .Title }}</div>
+                                    </div>
+                                    {{ end }}
+                                    {{ end }}
+                                </div>
                             </div>
                         </a>
                     </div>
-                </div>
-            </div>
-            <div class="div-block-33">
-                <div class="w-dyn-list">
-                    <div class="collection-list-7 w-dyn-items">
-                        <div class="collection-item-5 small w-dyn-item">
-                            <a href="/post/15-best-blogs-to-follow-about-web-design" class="small-f-blog-link w-inline-block">
-                                <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5b161991122bed2b364e911a/5b318b5c1e5234b80fff9fcc_pablo-heimplatz-317359-unsplash.jpg&quot;)"
-                                    class="feature-blog-image-small">
-                                    <div class="image-overlay"></div>
-                                    <div class="small-f-blog-content w-clearfix">
-                                        <h1 class="f-blog-title-small">How Having A Good Health Insurance Plan Makes Your Life Easier</h1>
-                                        <div class="author-photo-small"></div>
-                                        <div class="author-text">by Mike Sosso</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="collection-item-5 small w-dyn-item">
-                            <a href="/post/7-must-have-tools-for-web-designers" class="small-f-blog-link w-inline-block">
-                                <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5b161991122bed2b364e911a/5b318b5c1e5234b80fff9fcc_pablo-heimplatz-317359-unsplash.jpg&quot;)"
-                                    class="feature-blog-image-small">
-                                    <div class="image-overlay"></div>
-                                    <div class="small-f-blog-content w-clearfix">
-                                        <h1 class="f-blog-title-small">10 Ways A Good Health Insurance Plan Can Make Life Easier</h1>
-                                        <div class="author-photo-small"></div>
-                                        <div class="author-text">by Mike Sosso</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="collection-item-5 small w-dyn-item">
-                            <a href="/post/10-great-examples-of-responsive-websites" class="small-f-blog-link w-inline-block">
-                                <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5b161991122bed2b364e911a/5b16cc66c9eb0b5ef6385f12_1528220772240-image16.jpg&quot;)"
-                                    class="feature-blog-image-small">
-                                    <div class="image-overlay"></div>
-                                    <div class="small-f-blog-content w-clearfix">
-                                        <h1 class="f-blog-title-small">10 Great Examples of Responsive Websites</h1>
-                                        <div class="author-photo-small"></div>
-                                        <div class="author-text">by Mike Sosso</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    {{ end }}
                 </div>
             </div>
             <div class="div-block-41"></div>
@@ -132,8 +115,10 @@
                                             {{- $a := replace .Params.Author "staff/" "" -}}
                                             {{- range where .Site.RegularPages "Section" "staff" -}}
                                                 {{- if eq $a .File.LogicalName -}}
-                                                <div class="author-photo-small" style="background-image: url({{ .Site.Params.Cloudinary_url }},w_30,h_30,c_fill,g_face,f_auto,q_60{{ .Params.Photo }})"></div>
-                                                <div class="author-text">by {{ .Title }}</div>
+                                                <div class="flexwrap">
+                                                    <div class="author-photo-small" style="background-image: url({{ .Site.Params.Cloudinary_url }},w_30,h_30,c_fill,g_face,f_auto,q_60{{ .Params.Photo }})"></div>
+                                                    <div class="author-text">by {{ .Title }}</div>
+                                                </div>
                                                 {{- end -}}
                                             {{- end -}}
                                         </div>
@@ -165,8 +150,10 @@
                                                 {{- $a := replace .Params.Author "staff/" "" -}}
                                                 {{- range where .Site.RegularPages "Section" "staff" -}}
                                                     {{- if eq $a .File.LogicalName -}}
-                                                    <div class="author-photo-small" style="background-image: url({{ $.Site.Params.Cloudinary_url }}w_30,h_30,c_fill,g_face,q_60,f_auto{{ .Params.Photo }})"></div>
-                                                    <div class="author-text">by {{ .Title }}</div>
+                                                    <div class="flexwrap">
+                                                        <div class="author-photo-small" style="background-image: url({{ $.Site.Params.Cloudinary_url }}w_30,h_30,c_fill,g_face,q_60,f_auto{{ .Params.Photo }})"></div>
+                                                        <div class="author-text">by {{ .Title }}</div>
+                                                    </div>
                                                     {{- end -}}
                                                 {{- end -}}
                                             </div>

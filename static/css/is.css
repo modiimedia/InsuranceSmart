@@ -72,6 +72,12 @@ a:hover .small-f-blog-content {
     -webkit-clip-path: none;*/
   }
 }
+.collection-list-7 .collection-item-5:nth-of-type(1) {
+  display: none;
+}
+.flexwrap {
+  display: flex;
+}
 .card-link.view-more {
   background: rgba(255, 255, 255, 0.3); 
   justify-content: center; 

@@ -1863,6 +1863,7 @@ address {
   margin-top: 0px;
   font-size: 40px;
   line-height: 50px;
+  margin-bottom: 10px;
 }
 
 .author-photo {
@@ -1954,14 +1955,14 @@ address {
 .author-text {
   font-size: 14px;
   line-height: 20px;
+  display: inline-block;
 }
 
 .author-photo-small {
-  display: block;
+  display: inline-block;
   width: 30px;
   height: 30px;
-  margin-right: 10px;
-  float: left;
+  margin-right: 5px;
   border-radius: 100px;
   background-position: 50% 50%;
   background-size: cover;
