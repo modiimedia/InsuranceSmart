@@ -8,7 +8,7 @@ quote:
   - Boat or Watercraft
   - Motorcycle
   - RV
-  default: Auto
+  default: 
 featured_image: "/v1530419488/insurancesmart/jon-flobrant-230583-unsplash-1.jpg"
 weight: 1
 fa_icon: car
@@ -18,6 +18,12 @@ seo:
   social_title: ''
   social_description: ''
   open_graph_image: ''
+menu:
+  shop_menu:
+    name: ''
+    weight: ''
+    parent: ''
+    post: ''
 
 ---
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
