@@ -10,7 +10,7 @@
       <div class="blog-content w-clearfix">
         <div class="div-block-46">
           {{ if eq .Params.Featured true }}
-          <a href="#" class="tag w-inline-block">
+          <a href="/posts/featured/" class="tag w-inline-block">
             <div>featured</div>
           </a>
           {{ end }}
@@ -86,56 +86,34 @@
     </div>
     {{- range .Params.form -}}
         {{- if eq .template "safeco-quoter" -}}
+        {{ $d := .default }}
           <div class="div-block-48">
             <div class="blog-quote-box" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1050,h_400,q_70,c_fill,f_auto{{ .background_image }})">
               <div class="image-overlay"></div>
-              <h1 class="quote-box-heading">Get a Free Quote</h1>
-              <p class="quote-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-              <div class="quote-box">
-                <form id="email-form-3" name="email-form-3" data-name="Email Form 3" class="form-2">
-                  <div class="quote-form-wrap">
-                    <input type="text" class="zip-field w-input" maxlength="256" name="Zip-Code" data-name="Zip Code" placeholder="Enter Zip Code"
-                      id="Zip-Code" required="" />
-                    <select id="field" name="field" required="" data-name="Field" class="insurance-select w-select">
-                      <option value="">Select Insurance Type...</option>
-                      <option value="Auto">Auto</option>
-                      <option value="Motorcycle">Motorcycle</option>
-                      <option value="boat &amp; watercraft">Boat &amp; Watercraft</option>
-                    </select>
-                    <input type="submit" value="Get a Quote" data-wait="Please wait..." class="get-a-quote w-button" />
-                  </div>
-                </form>
-                <div class="w-form-done">
-                  <div>Thank you! Your submission has been received!</div>
+              <h1 class="quote-box-heading">{{ .heading }}</h1>
+              <p class="quote-box-text">{{ .subheading }}</p>
+              <div class="w-embed w-script">
+                  <form name="gaqList" id="gaqList" onsubmit="return submitForm();">
+                      <div class="quote-form-wrap" onload="setProduct();">
+                          <input id="zip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
+                          <select id="subMenu" required="" name="subMenu" class="insurance-select w-select">
+                              {{ if $d }}{{ else }}<option id="defaultoption" value="">Select Insurance Type</option>{{ end }}
+                              {{- range .options -}}
+                                  {{ $id := . | lower }}
+                                  {{ range $.Site.Data.quote_forms.safeco }}
+                                      {{ $l := .display | lower }}
+                                      {{ if eq $id $l }}
+                                      <option id="{{ .id }}" {{ if eq $d $l }}selected{{ end }} value="{{ .value }}" data-zip="zip">{{ .display }}</option>
+                                      {{ end }}
+                                  {{ end }}
+                              {{ end }}
+                          </select>
+                          <input type="submit" value="Get a Quote" id="fakeBtn" class="get-a-quote w-button">
+                          <input type="submit" value="Get a Quote" id="startBtn" onclick="submitForm();" class="get-a-quote w-button" style="display:none">
+                      </div>
+                  </form>
                 </div>
-                <div class="w-form-fail">
-                  <div>Oops! Something went wrong while submitting the form.</div>
-                </div>
-              </div>
-              <div class="w-embed">
-                <form name="gaqList" id="gaqList" onsubmit="return submitForm();">
-                  <div class="quote-form-wrap" onload="setProduct();">
-                    <input id="zip" required type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
-                    <select id="subMenu" required name="subMenu" class="insurance-select w-select">
-                      <option id="defaultoption" value=''>Select Insurance Type</option>
-                      <option id="subMenuAuto" value='https://quote.safeco.com/consumer/auto/VPLaunch.aspx' data-zip='zip'>Auto</option>
-                      <!--<option id = "subMenuHome" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Home' data-zip='zip'>Home</option>  
-              <option id = "subMenuRenters" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Rent' data-zip='zip'>Renters</option>
-              <option id = "subMenuCondo" value='https://quote.safeco.com/consumer/home/safeco/contactinfoco.aspx?product=Condo' data-zip='zip'>Condo</option>-->
-                      <option id="subMenuBoat" value='https://tools.safeco.com/BPS/bps.aspx/boatquoterq' data-zip='zip'>Boat or Watercraft</option>
-                      <option id="subMenuMotorcycle" value='https://tools.safeco.com/BPS/bps.aspx/mcquoterq' data-zip='zip'>Motorcycle</option>
-                      <option id="subMenuRV" value='https://tools.safeco.com/BPS/bps.aspx/rvquoterq' data-zip='zip'>RV</option>
-                      <!--<option id = "subMenuUmbrella" value='https://tools.safeco.com/BPS/bps.aspx/umbquoterq' data-zip='zip'>Umbrella</option>
-              <option id = "subMenuLandlordProtection" value='https://tools.safeco.com/BPS/bps.aspx/firequoterq' data-zip='zip'>Landlord Protection</option>-->
-                    </select>
-                    <input type="submit" value="Get a Quote" id="fakeBtn" class="get-a-quote w-button" />
-                    <input type="submit" value="Get a Quote" id="startBtn" onclick="submitForm();" class="get-a-quote w-button" style="display:none">
-                  </div>
-                </form>
-              </div>
               <div class="quote-box-disclaimer">Insurance quoting provided by SafeCo</div>
-              <p class="paragraph-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla</p>
             </div>
           </div>
         {{ end }}
@@ -216,4 +194,15 @@
       </div>
   </div>
 </section>
+{{ end }}
+
+{{ define "addscripts" }}
+  {{- range .Params.form -}}
+    {{- if eq .template "safeco-quoter" -}}
+      {{ partial "forms/safeco-scripts.html" }}
+    {{- end -}}
+    {{- if eq .template "unitedhealthcare-quoter" -}}
+      {{ partial "uhc-scripts.html" }}
+    {{- end -}}
+  {{- end -}}
 {{ end }}
