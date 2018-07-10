@@ -49,7 +49,7 @@
                     {{ $author := replace .Params.Author "staff/" "" }}
                     <div class="collection-item-5 small w-dyn-item">
                         <a href="{{ .RelPermalink }}" class="small-f-blog-link w-inline-block">
-                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5b161991122bed2b364e911a/5b318b5c1e5234b80fff9fcc_pablo-heimplatz-317359-unsplash.jpg&quot;)"
+                            <div style="background-image:url({{ $.Site.Params.cloudinary_url }}w_540,q_60,f_auto{{ .Params.featured_image }})"
                                 class="feature-blog-image-small">
                                 <div class="image-overlay"></div>
                                 <div class="small-f-blog-content w-clearfix">
