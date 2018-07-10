@@ -14,7 +14,9 @@ social_description = ""
 social_title = ""
 [[form]]
 background_image = "/v1530819319/insurancesmart/photo-1520813792240-56fc4a3765a7%20%281%29bb%20%281%29.jpg"
+heading = "Get A Free Quote"
 options = ["Auto", "Home", "Umbrella", "Boat or Watercraft", "RV", "Motorcycle", "Renters", "Condo"]
+subheading = "Save money today"
 template = "safeco-quoter"
 
 +++
