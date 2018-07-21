@@ -18,12 +18,6 @@ seo:
   social_title: ''
   social_description: ''
   open_graph_image: ''
-menu:
-  shop_menu:
-    name: ''
-    weight: ''
-    parent: ''
-    post: ''
 
 ---
 The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
