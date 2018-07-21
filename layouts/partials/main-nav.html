@@ -9,18 +9,18 @@
         <div class="dropdown shop hide" style="display: none;">
             
             <div class="dropdown-columns">
-                {{ range .Site.Menus.shop_menu }}
-                {{ if .HasChildren }}
+                {{ range .Site.Data.menus.shop_menu }}
+                {{ if .children }}
                     <div class="dropdown-column">
-                        {{ range .Children }}
-                        <a href="{{ .URL }}" class="nav-heading w-inline-block">
-                            <div class="text-block-10">{{ .Name }}</div>
-                            <div class="text-block-11">&nbsp;&nbsp;&nbsp;&nbsp;{{ .Post }}</div>
+                        {{ range .children }}
+                        <a href="{{ .url }}" class="nav-heading w-inline-block">
+                            <div class="text-block-10">{{ .name }}</div>
+                            <div class="text-block-11">&nbsp;&nbsp;&nbsp;&nbsp;{{ safeHTML .icon  }}</div>
                         </a>
-                        {{ if .HasChildren }}
-                            {{ range .Children }}
-                            <a href="{{ .URL }}" class="shop-link w-inline-block">
-                                <div class="nav-link-text">{{ .Name }}</div>
+                        {{ if .children }}
+                            {{ range .children }}
+                            <a href="{{ .url }}" class="shop-link w-inline-block">
+                                <div class="nav-link-text">{{ .name }}</div>
                             </a>
                             {{ end }}
                         {{ end }}

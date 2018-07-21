@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header-content">
             <div class="div-block-3">
-                <a class="logo w-inline-block">
+                <a href="/" class="logo w-inline-block">
                     <div>Insurance<strong class="bold-text">Smart</strong>
                     </div>
                 </a>
@@ -16,15 +16,11 @@
                     <div class="text-block-4">&nbsp;&nbsp;call us</div>
                 </a>
                 <div class="social-icons">
-                    <a href="#" class="social-link w-inline-block">
-                        <i class="fab fa-facebook"></i>
+                    {{ range .Site.Data.general_settings.social_media }}
+                    <a href="{{ .url }}" class="social-link w-inline-block">
+                        <i class="fab fa-{{ .platform }}"></i>
                     </a>
-                    <a href="#" class="social-link w-inline-block">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link w-inline-block">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                    {{ end }}
                 </div>
                 <a href="#" data-w-id="6714678d-cb9c-b655-5209-6473232315fb" class="link-block-2 w-inline-block">
                     <i class="fas fa-bars"></i>

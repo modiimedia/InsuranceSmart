@@ -1,0 +1,49 @@
+shop_menu:
+  - name: column_1
+    children:
+    - name: Life
+      url: /products/life/
+      icon: '<i class="fas fa-heartbeat"></i>'
+      children: 
+    - name: Health
+      url: /insurancecategories/health/
+      icon: '<i class="fas fa-medkit"></i>'
+      children:
+      - name: Health ProtectorGuard
+        url: /products/fixed-indemnity/
+      - name: Critical Illness
+        url: /products/critical-illness/
+      - name: Dental
+        url: /products/dental-insurance/
+  - name: column_2
+    children:
+    - name: Auto & Vehicle Insurance
+      url: /insurancecategories/auto/
+      icon: '<i class="fas fa-car"></i>'
+      children:
+      - name: Auto
+        url: /products/auto/
+      - name: Motorcycle
+        url: /products/auto/
+      - name: Boat or Watercraft
+        url: /products/boat/
+      - name: RV
+        url: '#'
+  - name: column_3
+    children:
+    - name: Personal Property
+      url: /insurancecategories/property/
+      icon: '<i class="fas fa-home"></i>'
+      children:
+      - name: Home
+        url: /products/home/
+      - name: Renters
+        url: /products/renters/
+      - name: Condo
+        url: /products/condo/
+      - name: Landlord Protection
+        url: /products/landlord
+    - name: Umbrella Insurance
+      url: /products/umbrella/
+      icon: '<i class="fas fa-umbrella"></i>'
+      children:
