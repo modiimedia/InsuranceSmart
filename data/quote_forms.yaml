@@ -1,5 +1,7 @@
 DO_NOT_EDIT_PLEASE: "OR AT LEAST BE REALLY CAREFUL"
 
+#DO NOT EDIT
+
 safeco:
   - display: "Auto"
     id: "subMenuAuto"
