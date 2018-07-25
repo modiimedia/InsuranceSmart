@@ -4,7 +4,7 @@ categories = ["health"]
 date = "2018-07-08T00:46:46+00:00"
 featured = true
 featured_image = "/v1530992901/insurancesmart/helena-lopes-463976-unsplash%20%281%29.jpg"
-tags = ["health insurance"]
+tags = ["health insurance", "auto insurance"]
 title = "My Third Post"
 [seo]
 meta_description = ""
