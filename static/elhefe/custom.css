@@ -101,3 +101,7 @@ button.sc-jAaTju.dirHKA {
 .sc-bnXvFD.difVtj::after {
     content: 'Welcome to your website editor. Navigate through the items on the left to edit the content on your website. 😎'
 }
+
+body ::selection {
+    background: #ffdb779e!important;
+}
