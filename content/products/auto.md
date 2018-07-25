@@ -25,7 +25,6 @@ description: Drive with peace of mind. We offer affordable and comprehensive pla
 resources: []
 mikes_take: ''
 custom_article_list: []
-draft: true
 
 ---
 Lorem markdownum remotam Oleniae contempsere tela patruo ardeat, numina [aures](http://mi.io/per.aspx). Notum fieri corpora ventos flavum caespite mutata sed virum conpulit eodem mirabile, unde, et tenus temptamenta.
