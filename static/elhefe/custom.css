@@ -89,3 +89,10 @@ button.sc-jAaTju.dirHKA {
 .RichText-m__rich-text___3gGMQ>[contenteditable]:focus {
     border-bottom: 1px solid #ffbc00;
 }
+
+.sc-dymIpo.jwARNr h1, .sc-bnXvFD.difVtj p {
+    display: none;
+} 
+.sc-bnXvFD.difVtj::after {
+    content: 'Welcome to your website editor. Navigate through the items on the left to edit the content on your website. 😎'
+}
