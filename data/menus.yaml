@@ -47,3 +47,33 @@ shop_menu:
       url: /products/umbrella/
       icon: '<i class="fas fa-umbrella"></i>'
       children:
+footer_menu:
+  menu_1:
+    name: Useful Links
+    children:
+    - name: Home
+      url: "/"
+    - name: About
+      url: "#"
+    - name: FAQ
+      url: "#"
+    - name: Blog
+      url: "/posts/"
+    - name: Contact
+      url: "#"
+  menu_2:
+    name: Shop Insurance
+    children: 
+    - name: Life
+      url: "/products/life/"
+    - name: Health
+      url: "/insurancecategories/health/"
+    - name: Auto
+      url: "/insurancecategories/auto/"
+    - name: Home
+      url: "/insurancecategories/property/"
+    - name: Umbrella
+      url: "/products/umbrella/"
+    - name: View All
+      url: "/products/"
+      
