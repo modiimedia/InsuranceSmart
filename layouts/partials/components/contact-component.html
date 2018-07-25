@@ -3,17 +3,17 @@
     <div class="container contact-form">
         <div class="flex-row reverse">
             <div class="form-block">
-                <form id="email-form">
+                <form id="email-form" method="POST" netlify name="email-form">
                     <label for="name">Name:</label>
-                    <input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Enter your name (Required)" id="name" required>
+                    <input type="text" class="text-field w-input" maxlength="256" name="Name" placeholder="Enter your name (Required)" id="name" required>
                     <label for="email">Email Address:</label>
-                    <input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email (Required)"
+                    <input type="email" class="text-field w-input" maxlength="256" name="Email" placeholder="Enter your email (Required)"
                         id="email" required>
                     <label for="Phone">Phone:</label>
-                    <input type="text" class="text-field w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Enter your phone number"
+                    <input type="text" class="text-field w-input" maxlength="256" name="Phone" placeholder="Enter your phone number"
                         id="Phone">
                     <label for="Phone-2">Sex:&nbsp;</label>
-                    <select id="Gender" name="Gender" data-name="Gender" required="" class="select-field w-select">
+                    <select id="Gender" name="Gender" required class="select-field w-select">
                         <option value="">Select one...</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -34,22 +34,22 @@
                     <label>I&nbsp;Am Interested In: (Check All That Apply)</label>
                     <div class="div-block-11">
                         <div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="auto" name="auto" class="w-checkbox-input">
+                            <input type="checkbox" id="auto" name="Auto" class="w-checkbox-input">
                             <label for="auto" class="w-form-label">Auto &amp; Vehicle Insurance</label>
                         </div>
                         <div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="home" name="home" class="w-checkbox-input">
+                            <input type="checkbox" id="home" name="Home" class="w-checkbox-input">
                             <label for="home" class="w-form-label">Home &amp; Property Insurance</label>
                         </div><div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="life" name="life" class="w-checkbox-input">
+                            <input type="checkbox" id="life" name="Life" class="w-checkbox-input">
                             <label for="life" class="w-form-label">Life Insurance</label>
                         </div>
                         <div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="health" name="health" data-name="health" class="w-checkbox-input">
+                            <input type="checkbox" id="health" name="Health" data-name="health" class="w-checkbox-input">
                             <label for="health" class="w-form-label">Health Insurance</label>
                         </div>
                         <div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="dental" name="dental" data-name="dental" class="w-checkbox-input">
+                            <input type="checkbox" id="dental" name="Dental" data-name="dental" class="w-checkbox-input">
                             <label for="dental" class="w-form-label">Dental Insurance</label>
                         </div>
                     </div>
