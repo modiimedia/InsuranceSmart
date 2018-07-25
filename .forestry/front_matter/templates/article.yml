@@ -57,7 +57,3 @@ fields:
   template_types:
   - safeco-quoter
   name: form
-pages:
-- content/posts/my-third-post.md
-- content/posts/new-post.md
-- content/posts/my-second-post.md

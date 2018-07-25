@@ -97,12 +97,3 @@ fields:
     use_select: true
     source:
       type: pages
-pages:
-- content/products/auto.md
-- content/products/boat.md
-- content/products/umbrella.md
-- content/products/life.md
-- content/products/home.md
-- content/products/dental-insurance.md
-- content/products/fixed-indemnity.md
-- content/products/critical-illness.md

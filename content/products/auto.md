@@ -33,7 +33,7 @@ Lorem markdownum remotam Oleniae contempsere tela patruo ardeat, numina [aures]
 
 ## Petentem Lyrnesia et crinis atque spumisque te
 
-Ubi Stymphalide ignem officioque ad totum gaudebat fonti at, dea. Achilles singula habeto.
+Ubi Stymphalide ignem officioque ad tot um gaudebat fonti at, dea. Achilles singula habeto.
 
 ![](https://res.cloudinary.com/modii/v1530419488/insurancesmart/jon-flobrant-230583-unsplash-1.jpg)
 
