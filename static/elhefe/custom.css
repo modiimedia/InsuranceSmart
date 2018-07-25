@@ -6,3 +6,86 @@ nav div:nth-of-type(2) .Navigation-m__nav-item___29fP-:nth-of-type(1) {
 #notifications-container {
     display: none!important;
 }
+.button.primary, button.button.primary, input.button.primary {
+    background-color: #00ac6a;
+}
+
+.login-form--button .button.primary {
+    background-color: #ffbc00;
+    color: #333;
+}
+.login-form--button .button.primary:hover {
+    background-color: #edae00;
+    color: #333;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-bottom: 1px solid #ffbc00;
+}
+a.active {
+    color: #ffbc00 !important;
+}
+.UserInfo-m__user-profile___1Hfkt .UserInfo-m__nav-item___3HjIp:hover {
+    color: #ffbc00 !important;
+}
+.sc-jAaTju.dcmUbP {
+    background: #ffbc00;
+    border-color: #ffbc00;
+}
+button {
+    background: #00ac6a!important;
+    border-color: #00ac6a!important;
+}
+button:disabled {
+    background: lightgray!important;
+    border-color: lightgray!important;
+    color: white;
+}
+button.sc-jAaTju.dUwxnc {
+    background: transparent!important;
+}
+.button.primary:hover, button.button.primary:hover, input.button.primary:hover {
+    background-color: #01945b;
+}
+button.sc-jAaTju.dirHKA {
+    background: lightgray!important;
+    border-color: lightgray!important;
+    color: white;
+}
+.delete {
+    color: red;
+    font-size: 30px;
+}
+
+.sc-cMljjf.iUQcWm { 
+    border-left: 3px solid white;
+    border-top: 5px solid #ffbc00;
+    border-right: 3px solid white;
+    border-bottom: 5px solid #ffbc00;
+}
+.react-tagsinput .react-tagsinput-tag {
+    background-color: #ffbc00;
+    color: #333;
+}
+.react-tagsinput--focused {
+    border: 1px solid #ffbc00!important;
+}
+.BoolField-m__switch___10gR0 input:checked+label .BoolField-m__card___2GHPj {
+    background: #ffbc00;
+}
+
+.rdtPicker td.rdtActive, .rdtPicker td.rdtActive:hover {
+    background-color: #ffbc0099;
+    color: #333;
+}
+.rdtPicker td.rdtActive:hover, .rdtPicker td.rdtActive:hover:hover {
+    background-color: #ffbc00!important;
+}
+
+.RichText-m__rich-text___3gGMQ a {
+    color: #1989c1;
+}
+
+.RichText-m__rich-text___3gGMQ>[contenteditable]:focus {
+    border-bottom: 1px solid #ffbc00;
+}
