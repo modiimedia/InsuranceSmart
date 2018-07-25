@@ -3,6 +3,6 @@
     display: none;
 }
 
-.Notifications-m__system-status___3WTRO .sidebar-notifications {
-    display: none;
+#notifications-container {
+    display: none!important;
 }
