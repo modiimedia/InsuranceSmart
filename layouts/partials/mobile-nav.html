@@ -5,52 +5,44 @@
         <div class="nav-link dropdown-trigger">
             <div class="nav-link">
                 <div class="nav-link-text">Shop Insurance &nbsp;</div>
-                <div class="nav-link-text">--</div>
+                <i class="fas fa-chevron-down"></i>
             </div>
             <div class="dropdown" style="display: none;">
-                {{ range .Site.Menus.shop_menu }}
-                    {{ if .HasChildren }}
-                        {{ range .Children }}
-                        <a href="{{ .URL }}" class="nav-link w-inline-block">
-                            <div class="nav-link-text">{{ .Name }}</div>
+                {{ range $.Site.Data.menus.shop_menu }}
+                    {{ if .children }}
+                        {{ range .children }}
+                        <a href="{{ .url }}" class="nav-link w-inline-block">
+                            <div class="nav-link-text">{{ .name }}</div>
                         </a>
                         {{ end }}
                     {{ end }}
                 {{ end }}
-                <a href="#" class="nav-link emphasis w-inline-block">
+                <a href="/products/" class="nav-link emphasis w-inline-block">
                     <div class="nav-link-text">View All</div>
                 </a>
             </div>
         </div>
-        <a href="#" class="nav-link w-inline-block">
-            <div class="nav-link-text">Blog</div>
+        <a href="/posts/" class="nav-link w-inline-block">
+            <div class="nav-link-text">Get Smart</div>
         </a>
         <div class="nav-link dropdown-trigger">
             <div class="nav-link">
                 <div class="nav-link-text">Explore&nbsp;&nbsp;</div>
-                <div class="nav-link-text">--</div>
+                <i class="fas fa-chevron-down"></i>
             </div>
             <div class="dropdown" style="display: none;">
-                <a href="#" class="nav-link w-inline-block">
-                    <div class="nav-link-text">About Us</div>
+                {{ range $.Site.Data.menus.explore_menu }}
+                <a href="{{ .url }}" class="nav-link w-inline-block">
+                    <div class="nav-link-text">{{ .name }}</div>
                 </a>
-                <a href="#" class="nav-link w-inline-block">
-                    <div class="nav-link-text">FAQ</div>
-                </a>
-                <a href="#" class="nav-link w-inline-block">
-                    <div class="nav-link-text">Contact</div>
-                </a>
+                {{ end }}
             </div>
         </div>
         <div class="social-icons mobile">
-            <a href="#" class="social-link w-inline-block">
-                <div></div>
+            {{ range .Site.Data.general_settings.social_media }}
+            <a href="{{ .url }}" class="social-link w-inline-block">
+                <i class="fab fa-{{ .platform }}"></i>
             </a>
-            <a href="#" class="social-link w-inline-block">
-                <div></div>
-            </a>
-            <a href="#" class="social-link w-inline-block">
-                <div></div>
-            </a>
+            {{ end }}
         </div>
     </div>
