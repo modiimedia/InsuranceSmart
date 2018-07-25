@@ -1,0 +1,7 @@
+<div class="social-icons">
+    {{ range .Site.Data.general_settings.social_media }}
+    <a href="{{ .url }}" class="social-link w-inline-block">
+        <i class="fab fa-{{ .platform }}"></i>
+    </a>
+    {{ end }}
+</div>

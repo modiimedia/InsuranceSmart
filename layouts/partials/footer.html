@@ -9,15 +9,11 @@
                 </a>
                 <div class="slogan">Don't just get insurance. Get InsuranceSmart</div>
                 <div class="social-icons footer">
-                    <a href="#" class="social-link footer w-inline-block">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#" class="social-link footer w-inline-block">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link footer w-inline-block">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                        {{ range .Site.Data.general_settings.social_media }}
+                        <a href="{{ .url }}" class="social-link w-inline-block">
+                            <i class="fab fa-{{ .platform }}"></i>
+                        </a>
+                        {{ end }}
                 </div>
             </div>
             <div class="footer-column">
