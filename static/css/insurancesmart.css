@@ -232,6 +232,9 @@ img {
 .section-light .hero-button {
   margin-bottom: 20px;
 }
+.section-dark a {
+  color: #ffffffaa;
+}
 .section-dark .hero-button {
   margin-bottom: 20px;
   background-color: transparent;

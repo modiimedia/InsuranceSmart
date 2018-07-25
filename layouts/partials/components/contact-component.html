@@ -57,11 +57,15 @@
                 </form>
             </div>
             <address class="flex-grow contact">
+                {{ $phoneclean := replace .phone "+1-" "" }}
+                {{ $phonelong := replace .phone "-" "" }}
+                {{ $faxclean := replace .fax "+1-" "" }}
+                {{ $faxlong := replace .fax "-" "" }}
                 <h1 class="dark-heading">{{ .Params.heading }}</h1>
                 <div class="text-block-5">
-                    {{- if .phone -}}<strong>Phone: </strong>{{- .phone -}}<br>{{- end -}}
-                    {{- if .fax -}}<strong>Fax:</strong>&nbsp;{{- .fax -}}<br>{{- end -}}
-                    {{- if .email -}}<strong>Email:</strong>&nbsp;{{- .email -}}<br>{{- end -}}
+                    {{- if .phone -}}<strong>Phone: </strong><a href="tel:{{ $phonelong }}">{{- $phoneclean -}}</a><br>{{- end -}}
+                    {{- if .fax -}}<strong>Fax:</strong>&nbsp;{{- $faxclean -}}<br>{{- end -}}
+                    {{- if .email -}}<strong>Email:</strong>&nbsp;<a href="mailto:{{ .email }}?subject=Questions about Insurance">{{- .email -}}</a><br>{{- end -}}
                 </div>
                 <div class="text-block-5">
                     <strong>InsuranceSmart&nbsp;Office:</strong><br>
