@@ -2,3 +2,7 @@
 .Navigation-m__nav-item___29fP-:nth-of-type(1) {
     display: none;
 }
+
+.Notifications-m__system-status___3WTRO .sidebar-notifications {
+    display: none;
+}
