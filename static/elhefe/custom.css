@@ -1,8 +1,5 @@
 
-nav div:nth-of-type(2) .Navigation-m__nav-item___29fP-:nth-of-type(1) {
-    display: none;
-}
-nav div:nth-of-type(1) .Navigation-m__nav-item___29fP-:nth-of-type(3) {
+nav div:nth-of-type(2) .Navigation-m__nav-item___29fP-:nth-of-type(1), nav div:nth-of-type(1) .Navigation-m__nav-item___29fP-:nth-of-type(3), nav div:nth-of-type(1) .Navigation-m__nav-item___29fP-:nth-of-type(3) {
     display: none;
 }
 
