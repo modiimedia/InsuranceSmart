@@ -10,5 +10,11 @@ testimony: This is a test Lorem ipsum dolor sit amet, consectetur adipiscing eli
   potenti. Quisque sollicitudin sodales eros, in lobortis lorem porta et. Phasellus
   sapien sem, dignissim pretium accumsan ullamcorper, luctus non turpis.
 photo: "/v1530419490/insurancesmart/couple-smiling.jpg"
+seo:
+  meta_title: ''
+  meta_description: ''
+  social_title: ''
+  social_description: ''
+  open_graph_image: ''
 
 ---
