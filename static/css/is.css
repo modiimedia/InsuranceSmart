@@ -10,7 +10,10 @@ body {
 .logo {
   max-width: 250px;
 }
-.logo img {
+.footer-logo {
+  max-width: 300px;
+}
+.logo img, .footer-logo img {
   max-width: 100%;
   margin: 0px;
 }

@@ -3,17 +3,16 @@
         <div class="flex-row">
             <div class="footer-column">
                 <a href="#" class="footer-logo w-inline-block">
-                    <div>Insurance
-                        <strong class="bold-text-2">Smart</strong>
-                    </div>
+                    <img src="{{ .Site.Data.general_settings.website_settings.logo_light }}" />
                 </a>
-                <div class="slogan">Don't just get insurance. Get InsuranceSmart</div>
+                <div class="slogan">{{ .Site.Data.general_settings.website_settings.site_slogan }}
+                    <!--Don't just get insurance. Get InsuranceSmart--></div>
                 <div class="social-icons footer">
-                        {{ range .Site.Data.general_settings.social_media }}
-                        <a href="{{ .url }}" class="social-link w-inline-block">
-                            <i class="fab fa-{{ .platform }}"></i>
-                        </a>
-                        {{ end }}
+                    {{ range .Site.Data.general_settings.social_media }}
+                    <a href="{{ .url }}" class="social-link w-inline-block">
+                        <i class="fab fa-{{ .platform }}"></i>
+                    </a>
+                    {{ end }}
                 </div>
             </div>
             <div class="footer-column">
