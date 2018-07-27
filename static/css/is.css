@@ -7,6 +7,21 @@ body {
   background-color: #293b45;
   margin: auto
 }
+.logo {
+  max-width: 250px;
+}
+.logo img {
+  max-width: 100%;
+  margin: 0px;
+}
+@media (max-width: 767px) {
+  .logo {max-width: 200px;}
+}
+@media (max-width: 467px) {
+  .logo {
+    max-width: 125px;
+  }
+}
 .tabs-content {
   width: 100%;
 }
