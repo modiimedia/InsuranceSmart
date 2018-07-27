@@ -22,6 +22,8 @@ sections:
 - path: content/testimonies
   label: Testimonies
   create: all
+  templates:
+  - testimony
 - path: content/staff
   label: Staff
   create: all
