@@ -1,17 +1,21 @@
 ---
-label: Laura Smith
-hide_body: 
-is_partial: 
+label: Testimony
+hide_body: true
+is_partial: false
 fields:
 - name: title
-  label: Title
+  label: Name
   type: text
   hidden: false
   default: ''
-- name: age
+  config:
+    required: true
+- type: number
+  name: age
   label: Age
-  type: text
-  hidden: false
+  config:
+    min: '1'
+    step: '1'
   default: ''
 - name: city
   label: City
@@ -23,13 +27,17 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: testimony
+- type: textarea
   label: Testimony
-  type: textarea
-  hidden: false
-  default: ''
-- name: photo
+  name: testimony
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
+- type: file
+  name: photo
   label: Photo
-  type: text
-  hidden: false
-  default: ''
+- type: include
+  template: seo
+  label: Seo
+  name: seo
