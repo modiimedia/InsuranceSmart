@@ -4,34 +4,46 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- path: content/products
+- type: directory
+  path: content/products
   label: Products
   create: all
+  match: "**/*"
   templates:
   - product
-- path: content/insurancecategories
+- type: directory
+  path: content/insurancecategories
   label: Product Categories
   create: all
+  match: "**/*"
   templates:
   - product-category
-- path: content/posts
+- type: directory
+  path: content/posts
   label: Posts
   create: all
+  match: "**/*"
   templates:
   - article
-- path: content/testimonies
+- type: directory
+  path: content/testimonies
   label: Testimonies
   create: all
+  match: "**/*"
   templates:
   - testimony
-- path: content/staff
+- type: directory
+  path: content/staff
   label: Staff
   create: all
+  match: "**/*"
   templates:
   - staff
-- path: content
+- type: directory
+  path: content
   label: Homepage
   create: none
+  match: "*"
 upload_dir: insurancesmart
 public_path: https://res.cloudinary.com/modii
 front_matter_path: ''

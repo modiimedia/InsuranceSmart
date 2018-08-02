@@ -43,3 +43,9 @@ fields:
   label: Font Awesome Icon
   description: Icon name for this category (Uses the font awesome icon library found
     at https://fontawesome.com/icons)
+pages:
+- content/insurancecategories/other.md
+- content/insurancecategories/health.md
+- content/insurancecategories/property.md
+- content/insurancecategories/auto.md
+- content/insurancecategories/life.md
