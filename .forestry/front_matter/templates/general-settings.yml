@@ -1,0 +1,91 @@
+---
+label: General Settings
+hide_body: true
+is_partial: false
+fields:
+- type: field_group
+  name: website_settings
+  label: Website Settings
+  fields:
+  - type: text
+    name: site_title
+    label: Site Title
+    config:
+      required: true
+  - type: text
+    label: Site Slogan
+    name: site_slogan
+    config:
+      required: false
+  - type: text
+    name: site_description
+    label: Site Description
+  - type: file
+    name: logo
+    label: Logo
+  - type: file
+    name: logo_light
+    label: Light Logo
+    description: Version of the logo that goes on dark backgrounds.
+  - type: file
+    name: favicon
+    label: Favicon
+- type: field_group
+  label: Contact Info
+  name: contact_info
+  fields:
+  - type: text
+    name: business_name
+    label: Business Name
+    config:
+      required: true
+  - type: text
+    label: Phone Number
+    name: phone
+  - type: text
+    label: Fax Number
+    name: fax
+  - type: text
+    name: email
+    label: Email
+  - type: text
+    name: address
+    label: Address Line 1
+  - type: text
+    label: Address Line 2
+    name: address_line2
+  - type: text
+    name: city
+    label: City
+  - type: text
+    name: state
+    label: State
+  - type: number
+    name: zip
+    label: Zipcode
+- type: field_group_list
+  name: social_media
+  label: Social Media Profiles
+  fields:
+  - type: select
+    name: platform
+    config:
+      source:
+        type: simple
+      options:
+      - facebook
+      - instagram
+      - twitter
+      - youtube
+      - linkedin
+      - google-plus
+      - pinterest
+      - vimeo
+      required: false
+    label: Platform
+  - type: text
+    name: url
+    label: Profile URL
+    description: Copy and paste the link to your social media profile here.
+    config:
+      required: true
