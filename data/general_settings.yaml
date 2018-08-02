@@ -2,10 +2,11 @@
 website_settings:
   site_title: InsuranceSmart
   site_slogan: Affordable Insurance Coverage for Texas Residents
-  site_description: InsuranceSmart is the best insurance company every! We are super rad.
+  site_description: InsuranceSmart is the best insurance company every! We are super
+    rad.
   logo: "/images/insurancesmart-default-logo.png"
   logo_light: "/images/insurancesmart-light-logo.png"
-  favicon: 
+  favicon: ''
 contact_info:
   business_name: InsuranceSmart
   phone: "+1-210-699-0281"
