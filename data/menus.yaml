@@ -1,61 +1,62 @@
+---
 shop_menu:
-  - name: column_1
+- name: Column 1
+  children:
+  - name: Life
+    url: _index.md
+    icon: <i class="fas fa-heartbeat"></i>
+    children: 
+  - name: Health
+    url: "/insurancecategories/health/"
+    icon: <i class="fas fa-medkit"></i>
     children:
-    - name: Life
-      url: /products/life/
-      icon: '<i class="fas fa-heartbeat"></i>'
-      children: 
-    - name: Health
-      url: /insurancecategories/health/
-      icon: '<i class="fas fa-medkit"></i>'
-      children:
-      - name: Health ProtectorGuard
-        url: /products/fixed-indemnity/
-      - name: Critical Illness
-        url: /products/critical-illness/
-      - name: Dental
-        url: /products/dental-insurance/
-  - name: column_2
+    - name: Health ProtectorGuard
+      url: "/products/fixed-indemnity/"
+    - name: Critical Illness
+      url: "/products/critical-illness/"
+    - name: Dental
+      url: "/products/dental-insurance/"
+- name: Column 2
+  children:
+  - name: Auto & Vehicle Insurance
+    url: "/insurancecategories/auto/"
+    icon: <i class="fas fa-car"></i>
     children:
-    - name: Auto & Vehicle Insurance
-      url: /insurancecategories/auto/
-      icon: '<i class="fas fa-car"></i>'
-      children:
-      - name: Auto
-        url: /products/auto/
-      - name: Motorcycle
-        url: /products/auto/
-      - name: Boat or Watercraft
-        url: /products/boat/
-      - name: RV
-        url: '#'
-  - name: column_3
+    - name: Auto
+      url: "/products/auto/"
+    - name: Motorcycle
+      url: "/products/auto/"
+    - name: Boat or Watercraft
+      url: "/products/boat/"
+    - name: RV
+      url: "#"
+- name: Column 3
+  children:
+  - name: Personal Property
+    url: "/insurancecategories/property/"
+    icon: <i class="fas fa-home"></i>
     children:
-    - name: Personal Property
-      url: /insurancecategories/property/
-      icon: '<i class="fas fa-home"></i>'
-      children:
-      - name: Home
-        url: /products/home/
-      - name: Renters
-        url: /products/renters/
-      - name: Condo
-        url: /products/condo/
-      - name: Landlord Protection
-        url: /products/landlord
-    - name: Umbrella Insurance
-      url: /products/umbrella/
-      icon: '<i class="fas fa-umbrella"></i>'
-      children:
+    - name: Home
+      url: "/products/home/"
+    - name: Renters
+      url: "/products/renters/"
+    - name: Condo
+      url: "/products/condo/"
+    - name: Landlord Protection
+      url: "/products/landlord"
+  - name: Umbrella Insurance
+    url: "/products/umbrella/"
+    icon: <i class="fas fa-umbrella"></i>
+    children: 
 explore_menu:
-  - name: About Us
-    url: "#"
-  - name: Testimonials
-    url: "/testimonies/"
-  - name: FAQ
-    url: "#"
-  - name: Contact
-    url: "/contact/"
+- name: About Us
+  url: _index.md
+- name: Testimonials
+  url: _index.md
+- name: FAQ
+  url: _index.md
+- name: Contact
+  url: _index.md
 footer_menu:
   menu_1:
     name: Useful Links
@@ -72,7 +73,7 @@ footer_menu:
       url: "#"
   menu_2:
     name: Shop Insurance
-    children: 
+    children:
     - name: Life
       url: "/products/life/"
     - name: Health
@@ -85,4 +86,3 @@ footer_menu:
       url: "/products/umbrella/"
     - name: View All
       url: "/products/"
-      
