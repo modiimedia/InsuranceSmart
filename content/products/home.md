@@ -21,34 +21,8 @@ options = ["Home", "Condo", "Renters", "Umbrella", "Landlord Protection"]
 template = "safeco-quote-form"
 
 +++
-Lorem markdownum geminata aliis his cani si ferro _ostia_ regia caespite; sola deus. Aura regnis fide coniugium materiem saligno et litus se unum sine aquarum est!
+Your home is one of your most valuable possessions. Whether you are a brand new first time homeowner or you've own one or more homes for years, you need the right homeowners insurance policy to protect that investment.  The right homeowners policy doesn't just protect your home, it can also protect your personal belongings, yourself, and your guests.  Let us help you understand the coverages available and structure the coverage you need at a price you can afford. 
 
-## Sumpta procubuit non nitidissima quo dixit mera
+Were here to assist with personal advice to help you find the best combination of homeowners coverage, value, and price to protect your hard earned investment.  
 
-Charybdin satis, mea et aere [namque](http://sociis-non.com/more) loquendi tura. Nuda errat obstat et induruit ad dederat votum, cornua requieque praeter angues, digna.
-
-* Non solvit et erat et madidas
-* Super et habenas
-* Ipse sole pietas pharetratus undas
-* Suspirat quiete vestrae vipereos blandita vetus
-* Sine narrare
-* Et sine adnuerat summam
-
-## Iacuere Ophias iam Atlantiades fata tenentibus quorum
-
-Ipsis inopi, apertos ait acervos tremulis arcem. Suos inter posses iterumque corpus: ingemit o ab humo: perfide canum prehendit e ipsamque. Vix vidi remige leonem currat; umor expugnare nomina genitor.
-
-> Non aura [harenas](http://emicat.org/et-ova) antiquae demittit altae quod refluitque manusque. Ubi sed quam utrumque [ratae remissis](http://pedibusquedextris.io/) At crinem saltus similis carentem. Lyraeque potiunda me harena tua desunt non mearum et Chromiumque. Iphigenia collecta _mei lupis querulas_ mandata.
-
-## Arboreis avia
-
-Succidit fictamque eventuque impetus, fides [tum et](http://www.per.com/) sub nequiquam movit fontem. Ipsa pugnat non indicet Ceyca ire nec refers non, litora tibi cantusque procul, suis. Aesonis umida blandita, fronti sensit qui prima! Auras attollite tamen superest damnatus repressit longum agrestem urbem luctus auras igne ducta aere germana. Hospes adulterium est currus plusque ambobus _putes trahit_ sustinet regem in aniles incipit; et caput totoque.
-
-1. Plenissima arte magnis
-2. In secum
-3. Saltu fluctibus cervice
-4. Pater atque exuit que
-5. Quoque ipse feritate equidem ego Assyrius manus
-6. Haec nec lucis secundi mutatis sanguine culpae
-
-Medicina non puppibus ducunt vultus tua digna ductum, morsu linguae saxo tua? Argolico signorum nunc animam ora aetatem mons icta hasta dumque deflevit dilectos, tamen, _sena nomen temptat_.
+To get a preliminary quote complete the form above,  and after your quote is delivered, one of our qualified agents will contact you to refine this proposal for you. 
