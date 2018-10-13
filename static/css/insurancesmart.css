@@ -167,6 +167,9 @@ img {
 .w-richtext a {
   color: #eeae00;
 }
+.w-richtext a:hover {
+  color: #d19900;
+}
 
 .hero-banner {
   position: relative;

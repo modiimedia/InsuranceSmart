@@ -13,13 +13,27 @@
                 {{ if .children }}
                     <div class="dropdown-column">
                         {{ range .children }}
-                        <a href="{{ .url }}" class="nav-heading w-inline-block">
+                        <a href="
+                            {{- if .external_url -}}
+                                {{- .external_url -}}
+                            {{- else -}}
+                                {{- with $.Site.GetPage .url -}}
+                                    {{- .RelPermalink -}}
+                                {{- end -}}
+                            {{- end -}}" class="nav-heading w-inline-block">
                             <div class="text-block-10">{{ .name }}</div>
                             <div class="text-block-11">&nbsp;&nbsp;&nbsp;&nbsp;{{ safeHTML .icon  }}</div>
                         </a>
                         {{ if .children }}
                             {{ range .children }}
-                            <a href="{{ .url }}" class="shop-link w-inline-block">
+                            <a href="
+                                {{- if .external_url -}}
+                                    {{- .external_url -}}
+                                {{- else -}}
+                                    {{- with $.Site.GetPage .url -}}
+                                        {{- .RelPermalink -}}
+                                    {{- end -}}
+                                {{- end -}}" class="shop-link w-inline-block">
                                 <div class="nav-link-text">{{ .name }}</div>
                             </a>
                             {{ end }}
@@ -58,7 +72,14 @@
         </div>
         <div data-w-id="6714678d-cb9c-b655-5209-6473232315ae" class="dropdown" style="display: none;">
             {{ range .Site.Data.menus.explore_menu }}
-            <a href="{{ .url }}" class="nav-link w-inline-block">
+            <a href="
+                {{- if .external_url -}}
+                    {{- .external_url -}}
+                {{- else -}}
+                    {{- with $.Site.GetPage .url -}}
+                        {{- .RelPermalink -}}
+                    {{- end -}}
+                {{- end -}}" class="nav-link w-inline-block">
                 <div class="nav-link-text">{{ .name }}</div>
             </a>
             {{ end }}
