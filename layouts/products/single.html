@@ -10,7 +10,7 @@
                 {{ range first 1 .Params.quote }}
                     <div id="quote-form">
                         {{ if eq .template "safeco-quote-form" }}
-                        {{ $d := .default }}
+                        {{ $d := .default | lower }}
                         <div class="w-embed w-script">
                                 <form name="gaqList" id="gaqList" onsubmit="return submitForm();">
                                     <div class="quote-form-wrap" onload="setProduct();">

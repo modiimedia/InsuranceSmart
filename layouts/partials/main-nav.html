@@ -72,16 +72,16 @@
         </div>
         <div data-w-id="6714678d-cb9c-b655-5209-6473232315ae" class="dropdown" style="display: none;">
             {{ range .Site.Data.menus.explore_menu }}
-            <a href="
-                {{- if .external_url -}}
-                    {{- .external_url -}}
-                {{- else -}}
-                    {{- with $.Site.GetPage .url -}}
-                        {{- .RelPermalink -}}
-                    {{- end -}}
-                {{- end -}}" class="nav-link w-inline-block">
-                <div class="nav-link-text">{{ .name }}</div>
-            </a>
+                <a href="
+                    {{- if .external_url -}}
+                        {{- .external_url -}}
+                    {{- else -}}
+                        {{- with $.Site.GetPage .url -}}
+                            {{- .RelPermalink -}}
+                        {{- end -}}
+                    {{- end -}}" class="nav-link w-inline-block">
+                    <div class="nav-link-text">{{ .name }}</div>
+                </a>
             {{ end }}
         </div>
     </div>
