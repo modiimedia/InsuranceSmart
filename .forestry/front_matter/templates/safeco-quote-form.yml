@@ -3,6 +3,24 @@ label: Safeco Quote Form
 hide_body: false
 is_partial: true
 fields:
+- type: select
+  name: default
+  config:
+    source:
+      type: simple
+      section: safeco-form
+    options:
+    - Auto
+    - Home
+    - Renters
+    - Condo
+    - Boat or Watercraft
+    - Motorcycle
+    - RV
+    - Umbrella
+    - Landlord Protection
+  label: Default Option
+  description: Leaving blank will show text saying "Choose insurance type"
 - type: list
   config:
     use_select: true
@@ -34,21 +52,3 @@ fields:
   - Condo
   - Landlord Protection
   - Umbrella
-- type: select
-  name: default
-  config:
-    source:
-      type: simple
-      section: safeco-form
-    options:
-    - Auto
-    - Home
-    - Renters
-    - Condo
-    - Boat or Watercraft
-    - Motorcycle
-    - RV
-    - Umbrella
-    - Landlord Protection
-  label: Default Option
-  description: Leaving blank will show text saying "Choose insurance type"
