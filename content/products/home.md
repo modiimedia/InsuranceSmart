@@ -34,18 +34,18 @@ You can get premium quality insurance without a premium quality price by applyin
 Discounts are available if you have a burglar alarm or fire sprinkler system installed in your home.  You may also qualify for lower rates if you live close to a fire station. 
 
 **Get a Package Deal**  
-Save up to 15 percent when you combine your homeowners and auto policies.
+Save up to 15 percent when you allow us to provide both your homeowners and auto policies.
 
 **Multiple Policy Discount**  
-Save even more with a multiple policy discount when you also add coverage for your [**motorcycle**](https://www.safeco.com/products/motorcycle-insurance), [**boat**](https://www.safeco.com/products/boat-insurance), or [**RV**](https://www.safeco.com/products/rv-insurance)
+You can save even more if you have multiple policies. to include coverage for your [**motorcycle**](https://www.safeco.com/products/motorcycle-insurance), [**boat**](https://www.safeco.com/products/boat-insurance), or [**RV**](https://www.safeco.com/products/rv-insurance)
 
 **Less Than 10 Years Old**  
-Qualify for a newer home discount when your house is less than 10 years old.
+We offer a newer home discount when your home is less than 10 years old.
 
 **Choose a Higher Deductible**  
-A higher deductible will lower how much you pay for your home insurance premium by shifting part of the loss payment to you. For example, if you have a $500 deductible, you’ll need to pay the first $500 of a loss out of your own pocket. A higher deductible will lower your home insurance bill, but will also increase how much you’ll end up paying yourself if you file a claim.
+Choosing a higher deductible will lower your insurance premium because you are sharing more of the risk of a qualified loss payment to you. For example, a $500 deductible requires you to pay the first $500 of a loss out of your own pocket. Raising this deductible to $1000 or more will lower your homeowners insurance bill, but increases your out of pocket expense if you file a claim.
 
 **Pay Your Bill in Full**  
-If you pay your bill in full when you start or renew a policy, instead of paying in monthly installments, you’ll end up paying less in the long run. Talk to your [**local independent agent**](https://insurance-agent.safeco.com/find-an-insurance-agency/app) about additional ways to save that could help reduce how much you pay for homeowners insurance.
+Paying your bill in full when starting or renewing your policy, instead of in monthly installments also saves you money. 
 
-Contact a [**local independent agent**](/contact "Contact an agent.") to help you identify discounts and savings you may qualify for.
+Contact one our our [**local independent agents**](/contact "Contact an agent.") with questions. We are here to help identify discounts and savings you may qualify for, and guarantee professional service to get you the coverage you need at a price you can afford.
