@@ -36,14 +36,11 @@ Get premium quality insurance coverage without the premium quality price by appl
 **Burglar Alarm/Fire Sprinkler/ Homes Near Fire Stations**  
 Discounts are available for a burglar alarm or fire sprinkler system installed in your home.  You may also qualify for lower rates if you live close to a fire station.
 
-**Home is Less Than 10 Years Old**  
-We offer a newer home discount when your home is less than 10 years old.
+**If Your Home is Less Than 10 Years Old** offer a newer home discount .
 
-**Choosing a Higher Deductible**  
-Choosing a higher deductible will lower your insurance premium because you are sharing more of the risk of a qualified loss payment to you. For example, a $500 deductible requires you to pay the first $500 of a loss out of your own pocket. Raising this deductible to $1000 or more will lower your insurance bill, but increase your out of pocket expense if you file a claim.
+**Choosing a Higher Deductible** will lower your insurance premium because you are sharing more of the risk of a qualified loss payment to you. For example, a $500 deductible requires you to pay the first $500 of a loss out of your own pocket. Raising this deductible to $1000 or more will lower your insurance bill, but increase your out of pocket expense if you file a claim.
 
-**Pay Your Bill in Full**  
-Paying your bill in full when starting or renewing your policy, instead of in monthly installments also saves you money.
+**Pay Your Bill in Full** when starting or renewing your policy, instead of in monthly installments also saves you money.
 
 **Additional Multiple Policy Discounts**  are available as well and can save you even more if you secure additional policies with us to include coverage for your [**auto,**](/products/auto) [**motorcycle**](/products/motorcycle), [**boat**](/products/boat/), [**RV**](/products/rv/)**,** and [**Umbrella**](/products/umbrella) policies.
 
