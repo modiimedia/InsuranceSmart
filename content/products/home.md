@@ -38,7 +38,7 @@ Discounts are available for a burglar alarm or fire sprinkler system installed i
 Save up to 15 percent when you allow us to provide both your homeowners and auto policies.
 
 **Multiple Policy Discount**  
-You can save even more if you have multiple policies. to include coverage for your [**auto,**](/products/auto) [**motorcycle**](/products/motorcycle), [**boat**](/products/boat/), [**RV**](https://www.safeco.com/products/rv-insurance)**,** and [**Umbrella **](/products/umbrella)policies.
+You can save even more if you have multiple policies. to include coverage for your [**auto,**](/products/auto) [**motorcycle**](/products/motorcycle), [**boat**](/products/boat/), [**RV**](/products/rv/)**,** and [**Umbrella**](/products/umbrella) policies.
 
 **Less Than 10 Years Old**  
 We offer a newer home discount when your home is less than 10 years old.
