@@ -164,6 +164,9 @@ img {
 .w-richtext h3 {
   opacity: 0.85;
 }
+.w-richtext a {
+  color: #eeae00;
+}
 
 .hero-banner {
   position: relative;
