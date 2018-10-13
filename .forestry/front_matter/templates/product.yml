@@ -98,7 +98,7 @@ fields:
     source:
       type: pages
 pages:
-- content/products/rv-insurance.md
+- content/products/RV.md
 - content/products/motorcycle.md
 - content/products/home.md
 - content/products/fixed-indemnity.md
