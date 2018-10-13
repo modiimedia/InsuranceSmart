@@ -7,7 +7,7 @@ featured_image = ""
 mikes_take = ""
 recommended_articles = "choose automatically"
 resources = []
-title = "Landlord"
+title = "Landlord Insurance"
 [seo]
 meta_description = ""
 meta_title = ""
