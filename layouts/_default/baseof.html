@@ -44,7 +44,7 @@
             {{- if $seo.social_description -}}
                 {{- $seo.social_description -}}
             {{- else if $seo.meta_description -}}
-                {{- .params.seo.meta_description -}}
+                {{- .Params.seo.meta_description -}}
             {{- else if .Description -}}
                 {{- .Description -}}
             {{- else -}}
@@ -69,7 +69,7 @@
             {{- if $seo.social_description -}}
                 {{- $seo.social_description -}}
             {{- else if $seo.meta_description -}}
-                {{- .params.seo.meta_description -}}
+                {{- .Params.seo.meta_description -}}
             {{- else if .Description -}}
                 {{- .Description -}}
             {{- else -}}
