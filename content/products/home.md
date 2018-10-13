@@ -25,13 +25,14 @@ template = "safeco-quote-form"
 +++
 A home is one of your most valuable possessions. Whether you are a brand new homeowner or you've owned one or more homes for years, you need the right homeowners insurance to protect your investment.  A homeowners policy doesn't just protect your home, when properly structured, it can also protect personal belongings, yourself, and your guests.  We are here to help you understand plans available, and to structure the coverage you need at a price you can afford.
 
-To get a preliminary quote[ complete the form above,]()  and after your quote is delivered, a qualified agents will contact you and refine this proposal for you.
+To get a preliminary quote[ complete the form above,]()  and after your quote is delivered, a qualified agents will contact you to refine this proposal for you.
 
 ## Discounts For Homeowners
 
-You can get premium quality insurance without a premium quality price by applying available discounts.
+Get premium quality insurance coverage without the premium quality price by applying available discounts.
 
-Discounts are available if you have a burglar alarm or fire sprinkler system installed in your home.  You may also qualify for lower rates if you live close to a fire station. 
+**Burglar Alarm/Fire Sprinkler/ Homes Near Fire Stations**  
+Discounts are available for a burglar alarm or fire sprinkler system installed in your home.  You may also qualify for lower rates if you live close to a fire station.
 
 **Get a Package Deal**  
 Save up to 15 percent when you allow us to provide both your homeowners and auto policies.
@@ -46,6 +47,6 @@ We offer a newer home discount when your home is less than 10 years old.
 Choosing a higher deductible will lower your insurance premium because you are sharing more of the risk of a qualified loss payment to you. For example, a $500 deductible requires you to pay the first $500 of a loss out of your own pocket. Raising this deductible to $1000 or more will lower your homeowners insurance bill, but increases your out of pocket expense if you file a claim.
 
 **Pay Your Bill in Full**  
-Paying your bill in full when starting or renewing your policy, instead of in monthly installments also saves you money. 
+Paying your bill in full when starting or renewing your policy, instead of in monthly installments also saves you money.
 
 Contact one our our [**local independent agents**](/contact "Contact an agent.") with questions. We are here to help identify discounts and savings you may qualify for, and guarantee professional service to get you the coverage you need at a price you can afford.
