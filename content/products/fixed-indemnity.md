@@ -1,5 +1,5 @@
 ---
-title: Health ProtectorGuard
+title: Hospital & Doctor
 category: insurancecategories/health.md
 recommended_articles: choose automatically
 resources:
