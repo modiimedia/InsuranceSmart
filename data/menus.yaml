@@ -3,49 +3,49 @@ shop_menu:
 - name: Column 1
   children:
   - name: Life
-    url: _index.md
+    url: insurancecategories/life.md
     icon: <i class="fas fa-heartbeat"></i>
     children: 
   - name: Health
-    url: "/insurancecategories/health/"
+    url: insurancecategories/health.md
     icon: <i class="fas fa-medkit"></i>
     children:
-    - name: Health ProtectorGuard
-      url: "/products/fixed-indemnity/"
+    - name: Hospital & Doctor
+      url: products/fixed-indemnity.md
     - name: Critical Illness
-      url: "/products/critical-illness/"
+      url: products/critical-illness.md
     - name: Dental
-      url: "/products/dental-insurance/"
+      url: products/dental-insurance.md
 - name: Column 2
   children:
   - name: Auto & Vehicle Insurance
-    url: "/insurancecategories/auto/"
+    url: insurancecategories/auto.md
     icon: <i class="fas fa-car"></i>
     children:
     - name: Auto
-      url: "/products/auto/"
+      url: products/auto.md
     - name: Motorcycle
-      url: "/products/auto/"
+      url: products/motorcycle.md
     - name: Boat or Watercraft
-      url: "/products/boat/"
+      url: products/boat.md
     - name: RV
-      url: "#"
+      url: products/RV.md
 - name: Column 3
   children:
   - name: Personal Property
-    url: "/insurancecategories/property/"
+    url: insurancecategories/property.md
     icon: <i class="fas fa-home"></i>
     children:
     - name: Home
-      url: "/products/home/"
+      url: products/home.md
     - name: Renters
-      url: "/products/renters/"
+      url: ''
     - name: Condo
-      url: "/products/condo/"
+      url: ''
     - name: Landlord Protection
-      url: "/products/landlord"
+      url: products/landlord.md
   - name: Umbrella Insurance
-    url: "/products/umbrella/"
+    url: products/umbrella.md
     icon: <i class="fas fa-umbrella"></i>
     children: 
 explore_menu:
