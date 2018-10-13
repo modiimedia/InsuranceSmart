@@ -2,7 +2,7 @@
 category = ""
 custom_article_list = []
 date = "2018-10-13T21:10:50+00:00"
-description = "Landlord Insurance"
+description = "Landlord Coverage For Rental Properties"
 draft = true
 featured_image = ""
 mikes_take = ""
@@ -17,7 +17,7 @@ open_graph_image = ""
 social_description = ""
 social_title = ""
 [[faqs]]
-answer = "We can provide quick quotes for up to 4 units.  If you need coverage for more that this, contact one of our [Independent Agents ](/contact)for a customised solution to meet your needs. "
-question = "How many rental houses or units can I own to qualify?"
+answer = "You can quickly quote up to 4 rental units on this platform.  If you have additional units, please contact one of our [Independent Insurance Agents](/Contact) for a customized solution."
+question = "How many rental units can I own to receive a quick quote on this site?"
 
 +++
