@@ -52,11 +52,12 @@ explore_menu:
 - name: About Us
   url: _index.md
 - name: Testimonials
-  url: _index.md
+  url: testimonies/_index.md
 - name: FAQ
   url: _index.md
 - name: Contact
-  url: _index.md
+  url: ''
+  external_url: "/contact"
 footer_menu:
   menu_1:
     name: Useful Links
