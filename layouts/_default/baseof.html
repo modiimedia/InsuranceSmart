@@ -9,18 +9,78 @@
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/insurancesmart.css">
     <link rel="stylesheet" href="/css/is.css">
-    <title>{{ block "title" . }}{{ .Title }} | {{ $.Site.Title }}{{ end }}</title>
-    <meta name="description" content="{{- block "description" . -}}{{ if .Description }}{{ .Description }}{{ else }}{{ .Params.meta_description }}{{ end }}{{- end -}}"></meta>
+    <title>
+    {{- block "title" . -}}
+        {{- if .Params.seo.meta_title -}}
+            {{- .Params.seo.meta_title -}}
+        {{- else -}}
+            {{ .Title }} | {{ $.Site.Title }}
+        {{- end -}}
+    {{- end -}}
+    </title>
+    <meta name="description" content="
+    {{- block "description" . -}}
+        {{- if .Params.seo.meta_description -}}
+            {{- .Params.seo.meta_description -}}
+        {{- else if .Description -}}
+            {{- .Description -}}
+        {{- else -}}
+            {{- .Summary | truncate 250 -}}
+        {{- end -}}
+    {{- end -}}"></meta>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     {{- block "social-meta" . -}}
-        <meta property="og:title" content="{{- if .Params.seo.meta_title -}}{{- .Params.seo.meta_title -}}{{- else -}}{{- .Title -}}{{- end -}}">
-        <meta property="og:description" content="{{- if .Params.seo.meta_description -}}{{- .params.seo.meta_description -}}{{- else -}}{{- if .Description -}}{{- .Description -}}{{- else -}}{{- .Summary | truncate 250 -}}{{- end -}}{{ end -}}">
-        <meta property="og:image" content="{{- if .Params.seo.open_graph_image -}}{{ .Site.Params.cloudinary_url }}w_1200,h_630,c_fill,q_60,f_auto{{- .Params.seo.open_graph_image -}}{{- else -}}{{ .Site.Params.cloudinary_url }}w_1200,h_630,c_fill,q_60,f_auto{{- .Params.featured_image -}}{{- end -}}">
+        {{- $seo := .Params.seo -}}
+        <meta property="og:title" content="
+            {{- if $seo.social_title -}}
+                {{- $seo.social_title -}}
+            {{- else if .Params.seo.meta_title -}}
+                {{- $seo.meta_title -}}
+            {{- else -}}
+                {{- .Title -}}
+            {{- end -}}">
+        <meta property="og:description" content="
+            {{- if $seo.social_description -}}
+                {{- $seo.social_description -}}
+            {{- else if $seo.meta_description -}}
+                {{- .params.seo.meta_description -}}
+            {{- else if .Description -}}
+                {{- .Description -}}
+            {{- else -}}
+                {{- .Summary | truncate 250 -}}
+            {{- end -}}">
+        <meta property="og:image" content="
+            {{- if .Params.seo.open_graph_image -}}
+                {{ .Site.Params.cloudinary_url }}w_1200,h_630,c_fill,q_60,f_auto{{- .Params.seo.open_graph_image -}}
+            {{- else -}}
+                {{ .Site.Params.cloudinary_url }}w_1200,h_630,c_fill,q_60,f_auto{{- .Params.featured_image -}}
+            {{- end -}}">
         <meta property="og:url" content="{{ .Permalink }}">
-        <meta name="twitter:title" content="{{- if .Params.seo.meta_title -}}{{- .Params.seo.meta_title -}}{{- else -}}{{- .Title -}}{{- end -}}">
-        <meta name="twitter:description" content="{{- if .Params.seo.meta_description -}}{{- .params.seo.meta_description -}}{{- else -}}{{- if .Description -}}{{- .Description -}}{{- else -}}{{- .Summary | truncate 250 -}}{{- end -}}{{ end -}}">
-        <meta name="twitter:image" content="{{- if .Params.seo.open_graph_image -}}{{ .Site.Params.cloudinary_url }}w_1200,h_630,c_fill,q_60,f_auto{{- .Params.seo.open_graph_image -}}{{- else -}}{{ .Site.Params.cloudinary_url }}w_1200,h_630,c_fill,q_60,f_auto{{- .Params.featured_image -}}{{- end -}}">
+        <meta name="twitter:title" content="
+            {{- if $seo.social_title -}}
+            {{- $seo.social_title -}}
+            {{- else if .Params.seo.meta_title -}}
+                {{- $seo.meta_title -}}
+            {{- else -}}
+                {{- .Title -}}
+            {{- end -}}">
+        <meta name="twitter:description" content="
+            {{- if $seo.social_description -}}
+                {{- $seo.social_description -}}
+            {{- else if $seo.meta_description -}}
+                {{- .params.seo.meta_description -}}
+            {{- else if .Description -}}
+                {{- .Description -}}
+            {{- else -}}
+                {{- .Summary | truncate 250 -}}
+            {{- end -}}">
+        <meta name="twitter:image" content="
+            {{- if .Params.seo.open_graph_image -}}
+                {{ .Site.Params.cloudinary_url }}w_1200,h_630,c_fill,q_60,f_auto{{- .Params.seo.open_graph_image -}}
+            {{- else -}}
+                {{ .Site.Params.cloudinary_url }}w_1200,h_630,c_fill,q_60,f_auto{{- .Params.featured_image -}}
+            {{- end -}}">
         <meta name="twitter:card" content="summary_large_image">
     {{- end -}}
 </head>

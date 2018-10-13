@@ -128,12 +128,14 @@
             </aside>
             <main class="flex-grow product">
                 {{ if .Params.mikes_take }}
-                <div class="div-block-19 w-clearfix">
-                    <h1 class="mikes-take">Mike&#x27;s Take</h1>
-                    <div class="take-title">Founder &amp; CEO</div>
-                    <div class="div-block-20"></div>
-                    {{ .Params.mikes_take }}
-                </div>
+                    {{ if ne .Params.mikes_take "" }}
+                    <div class="div-block-19 w-clearfix">
+                        <h1 class="mikes-take">Mike&#x27;s Take</h1>
+                        <div class="take-title">Founder &amp; CEO</div>
+                        <div class="div-block-20"></div>
+                        {{ .Params.mikes_take }}
+                    </div>
+                    {{ end }}
                 {{ end }}
                 <div>
                     <div data-duration-in="300" data-duration-out="100" class="w-tabs">
