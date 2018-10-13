@@ -2,13 +2,13 @@
 {{- $phone := $.Site.Data.general_settings.contact_info.phone -}}
 <section style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_80,f_auto{{ .Params.Featured_Image }})"
     class="page-banner-copy2-copy">
-    <div class="container">
+    <div class="container" id="quote">
         <div class="product-quote-box">
             <h1 class="quote-box-heading">{{ .Title }}</h1>
             <p class="quote-box-text">{{ .Params.Description }}</p>
             {{ if .Params.quote }}
                 {{ range first 1 .Params.quote }}
-                    <div id="quote">
+                    <div id="quote-form">
                         {{ if eq .template "safeco-quote-form" }}
                         {{ $d := .default }}
                         <div class="w-embed w-script">
@@ -204,7 +204,7 @@
     <script>
     // script for in content content blocks
 
-    let quoter = document.getElementById("quote").innerHTML;
+    let quoter = document.getElementById("quote-form").innerHTML;
     let contentQuoters = document.querySelectorAll(".blog-quote-box > .blog-quote-box-form");
 
     for(let i = 0; i < contentQuoters.length; i++) {
