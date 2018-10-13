@@ -1,5 +1,5 @@
 ---
-title: Hospital & Doctor
+title: Hosp
 category: insurancecategories/health.md
 recommended_articles: choose automatically
 resources:

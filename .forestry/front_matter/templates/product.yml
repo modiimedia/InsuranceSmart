@@ -98,10 +98,10 @@ fields:
     source:
       type: pages
 pages:
+- content/products/fixed-indemnity.md
 - content/products/condo-insurance.md
 - content/products/renters-insurance.md
 - content/products/RV.md
-- content/products/fixed-indemnity.md
 - content/products/landlord.md
 - content/products/motorcycle.md
 - content/products/home.md
