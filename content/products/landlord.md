@@ -2,8 +2,8 @@
 category = "insurancecategories/property.md"
 custom_article_list = []
 date = "2018-10-13T21:10:50+00:00"
-description = "Landlord Coverage For Rental Properties"
-featured_image = ""
+description = "Get affordable coverage for your rental properties."
+featured_image = "/v1539469950/insurancesmart/woman-in-living-room%20%281%29.jpg"
 mikes_take = ""
 recommended_articles = "choose automatically"
 resources = []
