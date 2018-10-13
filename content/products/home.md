@@ -25,7 +25,7 @@ template = "safeco-quote-form"
 +++
 A home is one of your most valuable possessions. Whether you are a brand new homeowner or you've owned one or more homes for years, you need the right homeowners insurance to protect your investment.  A homeowners policy doesn't just protect your home, when properly structured, it can also protect personal belongings, yourself, and your guests.  We are here to help you understand plans available, and to structure the coverage you need at a price you can afford.
 
-To get a preliminary quote[ complete the form above,]()  and after your quote is delivered, a qualified agents will contact you to refine this proposal for you.
+To get a preliminary quote[ complete the form above,](/contact)  and after your quote is delivered, a qualified agents will contact you to refine this proposal for you.
 
 ## Discounts For Homeowners
 
@@ -38,7 +38,7 @@ Discounts are available for a burglar alarm or fire sprinkler system installed i
 Save up to 15 percent when you allow us to provide both your homeowners and auto policies.
 
 **Multiple Policy Discount**  
-You can save even more if you have multiple policies. to include coverage for your [**motorcycle**](/products/motorcycle), [**boat**](/products/boat/), or [**RV**](https://www.safeco.com/products/rv-insurance)
+You can save even more if you have multiple policies. to include coverage for your [**auto,**](/products/auto) [**motorcycle**](/products/motorcycle), [**boat**](/products/boat/), [**RV**](https://www.safeco.com/products/rv-insurance)**,** and [**Umbrella **](/products/umbrella)policies.
 
 **Less Than 10 Years Old**  
 We offer a newer home discount when your home is less than 10 years old.
