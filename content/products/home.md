@@ -25,7 +25,7 @@ template = "safeco-quote-form"
 +++
 A home is one of your most valuable possessions. Whether you are a brand new homeowner or you've owned one or more homes for years, you need the right homeowners insurance to protect your investment.  A homeowners policy doesn't just protect your home, when properly structured, it can also protect personal belongings, yourself, and your guests.  We are here to help you understand plans available, and to structure the coverage you need at a price you can afford.
 
-To get a preliminary quote complete the form above,  and after your quote is delivered, a qualified agents will contact you and refine this proposal for you.
+To get a preliminary quote[ complete the form above,]()  and after your quote is delivered, a qualified agents will contact you and refine this proposal for you.
 
 ## Discounts For Homeowners
 
