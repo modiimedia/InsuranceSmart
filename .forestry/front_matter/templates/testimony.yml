@@ -42,6 +42,6 @@ fields:
   label: Seo
   name: seo
 pages:
-- content/testimonies/jason.md
 - content/testimonies/jason.1.md
+- content/testimonies/jason.md
 - content/testimonies/laura.md
