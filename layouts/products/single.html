@@ -3,7 +3,7 @@
 <section style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_80,f_auto{{ .Params.Featured_Image }})"
     class="page-banner-copy2-copy">
     <div class="container">
-        <div class="product-quote-box">
+        <div class="product-quote-box" id="quote">
             <h1 class="quote-box-heading">{{ .Title }}</h1>
             <p class="quote-box-text">{{ .Params.Description }}</p>
             {{ if .Params.quote }}
@@ -128,14 +128,15 @@
             </aside>
             <main class="flex-grow product">
                 {{ if .Params.mikes_take }}
-                    {{ if ne .Params.mikes_take "" }}
                     <div class="div-block-19 w-clearfix">
                         <h1 class="mikes-take">Mike&#x27;s Take</h1>
                         <div class="take-title">Founder &amp; CEO</div>
-                        <div class="div-block-20"></div>
+                        <div class="div-block-20" 
+                            {{- with $.Site.GetPage "/staff/mike.md" -}}
+                                style="background-image: url({{ $.Site.Params.cloudinary_url }}w_100,h_100,c_fill,q_80,f_auto{{ .Params.photo }})"
+                            {{- end -}}></div>
                         {{ .Params.mikes_take }}
                     </div>
-                    {{ end }}
                 {{ end }}
                 <div>
                     <div data-duration-in="300" data-duration-out="100" class="w-tabs">
