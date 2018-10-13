@@ -24,6 +24,16 @@ fields:
   label: Options to Display
   name: options
   description: Which products do you want to display on the form?
+  default:
+  - Auto
+  - Boat or Watercraft
+  - RV
+  - Motorcycle
+  - Home
+  - Renters
+  - Condo
+  - Landlord Protection
+  - Umbrella
 - type: select
   name: default
   config:
