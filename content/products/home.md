@@ -36,14 +36,14 @@ Get premium quality insurance coverage without the premium quality price by appl
 **Burglar Alarm/Fire Sprinkler/ Homes Near Fire Stations**  
 Discounts are available for a burglar alarm or fire sprinkler system installed in your home.  You may also qualify for lower rates if you live close to a fire station.
 
-**If Your Home is Less Than 10 Years Old** offer a newer home discount .
+**If Your Home is Less Than 10 Years Old** we also offer a newer home discount .
 
-**Choosing a Higher Deductible** will lower your insurance premium because you are sharing more of the risk of a qualified loss payment to you. For example, a $500 deductible requires you to pay the first $500 of a loss out of your own pocket. Raising this deductible to $1000 or more will lower your insurance bill, but increase your out of pocket expense if you file a claim.
+**Choosing a Higher Deductible** will lower your insurance premium because you are sharing more of the risk of a qualified loss payment to you. For example, a $500 deductible requires you to pay the first $500 of a loss out of your own pocket. Raising this deductible to $1000 or more will lower your insurance bill, but increase your out of pocket expense from $500 to $1000 if you file a claim.
 
-**Pay Your Bill in Full** when starting or renewing your policy, instead of in monthly installments also saves you money.
+**Pay Your Bill in Full** when you start or renew your policy, instead of paying on monthly installments also saves you money.
 
-**Additional Multiple Policy Discounts**  are available as well and can save you even more if you secure additional policies with us to include coverage for your [**auto,**](/products/auto) [**motorcycle**](/products/motorcycle), [**boat**](/products/boat/), [**RV**](/products/rv/)**,** and [**Umbrella**](/products/umbrella) policies.
+**Additional Multiple Policy Discounts**  are available and save you even more if you secure additional policies with us and include coverage for your [**auto,**](/products/auto) [**motorcycle**](/products/motorcycle), [**boat**](/products/boat/), [**RV**](/products/rv/)**,** or an [**Umbrella**](/products/umbrella) policy.
 
-Contact one our our [**local independent agents**](/contact "Contact an agent.") with questions. We are here to help identify discounts and savings you may qualify for, and guarantee professional service to get you the coverage you need at a price you can afford.
+Contact one our our [**local independent agents**](/contact "Contact an agent.") with questions. We are here to help identify discounts you may qualify for, and guarantee professional service to get you the coverage you need, at a price you can afford.
 
 {{< quote-block >}}
