@@ -6,7 +6,6 @@ description = "Motorcycle Insurance"
 faqs = []
 featured_image = ""
 mikes_take = ""
-quote = []
 recommended_articles = "choose automatically"
 resources = []
 title = "Motorcycle Insurance"
@@ -16,5 +15,9 @@ meta_title = ""
 open_graph_image = ""
 social_description = ""
 social_title = ""
+[[quote]]
+default = "Motorcycle"
+options = ["Auto", "Boat or Watercraft", "RV", "Motorcycle", "Home", "Renters", "Condo", "Landlord Protection", "Umbrella"]
+template = "safeco-quote-form"
 
 +++
