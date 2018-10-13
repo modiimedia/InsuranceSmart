@@ -19,13 +19,13 @@ answer = "We are currently licensed and appointed for the great state of Texas. 
 question = "What states does InsuranceSmart service?"
 [[quote]]
 default = "Home"
-options = ["Home", "Condo", "Renters", "Umbrella", "Landlord Protection"]
+options = ["Home", "Condo", "Renters", "Landlord Protection", "Umbrella", "Auto", "RV", "Motorcycle", "Boat or Watercraft"]
 template = "safeco-quote-form"
 
 +++
 **A home is one of your most valuable possessions**. Whether you are a brand new homeowner or you've owned one or more homes for years, you need the right homeowners insurance to protect your investment.  A homeowners policy doesn't just protect your home, when properly structured, it can also protect personal belongings, yourself, and your guests.  We are here to help you understand plans available, and to structure the coverage you need at a price you can afford.
 
-To get a preliminary quote [**complete the form above**,](/contact)  and after your quote is delivered, a qualified agents will contact you to refine this proposal for you.
+To get a preliminary quote [**complete the form above**,](#quote)  and after your quote is delivered, a qualified agents will contact you to refine this proposal for you.
 
 ## Discounts For Homeowners
 
@@ -39,8 +39,8 @@ Discounts are available for a burglar alarm or fire sprinkler system installed i
 **Home is Less Than 10 Years Old**  
 We offer a newer home discount when your home is less than 10 years old.
 
-**Choosing a Higher Deductible**   
-Choosing a higher deductible will lower your insurance premium because you are sharing more of the risk of a qualified loss payment to you. For example, a $500 deductible requires you to pay the first $500 of a loss out of your own pocket. Raising this deductible to $1000 or more will lower your insurance bill, but increase your out of pocket expense if you file a claim. 
+**Choosing a Higher Deductible**  
+Choosing a higher deductible will lower your insurance premium because you are sharing more of the risk of a qualified loss payment to you. For example, a $500 deductible requires you to pay the first $500 of a loss out of your own pocket. Raising this deductible to $1000 or more will lower your insurance bill, but increase your out of pocket expense if you file a claim.
 
 **Pay Your Bill in Full**  
 Paying your bill in full when starting or renewing your policy, instead of in monthly installments also saves you money.
@@ -48,3 +48,5 @@ Paying your bill in full when starting or renewing your policy, instead of in mo
 **Additional Multiple Policy Discounts**  are available as well and can save you even more if you secure additional policies with us to include coverage for your [**auto,**](/products/auto) [**motorcycle**](/products/motorcycle), [**boat**](/products/boat/), [**RV**](/products/rv/)**,** and [**Umbrella**](/products/umbrella) policies.
 
 Contact one our our [**local independent agents**](/contact "Contact an agent.") with questions. We are here to help identify discounts and savings you may qualify for, and guarantee professional service to get you the coverage you need at a price you can afford.
+
+{{< quote-block >}}
