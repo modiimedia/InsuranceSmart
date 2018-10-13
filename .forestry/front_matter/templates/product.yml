@@ -98,6 +98,7 @@ fields:
     source:
       type: pages
 pages:
+- content/products/landlord.md
 - content/products/RV.md
 - content/products/motorcycle.md
 - content/products/home.md
