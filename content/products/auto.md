@@ -27,10 +27,17 @@ mikes_take: ''
 custom_article_list: []
 
 ---
-There are new and better ways to protect cars and drivers with auto insurance. If you drive a sedan, hybrid, minivan, station wagon, SUV, pickup truck or anything in between, your [**local independent agent**](https://insurance-agent.safeco.com/find-an-insurance-agency/app) can provide personalized coverage that's right for you. If trouble comes along, we’ll make sure you’re taken care of every step of the way.
+**Having The Right Auto Insurance policy** can save you and your family thousands if you are ever involved in an accident while being driven by you or someone else, or if your car is damaged in a storm, vandalized or even stolen.
 
-  
-  
+We provide the minimum essential liability protection and other coverages required by laws in your state and offer a number of enhancements with extra protection for damage, emergencies road side assistance, repairs, personal property, medical payments, personal injury protection, and rental reimbursement. Your [**local independent agent**](https://insurance-agent.safeco.com/find-an-insurance-agency/app) can help with personal advice about product availability in your area and how much coverage is right for you.
+
+**Get an Online Quote**
+
+Whether you are a brand new homeowner or you've owned one or more homes for years, you need the right homeowners insurance to protect your investment.  A homeowners policy doesn't just protect your home, when properly structured, it can also protect personal belongings, yourself, and your guests.  We are here to help you understand plans available, and to structure the coverage you need at a price you can afford.
+
+To get a preliminary quote [**complete the form above**,](#quote)  and after your quote is delivered, a qualified agents will contact you to refine this proposal for you.
+
+There are new and better ways to protect cars and drivers with auto insurance. If you drive a sedan, hybrid, minivan, station wagon, SUV, pickup truck or anything in between, your [**local independent agent**](/contact) can provide personalized coverage that's right for you. If trouble comes along, we’ll make sure you’re taken care of every step of the way.
 
 ## Petentem Lyrnesia et crinis atque spumisque te
 
