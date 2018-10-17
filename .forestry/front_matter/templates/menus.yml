@@ -143,5 +143,3 @@ fields:
         label: External Link
         description: Paste the desired URL here. Populating this field will override
           the link above.
-data_files:
-- data/menus.yaml

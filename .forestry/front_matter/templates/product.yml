@@ -98,9 +98,6 @@ fields:
     source:
       type: pages
 pages:
-- content/products/fixed-indemnity.md
-- content/products/condo-insurance.md
-- content/products/renters-insurance.md
 - content/products/RV.md
 - content/products/landlord.md
 - content/products/motorcycle.md
@@ -108,6 +105,5 @@ pages:
 - content/products/auto.md
 - content/products/critical-illness.md
 - content/products/life.md
-- content/products/dental-insurance.md
 - content/products/umbrella.md
 - content/products/boat.md
