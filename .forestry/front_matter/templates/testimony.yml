@@ -41,5 +41,3 @@ fields:
   template: seo
   label: Seo
   name: seo
-pages:
-- content/testimonies/laura.md
