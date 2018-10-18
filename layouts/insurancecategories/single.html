@@ -5,32 +5,11 @@
         <div class="product-quote-box">
             <h1 class="quote-box-heading">{{ .Title }}</h1>
             <p class="quote-box-text">{{ .Params.Subheading }}</p>
+            {{ $data := $.Site.Data }}
             {{ if .Params.Quote }}
-                {{ range first 1 .Params.Quote }}
+                {{ range first 1 .Params.quote }}
                     {{ if eq .template "safeco-quote-form" }}
-                    {{ $d := .default }}
-                    <div class="w-embed w-script">
-                            <form name="gaqList" id="gaqList" onsubmit="return submitForm();">
-                                <div class="quote-form-wrap" onload="setProduct();">
-                                    <input id="zip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
-                                    <select id="subMenu" required="" name="subMenu" class="insurance-select w-select">
-                                        {{ if $d }}{{ else }}<option id="defaultoption" value="">Select Insurance Type</option>{{ end }}
-                                        {{- range .options -}}
-                                            {{ $id := . | lower }}
-                                            {{ range $.Site.Data.quote_forms.safeco }}
-                                                {{ $l := .display | lower }}
-                                                {{ if eq $id $l }}
-                                                <option id="{{ .id }}" {{ if eq $d $l }}selected{{ end }} value="{{ .value }}" data-zip="zip">{{ .display }}</option>
-                                                {{ end }}
-                                            {{ end }}
-                                        {{ end }}
-                                    </select>
-                                    <input type="submit" value="Get a Quote" id="fakeBtn" class="get-a-quote w-button">
-                                    <input type="submit" value="Get a Quote" id="startBtn" onclick="submitForm();" class="get-a-quote w-button" style="display:none">
-                                </div>
-                            </form>
-                    </div>
-                    <div class="quote-box-disclaimer">Insurance quoting provided by SafeCo</div>
+                        {{ partial "forms/safeco-quote-form.html" (dict "context" . "data" $data ) }}
                     {{ end }}
                 {{ end }}
             {{ end }}
@@ -46,6 +25,17 @@
             <div class="flex-grow product">
                 <div class="w-richtext">
                     {{ replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50,f_auto/" | safeHTML }}
+                </div>
+                <div class="flex-grid" style="margin-top: 20px; margin-bottom: 20px">
+                    {{ $category := replace .File.Path "\\" "/" }}
+                    {{ range sort (where $.Site.RegularPages "Params.category" $category) ".Title" }}
+                    <article class="product-item">
+                        <a href="{{ .RelPermalink }}">
+                          <h2>{{ .Title }}</h2>
+                          <p>{{ .Description }}</p>
+                        </a>
+                    </article>
+                    {{ end }}
                 </div>
                 <h1 class="heading-13">Relevant Readings</h1>
                 <div class="w-dyn-list">

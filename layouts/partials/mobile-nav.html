@@ -11,7 +11,15 @@
                 {{ range $.Site.Data.menus.shop_menu }}
                     {{ if .children }}
                         {{ range .children }}
-                        <a href="{{ .url }}" class="nav-link w-inline-block">
+                        <a href="
+                            {{- if .external_url -}}
+                                {{- .external_url -}}
+                            {{- else -}}
+                                {{- with $.Site.GetPage .url -}}
+                                    {{- .RelPermalink -}}
+                                {{- end -}}
+                            {{- end -}}
+                                " class="nav-link w-inline-block">
                             <div class="nav-link-text">{{ .name }}</div>
                         </a>
                         {{ end }}
@@ -22,9 +30,10 @@
                 </a>
             </div>
         </div>
-        <a href="/posts/" class="nav-link w-inline-block">
+        <!--hide get smart-->
+        <!-- <a href="/posts/" class="nav-link w-inline-block">
             <div class="nav-link-text">Get Smart</div>
-        </a>
+        </a> -->
         <div class="nav-link dropdown-trigger">
             <div class="nav-link">
                 <div class="nav-link-text">Explore&nbsp;&nbsp;</div>
@@ -32,7 +41,14 @@
             </div>
             <div class="dropdown" style="display: none;">
                 {{ range $.Site.Data.menus.explore_menu }}
-                <a href="{{ .url }}" class="nav-link w-inline-block">
+                <a href="
+                    {{- if .external_url -}}
+                        {{- .external_url -}}
+                    {{- else -}}
+                        {{- with $.Site.GetPage .url -}}
+                            {{- .RelPermalink -}}
+                        {{- end -}}
+                    {{- end -}}" class="nav-link w-inline-block">
                     <div class="nav-link-text">{{ .name }}</div>
                 </a>
                 {{ end }}

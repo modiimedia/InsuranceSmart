@@ -196,6 +196,10 @@ img {
   align-items: stretch;
 }
 
+.homeQuoterOption {
+  display: none;
+}
+
 .hero-content {
   position: relative;
   z-index: 1;
@@ -793,6 +797,39 @@ header .social-link {
 .text-block-4 {
   display: none;
 }
+.flex-grid {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  margin: -10px;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+.product-item {
+  padding: 10px;
+  width: 50%;
+}
+
+.product-item > a {
+  padding: 30px;
+  background: white;
+  border: 1px solid rgb(172, 172, 172);
+  display: block;
+}
+.product-item h2 {
+  font-size: 120%;
+  margin-top: 0;
+}
+
+.product-item:hover h2 {
+  opacity: 0.5;
+}
+
+@media (max-width: 676px) {
+  .product-item {
+    width: 100%;
+  }
+}
 
 .flex-row {
   display: -webkit-box;
@@ -1132,6 +1169,9 @@ address {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.main-content.product > .container {
+  overflow: hidden;
+}
 
 .main-content.blog-home {
   position: relative;
@@ -1353,6 +1393,40 @@ address {
 
 .zip-field::placeholder {
   color: #333;
+}
+#homeQuoter {
+  min-width: 80%;
+  background-image: linear-gradient(180deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(https://images.unsplash.com/photo-1530047625168-4b29bfbbe1fc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=80d3b79de96c47b48c7775aaef5ae2ee&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.384);
+  transition: transform 300ms ease;
+  -moz-transition: transform 300ms ease;
+  -o-transition: transform 300ms ease;
+  -webkit-transition: transform 300ms ease;
+
+}
+#homeQuoter._3d {
+  transform: rotateX(15deg) rotateY(-15deg) rotateZ(4deg)
+}
+#homeQuoter .quote-form-wrap {
+  flex-direction: column;
+  -ms-flex-direction: column;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  #homeQuoter._3d {
+    transform: none;
+  }
+  #homeQuoter {
+    width: 100%;
+  }
+}
+
+#homeQuoter .quote-form-wrap input, #homeQuoter .quote-form-wrap select {
+  margin-bottom: 10px;
 }
 
 .quote-form-wrap {
