@@ -9,6 +9,7 @@ banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
   background_image: "/v1530989211/insurancesmart/homepage%20collage%20%282%29.jpg"
+  media_type: quote form
 components:
 - template: testimony-slider
   heading: What People Are Saying
