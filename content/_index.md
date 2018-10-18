@@ -27,7 +27,7 @@ components:
     link: products/_index.md
   style:
     mask: large to small
-    background_style: light
+    background_style: dark
     background_image: "/v1530419500/insurancesmart/joshua-rodriguez-583392-unsplash.jpg"
   media:
     media_type: none
