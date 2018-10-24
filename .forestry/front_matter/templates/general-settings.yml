@@ -89,3 +89,5 @@ fields:
     description: Copy and paste the link to your social media profile here.
     config:
       required: true
+pages:
+- data/general_settings.yaml
