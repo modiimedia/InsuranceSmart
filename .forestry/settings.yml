@@ -49,11 +49,9 @@ sections:
 - type: document
   path: data/general_settings.yaml
   label: General
-  match: "**/*"
 - type: document
   path: data/menus.yaml
   label: Menus
-  match: "**/*"
 upload_dir: insurancesmart
 public_path: https://res.cloudinary.com/modii
 front_matter_path: ''
