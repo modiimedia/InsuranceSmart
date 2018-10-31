@@ -51,10 +51,6 @@ shop_menu:
 explore_menu:
 - name: About Us
   url: _index.md
-- name: Testimonials
-  url: testimonies/_index.md
-- name: FAQ
-  url: _index.md
 - name: Contact
   url: ''
   external_url: "/contact"
