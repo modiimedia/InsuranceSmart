@@ -21,3 +21,9 @@ options = ["Auto", "Boat or Watercraft", "RV", "Motorcycle", "Home", "Renters", 
 template = "safeco-quote-form"
 
 +++
+## What Your Policy Covers
+
+A basic motorcycle policy helps pay for repairs and other expenses related to damage and injury resulting from an accident you may or may not have caused. Optional additional coverage can be added for such items as roadside assistance, uninsured motorist protection, trip interruption, custom parts and equipment, and more.
+
+  
+ 
