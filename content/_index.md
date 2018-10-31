@@ -35,7 +35,7 @@ components:
     youtube_url: https://www.youtube.com/watch?v=8iU8LPEa4o0
     _3d: true
     image: ''
-  hide: false
+  hide: true
 - template: contact-form-company-info
   heading: Get In Touch With Us
   background_image: "/v1530992759/insurancesmart/rawpixel-703123-unsplash%20%281%29.jpg"
