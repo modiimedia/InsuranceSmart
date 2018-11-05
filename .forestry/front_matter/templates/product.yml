@@ -101,13 +101,13 @@ fields:
     source:
       type: pages
 pages:
+- content/products/critical-illness.md
 - content/products/medicare-supplement.md
 - content/products/RV.md
 - content/products/landlord.md
 - content/products/motorcycle.md
 - content/products/home.md
 - content/products/auto.md
-- content/products/critical-illness.md
 - content/products/life.md
 - content/products/umbrella.md
 - content/products/boat.md
