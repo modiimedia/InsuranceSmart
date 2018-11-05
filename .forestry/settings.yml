@@ -55,7 +55,6 @@ sections:
 - type: document
   path: data/quote_forms.yaml
   label: Quote Forms
-  read_only: false
 upload_dir: insurancesmart
 public_path: https://res.cloudinary.com/modii
 front_matter_path: ''
