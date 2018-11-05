@@ -1,0 +1,13 @@
+---
+label: Quoteit Quote Form
+hide_body: false
+is_partial: true
+fields:
+- type: select
+  name: default
+  config:
+    source:
+      type: documents
+      section: quote-forms
+      file: data/quote_forms.yaml
+  label: Default
