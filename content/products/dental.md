@@ -23,9 +23,9 @@ question = "What about my dependents?"
 answer = "Network providers have agreed to discounted pricing for covered expenses with no additional billing to you other than the copayment, coinsurance, and deductible amount. If you choose to use a non-network provider for non-emergency services you will pay more because they have not agreed to the same discounted rates. You can determine whether your chosen provider is part of the network at [**myuhc.com**](https://myuhc.com/)."
 question = "What if I use a non-network provider?"
 [[quote]]
-default = "Dental"
-options = ["Dental", "Critical Illness", "Term Life Safeguard", "Health ProtectorGuard (Fixed Indemnity)"]
-template = "unitedhealthcare-quote-form"
+default = "Individual Dental Insurance"
+options = ["Individual Dental Insurance"]
+template = "quoteit-quote-form"
 [[resources]]
 file = "/v1530817139/insurancesmart/UHC%20Dental%20-%20Vision%20Brochure.pdf"
 name = "UHC Dental and Vision Brochure"
