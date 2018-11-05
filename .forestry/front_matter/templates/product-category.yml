@@ -21,6 +21,7 @@ fields:
   name: quote
   label: Quote Form
   template_types:
+  - quoteit-quote-form
   - unitedhealthcare-quote-form
   - safeco-quote-form
   - call-for-a-quote
