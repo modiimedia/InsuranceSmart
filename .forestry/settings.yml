@@ -52,6 +52,11 @@ sections:
 - type: document
   path: data/menus.yaml
   label: Menus
+- type: document
+  path: data/quote_forms.yaml
+  label: Quote Forms
+  match: "**/*"
+  read_only: true
 upload_dir: insurancesmart
 public_path: https://res.cloudinary.com/modii
 front_matter_path: ''
