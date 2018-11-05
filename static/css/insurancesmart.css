@@ -10,6 +10,10 @@ body {
   line-height: 28px;
 }
 
+body.no-scroll {
+  overflow-y: hidden;
+}
+
 a {
   color: #274f63;
   text-decoration: none;
@@ -20,6 +24,73 @@ img {
   max-width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.close-qt-modal {
+  cursor: pointer;
+}
+
+.qt-modal {
+  display: none;
+}
+
+.qt-modal.active {
+  display: block;
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+}
+
+.qt-modal-content {
+  position: relative;
+}
+
+.qt-modal-content > iframe {
+  position: relative;
+  margin: 50px 30px 30px 30px;
+  width: 100vw;
+  height: 80vh;
+  max-width: 1000px;
+  background: white;
+  padding: 0px 0px 0px 20px;
+}
+
+.qt-modal-content > .close-qt-modal {
+  background: #333333;
+  height: 50px;
+  display: block;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  right: 30px;
+  z-index: 1;
+  text-align: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .qt-modal-content > iframe {
+    margin: 0;
+    padding-top: 50px;
+    height: 100vh;
+  }
+  .qt-modal-content > .close-qt-modal {
+    left: 0;
+    right: 0;
+  }
 }
 
 .container {
@@ -1333,6 +1404,7 @@ address {
   z-index: 1;
   display: inline-block;
   max-width: 750px;
+  min-width: 600px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 30px;
@@ -2753,6 +2825,7 @@ address {
   }
   .product-quote-box {
     bottom: -115px;
+    min-width: 400px;
   }
   .page-banner-copy2 {
     padding-top: 250px;
@@ -3061,6 +3134,8 @@ address {
   }
   .product-quote-box {
     bottom: -70px;
+    min-width: 100%;
+    max-width: none;
   }
   .page-banner-copy2 {
     padding-top: 150px;

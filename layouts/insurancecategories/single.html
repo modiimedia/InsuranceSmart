@@ -10,6 +10,8 @@
                 {{ range first 1 .Params.quote }}
                     {{ if eq .template "safeco-quote-form" }}
                         {{ partial "forms/safeco-quote-form.html" (dict "context" . "data" $data ) }}
+                    {{ else if eq .template "quoteit-quote-form" }}
+                        {{ partial "forms/quoteit-quote-form.html" (dict "context" . "data" $.Site.Data ) }}
                     {{ end }}
                 {{ end }}
             {{ end }}
@@ -37,7 +39,7 @@
                     </article>
                     {{ end }}
                 </div>
-                <h1 class="heading-13">Relevant Readings</h1>
+                <!-- <h1 class="heading-13">Relevant Readings</h1>
                 <div class="w-dyn-list">
                     <div class="collection-list-3 w-dyn-items">
                         <div class="w-dyn-item">
@@ -89,7 +91,7 @@
                             <a href="/post/20-myths-about-web-design" class="link-block-7 w-inline-block">
                                 <h2 class="heading-14">Picking the Right Life Insurance Plan</h2>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -99,5 +101,15 @@
 {{ end }}
 
 {{ define "addscripts"}}
-    {{ partial "forms/safeco-scripts.html" . }}
+    {{ if .Params.quote }}
+        {{ range first 1 .Params.quote }}
+            {{ if eq .template "safeco-quote-form" }}
+                {{ partial "forms/safeco-scripts.html" . }}
+            {{ else if eq .template "unitedhealthcare-quote-form" }}
+                {{ partial "forms/uhc-scripts.html" . }}
+            {{ else if eq .template "quoteit-quote-form" }}
+                {{ partial "forms/quoteit-form-scripts.html" . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
 {{ end }}

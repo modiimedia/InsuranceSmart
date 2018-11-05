@@ -1,0 +1,18 @@
+{{ $d := .context.default | lower }}
+{{ $data := .data }}
+<form id="quoteit-form" class="quoteit-form" onsubmit="return false">
+    <div class="quote-form-wrap">
+        <input id="qt-zip" pattern=".{5}" title="Zipcode (5 characters)" name="zipcode" placeholder="Enter Zip Code" class="zip-field w-input" type="text" required>
+        <select name="product" id="qt-option" class="insurance-select w-select">
+            {{- if not $d -}}<option selected>Choose an option</option>{{- end -}}
+            {{- range .context.options -}}
+                {{ $display := print . }}
+                <option value='
+                {{- range where $data.quote_forms.quoteit "display" "=" $display -}}
+                    {{- .value -}}
+                {{- end -}}' {{ if eq $d ( . | lower ) -}}selected{{- end -}}>{{ . }}</option>
+            {{- end -}}
+        </select>
+        <input type="submit" value="Get A Quote" class="get-a-quote w-button">
+    </div>
+</form>

@@ -33,8 +33,7 @@
                                 </form>
                         </div>
                         <div class="quote-box-disclaimer">Insurance quoting provided by SafeCo</div>
-                        {{ end }}
-                        {{ if eq .template "unitedhealthcare-quote-form" }}
+                        {{ else if eq .template "unitedhealthcare-quote-form" }}
                         <form name="unitedhform" id="unitedhform" onsubmit="getquote()">
                             <div class="quote-form-wrap">
                                 <input id="uhZip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
@@ -54,11 +53,11 @@
                                 <input type=submit id="uhQuoteBtn" class="get-a-quote w-button" onclick="submit" value="Get a Quote" style="display:none"/>
                             </div>
                         </form>
-                        {{ end }}
-                        {{ if eq .template "custom-link" }}
+                        {{ else if eq .template "quoteit-quote-form" }}
+                            {{ partial "forms/quoteit-quote-form.html" (dict "context" . "data" $.Site.Data ) }}
+                        {{ else if eq .template "custom-link" }}
                             <a class="get-a-quote" target="_blank" href="{{ .button_link }}">{{ .button_text }}</a>
-                        {{ end }}
-                        {{ if eq .template "call-for-a-quote" }}
+                        {{ else if eq .template "call-for-a-quote" }}
                             <a class="link-block-3 w-inline-block" href="tel:{{- if .phone_number -}}{{- .phone_number -}}{{- else -}}{{- $phone -}}{{- end -}}">
                                 <div class="call-us-large">{{ .heading }}<br/>{{- if .phone_number -}}{{- .phone_number -}}{{- else -}}{{ $phone }}{{ end }}</div>
                             </a>
@@ -75,7 +74,7 @@
         <div class="flex-row product">
             <aside class="sidebar">
                 {{ partial "product-menu.html" . }}
-                <div class="sidebar-section">Suggested Readings</div>
+                <!-- <div class="sidebar-section">Suggested Readings</div>
                 <div>
                     <div class="collection-list-wrapper w-dyn-list">
                         <div class="w-dyn-items">
@@ -126,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </aside>
             <main class="flex-grow product">
                 {{ if .Params.mikes_take }}
@@ -199,8 +198,6 @@
 
 {{ define "addscripts" }}
     <!--uhc = UnitedHealthCare -->
-    {{ partial "forms/safeco-scripts.html" . }}
-    {{ partial "forms/uhc-scripts.html" . }}
     <script>
     // script for in content content blocks
 
@@ -213,4 +210,17 @@
 
 
     </script>
+
+    {{ if .Params.quote }}
+        {{ range first 1 .Params.quote }}
+            {{ if eq .template "safeco-quote-form" }}
+                {{ partial "forms/safeco-scripts.html" . }}
+            {{ else if eq .template "unitedhealthcare-quote-form" }}
+                {{ partial "forms/uhc-scripts.html" . }}
+            {{ else if eq .template "quoteit-quote-form" }}
+                {{ partial "forms/quoteit-form-scripts.html" . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
 {{ end }}
