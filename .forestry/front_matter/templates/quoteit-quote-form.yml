@@ -1,13 +1,42 @@
 ---
-label: Quoteit Quote Form
+label: Quoteit Fields
 hide_body: false
 is_partial: true
 fields:
+- type: list
+  name: options
+  label: Options
+  config:
+    use_select: true
+    source:
+      type: simple
+      section: ''
+    options:
+    - Individual Health Insurance
+    - Individual Health Insurance - Child Only
+    - Individual Short-Term Health Insurance
+    - Individual Dental Insurance
+    - Medicare Supplements
+    - Accident
+    - Critical Illness
+    - Cancer
+    - Term Life
+    - WBE Health On Exchange
+  default: []
 - type: select
   name: default
   config:
     source:
-      type: documents
-      section: quote-forms
-      file: data/quote_forms.yaml
+      type: simple
+    options:
+    - Individual Health Insurance
+    - Individual Health Insurance - Child Only
+    - Individual Short-Term Health Insurance
+    - Individual Dental Insurance
+    - Medicare Supplements
+    - Accident
+    - Critical Illness
+    - Cancer
+    - Term Life
+    - WBE Health On Exchange
   label: Default
