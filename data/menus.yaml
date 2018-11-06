@@ -11,25 +11,25 @@ shop_menu:
     icon: <i class="fas fa-medkit"></i>
     children:
     - name: Hospital & Doctor
-      url: products/fixed-indemnity.md
+      url: products/health/hospital-doctor.md
     - name: Critical Illness
-      url: products/critical-illness.md
+      url: products/health/critical-illness.md
     - name: Dental
-      url: products/dental-insurance.md
+      url: products/health/dental.md
 - name: Column 2
   children:
   - name: Auto & Vehicle Insurance
-    url: insurancecategories/auto.md
+    url: insurancecategories/vehicle.md
     icon: <i class="fas fa-car"></i>
     children:
     - name: Auto
-      url: products/auto.md
+      url: products/vehicle/auto.md
     - name: Motorcycle
-      url: products/motorcycle.md
+      url: products/vehicle/motorcycle.md
     - name: Boat or Watercraft
-      url: products/boat.md
+      url: products/vehicle/boat.md
     - name: RV
-      url: products/RV.md
+      url: products/vehicle/RV.md
 - name: Column 3
   children:
   - name: Personal Property
@@ -37,15 +37,15 @@ shop_menu:
     icon: <i class="fas fa-home"></i>
     children:
     - name: Home
-      url: products/home.md
+      url: products/property/home.md
     - name: Renters
-      url: ''
+      url: products/property/renters.md
     - name: Condo
-      url: ''
+      url: products/property/condo.md
     - name: Landlord Protection
-      url: products/landlord.md
+      url: products/property/landlord.md
   - name: Umbrella Insurance
-    url: products/umbrella.md
+    url: products/other/umbrella.md
     icon: <i class="fas fa-umbrella"></i>
     children: 
 explore_menu:
