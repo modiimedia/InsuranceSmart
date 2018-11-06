@@ -1,9 +1,19 @@
+{{ $phone := .data.general_settings.contact_info.phone }}
+{{ $fax := .data.general_settings.contact_info.fax }}
+{{ $email := .data.general_settings.contact_info.email }}
+{{ $street := .data.general_settings.contact_info.address }}
+{{ $street2 := .data.general_settings.contact_info.address_line2 }}
+{{ $city := .data.general_settings.contact_info.city }}
+{{ $state := .data.general_settings.contact_info.state }}
+{{ $zip := .data.general_settings.contact_info.zip }}
+{{ $p := print $street "<br>" $street2 "<br>" $city ", " $state " " $zip }}
+
 <section class="section-dark" style="background-image: url({{ .cUrl }}w_1600,q_50,f_auto{{ .Params.background_image }})">
     <div class="image-overlay"></div>
     <div class="container contact-form">
         <div class="flex-row reverse">
             <div class="form-block">
-                <form id="email-form" method="POST" netlify name="email-form">
+                <form id="contact-form" method="POST" netlify name="contact-form">
                     <label for="name">Name:</label>
                     <input type="text" class="text-field w-input" maxlength="256" name="Name" placeholder="Enter your name (Required)" id="name" required>
                     <label for="email">Email Address:</label>
@@ -12,7 +22,7 @@
                     <label for="Phone">Phone:</label>
                     <input type="text" class="text-field w-input" maxlength="256" name="Phone" placeholder="Enter your phone number"
                         id="Phone">
-                    <label for="Phone-2">Sex:&nbsp;</label>
+                    <label for="Gender">Sex:&nbsp;</label>
                     <select id="Gender" name="Gender" required class="select-field w-select">
                         <option value="">Select one...</option>
                         <option value="male">Male</option>
@@ -22,7 +32,7 @@
                     <label for="Month">Birthday:</label>
                         <div class="flex-fields">
                             <select id="Month" name="Month" class="select-field flex w-select">
-                                {{ partial "forms/month-dropdown.html" .}}
+                                {{ partial "forms/month-dropdown.html" . }}
                             </select>
                             <select id="Day" name="Day" class="select-field flex w-select">
                                 {{ partial "forms/day-dropdown.html" . }}
@@ -33,43 +43,30 @@
                         </div>
                     <label>I&nbsp;Am Interested In: (Check All That Apply)</label>
                     <div class="div-block-11">
+                        {{ range .data.quote_forms.contact_form.insurance_choices }}
                         <div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="auto" name="Auto" class="w-checkbox-input">
-                            <label for="auto" class="w-form-label">Auto &sol; Vehicle Insurance</label>
+                            <input type="checkbox" id="contact_{{ .name | lower }}_field" name="{{ .name | title }}" class="w-checkbox-input">
+                            <label for="contact_{{ .name | lower }}_field" class="w-form-label">{{ .label }}</label>
                         </div>
-                        <div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="home" name="Home" class="w-checkbox-input">
-                            <label for="home" class="w-form-label">Home &sol; Property Insurance</label>
-                        </div><div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="life" name="Life" class="w-checkbox-input">
-                            <label for="life" class="w-form-label">Life Insurance</label>
-                        </div>
-                        <div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="health" name="Health" class="w-checkbox-input">
-                            <label for="health" class="w-form-label">Health Insurance</label>
-                        </div>
-                        <div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="umbrella" name="Umbrella" class="w-checkbox-input">
-                            <label for="umbrella" class="w-form-label">Umbrella Insurance</label>
-                        </div>
+                        {{ end }}
                     </div>
                     <input type="submit" data-wait="Please wait..." class="submit-button w-button">
                 </form>
             </div>
             <address class="flex-grow contact">
-                {{ $phoneclean := replace .phone "+1-" "" }}
-                {{ $phonelong := replace .phone "-" "" }}
-                {{ $faxclean := replace .fax "+1-" "" }}
-                {{ $faxlong := replace .fax "-" "" }}
+                {{ $phoneclean := replace $phone "+1-" "" }}
+                {{ $phonelong := replace $phone "-" "" }}
+                {{ $faxclean := replace $fax "+1-" "" }}
+                {{ $faxlong := replace $fax "-" "" }}
                 <h1 class="dark-heading">{{ .Params.heading }}</h1>
                 <div class="text-block-5">
-                    {{- if .phone -}}<strong>Phone: </strong><a href="tel:{{ $phonelong }}">{{- $phoneclean -}}</a><br>{{- end -}}
-                    {{- if .fax -}}<strong>Fax:</strong>&nbsp;{{- $faxclean -}}<br>{{- end -}}
-                    {{- if .email -}}<strong>Email:</strong>&nbsp;<a href="mailto:{{ .email }}?subject=Questions about Insurance">{{- .email -}}</a><br>{{- end -}}
+                    {{- if $phone -}}<strong>Phone: </strong><a href="tel:{{ $phonelong }}">{{- $phoneclean -}}</a><br>{{- end -}}
+                    {{- if $fax -}}<strong>Fax:</strong>&nbsp;{{- $faxclean -}}<br>{{- end -}}
+                    {{- if $email -}}<strong>Email:</strong>&nbsp;<a href="mailto:{{ $email }}?subject=Questions about Insurance">{{- $email -}}</a><br>{{- end -}}
                 </div>
                 <div class="text-block-5">
                     <strong>InsuranceSmart&nbsp;Office:</strong><br>
-                    {{ .address | safeHTML }}
+                    {{ $p | safeHTML }}
                 </div>
             </address>
         </div>

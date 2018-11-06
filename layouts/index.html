@@ -119,18 +119,7 @@
         {{- end -}} 
         {{- if eq $t "contact-form-company-info" -}}
             {{ $cUrl := $.Site.Params.cloudinary_url }}
-            {{ $phone := $.Site.Data.general_settings.contact_info.phone }}
-            {{ $fax := $.Site.Data.general_settings.contact_info.fax }}
-            {{ $email := $.Site.Data.general_settings.contact_info.email }}
-            {{ $street := $.Site.Data.general_settings.contact_info.address }}
-            {{ $street2 := $.Site.Data.general_settings.contact_info.address_line2 }}
-            {{ $city := $.Site.Data.general_settings.contact_info.city }}
-            {{ $state := $.Site.Data.general_settings.contact_info.state }}
-            {{ $zip := $.Site.Data.general_settings.contact_info.zip }}
-            
-            {{ $p := print $street "<br>" $street2 "<br>" $city ", " $state " " $zip }}
-            
-            {{- partial "components/contact-component.html" (dict "Params" . "cUrl" $cUrl "phone" $phone "fax" $fax "email" $email "address" $p ) -}} 
+            {{- partial "components/contact-component.html" (dict "Params" . "data" $.Site.Data "cUrl" $cUrl ) -}} 
         {{- end -}}
         {{- if eq $t "content-left" -}}
             {{ $cUrl := $.Site.Params.cloudinary_url }}

@@ -1,7 +1,13 @@
 <div class="footer-heading">{{ $.Site.Data.menus.footer_menu.menu_1.name }}</div>
 <div class="div-block-12">
     {{ range $.Site.Data.menus.footer_menu.menu_1.children }}
-    <a href="{{ .url }}" class="footer-link w-inline-block">
+    {{ $url := print .url }}
+    <a href="
+    {{- if .external_url -}}
+        {{- .external_url -}}
+    {{- else -}}
+        {{- with $.Site.GetPage $url -}}{{- .RelPermalink -}}{{- end -}}
+    {{- end -}}" class="footer-link w-inline-block">
         <div>{{ .name }}</div>
     </a>
     {{ end }}
@@ -9,7 +15,13 @@
 <div class="footer-heading">{{ $.Site.Data.menus.footer_menu.menu_2.name }}</div>
 <div class="div-block-12">
     {{ range $.Site.Data.menus.footer_menu.menu_2.children }}
-    <a href="{{ .url }}" class="footer-link w-inline-block">
+    {{ $url := print .url }}
+    <a href="
+    {{- if .external_url -}}
+        {{- .external_url -}}
+    {{- else -}}
+        {{- with $.Site.GetPage $url -}}{{- .RelPermalink -}}{{- end -}}
+    {{- end -}}" class="footer-link w-inline-block">
         <div>{{ .name }}</div>
     </a>
     {{ end }}

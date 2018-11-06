@@ -30,6 +30,7 @@ safeco:
   - display: "Landlord Protection" 
     id: "subMenuLandlordProtection" 
     value: 'https://tools.safeco.com/BPS/bps.aspx/firequoterq'
+
 unitedhealthcare:
   - display: "Health ProtectorGuard (Fixed Indemnity)"
     value: "https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&amp;ProductType=Fixed%20Indemnity"
@@ -61,3 +62,19 @@ quoteit:
     value: "https://www.quotit.net/eproIFP/webPages/infoEntry/infoEntry.asp?insuranceTypeID=L&license_no=6B3VDN"
   - display: "WBE Health On Exchange"
     value: "https://www.quotit.net/eproIFP/webpages/infoEntry/InfoEntryZip.asp?InsuranceTypeId=5&license_no=6B3VDN"
+
+
+contact_form:
+  insurance_choices:
+  - name: auto
+    label: Auto / Vehicle Insurance
+  - name: home
+    label: Home / Property Insurance
+  - name: life
+    label: Life Insurance
+  - name: health
+    label: Health Insurance
+  - name: medicare
+    label: Medicare Supplement Insurance
+  - name: umbrella
+    label: Umbrella Insurance
