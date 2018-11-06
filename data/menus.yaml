@@ -59,27 +59,22 @@ footer_menu:
     name: Useful Links
     children:
     - name: Home
-      url: "/"
-    - name: About
-      url: "#"
-    - name: FAQ
-      url: "#"
-    - name: Blog
-      url: "/posts/"
+      url: _index.md
     - name: Contact
-      url: "#"
+      url: contact.md
   menu_2:
     name: Shop Insurance
     children:
     - name: Life
-      url: "/products/life/"
+      url: products/life/life.md
     - name: Health
-      url: "/insurancecategories/health/"
+      url: insurancecategories/health.md
     - name: Auto
-      url: "/insurancecategories/auto/"
+      url: insurancecategories/vehicle.md
     - name: Home
-      url: "/insurancecategories/property/"
+      url: insurancecategories/property.md
     - name: Umbrella
-      url: "/products/umbrella/"
+      url: products/other/umbrella.md
     - name: View All
-      url: "/products/"
+      url: ''
+      external_url: "/products"
