@@ -3,7 +3,7 @@
         <div class="flex-row">
             <div class="footer-column">
                 <a href="#" class="footer-logo w-inline-block">
-                    <img src="{{ .Site.Data.general_settings.website_settings.logo_light }}" alt="logo for InsuranceSmart insurance agency"/>
+                    <img src="{{ $.Site.Params.cloudinary_url }}w_350,q_60,f_auto{{ .Site.Data.general_settings.website_settings.logo_light }}" alt="logo for InsuranceSmart insurance agency"/>
                 </a>
                 <div class="slogan">{{ .Site.Data.general_settings.website_settings.site_slogan }}
                     <!--Don't just get insurance. Get InsuranceSmart--></div>
