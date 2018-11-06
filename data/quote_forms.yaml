@@ -41,13 +41,13 @@ unitedhealthcare:
     value: "https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&amp;ProductType=Dental"
 
 quoteit:
-  - display: "Individual Health Insurance"
+  - display: "Health Insurance"
     value: "https://www.quotit.net/eproIFP/webPages/infoEntry/infoEntry.asp?license_no=6B3VDN"
-  - display: "Individual Health Insurance - Child Only"
+  - display: "Health Insurance - Child Only"
     value: "https://www.quotit.net/eproIFP/webPages/infoEntry/infoEntry.asp?covTypeID=C&insuranceTypeID=H&license_no=6B3VDN"
-  - display: "Individual Short-Term Health Insurance"
+  - display: "Short-Term Health Insurance"
     value: "https://www.quotit.net/eproIFP/webPages/infoEntry/infoEntry.asp?insuranceTypeID=T&license_no=6B3VDN"
-  - display: "Individual Dental Insurance"
+  - display: "Dental Insurance"
     value: "https://www.quotit.net/eproIFP/webPages/infoEntry/infoEntry_V2.asp?InsuranceTypeId=D&license_no=6B3VDN"
   - display: "Medicare Supplements"
     value: "https://www.quotit.net/eproIFP/webPages/infoentry/infoEntry.asp?covTypeID=ES&InsuranceTypeId=G&license_no=6B3VDN"

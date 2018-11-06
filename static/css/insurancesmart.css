@@ -81,18 +81,24 @@ img {
   -ms-flex-direction: column;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .qt-modal-content > iframe {
     margin: 0;
     padding-top: 50px;
     height: 100vh;
+    /* zoom: 0.5;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.5);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0; */
   }
   .qt-modal-content > .close-qt-modal {
     left: 0;
     right: 0;
   }
 }
-
 .container {
   position: relative;
   display: block;
@@ -639,7 +645,7 @@ img {
 
 .dropdown.shop {
   left: auto;
-  right: -400px;
+  right: -330px;
   z-index: 1;
   width: 800px;
 }
