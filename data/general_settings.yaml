@@ -6,7 +6,7 @@ website_settings:
     rad.
   logo: "/images/insurancesmart-default-logo.png"
   logo_light: "/images/insurancesmart-light-logo.png"
-  favicon: ''
+  favicon: "/v1541542473/insurancesmart/insurancesmart%20logo-01.png"
 contact_info:
   business_name: InsuranceSmart
   phone: 210-699-0281
