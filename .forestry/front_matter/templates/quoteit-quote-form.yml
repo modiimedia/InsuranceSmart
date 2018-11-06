@@ -12,10 +12,10 @@ fields:
       type: simple
       section: ''
     options:
-    - Individual Health Insurance
-    - Individual Health Insurance - Child Only
-    - Individual Short-Term Health Insurance
-    - Individual Dental Insurance
+    - Health Insurance
+    - Health Insurance - Child Only
+    - Short-Term Health Insurance
+    - Dental Insurance
     - Medicare Supplements
     - Accident
     - Critical Illness
@@ -29,10 +29,10 @@ fields:
     source:
       type: simple
     options:
-    - Individual Health Insurance
-    - Individual Health Insurance - Child Only
-    - Individual Short-Term Health Insurance
-    - Individual Dental Insurance
+    - Health Insurance
+    - Health Insurance - Child Only
+    - Short-Term Health Insurance
+    - Dental Insurance
     - Medicare Supplements
     - Accident
     - Critical Illness
