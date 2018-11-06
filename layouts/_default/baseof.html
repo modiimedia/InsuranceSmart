@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/insurancesmart.css">
     <link rel="stylesheet" href="/css/is.css">
-    <link rel="icon" href="{{ $.Site.Params.cloudinary_url }}w_32,h_32,c_fit{{ $.Site.Data.general_settings.website_settings.favicon }}">
+    <link rel="icon" sizes="32x32" href="{{ $.Site.Params.cloudinary_url }}w_32,h_32,c_fit{{ $.Site.Data.general_settings.website_settings.favicon }}">
+    <link rel="icon" sizes="16x16" href="{{ $.Site.Params.cloudinary_url }}w_16,h_16,c_fit{{ $.Site.Data.general_settings.website_settings.favicon }}">
+    <meta name="msapplication-TileColor" content="#ffbc00">
+    <meta name="theme-color" content="#293b45">
     <title>
     {{- block "title" . -}}
         {{- if .Params.seo.meta_title -}}
