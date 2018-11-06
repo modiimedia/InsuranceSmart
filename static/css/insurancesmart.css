@@ -95,9 +95,10 @@ img {
     -webkit-transform-origin: 0 0; */
   }
   .qt-modal-content > .close-qt-modal {
+    position: fixed;
     top: auto;
-    bottom: 40px;
-    left: 25px;
+    bottom: 20px;
+    left: 20px;
     right: auto;
     padding: 10px 15px;
     border-radius: 10px;
