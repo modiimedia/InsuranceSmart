@@ -84,7 +84,7 @@ img {
 @media (max-width: 767px) {
   .qt-modal-content > iframe {
     margin: 0;
-    padding-top: 0px;
+    padding-top: 30px;
     height: 100vh;
     /* zoom: 0.5;
     -moz-transform: scale(0.5);
@@ -96,12 +96,12 @@ img {
   }
   .qt-modal-content > .close-qt-modal {
     top: auto;
-    bottom: 15px;
-    left: auto;
-    right: 15px;
-    padding: 5px 10px;
+    bottom: 50px;
+    left: 25px;
+    right: auto;
+    padding: 10px 15px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 20px;
     height: auto;
   }
 }
