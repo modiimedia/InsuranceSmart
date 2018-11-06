@@ -7,3 +7,5 @@ cloudinary_url = "https://res.cloudinary.com/modii/"
 [taxonomies]
 category = "categories"
 tag = "tags"
+[permalinks]
+insurancecategories = "/products/:filename/"

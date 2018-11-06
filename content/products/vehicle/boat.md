@@ -1,6 +1,6 @@
 ---
 title: Boat & Watercraft Insurance
-category: insurancecategories/auto.md
+category: insurancecategories/vehicle.md
 recommended_articles: choose automatically
 featured_image: "/v1530578065/insurancesmart/5b2d4a57f91bff2929497ac9_eric-ward-346232-unsplash%20%281%29.jpg"
 quote:
