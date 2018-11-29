@@ -18,8 +18,20 @@ seo:
   social_description: ''
   open_graph_image: ''
 faqs:
-- answer: Example Answer
-  question: Example Question
+- question: What does Uninsured/Underinsured Motorist cover, and do I really need
+    this?
+  answer: 'Uninsure/underinsured motorist coverage protects you from loss should you
+    be involved in an accident where the motorist at fault is either uninsured or
+    underinsured to sufficiently cover the damages, bodily injury and loss incurred
+    to you,  your passengers and your vehicle.  We always recommend you purchase this
+    and at limits equal to the level of your own liability coverage. '
+- question: What is Personal Injury Protection and Medical Payments and do I need
+    this?
+  answer: Personal Injury Protection and Medical Payments is coverage that pays a
+    stated limit for damages incurred to individuals riding within your vehicle in
+    the event of an accident caused by you or someone driving your vehicle.  Personal
+    Injury Protection compensates for things like medical expenses and lost wages
+    while Medical Expenses compensates for medical expenses only.
 description: Drive with peace of mind. We offer affordable and comprehensive plans
   to fit your needs.
 resources: []
@@ -48,5 +60,13 @@ There are many optimum solutions to include,  Accident Forgiveness, Roadside Ass
 ## Multi Car / Policy Discount
 
 There are also very good discounts for multi-car and / or policies being secured on other lines of business like your RV, Boat, Motorcycle, Home, Rental property, Condo or Apartment.  Contact your agent if you have any questions.
+
+{{< quote-block >}}
+
+## Consider increasing your liability limits for a fraction of the cost. 
+
+Most state minimum liability requirements of somewhere around 25,000 / 50,000 don't adequately protect consumers from liability if you were involved in a serious accident.  For this reason we always recommend considering at minimum 100,000 / 300,000 liability protection to provide more coverage incase the unexpected should occur.  Most carriers will go up to 250,000 / 500,000 again for a small increase in premium and this extra protection could make the difference in a loss that would otherwise place you or your family in unwanted financial exposure.  The overal benefit protetion from increasing your liability limits in our professional opinion and experience far outweighs the modest cost increase incurred by adding this benefit. 
+
+To get a preliminary quote [**complete the form above**,](https://bknplar1v3nalq.preview.forestry.io/products/vehicle/auto/#quote) and after your quote is delivered, a qualified agents will contact you to refine this proposal for you.  
 
 {{< quote-block >}}
