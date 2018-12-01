@@ -3,13 +3,8 @@ title: Life Insurance
 category: insurancecategories/life.md
 subheading: Get insurance for your home, condo, rental, and more!
 recommended_articles: choose automatically
-description: A properly structured Life Insurance policy doesn’t take money from you,
-  but once in place provides real peace of mind.  It’s a wise investment made today,
-  that provides a gift of your love for the future.  When properly designed, Life
-  Insurance can help secure the financial wellbeing of those most dear to you, at
-  a time they may need it most, even well after you are gone.  Contact one of our
-  Life Insurance professionals today, to help you design a plan that meets your personal
-  life need, and budget.
+description: 'We provide quality Life Insurance from top rated carriers to get you
+  the best coverage available at a price you can afford. '
 featured_image: "/v1530419500/insurancesmart/joshua-rodriguez-583392-unsplash.jpg"
 seo:
   meta_title: Great Rates On Life Insurance
