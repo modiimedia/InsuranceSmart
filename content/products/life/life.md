@@ -12,8 +12,12 @@ description: A properly structured Life Insurance policy doesn’t take money fr
   life need, and budget.
 featured_image: "/v1530419500/insurancesmart/joshua-rodriguez-583392-unsplash.jpg"
 seo:
-  meta_title: ''
-  meta_description: ''
+  meta_title: Great Rates On Life Insurance
+  meta_description: 'We shop among mutliple carriers to get you the best value on
+    life insurance.  Shop Term Insurance, Whole Life, Universal Life, Indexed Universal,
+    and more and there is never a cost to complete an application to see if we can
+    get you approved. We work to find you the lowest cost life insurance poduct to
+    meet your need and make it affordable for any budget. '
   social_title: ''
   social_description: ''
   open_graph_image: ''
