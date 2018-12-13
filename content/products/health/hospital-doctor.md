@@ -111,7 +111,7 @@ A prescription discount card is included with every Health ProtectorGuard plan
 
 ### **Outpatient Services**
 
-Benefits for outpatient services (tests or medical procedures that don't involve an overnight stay). Health ProtectorGuard includes benefits for things like labs tests, x-rays, diagnostic imaging, and more. See [brochure](https://s3.us-east-2.amazonaws.com/insurancesmart/Brochures+and+PDFs/Texas+Health+Protector+Guard+Brochure+2017+Aug25.pdf) for details.
+Benefits for outpatient services (tests or medical procedures that don't involve an overnight stay). Health ProtectorGuard includes benefits for things like labs tests, x-rays, diagnostic imaging, and more. See [brochure](https://res.cloudinary.com/modii//v1530578576/insurancesmart/Texas%20Health%20Protector%20Guard%20Brochure%202018%20April.pdf) for details.
 
 ### **Outpatient Cancer Treatment**
 
