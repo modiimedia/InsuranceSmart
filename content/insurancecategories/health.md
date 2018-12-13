@@ -1,6 +1,6 @@
 ---
 title: Health Insurance
-subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse variusenim
+subheading: We now have affordable health insurance solutions to meet any budget!
 quote:
 - template: quoteit-quote-form
   options:
