@@ -32,10 +32,10 @@ faqs:
 quote:
 - template: unitedhealthcare-quote-form
   options:
+  - Health ProtectorGuard (Fixed Indemnity)
   - Term Life Safeguard
   - Dental
   - Critical Illness
-  - Health ProtectorGuard (Fixed Indemnity)
   default: Health ProtectorGuard (Fixed Indemnity)
 seo:
   meta_title: ''
@@ -73,7 +73,7 @@ Health ProtectorGuard is not subject to specific Enrollment Periods like Obamaca
 
 ## Key Features and Benefits
 
-See [**brochure**](https://s3.us-east-2.amazonaws.com/insurancesmart/Brochures+and+PDFs/Texas+Health+Protector+Guard+Brochure+2017+Aug25.pdf) for specific details and exclusions.
+See [**brochure**](https://res.cloudinary.com/modii//v1530578576/insurancesmart/Texas%20Health%20Protector%20Guard%20Brochure%202018%20April.pdf) for specific details and exclusions.
 
 ### **Guaranteed Benefits**
 
@@ -87,11 +87,11 @@ Benefits Increase 25% per year for injuries for five years, from $2,000 to $10
 
 So the longer you keep your plan, the more benefits you receive.
 
-Additional ICU Benefits from $2,000 to $10,000 per day are provided for up to 31 days when confined to a hospitals intensive care or critical care unit. In addition, your Daily Inpatient Hospital Confinement.  See [brochure](https://s3.us-east-2.amazonaws.com/insurancesmart/Brochures+and+PDFs/Texas+Health+Protector+Guard+Brochure+2017+Aug25.pdf) for details.
+Additional ICU Benefits from $2,000 to $10,000 per day are provided for up to 31 days when confined to a hospitals intensive care or critical care unit. In addition, your Daily Inpatient Hospital Confinement.  See [brochure](https://res.cloudinary.com/modii//v1530578576/insurancesmart/Texas%20Health%20Protector%20Guard%20Brochure%202018%20April.pdf) for details.
 
 ### **Surgery Services**
 
-All plans include additional surgical benfits and have **unlimited number of days of surgical benefits**, and surgeon benefits apply whether surgery is performed in a hospital, an outpatient surgical facility, or at a doctor's office/clinic. See [**brochure**](https://s3.us-east-2.amazonaws.com/insurancesmart/Brochures+and+PDFs/Texas+Health+Protector+Guard+Brochure+2017+Aug25.pdf) for details.
+All plans include additional surgical benfits and have **unlimited number of days of surgical benefits**, and surgeon benefits apply whether surgery is performed in a hospital, an outpatient surgical facility, or at a doctor's office/clinic. See [**brochure**](https://res.cloudinary.com/modii//v1530578576/insurancesmart/Texas%20Health%20Protector%20Guard%20Brochure%202018%20April.pdf) for details.
 
 ### **Doctor Visits provided with No Deductible**
 
@@ -99,15 +99,15 @@ Health ProtectorGuard provides a Doctor Visit benefit with every plan with **no
 
 ### **Rollover Unused Doctor Visits**
 
-Because people often don't use all their doctor visits in a given year, Health ProtectorGuard allows you to roll over unused doctor visits into the next calendar year! So the longer you keep your plan, the more potential visits you have in years ahead. See [brochure](https://s3.us-east-2.amazonaws.com/insurancesmart/Brochures+and+PDFs/Texas+Health+Protector+Guard+Brochure+2017+Aug25.pdf) for specific details and limitations.
+Because people often don't use all their doctor visits in a given year, Health ProtectorGuard allows you to roll over unused doctor visits into the next calendar year! So the longer you keep your plan, the more potential visits you have in years ahead. See [brochure](https://res.cloudinary.com/modii//v1530578576/insurancesmart/Texas%20Health%20Protector%20Guard%20Brochure%202018%20April.pdf) for specific details and limitations.
 
 ### **Wellness / Preventative Care**
 
-After a modest 6-month waiting period, each member receives one wellness benefit per year. You can utilize benefits for preventative care and wellness services to include: annual physicals, immunizations (other than a flu shot), mammograms, psa tests, and certain blood screenings, etc. See [brochure](https://s3.us-east-2.amazonaws.com/insurancesmart/Brochures+and+PDFs/Texas+Health+Protector+Guard+Brochure+2017+Aug25.pdf) for details.
+After a modest 6-month waiting period, each member receives one wellness benefit per year. You can utilize benefits for preventative care and wellness services to include: annual physicals, immunizations (other than a flu shot), mammograms, psa tests, and certain blood screenings, etc. See [brochure](https://res.cloudinary.com/modii//v1530578576/insurancesmart/Texas%20Health%20Protector%20Guard%20Brochure%202018%20April.pdf) for details.
 
 ### **Pharmacy Services**
 
-A prescription discount card is included with every Health ProtectorGuard plan. The discount card gives you valuable discounts on most prescriptions you use everyday. In addition select plans pay $20 toward generic, and $40 toward brand name drugs.  Some restrictions apply. See [brochure](https://s3.us-east-2.amazonaws.com/insurancesmart/Brochures+and+PDFs/Texas+Health+Protector+Guard+Brochure+2017+Aug25.pdf) for details.
+A prescription discount card is included with every Health ProtectorGuard plan. The discount card gives you valuable discounts on most prescriptions you use everyday. In addition select plans pay $20 toward generic, and $40 toward brand name drugs.  Some restrictions apply. See [brochure](https://res.cloudinary.com/modii//v1530578576/insurancesmart/Texas%20Health%20Protector%20Guard%20Brochure%202018%20April.pdf) for details.
 
 ### **Outpatient Services**
 
@@ -115,7 +115,7 @@ Benefits for outpatient services (tests or medical procedures that don't involve
 
 ### **Outpatient Cancer Treatment**
 
-Outpatient Chemotherapy and Radiation benefits are also included on every plan! Health Benefit for both Oral Chemotherapy, Outpatient Chemotherapy, and Non Oral Chemotherapy or Radiation. See [brochure](https://s3.us-east-2.amazonaws.com/insurancesmart/Brochures+and+PDFs/Texas+Health+Protector+Guard+Brochure+2017+Aug25.pdf) for details.
+Outpatient Chemotherapy and Radiation benefits are also included on every plan! Health Benefit for both Oral Chemotherapy, Outpatient Chemotherapy, and Non Oral Chemotherapy or Radiation. See [brochure](https://res.cloudinary.com/modii//v1530578576/insurancesmart/Texas%20Health%20Protector%20Guard%20Brochure%202018%20April.pdf) for details.
 
 ### [**Apply Today**](https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&ProductType=Fixed%20Indemnity)
 
