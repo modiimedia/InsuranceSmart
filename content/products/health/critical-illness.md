@@ -57,7 +57,7 @@ Below you will see some frequently asked questions. For more complete informatio
 
 ## Does this plan cover regular medical expenses like hospital visits?
 
-No, the UnitedHealthcare Critical Illness Insurance pays cash benefits directly to you when you suffer a qualifying critical illness. It does pay for regular medical visits like hospital visits. You should maintain separate comprehensive health coverage for day to day medical expenses. We recommend pairing this product with a fixed hospital indemnity plan like [**Health ProtectorGuard**](https://www.getinsurancesmart.com/products/health-protector-guard) to cover regular medical expenses and hospital visits.
+No, the UnitedHealthcare Critical Illness Insurance pays cash benefits directly to you when you suffer a qualifying critical illness. It does pay for regular medical visits like hospital visits. You should maintain separate comprehensive health coverage for day to day medical expenses. We recommend pairing this product with a fixed hospital indemnity plan like [**Health ProtectorGuard**](https://www.getinsurancesmart.com/products/health/hospital-doctor/) to cover regular medical expenses and hospital visits.
 
 ## Who qualifies for this product?
 

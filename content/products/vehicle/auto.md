@@ -18,8 +18,20 @@ seo:
   social_description: ''
   open_graph_image: ''
 faqs:
-- answer: Example Answer
-  question: Example Question
+- question: What does Uninsured/Underinsured Motorist cover, and do I really need
+    this?
+  answer: 'Uninsure/underinsured motorist coverage protects you from loss should you
+    be involved in an accident where the motorist at fault is either uninsured or
+    underinsured to sufficiently cover the damages, bodily injury and loss incurred
+    to you,  your passengers and your vehicle.  We always recommend you purchase this
+    and at limits equal to the level of your own liability coverage. '
+- question: What is Personal Injury Protection and Medical Payments and do I need
+    this?
+  answer: Personal Injury Protection and Medical Payments is coverage that pays a
+    stated limit for damages incurred to individuals riding within your vehicle in
+    the event of an accident caused by you or someone driving your vehicle.  Personal
+    Injury Protection compensates for things like medical expenses and lost wages
+    while Medical Expenses compensates for medical expenses only.
 description: Drive with peace of mind. We offer affordable and comprehensive plans
   to fit your needs.
 resources: []
@@ -39,25 +51,22 @@ To get a preliminary quote [**complete the form above**,](#quote)  and after you
 
 There are new and better ways to protect cars and drivers with auto insurance. If you drive a sedan, hybrid, minivan, station wagon, SUV, pickup truck or anything in between, your [**local independent agent**](/contact) can provide personalized coverage that's right for you. If trouble comes along, we’ll make sure you’re taken care of every step of the way.
 
-## Petentem Lyrnesia et crinis atque spumisque te
+## Optimum solutions for the budget conscious consumer
 
-Ubi Stymphalide ignem officioque ad tot um gaudebat fonti at, dea. Achilles singula habeto.
+There are many optimum solutions to include,  Accident Forgiveness, Roadside Assistance, Vehicle Replacement Cost and much more that can be added to your policy for a modest cost that will give you the premium coverage protection and peace of mind you need and deserve.  
 
 ![](https://res.cloudinary.com/modii/v1530419488/insurancesmart/jon-flobrant-230583-unsplash-1.jpg)
 
-## Dolosas cursus
+## Multi Car / Policy Discount
 
-Nomine non membris, nubila [repperit sed est](http://namque.org/sitim) nec in. Petat vultu quaerit supplex omni. Lanae hi ignes vix caput putat, texit graves bella. Ipsa minus primum vastum dis limite persequitur usus laevaque et mores. Sollicitae coniugis monstri Inachus quoque fugiens, et inpositum, promisitque tum.
+There are also very good discounts for multi-car and / or policies being secured on other lines of business like your RV, Boat, Motorcycle, Home, Rental property, Condo or Apartment.  Contact your agent if you have any questions.
 
 {{< quote-block >}}
 
-## Est inque in prima licet fissa magico
+## Consider increasing your liability limits for a fraction of the cost. 
 
-Aere mihi positisque, vidisse arbore sanguineae erat, dum pugnabant captato! Ericthonio Aetne sub conditus me Fortuna ore sed cupiens aurum fragor? Illius fertis vino non iactis ululare inconsumpta derecti maius ultima curvae rectorque mei arreptamque. Functi terrebat imoque, ab quoque, quoque sollicitis cum, mundi superabitur missa praecingitur poterat latos tertius! Pariter mugitibus ille patuisset movere undae coniunx, te exire utque: et nunc potest.
+Most state minimum liability requirements of somewhere around 25,000 / 50,000 don't adequately protect consumers from liability if you were involved in a serious accident.  For this reason we always recommend considering at minimum 100,000 / 300,000 liability protection to provide more coverage incase the unexpected should occur.  Most carriers will go up to 250,000 / 500,000 again for a small increase in premium and this extra protection could make the difference in a loss that would otherwise place you or your family in unwanted financial exposure.  The overal benefit protetion from increasing your liability limits in our professional opinion and experience far outweighs the modest cost increase incurred by adding this benefit. 
 
-* In duro manusque sunt
-* Nec est vincetis robora
-* Iure non ama suis hunc refugit illa
-* Patiemur pereuntem medicina causamque fugit Amphitryoniaden euhoeque
+To get a preliminary quote [**complete the form above**,](https://bknplar1v3nalq.preview.forestry.io/products/vehicle/auto/#quote) and after your quote is delivered, a qualified agents will contact you to refine this proposal for you.  
 
-Trita vastarumque leti, molirique dat _Actaeo miscuit_ mea damno? Ponderis Haemoniosque, auctor, at quod quam? Ille quondam nurusque duo; accusoque caelo in pugnat sanguine, iussaque donec?
+{{< quote-block >}}
