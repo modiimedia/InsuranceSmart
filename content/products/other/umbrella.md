@@ -2,7 +2,9 @@
 title: Umbrella Insurance
 category: insurancecategories/other.md
 recommended_articles: choose automatically
-description: Umbrella Insurance
+description: 'Umbrella Insurance puts a canopy of additional coverage protection over
+  the top of all your other polices to fill in the gap should damages exceed other
+  policy liability limits. '
 seo:
   meta_title: ''
   meta_description: ''
