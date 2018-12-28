@@ -11,8 +11,8 @@ quote:
   - Boat or Watercraft
   - Auto
   default: Boat or Watercraft
-description: Ubi Stymphalide ignem officioque ad totum gaudebat fonti at, dea. Achilles
-  singula habeto.
+description: 'Watercraft Coverage can often be bundled with your home or auto to give
+  you exceptional coverage and save you even more money! and '
 
 ---
 We can also cover your boat and bundle with your other policies to  give you great savings.   Give us the opportunity to show you how we can save you money by bundling today.
