@@ -13,6 +13,7 @@ quote:
   default: Boat or Watercraft
 description: Watercraft Coverage can often be bundled with your home or auto to give
   you exceptional coverage and save you even more money!
+draft: true
 
 ---
 We can also cover your boat and bundle with your other policies to  give you great savings.   Give us the opportunity to show you how we can save you money by bundling today.
