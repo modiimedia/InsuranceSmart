@@ -1,6 +1,6 @@
 ---
 title: Auto & Vehicle Insurance
-subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+subheading: Get Affordable Auto Coverage From Premium Carriers To Keep You Well Protected
 quote:
 - template: safeco-quote-form
   options:
