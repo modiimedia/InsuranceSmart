@@ -18,20 +18,6 @@ shop_menu:
       url: products/health/dental.md
 - name: Column 2
   children:
-  - name: Auto & Vehicle Insurance
-    url: insurancecategories/vehicle.md
-    icon: <i class="fas fa-car"></i>
-    children:
-    - name: Auto
-      url: products/vehicle/auto.md
-    - name: Motorcycle
-      url: products/vehicle/motorcycle.md
-    - name: Boat or Watercraft
-      url: products/vehicle/boat.md
-    - name: RV
-      url: products/vehicle/RV.md
-- name: Column 3
-  children:
   - name: Personal Property
     url: insurancecategories/property.md
     icon: <i class="fas fa-home"></i>
@@ -44,10 +30,11 @@ shop_menu:
       url: products/property/condo.md
     - name: Landlord Protection
       url: products/property/landlord.md
+- name: Column 3
+  children:
   - name: Umbrella Insurance
     url: products/other/umbrella.md
     icon: <i class="fas fa-umbrella"></i>
-    children: 
 explore_menu:
 - name: About Us
   url: _index.md
