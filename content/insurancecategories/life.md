@@ -9,7 +9,7 @@ seo:
   social_title: ''
   social_description: ''
   open_graph_image: ''
-subheading: ''
+subheading: Get a quote today
 quote:
 - template: unitedhealthcare-quote-form
   options:
@@ -17,5 +17,5 @@ quote:
   - Critical Illness
   - Term Life Safeguard
   - Dental
-  default: Term Life Safeguard
+
 ---
