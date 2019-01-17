@@ -13,7 +13,8 @@
     <div class="container contact-form">
         <div class="flex-row reverse">
             <div class="form-block">
-                <form id="contact-form" method="POST" netlify name="contact-form">
+                <form id="contact-form" method="POST" netlify netlify-honeypot="honeypot-field" name="contact-form">
+                    <input type="text" style="display:none" name="honeypot-field">
                     <label for="name">Name:</label>
                     <input type="text" class="text-field w-input" maxlength="256" name="Name" placeholder="Enter your name (Required)" id="name" required>
                     <label for="email">Email Address:</label>
