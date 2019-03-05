@@ -29,7 +29,14 @@ faqs:
     benefits for a loss that is incurred due to a preexisting condition. After the
     initial 12 month period has passed the preexisting condition limitation will no
     longer apply.
-quote: []
+quote:
+- template: unitedhealthcare-quote-form
+  options:
+  - Health ProtectorGuard (Fixed Indemnity)
+  - Critical Illness
+  - Term Life Safeguard
+  - Dental
+  default: Health ProtectorGuard (Fixed Indemnity)
 seo:
   meta_title: ''
   meta_description: ''
