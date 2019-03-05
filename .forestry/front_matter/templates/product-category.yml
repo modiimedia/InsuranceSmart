@@ -45,8 +45,8 @@ fields:
   description: Icon name for this category (Uses the font awesome icon library found
     at https://fontawesome.com/icons)
 pages:
-- content/insurancecategories/other.md
-- content/insurancecategories/health.md
-- content/insurancecategories/life.md
-- content/insurancecategories/property.md
 - content/insurancecategories/medicare.md
+- content/insurancecategories/property.md
+- content/insurancecategories/life.md
+- content/insurancecategories/health.md
+- content/insurancecategories/other.md
