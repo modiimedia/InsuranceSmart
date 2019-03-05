@@ -1,5 +1,6 @@
 +++
 category = "insurancecategories/property.md"
+draft = true
 custom_article_list = []
 date = "2018-10-13T22:25:25+00:00"
 description = "You're renting a great place, make sure your stay there is worry free."

@@ -1,5 +1,6 @@
 +++
 category = "insurancecategories/property.md"
+draft = true
 custom_article_list = []
 date = "2018-10-13T22:47:46+00:00"
 description = "Get coverage for your condominium"

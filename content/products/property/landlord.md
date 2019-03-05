@@ -1,5 +1,6 @@
 +++
 category = "insurancecategories/property.md"
+draft = true
 custom_article_list = []
 date = "2018-10-13T21:10:50+00:00"
 description = "Get affordable coverage for your rental properties."

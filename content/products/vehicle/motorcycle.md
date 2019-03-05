@@ -1,5 +1,6 @@
 +++
 category = "insurancecategories/vehicle.md"
+draft = true
 custom_article_list = []
 date = "2018-10-13T20:26:29+00:00"
 description = "Get quality coverage for your bike so you can ride worry free."

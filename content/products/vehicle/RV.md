@@ -1,5 +1,6 @@
 +++
 category = "insurancecategories/vehicle.md"
+draft = true
 custom_article_list = []
 date = "2018-10-13T20:28:05+00:00"
 description = "RV Insurance"

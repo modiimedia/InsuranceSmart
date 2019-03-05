@@ -1,5 +1,6 @@
 ---
 title: Umbrella Insurance
+draft: true
 category: insurancecategories/other.md
 recommended_articles: choose automatically
 description: 'Umbrella Insurance puts a canopy of additional coverage protection over
