@@ -1,7 +1,6 @@
 ---
 label: Quoteit
 hide_body: false
-is_partial: true
 fields:
 - type: list
   name: options

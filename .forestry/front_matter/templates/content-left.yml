@@ -1,7 +1,6 @@
 ---
 label: Content (Left)
 hide_body: false
-is_partial: true
 fields:
 - type: boolean
   label: Hide Component

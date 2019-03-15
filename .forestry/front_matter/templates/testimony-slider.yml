@@ -1,7 +1,6 @@
 ---
 label: Testimony Slider
 hide_body: false
-is_partial: true
 fields:
 - type: boolean
   name: hide

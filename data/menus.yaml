@@ -6,6 +6,8 @@ shop_menu:
     url: insurancecategories/life.md
     icon: <i class="fas fa-heartbeat"></i>
     children: 
+- name: Column 2
+  children:
   - name: Health
     url: insurancecategories/health.md
     icon: <i class="fas fa-medkit"></i>
@@ -16,20 +18,6 @@ shop_menu:
       url: products/health/critical-illness.md
     - name: Dental
       url: products/health/dental.md
-- name: Column 2
-  children:
-  - name: Personal Property
-    url: insurancecategories/property.md
-    icon: <i class="fas fa-home"></i>
-    children:
-    - name: Home
-      url: products/property/home.md
-    - name: Renters
-      url: products/property/renters.md
-    - name: Condo
-      url: products/property/condo.md
-    - name: Landlord Protection
-      url: products/property/landlord.md
 - name: Column 3
   children:
   - name: Umbrella Insurance
