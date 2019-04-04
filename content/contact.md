@@ -11,7 +11,7 @@ We can provided you a customized plan that's perfect to fit your needs.
 
 <br>
 
-__Phone:__ [210-699-0281](tel:+12106990281)
+__Phone:__ <a href="tel:+12106990281" class="callNowButton" target="_blank">210-699-0281</a>
 
 __Email:__ [info@getinsurancesmart.com](mailto:info@getinsurancesmart.com)
 

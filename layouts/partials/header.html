@@ -11,7 +11,7 @@
                 {{ partial "mobile-nav.html" . }}
                 {{ $phoneclean := replace $.Site.Data.general_settings.contact_info.phone "+1-" "" }}
                 {{ $phonelong := replace $.Site.Data.general_settings.contact_info.phone "-" "" }}
-                <a href="tel:{{ $phonelong }}" class="nav-link phone w-inline-block">
+                <a href="tel:{{ $phonelong }}" class="nav-link phone w-inline-block callNowButton">
                     <div class="text-block-2"><i class="fas fa-phone"></i></div>
                     <div class="text-block-3">&nbsp;&nbsp;{{ $phoneclean }}</div>
                     <div class="text-block-4">&nbsp;&nbsp;call us</div>

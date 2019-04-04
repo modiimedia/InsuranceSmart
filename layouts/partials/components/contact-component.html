@@ -62,7 +62,7 @@
                 {{ $faxlong := replace $fax "-" "" }}
                 <h1 class="dark-heading">{{ .Params.heading }}</h1>
                 <div class="text-block-5">
-                    {{- if $phone -}}<strong>Phone: </strong><a href="tel:{{ $phonelong }}">{{- $phoneclean -}}</a><br>{{- end -}}
+                    {{- if $phone -}}<strong>Phone: </strong><a href="tel:{{ $phonelong }}" class="callNowButton">{{- $phoneclean -}}</a><br>{{- end -}}
                     {{- if $fax -}}<strong>Fax:</strong>&nbsp;{{- $faxclean -}}<br>{{- end -}}
                     {{- if $email -}}<strong>Email:</strong>&nbsp;<a href="mailto:{{ $email }}?subject=Questions about Insurance">{{- $email -}}</a><br>{{- end -}}
                 </div>
