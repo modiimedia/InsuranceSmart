@@ -1,10 +1,10 @@
 ---
 title: Home
 banner_heading: We Provide Affordable Insurance For Texas Residents
-banner_text: "Our mission is to become the one resource our clients rely on, and consistently
-  refer to their friends and associates. \n\nWhether it's life insurance, health insurance,
-  home, auto, or commercial coverage, we are here to help get you the coverage you
-  need, at a price you can afford. "
+banner_text: |-
+  We are here to help you get the coverage you need, at a price you can afford. We specialize in life and health insurance for all ages, and provide help to seniors on Medicare. We are also expanding to help with your home, auto, and commercial coverage.
+
+  Our mission is to become the one resource our clients rely on, and consistently refer to their friends and associates.
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
