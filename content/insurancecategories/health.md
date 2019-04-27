@@ -2,17 +2,12 @@
 title: Health Insurance
 subheading: We now have affordable health insurance solutions to meet any budget!
 quote:
-- template: quoteit-quote-form
+- template: unitedhealthcare-quote-form
   options:
-  - Health Insurance
-  - Health Insurance - Child Only
-  - Short-Term Health Insurance
-  - Cancer
+  - Health ProtectorGuard (Fixed Indemnity)
   - Critical Illness
-  - Accident
-  - Dental Insurance
-  - WBE Health On Exchange
-  default: Health Insurance
+  - Term Life Safeguard
+  - Dental
 featured_image: "/v1530578684/insurancesmart/arms-care-check-905874%20%281%29.jpg"
 weight: 5
 fa_icon: medkit
