@@ -40,6 +40,7 @@ components:
   heading: Get In Touch With Us
   background_image: "/v1530992759/insurancesmart/rawpixel-703123-unsplash%20%281%29.jpg"
   style: dark
+  hide: true
 seo:
   social_title: Insurance You Need At A Price You Can Afford
   social_description: Get the insurance you need at a price you can afford
