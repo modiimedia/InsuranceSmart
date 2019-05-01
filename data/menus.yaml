@@ -19,10 +19,7 @@ shop_menu:
     - name: Dental
       url: products/health/dental.md
 - name: Column 3
-  children:
-  - name: Umbrella Insurance
-    url: products/other/umbrella.md
-    icon: <i class="fas fa-umbrella"></i>
+  children: []
 explore_menu:
 - name: About Us
   url: _index.md
