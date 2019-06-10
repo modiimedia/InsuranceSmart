@@ -1,0 +1,39 @@
+html.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    z-index: 9999;
+}
+
+.modal.is-open {
+    display: block;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.modal.modal.is-open > .image-overlay {
+    z-index: 100!important;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.modal > .modalContent {
+    padding: 50px;
+    background: white;
+}

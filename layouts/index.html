@@ -18,7 +18,7 @@
                 <div class="form-block homepage" style="">
                     <!-- style="background: #333333; color: white; margin: -30px -30px 40px -30px; padding: 30px;" -->
                     <h1 class="heading">GET A FREE QUOTE</h1>
-                    <form>
+                    <form method="GET">
                         <div class="control">
                             <label class="overlay-label" for="banner_name">Name:</label>
                             <input type="text" class="text-field" name="name" id="banner_name" autocomplete="name" required>        
@@ -31,21 +31,9 @@
                             <label class="overlay-label" for="banner_phone">Phone Number:</label>
                             <input type="tel" class="text-field" name="phone" autocomplete="tel" required>        
                         </div>
-                        <!-- <h2>I am interested in:</h2>
-                        <div class="control checkbox">
-                            {{ range .Site.Data.quote_forms.contact_form.insurance_choices }}
-                                <div class="checkbox-field w-checkbox">
-                                    <input type="checkbox" id="contact_{{ .name | lower }}_field" name="{{ .name | title }}" class="w-checkbox-input">
-                                    <label for="contact_{{ .name | lower }}_field" class="w-form-label">
-                                        <span>
-                                            <i class="far fa-square"></i>
-                                            <i class="fas fa-check"></i>
-                                            {{ .label }}
-                                        </span>
-                                    </label>
-                                </div>
-                            {{ end }}
-                        </div> -->
+                        <div class="control is-hidden">
+                            <input type="checkbox" name="modal" required checked>
+                        </div>
                         <div class="control submit">
                             <button class="submit-button large" type="submit">Get Started <i class="fas fa-angle-right"></i></button>
                         </div>
@@ -106,9 +94,7 @@
 {{- end -}}
 
 {{ define "addscripts" }}
-    {{ partial "forms/safeco-scripts.html" . }}
-    {{ partial "forms/uhc-scripts.html" . }}
-    <script>
+    <!-- <script>
     let quoterStart = document.getElementById("homeQuoterStart")
     let quoterBtns = document.querySelectorAll("#homeQuoterStart button")
     let resetBtns = document.querySelectorAll("#homeQuoter .homeQuoterOption > p > a")
@@ -136,5 +122,5 @@
         }
         quoterStart.style.display = '';
     }
-    </script>
+    </script> -->
 {{ end }}

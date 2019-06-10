@@ -1,0 +1,60 @@
+<aside id="contact-form-modal" class="modal">
+    <div class="image-overlay cfm_closer"></div>
+    <div class="modal-content">
+        <h2 style="margin-top: 0;">You Are Almost Done</h2>
+        <p>You can submit now or fill out some additional information so that we can better help you.</p>
+        <div class="form-block homepage modal-form">
+            <form method="POST" data-netlify="true" name="contact-form" netlify-honeypot="date">
+                <div class="control submit" style="margin-bottom: 50px; display: flex; display: -ms-flexbox; display: -webkit-flex; align-items: flex-end; flex-wrap: wrap; -ms-flex-wrap: wrap;">
+                    <button class="submit-button large" type="submit" style="margin-right: 10px">Submit Now</button>
+                    <div class="button cancel cfm_closer" style="margin-top: 10px">Cancel</div>
+                </div>
+                <div class="form-field control">
+                    <label for="cfm_name" class="overlay-label">Name</label>
+                    <input id="cfm_name" type="text" class="text-field" name="name" required>
+                </div>
+                <div class="form-field control">
+                    <label for="cfm_email" class="overlay-label">Email</label>
+                    <input id="cfm_email" type="email" class="text-field" name="email" required>
+                </div>
+                <div class="form-field control">
+                    <label for="cfm_phone" class="overlay-label">Phone</label>
+                    <input id="cfm_phone" type="tel" class="text-field" name="phone" required>
+                </div>
+                <div class="form-field control">
+                    <label for="cfm_birthday" class="overlay-label">Birthday</label>
+                    <input type="date" name="birthday" id="cfm_birthday" class="text-field birthday">
+                </div>
+                <div class="form-field control">
+                    <label for="cfm_zipcode" class="overlay-label">Zip Code</label>
+                    <input id="cfm_zipcode" type="text" name="zip" class="text-field">
+                </div>
+
+                <div class="form-field control is-hidden">
+                    <input id="cfm_date" type="date" name="date" class="text-field">
+                </div>
+                <h2>I am interested in:</h2>
+                <div class="control checkbox">
+                    {{ range $i, $e := .Site.Data.quote_forms.contact_form.insurance_choices }}
+                        <div class="checkbox-field w-checkbox">
+                            <input type="checkbox" id="cfm_check_{{ .name | lower }}_field" name="{{ .name | title }}" class="w-checkbox-input">
+                            <label for="cfm_check_{{ .name | lower }}_field" class="w-form-label">
+                                <span>
+                                    <i class="far fa-square"></i>
+                                    <i class="fas fa-check"></i>
+                                    {{ .label }}
+                                </span>
+                            </label>
+                        </div>
+                    {{ end }}
+                </div>
+                <div class="form-field control">
+                    <label class="overlay-label">Tell us about your situation</label>
+                    <textarea class="text-field" rows="5" columns="11" name="details"></textarea>
+                </div>
+                <div class="control submit">
+                    <button class="submit-button large" type="submit">Complete Submission <i class="fas fa-check"></i></button>
+                </div>
+        </form>
+    </div>
+</aside>
