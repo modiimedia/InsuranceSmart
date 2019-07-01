@@ -45,7 +45,7 @@ fields:
     at https://fontawesome.com/icons)
 pages:
 - content/insurancecategories/health.md
-- content/insurancecategories/property.md
 - content/insurancecategories/medicare.md
-- content/insurancecategories/life.md
 - content/insurancecategories/other.md
+- content/insurancecategories/property.md
+- content/insurancecategories/life.md

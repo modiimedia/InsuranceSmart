@@ -56,3 +56,5 @@ fields:
   template_types:
   - safeco-quoter
   name: form
+pages:
+- content/posts/test.md
