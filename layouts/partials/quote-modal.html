@@ -21,9 +21,30 @@
                     <label for="cfm_phone" class="overlay-label">Phone</label>
                     <input id="cfm_phone" type="tel" class="text-field" name="phone" required>
                 </div>
-                <div class="form-field control">
-                    <label for="cfm_birthday" class="overlay-label">Birthday</label>
-                    <input type="date" name="birthday" id="cfm_birthday" class="text-field birthday">
+                <label class="section-label">Birthday</label>
+                <div class="form-field multi-input">
+                    <div class="form-field control">
+                        <!-- <label for="cfm_birth_month" class="overlay-label">Month</label> -->
+                        <select type="date" name="birthday" id="cfm_birth_month" class="text-field">
+                            {{ partial "forms/month-dropdown.html" }}
+                        </select>
+                    </div>            
+                    <div class="form-field control">
+                        <!-- <label for="cfm_birth_day" class="overlay-label">Day</label> -->
+                        <select name="birth day" id="cfm_birth_day" class="text-field">
+                            <option value="">Select a day...</option>
+                            {{ range $i, $e := (seq 31) }}
+                                {{ $val := add $i 1 }}
+                                <option value="{{ $val }}">{{ $val }}</option>
+                            {{ end }}
+                        </select>
+                    </div>         
+                    <div class="form-field control">
+                        <!-- <label for="cfm_birth_year" class="overlay-label">Year</label> -->
+                        <select name="birth year" id="cfm_birth_year" class="text-field">
+                            {{ partial "forms/year-dropdown.html" }}
+                        </select>
+                    </div>         
                 </div>
                 <div class="form-field control">
                     <label for="cfm_zipcode" class="overlay-label">Zip Code</label>

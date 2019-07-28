@@ -109,7 +109,7 @@ form > .control.submit {
   font-size: 1.8rem;
 }
 
-form > .control > .overlay-label {
+form .control > .overlay-label {
   top: -13px;
   left: 10px;
   background: white;
@@ -120,7 +120,7 @@ form > .control > .overlay-label {
   color: #333333;
 }
 
-.form-block.homepage > form > .control > .text-field {
+.form-block.homepage > form .control > .text-field {
   margin-top: 0px;
   border: 1px solid #333333;
   padding: 20px 10px;
