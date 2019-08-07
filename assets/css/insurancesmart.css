@@ -109,7 +109,7 @@ form > .control.submit {
   font-size: 1.8rem;
 }
 
-form > .control > .overlay-label {
+form .control > .overlay-label {
   top: -13px;
   left: 10px;
   background: white;
@@ -120,7 +120,7 @@ form > .control > .overlay-label {
   color: #333333;
 }
 
-.form-block.homepage > form > .control > input.text-field {
+.form-block.homepage > form .control > .text-field {
   margin-top: 0px;
   border: 1px solid #333333;
   padding: 20px 10px;
@@ -135,7 +135,7 @@ form > .control > .overlay-label {
 form > .control.checkbox {
   border-radius: 10px;
   padding-top: 15px;
-  margin: -10px;
+  margin: -10px -10px 30px -10px;
 }
 
 .form-block.homepage > form > .control > .checkbox-field {
@@ -186,11 +186,43 @@ input:checked + label > span > .fa-check {
   color: green;
 }
 
-.form-block.homepage > form > .control > input.text-field:focus {
+.form-block.homepage > form > .control > .text-field:focus {
   border-radius: 10px;
 }
 
+.success-banner {
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  font-size: 1.5rem;
+  line-height: 120%;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  padding: 2rem;
+  min-height: 300px;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(150deg, rgba(33,33,33,0.7), rgba(33,33,33,0.7)), url(/images/woman-smiling-and-celebrating-on-the-beach-wearing-sunglasses.jpg)
+}
+
+.success-banner .content {
+  width: 100%;
+}
+
 @media (max-width: 767px) {
+  .success-banner {
+    margin-top: 0px;
+  }
   .qt-modal-content > iframe {
     margin: 0;
     padding-top: 30px;

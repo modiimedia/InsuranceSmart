@@ -6,75 +6,39 @@
             <div class="hero-content">
                 <h1 class="heading">{{- .Params.banner_heading -}}</h1>
                 <p class="paragraph">{{- .Params.banner_text -}}</p>
-                <a href="/products" class="hero-button w-inline-block">
+                <!-- <a href="/products" class="hero-button w-inline-block">
                     <div class="text-block">Shop Insurance</div>
                 </a>
                 <a href="/contact" class="ghost-button w-inline-block">
                     <div class="text-block-2"><i class="fas fa-phone"></i>&nbsp;</div>
                     <div class="text-block">Contact Us</div>
-                </a>
+                </a> -->
             </div>
-            {{- $bMedia := .Params.banner_media -}}
-            <div class="hero-content flex-grow hero-video-container" {{ if eq $bMedia.media_type "quote form" }} style="justify-content: flex-start"{{ end }}>
-                {{- if eq $bMedia.media_type "quote form" -}}
-                    <div id="homeQuoter" class="product-quote-box" style="justify-self: flex-start;">
-                        <h2 style="margin-top: 0">Get A Quote Online</h2>
-                        <div id="homeQuoterStart">
-                            <p>Choose a category</p>
-                            <button class="get-a-quote w-button" style="margin: 0px 10px 10px 0px;" data-option="1">Health & Life</button>
-                            <button class="get-a-quote w-button" style="margin: 0px 10px 10px 0px;" data-option="2">Auto & Personal Property</button>
+            <div class="hero-content flex-grow hero-video-container" style="justify-content: flex-start; align-items: flex-end">
+                <div class="form-block homepage" style="">
+                    <!-- style="background: #333333; color: white; margin: -30px -30px 40px -30px; padding: 30px;" -->
+                    <h1 class="heading">GET A FREE QUOTE</h1>
+                    <form method="GET">
+                        <div class="control">
+                            <label class="overlay-label" for="banner_name">Name:</label>
+                            <input type="text" class="text-field" name="name" id="banner_name" autocomplete="name" required>        
                         </div>
-                        <form id="option1" class="homeQuoterOption">
-                            <p><a style="color: gold" href="#">Go Back</a><br><strong>Health & Life</strong></p>
-                            <div class="quote-form-wrap" style="flex-direction: row; -ms-flex-direction: row">
-                                <input style="margin-bottom: 0" id="uhZip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
-                                <select style="display:none" id="uhProduct" required="" name="Product" class="insurance-select w-select">
-                                    <option value="">Select insurance type</option>
-                                    {{ range first 1 $.Site.Data.quote_forms.unitedhealthcare }}
-                                        <option selected value="{{ .value }}">{{ .display }}</option>
-                                    {{ end }}
-                                </select>
-                                <input type="submit" id="uhFakeBtn" value="Get a Quote" class="get-a-quote w-button" style="margin-bottom: 0;">
-                                <a href="#" target="_blank" id="uhQuoteBtn" class="get-a-quote w-button" style="display:none">Get A Quote</a>
-                                <!--<input type=submit id="uhQuoteBtn" class="get-a-quote w-button" onclick="getquote()" value="Get a Quote" style="display:none"/>-->
-                            </div>
-                        </form>
-                        <form action="" id="option2" class="homeQuoterOption" onsubmit="return submitForm();">
-                            <p><a style="color: gold" href="#">Go Back</a><br><strong>Auto & Personal Property</strong></p>
-                            <div class="quote-form-wrap" onload="setProduct();">
-                                <input id="zip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
-                                <select id="subMenu" required="" name="subMenu" class="insurance-select w-select">
-                                    <option id="defaultoption" value="">Select Insurance Type</option>
-                                    {{ range $.Site.Data.quote_forms.safeco }}
-                                        <option id="{{ .id }}" value="{{ .value }}" data-zip="zip">{{ .display }}</option>
-                                    {{ end }}
-                                </select>
-                                <input type="submit" value="Get a Quote" id="fakeBtn" class="get-a-quote w-button">
-                                <input type="submit" value="Get a Quote" id="startBtn" onclick="submitForm();" class="get-a-quote w-button" style="display:none">
-                            </div>
-                        </form>
-                    </div>
-                
-                {{- else if eq $bMedia.media_type "video" -}}
-                    {{- if eq .Params.banner_media.video_type "youtube" -}} {{- $v := replace .Params.banner_media.youtube_url "https://www.youtube.com/watch?v=" "" -}} {{- $v2 := replace $v "https://youtu.be/" "" -}}
-                    <a href="#" class="lightbox-link _3d w-inline-block w-lightbox" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://img.youtube.com/vi/{{ $v2 }}/maxresdefault.jpg')">
-                        <div class="play-icon"><i class="fas fa-play"></i></div>
-                        <script type="application/json" class="w-json">
-                            {
-                                "items": [{
-                                "type": "video",
-                                "originalUrl": "https://www.youtube.com/watch?v={{ $v2 }}",
-                                "url": "https://www.youtube.com/watch?v={{ $v2 }}",
-                                "html": "<iframe src=\"https://www.youtube.com/embed/{{ $v2 }}?autoplay=1&rel=0&showinfo=0&modestbranding=1\" width=\"720\" height=\"420\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>",
-                                "thumbnailUrl": "https://i.ytimg.com/vi/{{ $v2 }}/hqdefault.jpg",
-                                "width": 940,
-                                "height": 528
-                                }]
-                            }
-                            </script>
-                    </a>
-                    {{- end -}}
-                {{- end -}}
+                        <div class="control">
+                            <label class="overlay-label" for="banner_email">Email Address:</label>
+                            <input type="email" class="text-field" name="email" id="banner_email" autocomplete="email" required>        
+                        </div>
+                        <div class="control">
+                            <label class="overlay-label" for="banner_phone">Phone Number:</label>
+                            <input type="tel" class="text-field" name="phone" autocomplete="tel" required>        
+                        </div>
+                        <div class="control is-hidden">
+                            <input type="checkbox" name="modal" required checked>
+                        </div>
+                        <div class="control submit">
+                            <button class="submit-button large" type="submit">Get Started <i class="fas fa-angle-right"></i></button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -130,9 +94,7 @@
 {{- end -}}
 
 {{ define "addscripts" }}
-    {{ partial "forms/safeco-scripts.html" . }}
-    {{ partial "forms/uhc-scripts.html" . }}
-    <script>
+    <!-- <script>
     let quoterStart = document.getElementById("homeQuoterStart")
     let quoterBtns = document.querySelectorAll("#homeQuoterStart button")
     let resetBtns = document.querySelectorAll("#homeQuoter .homeQuoterOption > p > a")
@@ -160,5 +122,5 @@
         }
         quoterStart.style.display = '';
     }
-    </script>
+    </script> -->
 {{ end }}

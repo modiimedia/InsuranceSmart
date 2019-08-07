@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    {{ .Hugo.Generator }}
+    {{- hugo.Generator -}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/insurancesmart.css">
-    <link rel="stylesheet" href="/css/is.css">
+    {{- $normalize := resources.Get "css/normalize.css" -}}
+    {{- $base := resources.Get "css/base.css" -}}
+    {{- $main := resources.Get "css/insurancesmart.css" -}}
+    {{- $main2 := resources.Get "css/is.css" -}}
+    {{- $modals := resources.Get "css/modal.css" -}}
+    {{- $css := slice $normalize $base $main $main2 $modals | resources.Concat "css/main.css" -}}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
     <link rel="icon" sizes="32x32" href="{{ $.Site.Params.cloudinary_url }}w_32,h_32,c_fit{{ $.Site.Data.general_settings.website_settings.favicon }}">
     <link rel="icon" sizes="16x16" href="{{ $.Site.Params.cloudinary_url }}w_16,h_16,c_fit{{ $.Site.Data.general_settings.website_settings.favicon }}">
     <meta name="msapplication-TileColor" content="#ffbc00">
@@ -110,6 +113,7 @@
     {{- block "main" . -}}{{- end -}}
 
     {{- partial "footer.html" . -}}
+    {{- partial "quote-modal.html" . -}}
     {{- partial "scripts.html" . -}}
     
     {{- block "addscripts" . -}}<!--put extra scripts here-->{{- end -}}

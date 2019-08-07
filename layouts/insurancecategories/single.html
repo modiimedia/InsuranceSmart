@@ -10,6 +10,26 @@
                 {{ range first 1 .Params.quote }}
                     {{ if eq .template "safeco-quote-form" }}
                         {{ partial "forms/safeco-quote-form.html" (dict "context" . "data" $data ) }}
+                    {{ else if eq .template "unitedhealthcare-quote-form" }}
+                    <form name="unitedhform" id="unitedhform" onsubmit="getquote()">
+                        <div class="quote-form-wrap">
+                            <input id="uhZip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
+                            <select id="uhProduct" required="" name="Product" class="insurance-select w-select">
+                                {{ if .default }}{{ else }}<option value="">Select insurance type</option>{{ end }}
+                                {{ $def := .default | lower }}
+                                {{ range .options }}
+                                    {{ $id := . | lower }}
+                                    {{ range $.Site.Data.quote_forms.unitedhealthcare }}
+                                        {{ $l := .display | lower }}
+                                        {{ if eq $id $l }}<option {{ if eq $def $l -}}selected{{- end }} value="{{ .value }}">{{ .display }}</option>{{ end }}
+                                    {{ end }}
+                                {{ end }}
+                            </select>
+                            <input type="submit" id="uhFakeBtn" value="Get a Quote" class="get-a-quote w-button">
+                            <!--<a href="#" target="_blank" id="uhQuoteBtn" class="get-a-quote w-button" style="display:none">Get A Quote</a>-->
+                            <input type=submit id="uhQuoteBtn" class="get-a-quote w-button" onclick="submit" value="Get a Quote" style="display:none"/>
+                        </div>
+                    </form>
                     {{ else if eq .template "quoteit-quote-form" }}
                         {{ partial "forms/quoteit-quote-form.html" (dict "context" . "data" $.Site.Data ) }}
                     {{ end }}

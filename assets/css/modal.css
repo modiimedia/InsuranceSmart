@@ -1,0 +1,125 @@
+html.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    z-index: 100;
+}
+
+.modal.is-open {
+    display: block;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.modal.is-open > .image-overlay {
+    z-index: 1!important;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.modal > .modal-content {
+    padding: 100px;
+    background: white;
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+@media (max-width: 800px){
+    .modal > .modal-content {
+        padding: 20px;
+    }
+    .submit-button.large {
+        font-size: 1.5rem;
+    }
+}
+
+.form-block.homepage.modal-form {
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding-top: 20px;
+}
+
+.modal-content .button.cancel {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.modal-content .submit-button {
+    text-align: left;
+}
+
+.is-hidden {
+    display: none!important;
+}
+
+.form-field.multi-input {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.form-field.multi-input > .control {
+    position: relative;
+    margin-right: 20px;
+}
+
+@media(max-width: 479px) {
+    .form-field.multi-input > .control {
+        width: 100%;
+    }
+}
+
+.section-label {
+    margin-bottom: 10px;
+    /* font-size: 20px; */
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+}
+.section-label::before {
+    background: black;
+    display: block;
+    content:" ";
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    top: 50%;
+    left: -20px;
+}
+.section-label::after {
+    background: black;
+    display: block;
+    content:" ";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    top: 50%;
+    left: 108%;
+    right: -25px;
+}
