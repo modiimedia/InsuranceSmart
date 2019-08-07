@@ -24,7 +24,7 @@ function checkForParams(){
         console.log(params)
         if (params.modal === "on"){
             if (params.name) {
-                params.name.replace("+", " ");
+                params.name = params.name.replace("+", " ");
             }
             if (params.email) {
                 params.email = params.email.replace("%40", "@");
