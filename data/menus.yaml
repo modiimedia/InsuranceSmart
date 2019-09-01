@@ -5,7 +5,8 @@ shop_menu:
   - name: Life
     url: insurancecategories/life.md
     icon: <i class="fas fa-heartbeat"></i>
-    children: 
+    children: []
+    external_url: ''
 - name: Column 2
   children:
   - name: Health
@@ -14,15 +15,17 @@ shop_menu:
     children:
     - name: Hospital & Doctor
       url: products/health/hospital-doctor.md
+      external_url: ''
     - name: Critical Illness
       url: products/health/critical-illness.md
+      external_url: ''
     - name: Dental
       url: products/health/dental.md
+      external_url: ''
+    external_url: ''
 - name: Column 3
   children: []
 explore_menu:
-- name: About Us
-  url: _index.md
 - name: Contact
   url: ''
   external_url: "/contact"
@@ -32,21 +35,19 @@ footer_menu:
     children:
     - name: Home
       url: _index.md
+      external_url: ''
     - name: Contact
       url: contact.md
+      external_url: ''
   menu_2:
     name: Shop Insurance
     children:
     - name: Life
       url: products/life/life.md
+      external_url: ''
     - name: Health
       url: insurancecategories/health.md
-    - name: Auto
-      url: insurancecategories/vehicle.md
-    - name: Home
-      url: insurancecategories/property.md
-    - name: Umbrella
-      url: products/other/umbrella.md
+      external_url: ''
     - name: View All
       url: ''
       external_url: "/products"
