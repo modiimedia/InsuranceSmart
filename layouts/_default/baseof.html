@@ -92,13 +92,17 @@
     {{- end -}}
 
     {{- if not $.Site.IsServer -}}
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-T23XKV9');</script>
         <!-- End Google Tag Manager -->
+
+        <!-- MailChimp Script -->
+        <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ce94cdd7d3aa0cb9144f23eb5/81f9d752ac8e9247dc6470537.js");</script>
+        <!-- End MailChimp Script -->
     {{- end -}}
 </head>
 <body>
