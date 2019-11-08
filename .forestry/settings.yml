@@ -35,7 +35,7 @@ sections:
 - type: directory
   path: content/posts
   label: Posts
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - article
