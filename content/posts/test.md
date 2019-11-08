@@ -5,7 +5,6 @@ date = 2019-07-01T05:00:00Z
 draft = true
 featured = false
 featured_image = "/v1530816707/insurancesmart/5a792163b9b0da0001c3e1d6_woman-smiling-compressor.jpg"
-form = []
 tags = []
 title = "Test"
 [seo]
@@ -14,6 +13,13 @@ meta_title = ""
 open_graph_image = ""
 social_description = ""
 social_title = ""
+[[form]]
+background_image = ""
+default = ""
+heading = "Get A Free Quote"
+options = ["Auto", "Boat or Watercraft", "RV", "Motorcycle", "Home", "Renters", "Condo", "Landlord Protection", "Umbrella"]
+subheading = ""
+template = "safeco-quoter"
 
 +++
 Lorem markdownum quaeque et lenimen Cadme resupinum tuoque! Quamquam patienda maiora, profanam parvis et ille rapuere? Quid **cum** videntur tamen quoniam formae diras est muneris passu: arcana. Moles essent. In haec si quam, velaque et Styge inpar; nare.
