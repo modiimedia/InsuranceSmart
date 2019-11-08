@@ -92,6 +92,7 @@ html.no-scroll {
 @media(max-width: 479px) {
     .form-field.multi-input > .control {
         width: 100%;
+        margin-right: 0;
     }
 }
 
@@ -122,4 +123,97 @@ html.no-scroll {
     top: 50%;
     left: 108%;
     right: -25px;
+}
+
+.blog-contact-form {
+    margin: 70px 0;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.35);
+    /* box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .3); */
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-contact-form .image-overlay {
+    background-size: cover;
+    background-color: transparent;
+    opacity: 0.25;
+}
+
+.blog-contact-form .heading, .blog-contact-form form {
+    z-index: 1;
+    position: relative;
+}
+
+.blog-contact-form.light {
+    background: white;
+}
+
+.blog-contact-form.dark {
+    background: #333333;
+    color: white;
+}
+
+.blog-contact-form.dark .text-field {
+    background: white;
+    /* opacity: 1; */
+    /* border: 1px solid white; */
+    color: #333333;
+}
+
+.blog-contact-form.dark .overlay-label {
+    /* background: #333333;
+    color: white; */
+}
+
+.blog-contact-form .heading {
+    margin-bottom: 2rem;
+}
+
+.blog-contact-form .heading .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.blog-contact-form .heading .subtitle {
+    font-size: 1rem;
+    line-height: 100%;
+}
+
+.blog-contact-form .text-field {
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+}
+
+.multi-input.full-width {
+    margin: -10px;
+}
+
+.multi-input.full-width .form-field {
+    padding: 10px;
+    width: 50%;
+    margin-right: 0;
+}
+
+.multi-input.full-width .overlay-label {
+    top: -3px;
+    left: 20px;
+}
+
+@media(max-width: 479px) {
+    .multi-input.full-width {
+        margin: 0;
+    }
+    .multi-input.full-width .overlay-label {
+        top: -13px;
+        left: 10px;
+    }
+    .multi-input.full-width .form-field {
+        width: 100%;
+        padding: 0;
+    }
 }

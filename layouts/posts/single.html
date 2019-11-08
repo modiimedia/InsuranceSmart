@@ -84,7 +84,35 @@
         </div>
       </div>
     </div>
+    {{ $cloudinary := .Site.Params.cloudinary_url }}
     {{- range .Params.form -}}
+        {{- if eq .template "contact-us-popup"}}
+          <aside class="blog-contact-form{{ if eq .style "light" }} light{{ else }} dark{{ end }}">
+              <div class="image-overlay" style="background-image: url({{ $cloudinary }}w_1000{{ .background_image }})"></div>
+              <div class="heading">
+                  <div class="title">GET A FREE QUOTE</div>
+                  <div class="subtitle">Contact us today to get a free quote on your insurance plan</div>
+              </div>
+              <form method="GET">
+                  <div class="form-field multi-input full-width">
+                      <div class="form-field control">
+                          <label for="" class="overlay-label">Name</label>
+                          <input type="text" class="text-field" name="name" id="" required>
+                      </div>
+                      <div class="form-field control">
+                          <label for="" class="overlay-label">Phone</label>
+                          <input type="tel" class="text-field" name="phone" id="" required>
+                      </div>        
+                  </div>
+                  <div class="form-field control">
+                      <label for="" class="overlay-label">Email</label>
+                      <input type="email" class="text-field" name="email" id="" required>
+                  </div>
+                  <input type="text" name="modal" id="" value="on" hidden required>
+                  <button class="submit-button" type="submit">Get Started <i class="fas fa-angle-right"></i></button>
+              </form>
+          </aside>
+        {{- end -}}
         {{- if eq .template "safeco-quoter" -}}
         {{ $d := .default }}
           <div class="div-block-48">
