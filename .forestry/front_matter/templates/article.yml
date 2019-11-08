@@ -54,7 +54,10 @@ fields:
 - type: blocks
   label: Conversion Form
   template_types:
+  - contact-us-popup
   - safeco-quoter
   name: form
+  config:
+    max: '1'
 pages:
 - content/posts/test.md
