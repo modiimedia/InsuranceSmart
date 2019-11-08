@@ -62,4 +62,5 @@ fields:
   config:
     max: '1'
 pages:
+- content/posts/antoher-life-article.md
 - content/posts/test.md
