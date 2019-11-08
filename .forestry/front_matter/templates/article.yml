@@ -2,9 +2,6 @@
 label: Article
 hide_body: false
 fields:
-- type: boolean
-  name: featured
-  label: Featured Post
 - type: text
   name: title
   label: Title
