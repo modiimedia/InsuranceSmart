@@ -2,12 +2,18 @@
         <a href="/posts/all/" class="tab-link-tab-3 w-inline-block">
             <div>All</div>
         </a>
-        <a href="/posts/featured/" class="tab-link-tab-3 w-inline-block w--current">
-            <div>Featured</div>
-        </a>
-            {{ range $.Site.Taxonomies.categories.Alphabetical }}
+        {{ range $.Site.Taxonomies.categories.Alphabetical }}
+            {{ if eq "featured" .Name }}
+            <a href="/categories/featured/" class="tab-link-tab-3 w-inline-block">
+                <div>Featured</div>
+            </a>
+            {{ end }}
+        {{ end }}
+        {{ range $.Site.Taxonomies.categories.Alphabetical }}
+            {{ if ne "featured" .Name }}
             <a href="/categories/{{ .Name | urlize }}/" class="tab-link-tab-3 w-inline-block">
                 <div>{{ .Name | title }}</div>
             </a>
             {{ end }}
+        {{ end }}
     </nav>

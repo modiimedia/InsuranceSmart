@@ -146,70 +146,30 @@
           </div>
         {{ end }}
       {{ end }}
+      {{ $related := .Site.RegularPages.Related . | first 6 }}
+      {{ with $related }}
       <div class="div-block-48">
         <h1 class="related-articles-heading">Related Articles</h1>
         <div data-animation="slide" data-duration="500" data-infinite="1" class="related-slider w-slider">
           <div class="related-slide-mask w-slider-mask">
+            {{ range . }}
             <div class="related-card w-slide">
-              <a href="#" class="card-link w-inline-block">
-                <div class="blog-card-image"></div>
+              <a href="{{ .RelPermalink }}" class="card-link w-inline-block">
+                <div class="blog-card-image" style="background-image: url({{ $cloudinary }}w_350{{ .Params.featured_image }})"></div>
                 <div class="blog-card-content w-clearfix">
-                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
-                  <div class="author-photo-small"></div>
-                  <div class="author-text">by Mike Sosso</div>
+                  <h2 class="blog-card-title">{{ .Title }}</h2>
+                  {{ with .Params.author }}
+                  {{ with $.Site.GetPage . }}
+                  <div class="flexwrap">
+                      <div class="author-photo-small" style="background-image: url({{ $cloudinary }}w_30,h_30,c_fill,g_face{{ .Params.photo }}"></div>
+                      <div class="author-text">by {{ .Title }}</div>    
+                  </div>
+                  {{ end }}
+                  {{ end }}
                 </div>
               </a>
             </div>
-            <div class="related-card w-slide">
-              <a href="#" class="card-link w-inline-block">
-                <div class="blog-card-image"></div>
-                <div class="blog-card-content w-clearfix">
-                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
-                  <div class="author-photo-small"></div>
-                  <div class="author-text">by Mike Sosso</div>
-                </div>
-              </a>
-            </div>
-            <div class="related-card w-slide">
-              <a href="#" class="card-link w-inline-block">
-                <div class="blog-card-image"></div>
-                <div class="blog-card-content w-clearfix">
-                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
-                  <div class="author-photo-small"></div>
-                  <div class="author-text">by Mike Sosso</div>
-                </div>
-              </a>
-            </div>
-            <div class="related-card w-slide">
-              <a href="#" class="card-link w-inline-block">
-                <div class="blog-card-image"></div>
-                <div class="blog-card-content w-clearfix">
-                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
-                  <div class="author-photo-small"></div>
-                  <div class="author-text">by Mike Sosso</div>
-                </div>
-              </a>
-            </div>
-            <div class="related-card w-slide">
-              <a href="#" class="card-link w-inline-block">
-                <div class="blog-card-image"></div>
-                <div class="blog-card-content w-clearfix">
-                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
-                  <div class="author-photo-small"></div>
-                  <div class="author-text">by Mike Sosso</div>
-                </div>
-              </a>
-            </div>
-            <div class="related-card w-slide">
-              <a href="#" class="card-link w-inline-block">
-                <div class="blog-card-image"></div>
-                <div class="blog-card-content w-clearfix">
-                  <h2 class="blog-card-title">Picking the Right Life Insurance Plan</h2>
-                  <div class="author-photo-small"></div>
-                  <div class="author-text">by Mike Sosso</div>
-                </div>
-              </a>
-            </div>
+            {{ end }}
           </div>
           <div class="related-arrow-left w-slider-arrow-left">
             <div class="w-icon-slider-left"><i class="fas fa-chevron-left"></i></div>
@@ -220,6 +180,7 @@
           <div class="slide-nav-2 w-slider-nav w-round"></div>
         </div>
       </div>
+      {{ end }}
   </div>
 </section>
 {{ end }}

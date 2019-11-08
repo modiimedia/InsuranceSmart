@@ -9,3 +9,15 @@ category = "categories"
 tag = "tags"
 [permalinks]
 insurancecategories = "/products/:filename/"
+[related]
+threshold = 80
+includeNewer = true
+  [[related.indices]]
+  name = "tags"
+  weight = 100.0
+  [[related.indices]]
+  name = "categories"
+  weight = 100.0
+  [[related.indices]]
+  name = "date"
+  weight = 10.0
