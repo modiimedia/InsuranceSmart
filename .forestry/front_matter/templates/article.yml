@@ -39,6 +39,7 @@ fields:
     source:
       type: simple
     options:
+    - featured
     - auto
     - home
     - health
