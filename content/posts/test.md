@@ -5,7 +5,7 @@ date = 2019-07-01T05:00:00Z
 draft = true
 featured = false
 featured_image = "/v1530816707/insurancesmart/5a792163b9b0da0001c3e1d6_woman-smiling-compressor.jpg"
-tags = []
+tags = ["life insurance", "this is a test", "awesome tag"]
 title = "Understanding the Different Kinds of Life Insurance"
 [seo]
 meta_description = ""
