@@ -37,6 +37,7 @@ sections:
   label: Posts
   create: documents
   match: "**/*"
+  exclude: _index.md
   templates:
   - article
 - type: directory
