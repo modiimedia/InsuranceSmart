@@ -1,12 +1,11 @@
 ---
 title: Home
-banner_heading: We Provide Affordable Insurance For Texas Residents
-banner_text: "We are here to help you get the coverage you need, at a price you can
-  afford. We specialize in life and health insurance for all ages, and provide help
-  to seniors transitioning to Medicare. We are also expanding to help with your home,
-  auto, and even commercial coverage.\n\nOur mission provide great service and a great
-  value on all types of insurance to help our cleints get the coverage they need at
-  a price they can afford. "
+banner_heading: Providing Affordable Insurance For Texas Residents Since 2005
+banner_text: "We are an Independent Insurance Agency specializing in life and health
+  coverage for all ages, and help seniors transitioning to Medicare. We are also expanding
+  to help provide valuable coverage for your home, auto, and business.\n\nOur mission
+  is to provide a great value on insurance in the markets we serve with exceptional
+  service so you get the coverage you need at a price you can afford. "
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
