@@ -1,7 +1,7 @@
 +++
 category = "insurancecategories/health.md"
 custom_article_list = []
-description = "Get Quick Quote On Medical Insurance Covering All Pre-Existing Conditions"
+description = "Get Quick Quote On Medical Insurance That Covers Pre-Existing Conditions"
 draft = true
 faqs = []
 featured_image = ""
