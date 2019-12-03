@@ -1,10 +1,12 @@
 ---
 title: Home
 banner_heading: We Provide Affordable Insurance For Texas Residents
-banner_text: |-
-  We are here to help you get the coverage you need, at a price you can afford. We specialize in life and health insurance for all ages, and provide help to seniors on Medicare. We are also expanding to help with your home, auto, and commercial coverage.
-
-  Our mission is to become the one resource our clients rely on, and consistently refer to their friends and associates.
+banner_text: "We are here to help you get the coverage you need, at a price you can
+  afford. We specialize in life and health insurance for all ages, and provide help
+  to seniors transitioning to Medicare. We are also expanding to help with your home,
+  auto, and even commercial coverage.\n\nOur mission provide great service and a great
+  value on all types of insurance to help our cleints get the coverage they need at
+  a price they can afford. "
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
@@ -16,6 +18,7 @@ components:
   show: most recent
   background_image: "/v1530992901/insurancesmart/helena-lopes-463976-unsplash%20%281%29.jpg"
   hide: true
+  custom_order: []
 - template: content-left
   content: "![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)\n\n#
     Experience You Can Trust\n\nWe don't just sell insurance, we build life long relationships
