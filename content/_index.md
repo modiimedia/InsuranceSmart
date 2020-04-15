@@ -15,7 +15,7 @@ banner_media:
 components:
 - template: testimony-slider
   heading: What People Are Saying
-  show: custom
+  show: most recent
   background_image: "/v1530992901/insurancesmart/helena-lopes-463976-unsplash%20%281%29.jpg"
   hide: false
   custom_order:
