@@ -1,6 +1,6 @@
 +++
 author = "staff/mike.md"
-categories = ["life", "featured", "other", "life"]
+categories = ["life", "life", "featured", "other", "life"]
 date = 2019-07-01T05:00:00Z
 draft = true
 featured = false
