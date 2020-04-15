@@ -1,18 +1,18 @@
 +++
 author = "staff/mike.md"
-categories = ["featured", "other", "life"]
+categories = ["life", "featured", "other", "life"]
 date = 2019-07-01T05:00:00Z
 draft = true
 featured = false
 featured_image = "/v1530816707/insurancesmart/5a792163b9b0da0001c3e1d6_woman-smiling-compressor.jpg"
 tags = ["life insurance", "this is a test", "awesome tag"]
-title = "Understanding the Different Kinds of Life Insurance"
+title = "Understanding Life Insurance"
 [seo]
-meta_description = ""
-meta_title = ""
-open_graph_image = ""
+meta_description = "Understanding Life Insurance - What Is Best For Me?"
+meta_title = "Understanding Life Insurance"
+open_graph_image = "/v1541543966/insurancesmart/woman-playing-with-two-kids%20%281%29.jpg"
 social_description = ""
-social_title = ""
+social_title = "Understanding Life Insurance - What's Best For Me?"
 [[form]]
 background_image = "/v1530419490/insurancesmart/couple-smiling.jpg"
 style = "light"
@@ -21,7 +21,9 @@ template = "contact-us-popup"
 title = "GET A FREE QUOTE"
 
 +++
-Lorem markdownum quaeque et lenimen Cadme resupinum tuoque! Quamquam patienda maiora, profanam parvis et ille rapuere? Quid **cum** videntur tamen quoniam formae diras est muneris passu: arcana. Moles essent. In haec si quam, velaque et Styge inpar; nare.
+There are so many things to consider when purchasing life insurance.  The first is to understand that Life Insurance was orignally designed to pay a stated cash benefit to protect from  financial loss that occurs in the event of the insured's death.  Since its inception however, life insurance companies have added many additional benefits to policies to include benefits that can be accessed by the insured while they are living and prior to thier death.  Among these Living Benefits are Cash Value Accumulation, Critical and Chronic Illness Acceleration benefits as well as Disability Income Riders and many more.  Be sure to connect with a seasoned and qualified Life Insurance Agent that understands all the many options available so you are sure to get the very best product to meet your need and budget.  In addition specify the exact need when speaking to your qualified sability in, , that can be accessed allow and insured to acc
+
+, the declared benefit Lorem markdownum quaeque et lenimen Cadme resupinum tuoque! Quamquam patienda maiora, profanam parvis et ille rapuere? Quid **cum** videntur tamen quoniam formae diras est muneris passu: arcana. Moles essent. In haec si quam, velaque et Styge inpar; nare.
 
 * Timore ut omni
 * Sic publica ipsum celsum vendit frondescere Venus
@@ -47,7 +49,6 @@ Colantur mortalia, ad placere erat, decutit **et mundus**. In tibi coniuge **con
     }
     e.moodle = click_bluetooth + rfidIcf(data, 2, veronica) * file.volumeEcc(1,
             bar_driver_threading);
-    
 
 ## Et alii oro amando quas monitus exierat
 
