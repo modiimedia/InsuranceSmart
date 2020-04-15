@@ -15,10 +15,11 @@ banner_media:
 components:
 - template: testimony-slider
   heading: What People Are Saying
-  show: most recent
+  show: custom
   background_image: "/v1530992901/insurancesmart/helena-lopes-463976-unsplash%20%281%29.jpg"
   hide: true
-  custom_order: []
+  custom_order:
+  - testimonies/_index.md
 - template: content-left
   content: "![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)\n\n#
     Experience You Can Trust\n\nWe don't just sell insurance, we build life long relationships
@@ -27,8 +28,8 @@ components:
     \n\nGive us a call today!"
   button_settings:
     text: Get Started Today!
-    show: true
-    link: products/_index.md
+    show: false
+    link: _index.md
   style:
     mask: large to small
     background_style: dark
@@ -38,7 +39,7 @@ components:
     youtube_url: https://www.youtube.com/watch?v=8iU8LPEa4o0
     _3d: true
     image: ''
-  hide: true
+  hide: false
 - template: contact-form-company-info
   heading: Get In Touch With Us
   background_image: "/v1530992759/insurancesmart/rawpixel-703123-unsplash%20%281%29.jpg"
