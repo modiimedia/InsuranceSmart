@@ -2,11 +2,11 @@
 title: Home
 banner_heading: Providing Affordable Insurance For Texas Residents Since 2005
 banner_text: "We are an Independent Insurance Agency specializing in life and health
-  coverage for all ages, and help seniors transitioning to Medicare. \n\nOur mission
-  is to provide quality service at an exceptional value in the markets we serve.  We
-  shop to find you the coverage you need, at a price you can afford. \n\nWe are expanding
-  to provide coverage for your home, auto, and business.  So let us know how we can
-  serve you!"
+  coverage since 2005 for all ages, and help seniors transitioning to Medicare. \n\nOur
+  mission is to provide quality service and an exceptional value in the insurance
+  markets we serve.  We shop to find you the best coverage for your need, at a price
+  you can afford. \n\nWe are also expanding to provide coverage for your home, auto,
+  and business. So let us know how we can serve you!"
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
