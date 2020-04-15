@@ -17,7 +17,7 @@ components:
   heading: What People Are Saying
   show: custom
   background_image: "/v1530992901/insurancesmart/helena-lopes-463976-unsplash%20%281%29.jpg"
-  hide: true
+  hide: false
   custom_order:
   - testimonies/_index.md
 - template: content-left
