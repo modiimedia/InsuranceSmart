@@ -37,6 +37,7 @@ sections:
   label: Testimonies
   create: all
   match: "**/*"
+  exclude: "**/_*"
   templates:
   - testimony
 - type: heading
