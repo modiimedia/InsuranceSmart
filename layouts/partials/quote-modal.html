@@ -1,7 +1,7 @@
 <aside id="contact-form-modal" class="modal">
     <div class="image-overlay cfm_closer"></div>
     <div class="modal-content">
-        <h2 style="margin-top: 0;">You Are Almost Done</h2>
+        <h2 style="margin-top: 0;">Review Your Submission</h2>
         <p>You can submit now or fill out some additional information so that we can better help you.</p>
         <div class="form-block homepage modal-form">
             <form method="POST" data-netlify="true" name="contact-form" netlify-honeypot="date" action="/success">
@@ -21,16 +21,17 @@
                     <label for="cfm_phone" class="overlay-label">Phone</label>
                     <input id="cfm_phone" type="tel" class="text-field" name="phone" required>
                 </div>
-                <label class="section-label">Birthday</label>
+
+                <!-- <label class="section-label">Birthday</label>
                 <div class="form-field multi-input">
                     <div class="form-field control">
-                        <!-- <label for="cfm_birth_month" class="overlay-label">Month</label> -->
+                        <label for="cfm_birth_month" class="overlay-label">Month</label>
                         <select type="date" name="birthday" id="cfm_birth_month" class="text-field">
                             {{ partial "forms/month-dropdown.html" }}
                         </select>
                     </div>            
                     <div class="form-field control">
-                        <!-- <label for="cfm_birth_day" class="overlay-label">Day</label> -->
+                        <label for="cfm_birth_day" class="overlay-label">Day</label>
                         <select name="birth day" id="cfm_birth_day" class="text-field">
                             <option value="">Select a day...</option>
                             {{ range $i, $e := (seq 31) }}
@@ -40,14 +41,14 @@
                         </select>
                     </div>         
                     <div class="form-field control">
-                        <!-- <label for="cfm_birth_year" class="overlay-label">Year</label> -->
+                        <label for="cfm_birth_year" class="overlay-label">Year</label>
                         <select name="birth year" id="cfm_birth_year" class="text-field">
                             {{ partial "forms/year-dropdown.html" }}
                         </select>
                     </div>         
-                </div>
+                </div> -->
                 <div class="form-field control">
-                    <label for="cfm_zipcode" class="overlay-label">Zip Code</label>
+                    <label for="cfm_zipcode" class="overlay-label">Zip Code (Optional)</label>
                     <input id="cfm_zipcode" type="text" name="zip" class="text-field">
                 </div>
 
@@ -70,7 +71,7 @@
                     {{ end }}
                 </div>
                 <div class="form-field control">
-                    <label class="overlay-label">Tell us about your situation</label>
+                    <label class="overlay-label">Tell us about your situation (Optional)</label>
                     <textarea class="text-field" rows="5" columns="11" name="details"></textarea>
                 </div>
                 <div class="control submit">
