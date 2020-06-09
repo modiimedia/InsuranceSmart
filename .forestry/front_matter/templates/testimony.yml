@@ -9,13 +9,11 @@ fields:
   default: ''
   config:
     required: true
-- type: number
-  name: age
-  label: Age
+- name: age
+  type: text
   config:
-    min: '1'
-    step: '1'
-  default: ''
+    required: false
+  label: Age
 - name: city
   label: City
   type: text
