@@ -1,8 +1,8 @@
 +++
-age = ""
-city = ""
+age = "72"
+city = "Round Rock"
 photo = ""
-state = ""
+state = "TX"
 testimony = "I really appreciated the time Mike spent getting to know me and my needs. I learned several things and felt very comfortable with my decisions."
 title = "Carolyn B"
 [seo]
