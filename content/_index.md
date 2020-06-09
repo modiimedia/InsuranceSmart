@@ -19,8 +19,8 @@ components:
   background_image: "/v1530992901/insurancesmart/helena-lopes-463976-unsplash%20%281%29.jpg"
   hide: false
   custom_order:
-  - testimonies/_index.md
   - testimonies/diana.md
+  - testimonies/bonnie.md
 - template: content-left
   content: "![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)\n\n#
     Experience You Can Trust\n\nWe don't just sell insurance, we build life long relationships
