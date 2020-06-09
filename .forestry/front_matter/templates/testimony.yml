@@ -39,4 +39,5 @@ fields:
   label: Seo
   name: seo
 pages:
+- content/testimonies/carolyn-b.md
 - content/testimonies/diana.md
