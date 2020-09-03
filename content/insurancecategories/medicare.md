@@ -7,8 +7,8 @@ subheading = "Find the best value at the click of your mouse!"
 title = "Medicare"
 weight = 5
 [seo]
-meta_description = "Shop and Buy Affordable Medicare Supplement Insurance Today. We help you understand all the options, make it simple for you, and provide workable solutions that meet your needs and budget. "
-meta_title = "Shop For Medicare Supplement Insurance"
+meta_description = "Are you moving from Traditional Medical Insurance to Medicare and need help understanding Medicare and all your options?  We make it simple and easy to understand so you can pick with confidence the plan that best meets your needs and budget!"
+meta_title = "Understanding Medicare As Easy As 1, 2, 3!"
 open_graph_image = "/v1541303837/insurancesmart/Senior%20Couple%20Sailing%202.jpg"
 social_description = ""
 social_title = ""
@@ -16,5 +16,9 @@ social_title = ""
 default = "Medicare Supplements"
 options = ["Medicare Supplements"]
 template = "quoteit-quote-form"
+[[quote]]
+button_link = "ApplyForMedSupp.com/R4NGEK"
+button_text = "Get A Quote"
+template = "custom-link"
 
 +++
