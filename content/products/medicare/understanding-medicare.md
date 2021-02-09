@@ -3,6 +3,7 @@ category = "insurancecategories/medicare.md"
 custom_article_list = []
 date = "2018-11-03T23:09:12-05:00"
 description = "Get the best plans and rates for medicare supplements"
+draft = true
 featured_image = "/v1541451206/insurancesmart/couple-in-kitchen-with-wine%20%281%29.jpg"
 mikes_take = ""
 recommended_articles = "choose automatically"
