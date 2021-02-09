@@ -2,11 +2,6 @@
 shop_menu:
 - name: Column 1
   children:
-  - name: bhgvygbg
-    url: ''
-    external_url: ''
-    icon: ''
-    children: []
   - name: Life
     url: insurancecategories/life.md
     icon: <i class="fas fa-heartbeat"></i>
