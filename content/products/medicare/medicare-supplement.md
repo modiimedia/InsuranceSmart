@@ -6,7 +6,7 @@ description = "Get the best plans and rates for medicare supplements"
 featured_image = "/v1541451206/insurancesmart/couple-in-kitchen-with-wine%20%281%29.jpg"
 mikes_take = ""
 recommended_articles = "choose automatically"
-title = "Medicare Supplement"
+title = "Understanding Medicare"
 [seo]
 meta_description = ""
 meta_title = ""
