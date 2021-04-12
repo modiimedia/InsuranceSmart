@@ -30,7 +30,10 @@ shop_menu:
     external_url: ''
     icon: ''
     children:
-    - url: products/medicare/medicare-supplement.md
+    - name: New To Medicare
+      url: products/medicare/new-to-medicare-we-make-it-easy.md
+      external_url: ''
+    - url: products/medicare/understanding-medicare.md
       external_url: ''
       name: Understanding Medicare
 explore_menu:
