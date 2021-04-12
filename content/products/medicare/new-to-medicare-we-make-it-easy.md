@@ -5,7 +5,6 @@ description = "We've been helping folks understand and enroll in Medicare since 
 faqs = []
 featured_image = ""
 mikes_take = ""
-quote = []
 recommended_articles = "choose automatically"
 resources = []
 title = "New To Medicare? We Make It Easy!"
@@ -15,6 +14,10 @@ meta_title = "Helping You With Medicare"
 open_graph_image = ""
 social_description = ""
 social_title = "New To "
+[[quote]]
+button_link = "https://letsmeet.io/insurancesmart/new-to-medicare"
+button_text = "Book An Intro To Medicare Quick Start"
+template = "custom-link"
 
 +++
 If you are new to Medicare, and looking for a simple guide to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no obligation to purchase anything. To help make it easy for you, we've designed a [15 minute Quick Start Consultation](https://letsmeet.io/insurancesmart/new-to-medicare "New To Medicare Quick Start Consultation") service where we can outline the steps you need to take to get
