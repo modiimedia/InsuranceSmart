@@ -1,2 +1,5 @@
 public
 resources
+node_modules
+**/*.build.css
+.hugo_build.lock
