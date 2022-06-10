@@ -2,10 +2,9 @@
 title: Health Insurance -
 subheading: 'Affordable Health Insurance! '
 quote:
-- template: custom-link
-  button_text: 'Get A Quote '
-  button_link: https://portal.benefitalign.com/brokerengage/InsuranceSmart/home/MarketingInd?id=D16A400859EAB71B7344718DBBE6E90A&PID=14&SourceChannel=&CampaignID=&BussinessType=Individual&lob=Short
-    Term Medical
+- template: call-for-a-quote
+  heading: 'Call for a Free Quote:'
+  phone_number: "2106990281"
 featured_image: "/v1584128394/insurancesmart/grayscale-photo-of-woman-lying-on-hospital-bed-3470032_nwldof.jpg"
 weight: 5
 fa_icon: medkit
