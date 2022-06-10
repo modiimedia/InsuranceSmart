@@ -35,12 +35,10 @@ url = "https://apps.apple.com/us/app/whats-covered/id1444143600"
 +++
 **There are 3 ways we can help make Medicare Enrollment easy for you.**
 
-1. We help you understand Medicare A & B. Then if you're not yet enrolled, we can show you how.
-2. We help you understand the difference between Traditional Medicare and Medicare Advantage, and then show you how to find the most affordable drug coverage.
-3. Finally we can show options for you to get the most out of Medicare that meet your healthcare needs and budget. We can even show you options to help with dental, vision, telemedicine, and even gym memberships.
+1. We'll help you understand Medicare A & B. Then if you're not yet enrolled, we can show you how.
+2. We'll help you understand the difference between Traditional Medicare and Medicare Advantage so there no guesswork and you decide whats best for you.
+3. Finally we'll give you options to get the most out of Medicare to meet your needs and budget. We can also show you how to find the most affordable drug coverage and help with dental, vision, telemedicine, and even gym memberships.
 
-**You are free to choose the plan that's right for you, and remember there is absolutley no cost or obligation for our service**
+**There is absolutley no cost or obligation for our services and you are free to choose the plan that's right for you!**
 
-[![](https://res.cloudinary.com/modii/v1612839179/insurancesmart/Medicare_What_s_Covered_App_For_Ipad_mhimfe.jpg)](https://apps.apple.com/us/app/whats-covered/id1444143600 "Understanding Medicare Apple App")
-
-To make it easy, we've created a no obligation [15 minute Intro To Medicare Quick Start Consultation ](https://io915.infusionsoft.com/app/bardEmailFunnel/\~Link-269\~)by phone or computer, that's convenient to use, and custom designed to guide you through the enrollment process. You'll meet live with a licensed insurance agent in Texas with a company that has over 15 years of experience in the Medicare field.
+To make it easy, we've created a no obligation [15 minute Intro To Medicare Quick Start Consultation ](https://io915.infusionsoft.com/app/bardEmailFunnel/\~Link-269\~) that's convenient to use, and custom designed to guide you through the enrollment process. You'll meet live with a Texas based licensed insurance agent that is here to answer all your questions and guide you through the enrollment process.
