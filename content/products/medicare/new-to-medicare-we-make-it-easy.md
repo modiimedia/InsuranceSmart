@@ -20,7 +20,7 @@ button_text = "Book An Intro To Medicare Quick Start"
 template = "custom-link"
 
 +++
-If you are new to Medicare, and need guidance to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no obligation to purchase anything. To make it easy for you, we've designed a [15 minute Quick Start Consultation](https://letsmeet.io/insurancesmart/new-to-medicare "New To Medicare Quick Start Consultation") service so you can get on our calendar for a call from a licensed agent specializing Medicare enrollment. Just click the link and complete the form and we will get back to you at the time you select. 
+If you are new to Medicare, and need to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no cost or obligation to purchase anything. To make it easy, we've designed a [15 minute Quick Start Consultation Service](https://letsmeet.io/insurancesmart/new-to-medicare "New To Medicare Quick Start Consultation") so you can book a call back from a licensed agent specializing Medicare enrollment. Just click the link and complete the form and we will get back to you at the time you select. 
 
 **3 ways we help make Medicare Enrollment easy for you.**
 
