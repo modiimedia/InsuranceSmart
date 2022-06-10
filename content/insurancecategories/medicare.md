@@ -12,12 +12,8 @@ open_graph_image = "/v1541303837/insurancesmart/Senior%20Couple%20Sailing%202.jp
 social_description = ""
 social_title = ""
 [[quote]]
-default = "Medicare Supplements"
-options = ["Medicare Supplements"]
-template = "quoteit-quote-form"
-[[quote]]
-button_link = "ApplyForMedSupp.com/R4NGEK"
-button_text = "Get A Quote"
-template = "custom-link"
+heading = "Call for a Free Quote:"
+phone_number = "2106990281"
+template = "call-for-a-quote"
 
 +++
