@@ -5,8 +5,9 @@ banner_text: "We are an Independent Insurance Agency specializing in life and he
   coverage since 2005 for all ages, and help seniors transitioning to Medicare. \n\nOur
   mission is to provide quality service and an exceptional value in the insurance
   markets we serve.  We shop to find you the best coverage for your need, at a price
-  you can afford. \n\nWe are also expanding to provide coverage for your home, auto,
-  and business. So let us know how we can serve you!"
+  you can afford. \n\nWe also provide secure financial products that can help you
+  protect and grow your nest egg with indexed returns and a no loss guarantee! Let
+  us know how we can serve you!"
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
@@ -14,11 +15,14 @@ banner_media:
   media_type: quote form
 components:
 - template: testimony-slider
-  heading: What People Are Saying
-  show: most recent
-  background_image: "/v1530992901/insurancesmart/helena-lopes-463976-unsplash%20%281%29.jpg"
+  heading: What Others Are Saying About InsuranceSmart
+  show: custom
+  background_image: "/v1541451206/insurancesmart/couple-in-kitchen-with-wine%20%281%29.jpg"
   hide: false
-  custom_order: []
+  custom_order:
+  - testimonies/carolyn-b.md
+  - testimonies/diana.md
+  - testimonies/bonnie.md
 - template: content-left
   content: "![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)\n\n#
     Experience You Can Trust\n\nWe don't just sell insurance, we build life long relationships
