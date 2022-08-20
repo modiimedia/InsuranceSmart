@@ -16,7 +16,7 @@ banner_media:
 components:
 - template: testimony-slider
   heading: What Others Are Saying About InsuranceSmart
-  show: custom
+  show: most recent
   background_image: "/v1541451206/insurancesmart/couple-in-kitchen-with-wine%20%281%29.jpg"
   hide: false
   custom_order:
