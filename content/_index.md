@@ -51,6 +51,6 @@ components:
 seo:
   social_title: Insurance You Need At A Price You Can Afford
   social_description: Get the insurance you need at a price you can afford
-  open_graph_image: ''
+  open_graph_image: "/v1660971115/insurancesmart/InsuranceSmart_-_Banner_msus7p.jpg"
 
 ---
