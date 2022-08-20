@@ -31,7 +31,7 @@ components:
     \n\nGive us a call today!"
   button_settings:
     text: Get Started Today!
-    show: false
+    show: true
     link: _index.md
   style:
     mask: large to small
