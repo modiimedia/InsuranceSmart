@@ -40,4 +40,4 @@ url = "https://apps.apple.com/us/app/whats-covered/id1444143600"
 
 **There is absolutley no cost or obligation for our services and you are free to choose the plan that's right for you!**
 
-To make it easy, we've created a convenient [15 minute Intro To Medicare Consultation ](https://io915.infusionsoft.com/app/bardEmailFunnel/\~Link-269\~) that's custom designed to guide you through the enrollment process. You'll meet live with a licensed Texas based insurance agent who is there to answer all your questions and guide you through the enrollment process.
+To make it easy, we've created a convenient 15 minute Intro To Medicare Consultation  that's custom designed to guide you through the enrollment process. You'll meet live with a licensed Texas based insurance agent who is there to answer all your questions and guide you through the enrollment process.
