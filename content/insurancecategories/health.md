@@ -3,7 +3,7 @@ title: Health Insurance -
 subheading: 'Affordable Health Insurance! '
 quote:
 - template: call-for-a-quote
-  heading: 'Call for a Free Quote:'
+  heading: 'Call for Free Consulation:'
   phone_number: "2106990281"
 featured_image: "/v1584128394/insurancesmart/grayscale-photo-of-woman-lying-on-hospital-bed-3470032_nwldof.jpg"
 weight: 5
