@@ -1,8 +1,7 @@
 +++
 category = "insurancecategories/medicare.md"
 custom_article_list = []
-description = "We've been helping folks understand and enroll in Medicare since 2005 and we are here to make it super easy for you!"
-faqs = []
+description = "We've been helping folks understand and enroll in Medicare since 2005 and we are here to make it easy for you!"
 featured_image = ""
 mikes_take = ""
 recommended_articles = "choose automatically"
@@ -14,18 +13,24 @@ meta_title = "Helping You With Medicare"
 open_graph_image = ""
 social_description = ""
 social_title = "New To "
+[[faqs]]
+answer = "Medicare Open Enrollment begins 3 months prior to the month of your 65th birthday and ends 3 months after the month of your 65th birthday and you must enroll during this time, or be subject to a penalty unless you are covered on an employer group health plan through you or your spouse's employer. In that case you can have the option to keep your coverage unless the employer coverage is ending or you want to make the transition voluntarily.  Call us for specifics as they relate to your situation and one of our licensed agents will be able to advise you."
+question = "When do I have to enroll in Medicare?"
+[[faqs]]
+answer = "Part A is "
+question = "How much does it cost?"
 [[quote]]
 button_link = "https://letsmeet.io/insurancesmart/new-to-medicare"
 button_text = "Book An Intro To Medicare Quick Start"
 template = "custom-link"
 
 +++
-If you are new to Medicare, and need to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no cost or obligation to purchase anything. To make it easy, we've designed a [15 minute Quick Start Consultation Service](https://letsmeet.io/insurancesmart/new-to-medicare "New To Medicare Quick Start Consultation") so you can book a call back from a licensed agent specializing Medicare enrollment. Just click the link and complete the form and we will get back to you at the time you select. 
+If you are new to Medicare, and need to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no cost or obligation to purchase anything. To make it easy, call us and talk to one of our licensed agents specializing Medicare. Or you fill out the contact form with your information and we will get back to you.
 
 **3 ways we help make Medicare Enrollment easy for you.**
 
 1. We'll help you understand Medicare A & B. Then if you're not yet enrolled, we can help and show you how.
-2. We'll help you understand the difference between Traditional Medicare and Medicare Advantage so you can determine what's best for you. 
+2. We'll help you understand the difference between Traditional Medicare and Medicare Advantage so you can determine what's best for you.
 3. We'll show you how to find the most affordable drug coverage.
 
 **You choose the plan that's right for you, and remember there is absolutley no cost or obligation for our service**
