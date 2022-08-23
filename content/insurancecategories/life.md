@@ -11,11 +11,8 @@ seo:
   open_graph_image: ''
 subheading: Get a quote today
 quote:
-- template: unitedhealthcare-quote-form
-  options:
-  - Health ProtectorGuard (Fixed Indemnity)
-  - Critical Illness
-  - Term Life Safeguard
-  - Dental
+- template: call-for-a-quote
+  heading: 'Call for Information:'
+  phone_number: ''
 
 ---
