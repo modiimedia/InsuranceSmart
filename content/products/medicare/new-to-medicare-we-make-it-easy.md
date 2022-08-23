@@ -25,12 +25,12 @@ button_text = "Book An Intro To Medicare Quick Start"
 template = "custom-link"
 
 +++
-If you are new to Medicare, and need to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no cost or obligation to purchase anything. To make it easy, call us and talk to one of our licensed agents specializing Medicare. Or you fill out the contact form with your information and we will get back to you.
+If you are new to Medicare and need to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no cost or obligation to purchase anything. So to make it easy, give us a call and talk to one of our licensed Medicare specialists. Or fill out our contact form and we will get back to you.
 
 **3 ways we help make Medicare Enrollment easy for you.**
 
-1. We'll help you understand Medicare A & B. Then if you're not yet enrolled, we can help and show you how.
-2. We'll help you understand the difference between Traditional Medicare and Medicare Advantage so you can determine what's best for you.
+1. We'll help you understand Medicare A & B. Then if you're not yet enrolled, we can show you how.
+2. We help you understand the difference between Medicare Advantage and Traditional Medicare so you can determine what's best for you.
 3. We'll show you how to find the most affordable drug coverage.
 
 **You choose the plan that's right for you, and remember there is absolutley no cost or obligation for our service**
