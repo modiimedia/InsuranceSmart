@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/ModiiMedia/InsuranceSmart#readme",
   "dependencies": {
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "hugo-bin": "^0.89.0"
   },
   "devDependencies": {
     "concurrently": "^7.3.0",
-    "hugo-bin": "^0.89.0",
     "prettier": "^2.7.1",
     "prettier-plugin-go-template": "^0.0.13"
   }
