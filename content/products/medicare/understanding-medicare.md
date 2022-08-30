@@ -2,7 +2,7 @@
 category = "insurancecategories/medicare.md"
 custom_article_list = []
 date = "2018-11-03T23:09:12-05:00"
-description = "Get the best plans and rates for medicare supplements"
+description = "Simple three step process to understanding Medicare with help to get you enrolled!"
 featured_image = "/v1541451206/insurancesmart/couple-in-kitchen-with-wine%20%281%29.jpg"
 mikes_take = ""
 recommended_articles = "choose automatically"
@@ -36,8 +36,10 @@ url = "https://apps.apple.com/us/app/whats-covered/id1444143600"
 
 1. Help you understand Medicare A & B in simple terms. Then if you're not yet enrolled, we can show you how.
 2. Help you understand your options with Traditional Medicare and Medicare Advantage so there no guesswork and you can determine what's best for you.
-3. Finally we'll give you several options to get the most out of Medicare meet your needs and budget to include how to find the most affordable drug coverage. We can also help with dental, vision, and telemedicine.
+3. Finally we'll give you several options to get the most out of Medicare that meets your needs and budget, to include how to find the most affordable drug coverage. We can also help with dental, vision, and final expense coverages.
 
 **There is absolutley no cost or obligation for our services and you are free to choose the plan that's right for you!**
 
-To make it easy, we've created a convenient 15 minute Intro To Medicare Consultation  that's custom designed to guide you through the enrollment process. You'll meet live with a licensed Texas based insurance agent who is there to answer all your questions and guide you through the enrollment process.
+To talk with one of our Texas based licensed Medicare insurance agents, give us a call or complete the contact form and we will get right back to you.
+
+**CALL TODAY!  (210) 699-0291**
