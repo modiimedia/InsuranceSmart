@@ -32,7 +32,7 @@ components:
   button_settings:
     text: Get Started Today!
     show: true
-    link: success.md
+    link: contact.md
   style:
     mask: large to small
     background_style: dark
