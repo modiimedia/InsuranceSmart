@@ -13,7 +13,7 @@ open_graph_image = ""
 social_description = ""
 social_title = "New To "
 [[faqs]]
-answer = "Medicare Open Enrollment begins 3 months prior to the month of your 65th birthday and ends 3 months after the month of your 65th birthday and you must enroll during this time, or be subject to a penalty unless you are covered on an employer group health plan through you or your spouse's employer or other credible coverage. In that case you can have the option to keep your coverage unless this coverage is ending or you want to make the transition voluntarily.  Call us for specifics as they relate to your situation and one of our licensed agents will be able to advise you."
+answer = "Medicare Open Enrollment begins 3 months prior to the month of your 65th birthday and ends 3 months after the month of your 65th birthday and you must enroll during this time, or be subject to a penalty unless you are covered on an employer group health plan through you or your spouse's employer. In that case you can have the option to keep your coverage unless the employer coverage is ending or you want to make the transition voluntarily.  Call us for specifics as they relate to your situation and one of our licensed agents will be able to advise you."
 question = "When do I have to enroll in Medicare?"
 [[faqs]]
 answer = "Part A is "
