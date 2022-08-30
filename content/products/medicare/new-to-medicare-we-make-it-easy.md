@@ -5,7 +5,6 @@ description = "We've been helping folks understand and enroll in Medicare since 
 featured_image = ""
 mikes_take = ""
 recommended_articles = "choose automatically"
-resources = []
 title = "New To Medicare? We Make It Easy!"
 [seo]
 meta_description = "If you are new to Medicare, and looking for a simple guide to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no obligation to purchase anything. We've designed a 15 minute Quick Start Consultation "
@@ -14,7 +13,7 @@ open_graph_image = ""
 social_description = ""
 social_title = "New To "
 [[faqs]]
-answer = "Medicare Open Enrollment begins 3 months prior to the month of your 65th birthday and ends 3 months after the month of your 65th birthday and you must enroll during this time, or be subject to a penalty unless you are covered on an employer group health plan through you or your spouse's employer. In that case you can have the option to keep your coverage unless the employer coverage is ending or you want to make the transition voluntarily.  Call us for specifics as they relate to your situation and one of our licensed agents will be able to advise you."
+answer = "Medicare Open Enrollment begins 3 months prior to the month of your 65th birthday and ends 3 months after the month of your 65th birthday and you must enroll during this time, or be subject to a penalty unless you are covered on an employer group health plan through you or your spouse's employer or other credible coverage. In that case you can have the option to keep your coverage unless this coverage is ending or you want to make the transition voluntarily.  Call us for specifics as they relate to your situation and one of our licensed agents will be able to advise you."
 question = "When do I have to enroll in Medicare?"
 [[faqs]]
 answer = "Part A is "
@@ -23,6 +22,10 @@ question = "How much does it cost?"
 button_link = "https://letsmeet.io/insurancesmart/new-to-medicare"
 button_text = "Book An Intro To Medicare Quick Start"
 template = "custom-link"
+[[resources]]
+file = "/v1661830550/insurancesmart/Medicare_and_You_2022_xku83k.pdf"
+name = "2022 Understanding Medicare"
+template = "resource-document-image"
 
 +++
 If you are new to Medicare and need to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no cost or obligation to purchase anything. So to make it easy, give us a call and talk to one of our licensed Medicare specialists. Or fill out our contact form and we will get right back to you.
