@@ -75,6 +75,7 @@ build:
   - HUGO_VERSION=0.101.0
   - NPM_VERSION=8.15.1
   preview_output_directory: public
+  install_dependencies_command: npm install
   preview_docker_image: forestryio/node:16
   mount_path: "/srv"
   working_dir: "/srv"
