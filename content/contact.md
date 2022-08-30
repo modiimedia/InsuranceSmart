@@ -1,22 +1,15 @@
 ---
 title: Contact
 layout: contact
-
+heading: Get In Touch With Us
+subheading: We can provide you a customized plan that's perfect to fit your needs.
+phone: 210-699-0281
+email: info@getinsurancesmart.com
+address:
+  name: InsuranceSmart Office
+  line1: 8000 IH 10 West
+  line2: Suite 600
+  city: San Antonio
+  state: TX
+  zip: "78023"
 ---
-# Get In Touch With Us
-
-We can provided you a customized plan that's perfect to fit your needs.
-
-<br/>
-
-**Phone:** <a href="tel:+12106990281" class="callNowButton" target="_blank">210-699-0281</a>
-
-**Email:** [info@getinsurancesmart.com](mailto:info@getinsurancesmart.com)
-
-**InsuranceSmart Office:**
-
-8000 IH 10 West
-
-Suite 600
-
-San Antonio, TX 78230

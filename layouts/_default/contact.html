@@ -1,7 +1,103 @@
 {{ define "main" }}
-<section class="main-content">
+  <section class="hero-banner">
     <div class="container">
-        {{ .Content }}    
+      <div class="lg:flex">
+        <div
+          class="hero-content lg:mr-10 mb-10"
+          style="justify-content: stretch; align-items: stretch"
+        >
+          <div class="form-block homepage" style="width: 100% !important">
+            <h1 class="heading">{{ .Params.heading }}</h1>
+            <div class="-mt-6 mb-10">{{ .Params.subheading }}</div>
+            <form
+              method="POST"
+              data-netlify="true"
+              name="contact-form"
+              action="/success/"
+            >
+              <div class="control">
+                <label class="overlay-label" for="banner_name">Name:</label>
+                <input
+                  type="text"
+                  class="text-field"
+                  name="name"
+                  id="banner_name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="control">
+                <label class="overlay-label" for="banner_email"
+                  >Email Address:</label
+                >
+                <input
+                  type="email"
+                  class="text-field"
+                  name="email"
+                  id="banner_email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="control">
+                <label class="overlay-label" for="banner_phone"
+                  >Phone Number:</label
+                >
+                <input
+                  type="tel"
+                  class="text-field"
+                  name="phone"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+              <div class="control">
+                <label for="banner_details" class="overlay-label"
+                  >How Can We Help You?</label
+                >
+                <textarea
+                  name="details"
+                  class="text-field"
+                  id="banner_details"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="control submit">
+                <button class="submit-button large" type="submit">
+                  Get Started <i class="fas fa-angle-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="hero-content">
+          {{ with .Params.phone }}
+            {{ $uri := replace . "-" "" }}
+            {{ $uri = replace $uri "(" "" }}
+            {{ $uri = replace $uri ")" "" }}
+            {{ $uri = replace $uri " " "" }}
+            <div>
+              <strong>Phone: </strong> <a href="tel:+{{ $uri }}">{{ . }}</a>
+            </div>
+          {{ end }}
+          {{ with .Params.email }}
+            <div class="mt-4">
+              <strong>Email: </strong>
+              <a href="mailto:{{ . }}">{{ . }}</a>
+            </div>
+          {{ end }}
+          {{ with .Params.address }}
+            <div class="mt-4"><strong>Address: </strong></div>
+            <div>{{ .name }}</div>
+            <div>{{ .line1 }}</div>
+            {{ with .line2 }}
+              <div>{{ . }}</div>
+            {{ end }}
+            <div>{{ .city }}, {{ .state }} {{ .zip }}</div>
+          {{ end }}
+        </div>
+      </div>
     </div>
-</section> 
+  </section>
 {{ end }}

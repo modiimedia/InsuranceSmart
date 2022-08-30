@@ -1,12 +1,17 @@
 {{ define "main" }}
-<section class="main-content">
+  <section class="main-content">
     <div class="container">
-        <div class="success-banner">
-            <div class="content">
-                {{ .Content }}
-                <a href="/products" class="submit-button" style="margin-top: 1rem; display: inline-block">View More Products</a>    
-            </div>
+      <div class="success-banner">
+        <div class="content">
+          {{ .Content }}
+          <a
+            href="/products"
+            class="submit-button"
+            style="margin-top: 1rem; display: inline-block"
+            >View More Products</a
+          >
         </div>
+      </div>
     </div>
-</section> 
+  </section>
 {{ end }}

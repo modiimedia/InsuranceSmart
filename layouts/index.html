@@ -1,100 +1,147 @@
-{{- define "title" -}}{{ $.Site.Data.general_settings.website_settings.site_title }} | {{ $.Site.Data.general_settings.website_settings.site_slogan }}{{- end -}} 
+{{- define "title" -}}
+  {{ $.Site.Data.general_settings.website_settings.site_title }} |
+  {{ $.Site.Data.general_settings.website_settings.site_slogan }}
+{{- end -}}
 {{- define "main" -}}
-<section class="hero-banner">
+  <section class="hero-banner">
     <div class="container">
-        <div class="flex-row">
-            <div class="hero-content">
-                <h1 class="heading">{{- .Params.banner_heading -}}</h1>
-                <p class="paragraph">{{- .Params.banner_text -}}</p>
-                <!-- <a href="/products" class="hero-button w-inline-block">
+      <div class="flex-row">
+        <div class="hero-content">
+          <h1 class="heading">{{- .Params.banner_heading -}}</h1>
+          <p class="paragraph">{{- .Params.banner_text -}}</p>
+          <!-- <a href="/products" class="hero-button w-inline-block">
                     <div class="text-block">Shop Insurance</div>
                 </a>
                 <a href="/contact" class="ghost-button w-inline-block">
                     <div class="text-block-2"><i class="fas fa-phone"></i>&nbsp;</div>
                     <div class="text-block">Contact Us</div>
                 </a> -->
-            </div>
-            <div class="hero-content flex-grow hero-video-container" style="justify-content: flex-start; align-items: flex-end">
-                <div class="form-block homepage" style="">
-                    <!-- style="background: #333333; color: white; margin: -30px -30px 40px -30px; padding: 30px;" -->
-                    <h1 class="heading">GET A FREE QUOTE</h1>
-                    <form method="GET">
-                        <div class="control">
-                            <label class="overlay-label" for="banner_name">Name:</label>
-                            <input type="text" class="text-field" name="name" id="banner_name" autocomplete="name" required>        
-                        </div>
-                        <div class="control">
-                            <label class="overlay-label" for="banner_email">Email Address:</label>
-                            <input type="email" class="text-field" name="email" id="banner_email" autocomplete="email" required>        
-                        </div>
-                        <div class="control">
-                            <label class="overlay-label" for="banner_phone">Phone Number:</label>
-                            <input type="tel" class="text-field" name="phone" autocomplete="tel" required>        
-                        </div>
-                        <div class="control is-hidden">
-                            <input type="checkbox" name="modal" required checked>
-                        </div>
-                        <div class="control submit">
-                            <button class="submit-button large" type="submit">Get Started <i class="fas fa-angle-right"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
+        <div
+          class="hero-content flex-grow hero-video-container"
+          style="justify-content: flex-start; align-items: flex-end"
+        >
+          <div class="form-block homepage" style="">
+            <!-- style="background: #333333; color: white; margin: -30px -30px 40px -30px; padding: 30px;" -->
+            <h1 class="heading">GET A FREE QUOTE</h1>
+            <form method="GET">
+              <div class="control">
+                <label class="overlay-label" for="banner_name">Name:</label>
+                <input
+                  type="text"
+                  class="text-field"
+                  name="name"
+                  id="banner_name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="control">
+                <label class="overlay-label" for="banner_email"
+                  >Email Address:</label
+                >
+                <input
+                  type="email"
+                  class="text-field"
+                  name="email"
+                  id="banner_email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="control">
+                <label class="overlay-label" for="banner_phone"
+                  >Phone Number:</label
+                >
+                <input
+                  type="tel"
+                  class="text-field"
+                  name="phone"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+              <div class="control is-hidden">
+                <input type="checkbox" name="modal" required checked />
+              </div>
+              <div class="control submit">
+                <button class="submit-button large" type="submit">
+                  Get Started <i class="fas fa-angle-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="polygon-small-to-large" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_960,q_60,f_auto{{ .Params.banner_media.background_image }})">
-        <div class="div-block _2"></div>
+    <div
+      class="polygon-small-to-large"
+      style="background-image: url({{ $.Site.Params.cloudinary_url }}w_960,q_60,f_auto{{ .Params.banner_media.background_image }})"
+    >
+      <div class="div-block _2"></div>
     </div>
-</section>
-{{- range .Params.components -}}
+  </section>
+  {{- range .Params.components -}}
     {{- $t := .template -}}
     {{ if ne .hide true }}
-        {{- if eq $t "testimony-slider" -}}
-            <section class="section-dark" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1600,q_40,f_auto{{ .background_image }})">
-                <div class="image-overlay"></div>
-                <div class="container">
-                    <h1 class="dark-heading">{{ .heading }}</h1>
-                    <div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
-                        <div class="mask w-slider-mask">
-                            {{- if eq .show "most recent" -}} 
-                                {{- range first 10 (where $.Site.RegularPages "Section" "testimonies") -}} 
-                                    {{- partial "components/testimony-slider.html" . -}} 
-                                {{- end -}} 
-                            {{- else -}}
-                                <div>Hi</div>
-                            {{- end -}}
-                        </div>
-                        <div class="left-arrow w-slider-arrow-left">
-                            <div class="arrow-icon w-icon-slider-left"><i class="fas fa-chevron-left"></i></div>
-                        </div>
-                        <div class="right-arrow w-slider-arrow-right">
-                            <div class="arrow-icon w-icon-slider-right"><i class="fas fa-chevron-right"></i></div>
-                        </div>
-                        <div class="slide-nav w-slider-nav w-round">
-                            <div class="w-slider-dot w-active" data-wf-ignore=""></div>
-                            <div class="w-slider-dot" data-wf-ignore=""></div>
-                        </div>
-                        <!-- <a href="#" class="button-gold w-inline-block">
+      {{- if eq $t "testimony-slider" -}}
+        <section
+          class="section-dark"
+          style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1600,q_40,f_auto{{ .background_image }})"
+        >
+          <div class="image-overlay"></div>
+          <div class="container">
+            <h1 class="dark-heading">{{ .heading }}</h1>
+            <div
+              data-animation="slide"
+              data-duration="500"
+              data-infinite="1"
+              class="slider w-slider"
+            >
+              <div class="mask w-slider-mask">
+                {{- if eq .show "most recent" -}}
+                  {{- range first 10 (where $.Site.RegularPages "Section" "testimonies") -}}
+                    {{- partial "components/testimony-slider.html" . -}}
+                  {{- end -}}
+                {{- else -}}
+                  <div>Hi</div>
+                {{- end -}}
+              </div>
+              <div class="left-arrow w-slider-arrow-left">
+                <div class="arrow-icon w-icon-slider-left">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+              </div>
+              <div class="right-arrow w-slider-arrow-right">
+                <div class="arrow-icon w-icon-slider-right">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="slide-nav w-slider-nav w-round">
+                <div class="w-slider-dot w-active" data-wf-ignore=""></div>
+                <div class="w-slider-dot" data-wf-ignore=""></div>
+              </div>
+              <!-- <a href="#" class="button-gold w-inline-block">
                             <div>VIEW ALL</div>
                         </a> -->
-                    </div>
-                </div>
-            </section>
-        {{- end -}} 
-        {{- if eq $t "contact-form-company-info" -}}
-            {{ $cUrl := $.Site.Params.cloudinary_url }}
-            {{- partial "components/contact-component.html" (dict "Params" . "data" $.Site.Data "cUrl" $cUrl ) -}} 
-        {{- end -}}
-        {{- if eq $t "content-left" -}}
-            {{ $cUrl := $.Site.Params.cloudinary_url }}
-            {{- partial "components/content-left.html" (dict "cLeft" . "cUrl" $cUrl) -}}
-        {{ end }}
+            </div>
+          </div>
+        </section>
+      {{- end -}}
+      {{- if eq $t "contact-form-company-info" -}}
+        {{ $cUrl := $.Site.Params.cloudinary_url }}
+        {{- partial "components/contact-component.html" (dict "Params" . "data" $.Site.Data "cUrl" $cUrl ) -}}
+      {{- end -}}
+      {{- if eq $t "content-left" -}}
+        {{ $cUrl := $.Site.Params.cloudinary_url }}
+        {{- partial "components/content-left.html" (dict "cLeft" . "cUrl" $cUrl) -}}
+      {{ end }}
     {{ end }}
-{{- end -}} 
+  {{- end -}}
 {{- end -}}
 
 {{ define "addscripts" }}
-    <!-- <script>
+  <!-- <script>
     let quoterStart = document.getElementById("homeQuoterStart")
     let quoterBtns = document.querySelectorAll("#homeQuoterStart button")
     let resetBtns = document.querySelectorAll("#homeQuoter .homeQuoterOption > p > a")

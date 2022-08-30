@@ -9,8 +9,9 @@
     {{- $base := resources.Get "css/base.css" -}}
     {{- $main := resources.Get "css/insurancesmart.css" -}}
     {{- $main2 := resources.Get "css/is.css" -}}
+    {{- $tailwind := resources.Get "css/tailwind.build.css" -}}
     {{- $modals := resources.Get "css/modal.css" -}}
-    {{- $css := slice $normalize $base $main $main2 $modals | resources.Concat "css/main.css" -}}
+    {{- $css := slice $normalize $base $main $main2 $tailwind $modals | resources.Concat "css/main.css" -}}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
     <link rel="icon" sizes="32x32" href="{{ $.Site.Params.cloudinary_url }}w_32,h_32,c_fit{{ $.Site.Data.general_settings.website_settings.favicon }}">
     <link rel="icon" sizes="16x16" href="{{ $.Site.Params.cloudinary_url }}w_16,h_16,c_fit{{ $.Site.Data.general_settings.website_settings.favicon }}">
