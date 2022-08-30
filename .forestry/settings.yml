@@ -72,10 +72,9 @@ file_template: ":filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
-  - HUGO_VERSION=0.55.6
+  - HUGO_VERSION=0.101.0
   preview_output_directory: public
   preview_docker_image: forestryio/build:latest
   mount_path: "/opt/buildhome/repo"
-  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
-    -d public
+  instant_preview_command: npm run forestry-preview
 version: '0.49'
