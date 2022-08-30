@@ -10,7 +10,8 @@
     "hugo": "hugo --minify",
     "hugo:watch": "hugo server",
     "dev": "concurrently \"npm run css:watch\" \"npm run hugo:watch\"",
-    "build": "npm run css && npm run hugo"
+    "build": "npm run css && npm run hugo",
+    "forestry-preview": "npm run css && hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public"
   },
   "repository": {
     "type": "git",
