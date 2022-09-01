@@ -2,7 +2,7 @@
 title: Contact
 layout: contact
 heading: Get In Touch With Us
-subheading: We can provide you a customized plan that's perfect to fit your needs.
+subheading: We can provide a customized plan that's perfect to fit your needs.
 phone: 210-699-0281
 email: info@getinsurancesmart.com
 address:
@@ -12,4 +12,5 @@ address:
   city: San Antonio
   state: TX
   zip: "78023"
+
 ---
