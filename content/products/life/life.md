@@ -5,7 +5,7 @@ subheading: Get insurance for your home, condo, rental, and more!
 recommended_articles: choose automatically
 description: 'We provide quality Life Insurance from top rated carriers to get you
   the best coverage available at a price you can afford. '
-featured_image: "/v1530419500/insurancesmart/joshua-rodriguez-583392-unsplash.jpg"
+featured_image: "/v1541304467/insurancesmart/Great%20Rates%20On%20Life%20Insurance.jpg"
 seo:
   meta_title: Great Rates On Life Insurance
   meta_description: 'We shop among mutliple carriers to get you the best value on
