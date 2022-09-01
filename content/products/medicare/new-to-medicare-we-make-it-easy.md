@@ -30,7 +30,7 @@ template = "resource-document-image"
 +++
 If you are new to Medicare and need to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no cost or obligation to purchase anything. So to make it easy, give us a call and talk to one of our licensed Medicare specialists. Or fill out our contact form and we will get right back to you.
 
-**3 simple steps to make Medicare Enrollment easy for you.**
+**3 Simple Steps to Make Medicare Enrollment Easy For You.**
 
 1. We'll help you understand Medicare A & B. Then if you're not yet enrolled, we can show you how.
 2. We help you understand the difference between Medicare Advantage and Traditional Medicare so you can determine what's best for you.
