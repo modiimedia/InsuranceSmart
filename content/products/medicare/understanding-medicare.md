@@ -2,7 +2,7 @@
 category = "insurancecategories/medicare.md"
 custom_article_list = []
 date = "2018-11-03T23:09:12-05:00"
-description = "Simple three step process to understanding Medicare with help to get you enrolled!"
+description = "Simple Three Step Process to Understanding Medicare with Help to Get You Enrolled!"
 featured_image = "/v1541451206/insurancesmart/couple-in-kitchen-with-wine%20%281%29.jpg"
 mikes_take = ""
 recommended_articles = "choose automatically"
@@ -32,7 +32,7 @@ template = "resource-external-link"
 url = "https://apps.apple.com/us/app/whats-covered/id1444143600"
 
 +++
-**3 Step Process to Make Medicare Enrollment Easy For You.**
+**_3 Step Process_ to Make Medicare Enrollment Easy For You.**
 
 1. Help you understand Medicare A & B in simple terms. Then if you're not yet enrolled, we can show you how.
 2. Help understand differences between Traditional Medicare and Medicare Advantage plans so you know all your options and can then determine what's best for you.
@@ -43,3 +43,5 @@ url = "https://apps.apple.com/us/app/whats-covered/id1444143600"
 To talk with one of our Licensed Texas Medicare Insurance Specialists, give us a call or complete the contact form below and we will get right back to you.
 
 **CALL TODAY!  (210) 699-0291**
+
+#### [**Or Contact Us Today**](/contact)
