@@ -1,6 +1,6 @@
 ---
 title: Life Insurance
-featured_image: "/v1530419487/insurancesmart/5a8b0feab39fc100011f1e5e_photo-1513337915236-364fe3ee1f53-compressor.jpg"
+featured_image: "/v1575340666/insurancesmart/Happy_Family_r1uvkl.png"
 weight: 5
 fa_icon: heartbeat
 seo:
@@ -14,6 +14,5 @@ quote:
 - template: call-for-a-quote
   heading: 'Call for Information:'
   phone_number: ''
-draft: true
 
 ---
