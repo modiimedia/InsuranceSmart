@@ -30,12 +30,12 @@ template = "resource-document-image"
 +++
 If you are new to Medicare and need to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no cost or obligation to purchase anything. So to make it easy, give us a call and talk to one of our licensed Medicare specialists. Or fill out our contact form and we will get right back to you.
 
-**3 ways we help make Medicare Enrollment easy for you.**
+**3 simple steps to make Medicare Enrollment easy for you.**
 
 1. We'll help you understand Medicare A & B. Then if you're not yet enrolled, we can show you how.
 2. We help you understand the difference between Medicare Advantage and Traditional Medicare so you can determine what's best for you.
-3. We'll show you how to find the most affordable drug coverage.
+3. Then based on your selection in step 2, we'll show options to get the most out of Medicare including finding you affordable Drug Coverage. We can also help with Dental, Vision, Long Term Care and Final Expense Plans
 
-**You choose the plan that's right for you, and remember there is absolutley no cost or obligation for our service**
+   **You choose the plan that's right for you, and remember there is absolutley no cost or obligation for our service**
 
 [![](https://res.cloudinary.com/modii/v1612839179/insurancesmart/Medicare_What_s_Covered_App_For_Ipad_mhimfe.jpg)](https://apps.apple.com/us/app/whats-covered/id1444143600 "Understanding Medicare Apple App")
