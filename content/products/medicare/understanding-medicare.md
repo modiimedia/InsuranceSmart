@@ -32,14 +32,14 @@ template = "resource-external-link"
 url = "https://apps.apple.com/us/app/whats-covered/id1444143600"
 
 +++
-**There are 3 ways we make Medicare Enrollment easy for you.**
+**3 Step Process to Make Medicare Enrollment Easy For You.**
 
 1. Help you understand Medicare A & B in simple terms. Then if you're not yet enrolled, we can show you how.
-2. Help you understand your options with Traditional Medicare and Medicare Advantage so there no guesswork and you can determine what's best for you.
-3. Finally we'll give you several options to get the most out of Medicare that meets your needs and budget, to include how to find the most affordable drug coverage. We can also help with dental, vision, and final expense coverages.
+2. Help understand differences between Traditional Medicare and Medicare Advantage plans so you know all your options and can then determine what's best for you.
+3. Based on your selection in step 2, we'll show you how to get the most out of Medicare to include finding you most affordable Drug Coverage. We can also help with Dental, Vision, Long Term Care and Final Expense Plans.
 
-**There is absolutley no cost or obligation for our services and you are free to choose the plan that's right for you!**
+**There is Absolutley No Cost or Obligation for Our Services and You are Free to Choose the Plan that's Right For You!**
 
-To talk with one of our Texas based licensed Medicare insurance agents, give us a call or complete the contact form and we will get right back to you.
+To talk with one of our Licensed Texas Medicare Insurance Specialists, give us a call or complete the contact form below and we will get right back to you.
 
 **CALL TODAY!  (210) 699-0291**
