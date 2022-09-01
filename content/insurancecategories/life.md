@@ -1,6 +1,6 @@
 ---
 title: Life Insurance
-featured_image: "/v1530419506/insurancesmart/eye-for-ebony-340137-unsplash.jpg"
+featured_image: "/v1530419487/insurancesmart/5a8b0feab39fc100011f1e5e_photo-1513337915236-364fe3ee1f53-compressor.jpg"
 weight: 5
 fa_icon: heartbeat
 seo:
