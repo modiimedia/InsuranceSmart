@@ -1,13 +1,12 @@
 ---
 title: Home
-banner_heading: Providing Affordable Insurance For Texas Residents Since 2005
-banner_text: "We are an Independent Insurance Agency specializing in life and health
-  coverage since 2005 for all ages, and help seniors transitioning to Medicare. \n\nOur
-  mission is to provide quality service and an exceptional value in the insurance
-  markets we serve.  We shop to find you the best coverage for your need, at a price
-  you can afford. \n\nWe also provide secure financial products to help you protect
-  and grow your nest egg with indexed returns and a no loss guarantee! Let us know
-  how we can serve you!"
+banner_heading: Insurance Solutions For Texas Residents Since 2005
+banner_text: "We are an Independent Insurance Agency specializing in helping seniors
+  transitioning to Medicare. \n\nOur mission is to provide quality service and exceptional
+  value in the insurance markets we serve.  We help find the coverage you need, at
+  a price you can afford. \n\nWe also provide secure financial products to help you
+  grow and protect your nest egg with indexed returns and a no loss guarantee so you
+  can retire in confidence! Let us know how we can serve you!"
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
@@ -49,8 +48,9 @@ components:
   style: dark
   hide: true
 seo:
-  social_title: Insurance You Need At A Price You Can Afford
-  social_description: Get the insurance you need at a price you can afford
+  social_title: 'Providing Seniors Medicare Solutions Since 2005. '
+  social_description: 'Help Seniors with Medicare, Life, Long-term Care, Final Expenses,
+    and Secure Retirement Solutions! '
   open_graph_image: "/v1660971115/insurancesmart/InsuranceSmart_-_Banner_msus7p.jpg"
 
 ---
