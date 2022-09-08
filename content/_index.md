@@ -1,6 +1,6 @@
 ---
 title: Home
-banner_heading: Providing Secure Insurance Solutions For Texas Residents Since 2005
+banner_heading: Providing Secure Insurance Solutions For Texas Since 2005
 banner_text: "We are an Independent Insurance Agency whose mission is to provide quality
   service and exceptional value in the insurance markets we serve.  \n\nWe Specialize
   in Medicare Helping Seniors Transitioning to Medicare and also provide Life, Health,
