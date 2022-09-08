@@ -2,15 +2,16 @@
 title: Home
 banner_heading: Providing Secure Insurance Solutions Since 2005
 banner_text: "We are an Independent Texas based Insurance Agency whose mission is
-  to provide our clients exceptional service and value in all the markets we serve.
+  to provide our clients exceptional value and service in all the markets we serve.
   \ \n\nWe Specialize in Medicare Helping Seniors Transition to Medicare as well as
   stay current with annual benefit changes throughout their lives. We also provide
   all types of Life, Health, Long-term Care, and Final Expense Coverage, as well as
-  Fixed Indexed Annuities. The Annuities a Financial Product designed to securely
-  grow Your Nest Egg and retirement accounts with both Fixed and Indexed Returns.
-  They Offer a Variety of Guaranteed and Non-Guaranteed Income Solutions, and Protect
-  Your Investment with A No-Loss-Guarantee so you can Enjoy Retire in Confidence!
-  \n\n\nContact Us For Information and let us know how we can serve you!"
+  Fixed Indexed Annuities. The Annuities are a Secure Financial Product designed to
+  safely grow Your Nest Egg and retirement accounts with both Fixed and Indexed Returns.
+  They Offer a Variety of Guaranteed and Non-Guaranteed Income Solutions and liquidity
+  options, and can Protect Your Investment with A No-Loss-Guarantee so you can Enjoy
+  Your Retirement in Confidence! \n\n\nContact Us For Information and let us know
+  how we can serve you!"
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
