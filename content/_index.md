@@ -1,6 +1,6 @@
 ---
 title: Home
-banner_heading: Insurance Solutions For Texas Residents Since 2005
+banner_heading: Providing Insurance Solutions For Texas Residents Since 2005
 banner_text: "We are an Independent Insurance Agency specializing in helping seniors
   transitioning to Medicare. \n\n\n\nOur mission is to provide quality service and
   exceptional value in the insurance markets we serve.  We provide coverage you need,
