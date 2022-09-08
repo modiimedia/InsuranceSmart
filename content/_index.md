@@ -4,8 +4,8 @@ banner_heading: Insurance Solutions For Texas Residents Since 2005
 banner_text: "We are an Independent Insurance Agency specializing in helping seniors
   transitioning to Medicare. \n\n\n\nOur mission is to provide quality service and
   exceptional value in the insurance markets we serve.  We provide coverage you need,
-  at a price you can afford. \n\n\n\nWe also provide Life, Health, Long-term care,
-  Final Expense coverage, as well as Fixed Indexed Annuities. These Secure Financial
+  at a price you can afford. \n\n\n\nWe also provide Life, Health, Long-term Care,
+  Final Expense Coverage, as well as Fixed Indexed Annuities. These Secure Financial
   Product are designed to help Grow and Protect your Nest Egg, with Fixed or Indexed
   Returns, Guaranteed Income Solutions, and No Loss Guarantee, so you can retire in
   confidence!  . \n\n\nLet us know how we can serve you!"
