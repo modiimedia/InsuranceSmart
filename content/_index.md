@@ -8,7 +8,7 @@ banner_text: "We are an Independent Insurance Agency specializing in helping sen
   Final Expense Coverage, as well as Fixed Indexed Annuities. These Secure Financial
   Product are designed to help Grow and Protect your Nest Egg, with Fixed or Indexed
   Returns, Guaranteed Income Solutions, and No Loss Guarantee, so you can retire in
-  confidence!  . \n\n\nLet us know how we can serve you!"
+  confidence! \n\n\nLet us know how we can serve you!"
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
@@ -45,7 +45,7 @@ components:
     image: ''
   hide: false
 - template: contact-form-company-info
-  heading: Get In Touch With Us
+  heading: 'Why Wait? Get In Touch With Us Today! '
   background_image: "/v1530992759/insurancesmart/rawpixel-703123-unsplash%20%281%29.jpg"
   style: dark
   hide: true
