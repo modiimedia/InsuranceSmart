@@ -1,14 +1,14 @@
 ---
 title: Home
-banner_heading: Providing Insurance Solutions For Texas Residents Since 2005
-banner_text: "We are an Independent Insurance Agency specializing in helping seniors
-  transitioning to Medicare. \n\n\n\nOur mission is to provide quality service and
-  exceptional value in the insurance markets we serve.  We provide coverage you need,
-  at a price you can afford. \n\n\n\nWe also provide Life, Health, Long-term Care,
+banner_heading: Providing Secure Insurance Solutions For Texas Residents Since 2005
+banner_text: "We are an Independent Insurance Agency whose mission is to provide quality
+  service and exceptional value in the insurance markets we serve.  We provide coverage
+  you need, at a price you can afford. \n\n\n\nWe specializing in Medicare helping
+  seniors transitioning to Medicare and also provide Life, Health, Long-term Care,
   Final Expense Coverage, as well as Fixed Indexed Annuities. These Secure Financial
-  Product are designed to help Grow and Protect your Nest Egg, with Fixed or Indexed
-  Returns, Guaranteed Income Solutions, and No Loss Guarantee, so you can retire in
-  confidence! \n\n\nLet us know how we can serve you!"
+  Products are designed to Protect and Grow Your Nest Egg, Offering Fixed and Indexed
+  Returns with Guaranteed Income Solutions, and No A Loss Guarantee, so you can Retire
+  in Confidence! \n\n\nLet us know how we can serve you!"
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
