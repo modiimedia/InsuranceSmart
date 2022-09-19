@@ -1,8 +1,8 @@
 ---
 title: Contact
 layout: contact
-heading: Get In Touch With Us
-subheading: We can provide a customized plan that's perfect to fit your needs.
+heading: Get In Touch With Us!
+subheading: We can provide a customized plan to fit your needs.
 phone: 210-699-0281
 email: info@getinsurancesmart.com
 address:
