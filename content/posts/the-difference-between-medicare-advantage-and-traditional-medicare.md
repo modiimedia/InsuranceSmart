@@ -15,7 +15,7 @@ social_description = ""
 social_title = ""
 
 +++
-By Mike Sosso, founder & Executive Director of Sosso Insurance Group and InsuranceSmart.
+By Mike Sosso, Founder & Executive Director of Sosso Insurance Group and InsuranceSmart.
 
 My experience has shown that staying on Traditional Medicare is almost always the better choice for our clients.
 
@@ -25,4 +25,4 @@ On a Medicare Advantage plan however, the dynamic changes dramatically. This is 
 
 In our experience it is apparent that to stay on Traditional Medicare with a good Medicare Supplement policy while the upfront cost (or monthly premium) may exceed the monthly cost of many Medicare Advantage plans, the overall client benefits, assurance of care, and security of client selection and control, make staying on Traditional Medicare well worth the premium. In addition, paying this premium upfront makes a huge difference in terms of benefits available to the client as well as greatly limiting the exposure the client has to future out of pocket costs during a major illness or procedure. The max out of pocket expenses a client faces on Traditional Medicare with a Plan G Medicare Supplement in 2022 was only $233 per year vs the average out of pocket maximin on many Medicare Advantage plans of up to $7500 per year in network and even higher if out of network.
 
-Mike Sosso has been serving clients with Medicare since 2005. He is founder and president of the Sosso Insurance Group located in San Antonio Texas and has developed and trademarked the **InsuranceSmart** brand. Our mission is to help clients become better educated in their insurance purchasing decisions and provide the best protection available for the cost, in order to work toward allocating more of a client’s resources to savings, retirement, and investments.
+Mike Sosso has been serving clients with Medicare since 2005. He is founder and president of the Sosso Insurance Group located in San Antonio Texas and has developed and trademarked the **InsuranceSmart** brand. Our mission is to help clients become better educated in their insurance purchasing decisions and provide the best protection available for the cost, and to work toward allocating more of a client’s resources to savings, retirement, and investments.
