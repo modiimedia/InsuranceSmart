@@ -1,11 +1,10 @@
 +++
 author = "staff/mike.md"
-categories = []
+categories = ["other"]
 date = 2022-10-11T15:11:33Z
 draft = true
-featured_image = ""
-form = []
-tags = []
+featured_image = "/v1660971115/insurancesmart/InsuranceSmart_-_Banner_msus7p.jpg"
+tags = ["Medicare", " Understanding Medicare", "Traditional Medicare Vs Medicare Advantage", "What is the difference between Medicare Advantage and Traditional Medicare"]
 title = "The difference between Medicare Advantage and Traditional Medicare."
 [seo]
 meta_description = ""
@@ -13,6 +12,12 @@ meta_title = ""
 open_graph_image = ""
 social_description = ""
 social_title = ""
+[[form]]
+background_image = ""
+style = "light"
+subtitle = "Contact us today to get a free quote on your insurance plan"
+template = "contact-us-popup"
+title = "GET A FREE QUOTE"
 
 +++
 By Mike Sosso, Founder & Executive Director of Sosso Insurance Group and InsuranceSmart.
