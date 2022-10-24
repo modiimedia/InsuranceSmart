@@ -29,10 +29,10 @@ components:
   - testimonies/bonnie.md
 - template: content-left
   content: "![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)\n\n#
-    Experience You Can Trust\n\nWe don't just sell insurance, we build life long relationships
-    with our clients. \n\nSince we are an independent agency, we are able to shop
-    many carriers and work to find the right product for your personal situation.
-    \n\nGive us a call today!"
+    Experience You Can Trust\n\nWe've been building life long relationships with our
+    clients since 2005.  \n\nBecause we are an independent agency, we are able to
+    shop among many carriers and work to find the right product for each and every
+    client situation.\n\nGive us a call today!"
   button_settings:
     text: Get Started Today!
     show: true
@@ -47,11 +47,6 @@ components:
     _3d: true
     image: ''
   hide: false
-- template: contact-form-company-info
-  heading: 'Why Wait? Get In Touch With Us Today! '
-  background_image: "/v1530992759/insurancesmart/rawpixel-703123-unsplash%20%281%29.jpg"
-  style: dark
-  hide: true
 seo:
   social_title: 'Providing Seniors Medicare Solutions Since 2005. '
   social_description: 'Help Seniors with Medicare, Life, Long-term Care, Final Expenses,
