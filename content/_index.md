@@ -31,8 +31,8 @@ components:
   content: "![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)\n\n#
     Experience You Can Trust\n\nWe've been building life long relationships with our
     clients since 2005.  \n\nBecause we are an independent agency, we are able to
-    shop among many carriers and work to find the right product for each and every
-    client situation.\n\nGive us a call today!"
+    shop among many carriers and work to find the right product for our clients in
+    each and every situation.\n\nGive us a call today!"
   button_settings:
     text: Get Started Today!
     show: true
