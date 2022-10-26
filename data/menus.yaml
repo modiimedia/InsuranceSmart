@@ -37,6 +37,9 @@ shop_menu:
       external_url: ''
       name: Understanding Medicare
 explore_menu:
+- name: Blog
+  url: ''
+  external_url: "/posts"
 - name: Contact
   url: ''
   external_url: "/contact"
