@@ -2,7 +2,6 @@
 author = "staff/mike.md"
 categories = ["other"]
 date = 2022-10-11T15:11:33Z
-draft = true
 featured_image = "/v1660971115/insurancesmart/InsuranceSmart_-_Banner_msus7p.jpg"
 tags = ["Medicare", " Understanding Medicare", "Traditional Medicare Vs Medicare Advantage", "What is the difference between Medicare Advantage and Traditional Medicare"]
 title = "The Difference Between Medicare Advantage and Traditional Medicare."
