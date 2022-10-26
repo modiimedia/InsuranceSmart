@@ -1,179 +1,259 @@
 {{ define "main" }}
-<section class="main-content blog-home">
+  <section class="main-content blog-home">
     <div class="polygon-small-to-large blog"></div>
     <div class="polygon-small-to-large blog-copy"></div>
     <div class="polygon-small-to-large blog-3"></div>
     <div class="container">
-        {{ range first 1 (where .Data.Pages ".Params.featured" "=" true )}}
+      {{ range first 1 (where .Data.Pages ".Params.featured" "=" true ) }}
         <div class="div-block-39">
-            <div class="div-block-40">
-                <h1 class="h1-no-margins">Featured Readings</h1>
-                <a href="/posts/featured/" class="view-all w-inline-block">
-                    <div>View All</div>
-                </a>
-            </div>
+          <div class="div-block-40">
+            <h1 class="h1-no-margins">Featured Readings</h1>
+            <a href="/posts/featured/" class="view-all w-inline-block">
+              <div>View All</div>
+            </a>
+          </div>
         </div>
-        {{ end }}
-        <div class="flex-row featured-blogs">
-            {{ range first 1 ( where .Data.Pages ".Params.featured" "=" true ) }}
-            {{ $date := .Date.Format "January 02, 2006" }}
-            {{ $author := replace .Params.Author "staff/" "" }}
-            <div class="collection-list-5 w-dyn-items">
-                <div class="collection-item-5 w-dyn-item">
-                    <a href="{{ .RelPermalink }}" class="f-blog-link w-inline-block">
-                        <div style="background-image:url({{ $.Site.Params.cloudinary_url }}w_820,q_70,f_auto{{ .Params.Featured_Image }})"
-                            class="feature-blog-image">
-                            <div class="image-overlay"></div>
-                        </div>
-                        <div class="f-blog-content w-clearfix">
-                            <h1 class="f-blog-title">{{ .Title }}</h1>
-                            {{ range where $.Site.RegularPages "Section" "staff" }}
-                            {{ if eq $author .File.LogicalName }}
-                            <div class="flexwrap">
-                                <div class="author-photo" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_50,h_50,c_fill,g_face,q_60,f_auto{{ .Params.Photo }})"></div>
-                                <div>
-                                    <div>by {{ .Title }}</div>
-                                    <div>{{ $date }}</div>
-                                </div>
-                            </div>
-                            {{ end }}
-                            {{ end }}
-                        </div>
-                    </a>
+      {{ end }}
+      <div class="flex-row featured-blogs">
+        {{ range first 1 ( where .Data.Pages ".Params.featured" "=" true ) }}
+          {{ $date := .Date.Format "January 02, 2006" }}
+          {{ $author := replace .Params.Author "staff/" "" }}
+          <div class="collection-list-5 w-dyn-items">
+            <div class="collection-item-5 w-dyn-item">
+              <a href="{{ .RelPermalink }}" class="f-blog-link w-inline-block">
+                <div
+                  style="background-image:url({{ $.Site.Params.cloudinary_url }}w_820,q_70,f_auto{{ .Params.Featured_Image }})"
+                  class="feature-blog-image"
+                >
+                  <div class="image-overlay"></div>
                 </div>
-            </div>
-            {{ end }}
-            <div class="div-block-33">
-                <div class="collection-list-7 w-dyn-items">
-                    {{ range first 4 ( where .Data.Pages ".Params.featured" "=" true ) }}
-                    {{ $author := replace .Params.Author "staff/" "" }}
-                    <div class="collection-item-5 small w-dyn-item">
-                        <a href="{{ .RelPermalink }}" class="small-f-blog-link w-inline-block">
-                            <div style="background-image:url({{ $.Site.Params.cloudinary_url }}w_540,q_60,f_auto{{ .Params.featured_image }})"
-                                class="feature-blog-image-small">
-                                <div class="image-overlay"></div>
-                                <div class="small-f-blog-content w-clearfix">
-                                    <h1 class="f-blog-title-small">{{ .Title }}</h1>
-                                    {{ range where $.Site.RegularPages "Section" "staff" }}
-                                    {{ if eq $author .File.LogicalName }}
-                                    <div class="flexwrap">
-                                        <div class="author-photo-small" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_30,h_30,c_fill,g_face,q_60,f_auto{{ .Params.Photo }})"></div>
-                                        <div class="author-text">by {{ .Title }}</div>
-                                    </div>
-                                    {{ end }}
-                                    {{ end }}
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="f-blog-content w-clearfix">
+                  <h1 class="f-blog-title">{{ .Title }}</h1>
+                  {{ range where $.Site.RegularPages "Section" "staff" }}
+                    {{ if eq $author .File.LogicalName }}
+                      <div class="flexwrap">
+                        <div
+                          class="author-photo"
+                          style="background-image: url({{ $.Site.Params.cloudinary_url }}w_50,h_50,c_fill,g_face,q_60,f_auto{{ .Params.Photo }})"
+                        ></div>
+                        <div>
+                          <div>by {{ .Title }}</div>
+                          <div>{{ $date }}</div>
+                        </div>
+                      </div>
                     {{ end }}
+                  {{ end }}
                 </div>
+              </a>
             </div>
-            <div class="div-block-41"></div>
-        </div>
-        <div class="div-block-43">
-            <div class="div-block-44">
-                <h1 class="h1-no-margin-large">Get Email Updates</h1>
-                <p class="email-text">You&#x27;ll start receiving insurance advice right to your inbox.</p>
-                <div class="quote-box-copy">
-                    <form id="email-form-3" name="email-form-3" data-name="Email Form 3" class="form-2-copy">
-                        <div class="quote-form-wrap-copy">
-                            <input type="text" class="text-field-2 w-input" maxlength="256" name="Email-3" data-name="Email 3"
-                                placeholder="Enter email address" id="Email-3" required="" />
-                            <input type="submit" value="Submit" data-wait="Please wait..." class="get-a-quote w-button" />
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="quote-box-disclaimer">We treat customer information with great care. We never sell information, and we do not spam.</div>
-        </div>
-        <h1 class="heading-23">Recent Posts</h1>
-        <div>
-            <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
-                <div class="tabs-menu-2 w-tab-menu">
-                    <a data-w-tab="tab-all" class="tab-link-tab-3 w-inline-block w-tab-link w--current">
-                        <div>All</div>
-                    </a>
-                    {{- range $.Site.Taxonomies.categories.Alphabetical -}}
-                    <a data-w-tab="tab-{{ .Name | urlize }}" class="tab-link-tab-3 w-inline-block w-tab-link">
-                        <div>{{ .Name | title }}</div>
-                    </a>
-                    {{- end -}}
-                </div>
-                <div class="tabs-content w-tab-content">
-                    <div data-w-tab="tab-all" class="tab-pane-tab-1-2 w-tab-pane w--tab-active">
-                            <div class="card-grid w-dyn-items">
-                                {{- range first 5 .Data.Pages -}}
-                                <div class="card-grid-item w-dyn-item">
-                                    <a href="{{ .RelPermalink }}" class="card-link w-inline-block">
-                                        <div style="background-image:url({{ $.Site.Params.cloudinary_url }}w_350,q_60,f_auto{{ .Params.Featured_image }})"
-                                            class="blog-card-image">
-                                            <div class="image-overlay"></div>
-                                        </div>
-                                        <div class="blog-card-content w-clearfix">
-                                            <h1 class="blog-card-title">{{ .Title }}</h1>
-                                            {{- $a := replace .Params.Author "staff/" "" -}}
-                                            {{- range where .Site.RegularPages "Section" "staff" -}}
-                                                {{- if eq $a .File.LogicalName -}}
-                                                <div class="flexwrap">
-                                                    <div class="author-photo-small" style="background-image: url({{ .Site.Params.Cloudinary_url }},w_30,h_30,c_fill,g_face,f_auto,q_60{{ .Params.Photo }})"></div>
-                                                    <div class="author-text">by {{ .Title }}</div>
-                                                </div>
-                                                {{- end -}}
-                                            {{- end -}}
-                                        </div>
-                                    </a>
-                                </div>
-                                {{- end -}}
-                                <div class="card-grid-item w-dyn-item">
-                                    <a href="/posts/all" class="card-link view-more w-inline-block">
-                                        <div class="image-overlay"></div>
-                                        <div><p>View More&nbsp;<i class="fas fa-chevron-circle-right"></i></p></div>
-                                    </a>
-                                </div>
-                            </div>
+          </div>
+        {{ end }}
+        <div class="div-block-33">
+          <div class="collection-list-7 w-dyn-items">
+            {{ range first 4 ( where .Data.Pages ".Params.featured" "=" true ) }}
+              {{ $author := replace .Params.Author "staff/" "" }}
+              <div class="collection-item-5 small w-dyn-item">
+                <a
+                  href="{{ .RelPermalink }}"
+                  class="small-f-blog-link w-inline-block"
+                >
+                  <div
+                    style="background-image:url({{ $.Site.Params.cloudinary_url }}w_540,q_60,f_auto{{ .Params.featured_image }})"
+                    class="feature-blog-image-small"
+                  >
+                    <div class="image-overlay"></div>
+                    <div class="small-f-blog-content w-clearfix">
+                      <h1 class="f-blog-title-small">{{ .Title }}</h1>
+                      {{ range where $.Site.RegularPages "Section" "staff" }}
+                        {{ if eq $author .File.LogicalName }}
+                          <div class="flexwrap">
+                            <div
+                              class="author-photo-small"
+                              style="background-image: url({{ $.Site.Params.cloudinary_url }}w_30,h_30,c_fill,g_face,q_60,f_auto{{ .Params.Photo }})"
+                            ></div>
+                            <div class="author-text">by {{ .Title }}</div>
+                          </div>
+                        {{ end }}
+                      {{ end }}
                     </div>
-                    {{- range $.Site.Taxonomies.categories.Alphabetical -}}
-                        <div data-w-tab="tab-{{ .Name | urlize }}" class="w-tab-pane">            
-                            <div class="card-grid w-dyn-items">
-                                {{- $name := .Name -}}
-                                {{- range first 5 (where $.Site.RegularPages "Section" "posts") -}}
-                                    {{- if in .Params.categories $name -}}
-                                    <div class="card-grid-item w-dyn-item">
-                                        <a href="{{ .RelPermalink }}" class="card-link w-inline-block">
-                                            <div style="background-image:url({{ $.Site.Params.cloudinary_url }},w_350,q_60,f_auto{{ .Params.Featured_image }})"
-                                                class="blog-card-image">
-                                                <div class="image-overlay"></div>
-                                            </div>
-                                            <div class="blog-card-content w-clearfix">
-                                                <h1 class="blog-card-title">{{ .Title }}</h1>
-                                                {{- $a := replace .Params.Author "staff/" "" -}}
-                                                {{- range where .Site.RegularPages "Section" "staff" -}}
-                                                    {{- if eq $a .File.LogicalName -}}
-                                                    <div class="flexwrap">
-                                                        <div class="author-photo-small" style="background-image: url({{ $.Site.Params.Cloudinary_url }}w_30,h_30,c_fill,g_face,q_60,f_auto{{ .Params.Photo }})"></div>
-                                                        <div class="author-text">by {{ .Title }}</div>
-                                                    </div>
-                                                    {{- end -}}
-                                                {{- end -}}
-                                            </div>
-                                        </a>
-                                    </div>
-                                    {{- end -}}
-                                {{- end -}}
-                                <div class="card-grid-item w-dyn-item">
-                                        <a href="/categories/{{ .Name | urlize }}" class="card-link view-more w-inline-block">
-                                            <div class="image-overlay"></div>
-                                            <div><p>View More&nbsp;<i class="fas fa-chevron-circle-right"></i></p></div>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    {{- end -}}
-                </div>
-            </div>
+                  </div>
+                </a>
+              </div>
+            {{ end }}
+          </div>
         </div>
+        <div class="div-block-41"></div>
+      </div>
+      <div class="div-block-43">
+        <div class="div-block-44">
+          <h1 class="h1-no-margin-large">Get Email Updates</h1>
+          <p class="email-text">
+            You&#x27;ll start receiving insurance advice right to your inbox.
+          </p>
+          <div class="quote-box-copy">
+            <form
+              id="email-form-3"
+              name="email-form-3"
+              data-name="Email Form 3"
+              class="form-2-copy"
+            >
+              <div class="quote-form-wrap-copy">
+                <input
+                  type="text"
+                  class="text-field-2 w-input"
+                  maxlength="256"
+                  name="Email-3"
+                  data-name="Email 3"
+                  placeholder="Enter email address"
+                  id="Email-3"
+                  required=""
+                />
+                <input
+                  type="submit"
+                  value="Submit"
+                  data-wait="Please wait..."
+                  class="get-a-quote w-button"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="quote-box-disclaimer">
+          We treat customer information with great care. We never sell
+          information, and we do not spam.
+        </div>
+      </div>
+      <h1 class="heading-23">Recent Posts</h1>
+      <div>
+        <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+          <div class="tabs-menu-2 w-tab-menu">
+            <a
+              data-w-tab="tab-all"
+              class="tab-link-tab-3 w-inline-block w-tab-link w--current"
+            >
+              <div>All</div>
+            </a>
+            {{- range $.Site.Taxonomies.categories.Alphabetical -}}
+              <a
+                data-w-tab="tab-{{ .Name | urlize }}"
+                class="tab-link-tab-3 w-inline-block w-tab-link"
+              >
+                <div>{{ .Name | title }}</div>
+              </a>
+            {{- end -}}
+          </div>
+          <div class="tabs-content w-tab-content">
+            <div
+              data-w-tab="tab-all"
+              class="tab-pane-tab-1-2 w-tab-pane w--tab-active"
+            >
+              <div class="card-grid w-dyn-items">
+                {{- range first 5 .Data.Pages -}}
+                  {{- if ne .Params.hide_from_list true -}}
+                    <div class="card-grid-item w-dyn-item">
+                      <a
+                        href="{{ .RelPermalink }}"
+                        class="card-link w-inline-block"
+                      >
+                        <div
+                          style="background-image:url({{ $.Site.Params.cloudinary_url }}w_350,q_60,f_auto{{ .Params.Featured_image }})"
+                          class="blog-card-image"
+                        >
+                          <div class="image-overlay"></div>
+                        </div>
+                        <div class="blog-card-content w-clearfix">
+                          <h1 class="blog-card-title">{{ .Title }}</h1>
+                          {{- $a := replace .Params.Author "staff/" "" -}}
+                          {{- range where .Site.RegularPages "Section" "staff" -}}
+                            {{- if eq $a .File.LogicalName -}}
+                              <div class="flexwrap">
+                                <div
+                                  class="author-photo-small"
+                                  style="background-image: url({{ .Site.Params.Cloudinary_url }},w_30,h_30,c_fill,g_face,f_auto,q_60{{ .Params.Photo }})"
+                                ></div>
+                                <div class="author-text">by {{ .Title }}</div>
+                              </div>
+                            {{- end -}}
+                          {{- end -}}
+                        </div>
+                      </a>
+                    </div>
+                  {{- end -}}
+                {{- end -}}
+                <div class="card-grid-item w-dyn-item">
+                  <a
+                    href="/posts/all"
+                    class="card-link view-more w-inline-block"
+                  >
+                    <div class="image-overlay"></div>
+                    <div>
+                      <p>
+                        View More&nbsp;<i
+                          class="fas fa-chevron-circle-right"
+                        ></i>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {{- range $.Site.Taxonomies.categories.Alphabetical -}}
+              <div data-w-tab="tab-{{ .Name | urlize }}" class="w-tab-pane">
+                <div class="card-grid w-dyn-items">
+                  {{- $name := .Name -}}
+                  {{- range first 5 (where $.Site.RegularPages "Section" "posts") -}}
+                    {{- if in .Params.categories $name -}}
+                      <div class="card-grid-item w-dyn-item">
+                        <a
+                          href="{{ .RelPermalink }}"
+                          class="card-link w-inline-block"
+                        >
+                          <div
+                            style="background-image:url({{ $.Site.Params.cloudinary_url }},w_350,q_60,f_auto{{ .Params.Featured_image }})"
+                            class="blog-card-image"
+                          >
+                            <div class="image-overlay"></div>
+                          </div>
+                          <div class="blog-card-content w-clearfix">
+                            <h1 class="blog-card-title">{{ .Title }}</h1>
+                            {{- $a := replace .Params.Author "staff/" "" -}}
+                            {{- range where .Site.RegularPages "Section" "staff" -}}
+                              {{- if eq $a .File.LogicalName -}}
+                                <div class="flexwrap">
+                                  <div
+                                    class="author-photo-small"
+                                    style="background-image: url({{ $.Site.Params.Cloudinary_url }}w_30,h_30,c_fill,g_face,q_60,f_auto{{ .Params.Photo }})"
+                                  ></div>
+                                  <div class="author-text">by {{ .Title }}</div>
+                                </div>
+                              {{- end -}}
+                            {{- end -}}
+                          </div>
+                        </a>
+                      </div>
+                    {{- end -}}
+                  {{- end -}}
+                  <div class="card-grid-item w-dyn-item">
+                    <a
+                      href="/categories/{{ .Name | urlize }}"
+                      class="card-link view-more w-inline-block"
+                    >
+                      <div class="image-overlay"></div>
+                      <div>
+                        <p>
+                          View More&nbsp;<i
+                            class="fas fa-chevron-circle-right"
+                          ></i>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            {{- end -}}
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-
+  </section>
 {{ end }}
