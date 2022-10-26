@@ -8,7 +8,7 @@
       <div class="flex-row">
         <div class="hero-content">
           <h1 class="heading">{{- .Params.banner_heading -}}</h1>
-          <p class="paragraph">{{- .Params.banner_text -}}</p>
+          <p class="paragraph">{{- .Params.banner_text | markdownify -}}</p>
           <!-- <a href="/products" class="hero-button w-inline-block">
                     <div class="text-block">Shop Insurance</div>
                 </a>
