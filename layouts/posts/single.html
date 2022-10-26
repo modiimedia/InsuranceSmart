@@ -48,24 +48,36 @@
         <div class="flex-grow">
           <div class="div-block-45">
             <p>Share This:</p>
-            <a href="#" class="share-button w-inline-block">
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | safeURL }}"
+              class="share-button w-inline-block"
+            >
               <i class="fab fa-facebook"></i>
             </a>
-            <a href="#" class="share-button w-inline-block">
+            <a
+              href="https://twitter.com/intent/tweet?text=Check out this article from InsuranceSmart. {{ .Permalink | safeURL }}"
+              class="share-button w-inline-block"
+            >
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#" class="share-button w-inline-block">
+            <!-- <a
+              href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | safeHTML }}"
+              class="share-button w-inline-block"
+            >
               <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" class="share-button w-inline-block">
+            </a> -->
+            <a
+              href="https://www.reddit.com/submit?url={{ .Permalink | safeURL }}"
+              class="share-button w-inline-block"
+            >
               <i class="fab fa-reddit"></i>
             </a>
-            <a href="#" class="share-button w-inline-block">
+            <!-- <a href="#" class="share-button w-inline-block">
               <i class="fab fa-tumblr"></i>
-            </a>
-            <a href="#" class="share-button w-inline-block">
+            </a> -->
+            <!-- <a href="#" class="share-button w-inline-block">
               <i class="fab fa-google-plus"></i>
-            </a>
+            </a> -->
           </div>
           <div class="div-block-45">
             <p>Tags:</p>
