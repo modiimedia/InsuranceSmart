@@ -84,45 +84,7 @@
         </div>
         <div class="div-block-41"></div>
       </div>
-      <div class="div-block-43">
-        <div class="div-block-44">
-          <h1 class="h1-no-margin-large">Get Email Updates</h1>
-          <p class="email-text">
-            You&#x27;ll start receiving insurance advice right to your inbox.
-          </p>
-          <div class="quote-box-copy">
-            <form
-              id="email-form-3"
-              name="email-form-3"
-              data-name="Email Form 3"
-              class="form-2-copy"
-            >
-              <div class="quote-form-wrap-copy">
-                <input
-                  type="text"
-                  class="text-field-2 w-input"
-                  maxlength="256"
-                  name="Email-3"
-                  data-name="Email 3"
-                  placeholder="Enter email address"
-                  id="Email-3"
-                  required=""
-                />
-                <input
-                  type="submit"
-                  value="Submit"
-                  data-wait="Please wait..."
-                  class="get-a-quote w-button"
-                />
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="quote-box-disclaimer">
-          We treat customer information with great care. We never sell
-          information, and we do not spam.
-        </div>
-      </div>
+      {{ partial "forms/mailchimp-form.html" . }}
       <h1 class="heading-23">Recent Posts</h1>
       <div>
         <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
