@@ -10,8 +10,8 @@ banner_text: "We are an Independent Texas based Insurance Agency whose mission i
   Safely Grow Your Nest Egg and Retirement Accounts, offering both Fixed and Indexed
   Returns. They provide a Variety of Guaranteed and Non-Guaranteed Income Solutions
   and Liquidity Options, and Protect Your Investment with A No-Loss-Guarantee so you
-  can Enjoy Your Retirement in Confidence! \n\n\nContact Us Today for more Information
-  and let us know how we can serve you!"
+  can Enjoy Your Retirement in Confidence! \n\n\nContact Us For Information and Let
+  Us Know How We Can Serve You!"
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
