@@ -17,6 +17,7 @@ contact_info:
   city: San Antonio
   state: TX
   zip: 78230
+  google_maps_url: https://maps.app.goo.gl/xKsvDQzyg5dGWrJYA
 social_media:
 - platform: facebook
   url: https://www.facebook.com/GetInsuranceSmart/
