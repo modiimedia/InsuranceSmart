@@ -14,11 +14,23 @@
         </div>
         <div class="social-icons footer">
           {{ range .Site.Data.general_settings.social_media }}
-          <a href="{{ .url }}" class="social-link w-inline-block">
-            <i class="fab fa-{{ .platform }}"></i>
-          </a>
+            <a href="{{ .url }}" class="social-link w-inline-block">
+              <i class="fab fa-{{ .platform }}"></i>
+            </a>
           {{ end }}
         </div>
+        {{ with .Site.Data.general_settings.contact_info.google_maps_url }}
+          <div class="my-6">
+            <a href="{{ . }}" target="_blank">
+              <button
+                class="px-4 py-2 bg-primary-default font-bold text-gray-text"
+              >
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                Find us on Google
+              </button>
+            </a>
+          </div>
+        {{ end }}
       </div>
       <div class="footer-column">{{ partial "footer-nav.html" . }}</div>
       <div class="footer-column">

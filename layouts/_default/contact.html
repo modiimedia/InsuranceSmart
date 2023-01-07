@@ -14,6 +14,7 @@
               data-netlify="true"
               name="contact-page-form"
               action="/success/"
+              netlify
             >
               <div class="control">
                 <label class="overlay-label" for="contact_name">Name:</label>
@@ -96,6 +97,18 @@
               <div>{{ . }}</div>
             {{ end }}
             <div>{{ .city }}, {{ .state }} {{ .zip }}</div>
+          {{ end }}
+          {{ with .Site.Data.general_settings.contact_info.google_maps_url }}
+            <div class="my-6">
+              <a href="{{ . }}" target="_blank">
+                <button
+                  class="px-4 py-2 bg-primary-default font-bold text-gray-text"
+                >
+                  <i class="fas fa-map-marker-alt mr-2"></i>
+                  Find us on Google
+                </button>
+              </a>
+            </div>
           {{ end }}
         </div>
       </div>
