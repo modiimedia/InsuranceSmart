@@ -38,7 +38,7 @@ shop_menu:
       name: Understanding Medicare
   - name: Other
     url: ''
-    external_url: ''
+    external_url: "/products/other"
     icon: ''
     children:
     - name: Travel
