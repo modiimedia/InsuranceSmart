@@ -36,16 +36,14 @@ shop_menu:
     - url: products/medicare/understanding-medicare.md
       external_url: ''
       name: Understanding Medicare
-- children:
-  - url: ''
+  - name: Other
+    url: ''
     external_url: ''
     icon: ''
     children:
-    - url: products/other/travel-insurance.md
+    - name: Travel
+      url: products/other/travel-insurance.md
       external_url: ''
-      name: Travel Insurance
-    name: Other
-  name: Column 4
 explore_menu:
 - name: Blog
   url: ''
