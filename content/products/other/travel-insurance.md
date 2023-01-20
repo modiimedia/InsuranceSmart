@@ -1,7 +1,7 @@
 +++
 category = "insurancecategories/other.md"
 custom_article_list = ["products/other/travel-insurance.md"]
-description = "Medical Insurance For When You Travel Outside The United States.  Plans can also protect you from trip interruptions due to illness and other potential losses incurred due to "
+description = "Insurance For Traveling Outside The United States.  Plans can also help protect from trip interruptions and increased costs due to illness and other potential losses incurred due to a myriad of issues to include terrorist attacks, and political upheavals, "
 faqs = []
 featured_image = ""
 mikes_take = "This is a really robust plan that provides a full array of travel and international medical plans for global lifestyles, exchange and foreign studies, and sophisticated travelers. From a 2 week leisure trip to a semester or 4 year decree, to a 2 year work assignment. You gain access to in-depth profiles of carefully selected doctors, dentists, hospitals and clinics around the world. In addition, many of these plans include costs associated with trip interruptions and displacements caused by illness, medical emergency or even terrorist event, and can help cover expense related to trip delays, schedule changes, and emergency evacuations.  Take time to review options carefully and when you find what works, you can enroll right on line.  Or just give us a call and we can walk you through it. "
