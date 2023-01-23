@@ -36,7 +36,7 @@ shop_menu:
     - url: products/medicare/understanding-medicare.md
       external_url: ''
       name: Understanding Medicare
-  - name: Other
+  - name: Travel
     url: products/other/travel-insurance.md
     external_url: ''
     icon: ''
