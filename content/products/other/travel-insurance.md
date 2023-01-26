@@ -6,7 +6,6 @@ faqs = []
 featured_image = "/v1530578065/insurancesmart/5b2d4a57f91bff2929497ac9_eric-ward-346232-unsplash%20%281%29.jpg"
 mikes_take = "When traveling outside the United States you don't want to be left without medical and emergency coverage. We've researched and found a really robust plan that provides a full array of travel and international medical coverage and even includes options to help with cost of an emergency evacuation and / or confinement. This product is perfect whether you travel on a short term or long term vacation, or if you have global lifestyle and make multiple trips in a year for vacations, or even work or study abroad in foreign exchange studies. You can get coverage from a 2 week leisure trip, to a school semester, a full 4 year degree, or book coverage for a long term work assignment.\n\nThis product is great because it also provides a downloadable mobile app that works with either Android or IPhone, and allows you to access in-depth profiles of carefully selected doctors, dentists, hospitals, and clinics around the world!  The app allows you to search for services based upon your international GPS location.\n\nIn addition, many of these plans include costs associated with trip interruptions and displacements caused by illness, medical emergency, or even a terrorist event or political unrest and can help cover costs related to trip delays, schedule changes, and emergency evacuations.\n\nTake time to review your options carefully and when you find what works, you can enroll on line.  I do suggest you book extra days past your scheduled return date as this will insure coverage is in place should an unexpected delay occur while traveling because you cannot purchase additional days once you depart the country and won't want to be left without protection.\n\nIf you have questions or need help, give us a call and we can walk you through it."
 recommended_articles = "choose automatically"
-resources = []
 title = "Travel Medical & International Health Insurance"
 [seo]
 meta_description = ""
@@ -18,6 +17,10 @@ social_title = ""
 button_link = "https://www.geobluetravelinsurance.com/product_overview.cfm?link_id=274777&personalized=y&header=y"
 button_text = "Get A Quote"
 template = "custom-link"
+[[resources]]
+name = "Review Plans & Options"
+template = "resource-external-link"
+url = "https://www.geobluetravelinsurance.com/product_overview.cfm?link_id=274777&personalized=y&header=y"
 
 +++
 ## Travel Medical Insurance 101
