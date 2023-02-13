@@ -7,7 +7,7 @@ banner_text: "We are an Independent Texas based Insurance Agency whose mission i
   remain up to date with annual benefit changes throughout their lives. We provide
   all types of Life, Health, Long-term Care, and Final Expense Coverage, as well as
   Fixed Indexed Annuities. \n\nAnnuities are a Secure Financial Product designed to
-  Safely Grow Your Savings, Investments and Retirement Accounts, offering both Fixed
+  Safely Grow Your Savings, Investments, and Retirement Accounts, offering both Fixed
   and Indexed Returns. They provide a Variety of Guaranteed and Non-Guaranteed Income
   Solutions and Liquidity Options, and Protect Your Investment with A No-Loss-Guarantee
   so you can Retire in Confidence! \n\n\nContact Us For Information and Let Us Know
