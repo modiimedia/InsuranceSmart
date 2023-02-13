@@ -7,11 +7,11 @@ banner_text: "We are an Independent Texas based Insurance Agency whose mission i
   remain up to date with annual benefit changes throughout their lives. We provide
   all types of Life, Health, Long-term Care, and Final Expense Coverage, as well as
   Fixed Indexed Annuities. \n\nAnnuities are a Secure Financial Product designed to
-  Safely Grow Your Nest Egg and Retirement Accounts, offering both Fixed and Indexed
-  Returns. They provide a Variety of Guaranteed and Non-Guaranteed Income Solutions
-  and Liquidity Options, and Protect Your Investment with A No-Loss-Guarantee so you
-  can Enjoy Your Retirement in Confidence! \n\n\nContact Us For Information and Let
-  Us Know How We Can Serve You!"
+  Safely Grow Your Savings, Investments and Retirement Accounts, offering both Fixed
+  and Indexed Returns. They provide a Variety of Guaranteed and Non-Guaranteed Income
+  Solutions and Liquidity Options, and Protect Your Investment with A No-Loss-Guarantee
+  so you can Retire in Confidence! \n\n\nContact Us For Information and Let Us Know
+  How We Can Serve You!"
 banner_media:
   video_type: youtube
   youtube_url: https://www.youtube.com/watch?v=LWGJA9i18Co
@@ -28,11 +28,18 @@ components:
   - testimonies/diana.md
   - testimonies/bonnie.md
 - template: content-left
-  content: "![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)\n\n#
-    Experience You Can Trust\n\nWe've been building life long relationships with our
-    clients since 2005.  \n\nBecause we are an independent agency, we are able to
-    shop among many carriers and work to find the right product for our clients, in
-    each and every situation.\n\nGive us a call today!"
+  content: |-
+    ![Trusted Choice Independent Insurance Agents](https://res.cloudinary.com/modii/v1530419486/insurancesmart/TC-horizontal-logo-black--blue-tranparency.png)
+
+    # Experience You Can Trust!
+
+    Building Life Long Relationships with Our Clients Since 2005.
+
+    Because we are an Independent Agency, we can shop among many carriers to find just the right product for our clients.  In addition, we take the time to review coverage annually or as needed with clients to make sure they are up to date and getting the very best value in each and every situation.
+
+    If you are looking for experience you can trust, give us a try!  You won't be disappointed!
+
+    [**Give Us A Call Today!**](Tel:210-699-0281)
   button_settings:
     text: Get Started Today!
     show: true
