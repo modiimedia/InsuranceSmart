@@ -6,11 +6,11 @@ featured_image = "/v1660971115/insurancesmart/InsuranceSmart_-_Banner_msus7p.jpg
 tags = ["Medicare", " Understanding Medicare", "Traditional Medicare Vs Medicare Advantage", "What is the difference between Medicare Advantage and Traditional Medicare"]
 title = "Understand Difference Between Medicare Advantage and Traditional Medicare."
 [seo]
-meta_description = ""
-meta_title = ""
-open_graph_image = ""
-social_description = ""
-social_title = ""
+meta_description = "Original Medicare Vs Medicare Advantage"
+meta_title = "Understanding Medicare"
+open_graph_image = "/v1679011760/insurancesmart/MA_Vs_Orginal_Medicare_bqto9j.jpg"
+social_description = "Enrolling in Medicare Advantage disenrolls you from Original Medicare and greatly reduces your medical care options by giving control for all your care over to the Medicare Advantage plan."
+social_title = "Medicare Advantage Vs Original Medicare"
 [[form]]
 background_image = ""
 style = "light"
