@@ -27,13 +27,21 @@ button_link = "Tel:2106990291"
 button_text = "Call Today!"
 template = "custom-link"
 [[resources]]
+file = "/v1679012593/insurancesmart/Understanding_Medicare_-_ndovjm.pdf"
+name = "Easy To Understand Medicare Guide"
+template = "resource-document-image"
+[[resources]]
 file = "/v1679012333/insurancesmart/Medicare_and_You_2023_ctyr92.pdf"
-name = "2023 Guide To Medicare"
+name = "2023 Guide To Medicare The Long Version"
 template = "resource-document-image"
 [[resources]]
 name = "Apple & Ipad App - Understanding Medicare - What's Covered"
 template = "resource-external-link"
 url = "https://apps.apple.com/us/app/whats-covered/id1444143600"
+[[resources]]
+file = "/v1679012701/insurancesmart/On_Medicare_-_Ready_for_Retirement_-_Some_things_to_consider_jnohea.pdf"
+name = "Getting Ready For Retirement.  Some things to consider."
+template = "resource-document-image"
 
 +++
 **3 Step Process to Make Medicare Enrollment Easy For You!**
