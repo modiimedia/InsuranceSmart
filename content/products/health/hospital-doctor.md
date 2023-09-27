@@ -3,52 +3,56 @@ title: Hospital & Doctor
 category: insurancecategories/health.md
 recommended_articles: choose automatically
 resources:
-- template: resource-document-image
-  name: Health ProtectorGuard Brochure
-  file: "/v1530578576/insurancesmart/Texas%20Health%20Protector%20Guard%20Brochure%202018%20April.pdf"
-- template: resource-document-image
-  name: Accident ProGuard
-featured_image: "/v1530578684/insurancesmart/arms-care-check-905874%20%281%29.jpg"
+    - template: resource-document-image
+      name: Health ProtectorGuard Brochure
+      file: '/v1530578576/insurancesmart/Texas%20Health%20Protector%20Guard%20Brochure%202018%20April.pdf'
+    - template: resource-document-image
+      name: Accident ProGuard
+featured_image: '/v1530578684/insurancesmart/arms-care-check-905874%20%281%29.jpg'
 faqs:
-- question: Am I eligible for this product?
-  answer: 'The primary insured and spouse must be between the ages of 18-64 (drop
-    off on 65th birthday) and any dependent children must be between 0-25 years of
-    age (drop off on 26th birthday) in order to be eligible for inclusion in the plan.
-    In addition all applicants must truthfully answer the medical questions in the
-    application. Any misstatement or misrepresentation on the application could result
-    in claims being denied.  '
-- question: Is this product ACA compliant?
-  answer: 'No, Health ProtectorGuard is not a substitute for the minimum essential
-    coverage required by the Affordable Care Act (ACA). But recent tax law changes
-    removed the individual mandate and and you are no longer required to carry an
-    ACA compliant plan.  As a result you will no longer be penalized on your taxes
-    and can purchase the medical insurance you feel meets your families needs and
-    budget.  Helath Protector Guard is a real cost effective solution. '
-- question: Does this policy cover preexisting conditions?
-  answer: During the first 12 months of coverage Health ProtectorGuard will not pay
-    benefits for a loss that is incurred due to a preexisting condition. After the
-    initial 12 month period has passed the preexisting condition limitation will no
-    longer apply.
+    - question: Am I eligible for this product?
+      answer:
+          'The primary insured and spouse must be between the ages of 18-64 (drop
+          off on 65th birthday) and any dependent children must be between 0-25 years of
+          age (drop off on 26th birthday) in order to be eligible for inclusion in the plan.
+          In addition all applicants must truthfully answer the medical questions in the
+          application. Any misstatement or misrepresentation on the application could result
+          in claims being denied.  '
+    - question: Is this product ACA compliant?
+      answer:
+          'No, Health ProtectorGuard is not a substitute for the minimum essential
+          coverage required by the Affordable Care Act (ACA). But recent tax law changes
+          removed the individual mandate and and you are no longer required to carry an
+          ACA compliant plan.  As a result you will no longer be penalized on your taxes
+          and can purchase the medical insurance you feel meets your families needs and
+          budget.  Helath Protector Guard is a real cost effective solution. '
+    - question: Does this policy cover preexisting conditions?
+      answer:
+          During the first 12 months of coverage Health ProtectorGuard will not pay
+          benefits for a loss that is incurred due to a preexisting condition. After the
+          initial 12 month period has passed the preexisting condition limitation will no
+          longer apply.
 quote:
-- template: unitedhealthcare-quote-form
-  options:
-  - Health ProtectorGuard (Fixed Indemnity)
-  - Critical Illness
-  - Term Life Safeguard
-  - Dental
-  default: Health ProtectorGuard (Fixed Indemnity)
+    - template: unitedhealthcare-quote-form
+      options:
+          - Health ProtectorGuard (Fixed Indemnity)
+          - Critical Illness
+          - Term Life Safeguard
+          - Dental
+      default: Health ProtectorGuard (Fixed Indemnity)
 seo:
-  meta_title: ''
-  meta_description: ''
-  social_title: ''
-  social_description: ''
-  open_graph_image: ''
+    meta_title: ''
+    meta_description: ''
+    social_title: ''
+    social_description: ''
+    open_graph_image: ''
 custom_article_list: []
-description: An affordable Hospital Surgical Indemnity plan provided by United Healthcare
-  that works with any doctor, any hospital, anywhere in the United States.
+description:
+    An affordable Hospital Surgical Indemnity plan provided by United Healthcare
+    that works with any doctor, any hospital, anywhere in the United States.
 mikes_take: ''
-
 ---
+
 Health ProtectorGuard is a hospital surgical fixed indemnity plan that pays set benefits for incurred medical expenses. It helps pay for things like hospital stays, inpatient and outpatient surgury, emergency room and doctor visits, annual wellness, prescriptions, x-rays, and much more. Benefits are predictable and simple to understand making it easy for you know exactly what you are getting! Best of all, it's affordable and you don't have to meet any deductible before your benefits begin.
 
 ## How Does it Compare to Obamacare?
@@ -127,10 +131,10 @@ Click below to see how United Healthcare's Health ProtectorGuard will work for y
 
 ## **A Final Suggestion From Our Founder**
 
-"I always recommend adding a additional supplemental coverage to cover out of pocket expenses that may occur in case of an Accident or Critical Illness with any Fixed Indemnity Plan for added protection.  I recommend with UHC Health Protectorguard packaging this with Accident ProGuard and Critical Illness Insurance fills potential gaps and provides real peace of mind should you or a family member suffer a qualifying critical illness. The policy I recommend provides a lump sum cash benefit of $10,000 to $50,000 paid directly to the policyholder in event of a qualifiying critical illness. The cash is yours to use wherever you need it, whether to make up for lost income during a critical illness and pay household bills, or to pay medical expenses that are not covered by your medical insurance.  I typically recommend $30,000 to $50,000 of coverage be added to the indemnity plan and you often still pay less than Obamacare. Plus you get real peace of mind with the added cash benefits allowed if you suffered a critical illness that Obamacare does not provide. _[**_Critical Illness Insurance _**](https://bknplar1v3nalq.preview.forestry.io/products/health/critical-illness/)_by UnitedHealthcare is an affordable addition that fits exceptionally well with Health ProtectorGuard."_
+"I always recommend adding a additional supplemental coverage to cover out of pocket expenses that may occur in case of an Accident or Critical Illness with any Fixed Indemnity Plan for added protection. I recommend with UHC Health Protectorguard packaging this with Accident ProGuard and Critical Illness Insurance fills potential gaps and provides real peace of mind should you or a family member suffer a qualifying critical illness. The policy I recommend provides a lump sum cash benefit of $10,000 to $50,000 paid directly to the policyholder in event of a qualifiying critical illness. The cash is yours to use wherever you need it, whether to make up for lost income during a critical illness and pay household bills, or to pay medical expenses that are not covered by your medical insurance.  I typically recommend $30,000 to $50,000 of coverage be added to the indemnity plan and you often still pay less than Obamacare. Plus you get real peace of mind with the added cash benefits allowed if you suffered a critical illness that Obamacare does not provide. *[\*\*\_Critical Illness Insurance *\*\*](https://bknplar1v3nalq.preview.forestry.io/products/health/critical-illness/)_by UnitedHealthcare is an affordable addition that fits exceptionally well with Health ProtectorGuard."\_
 
 Mike Sosso
 
 ‍
 
-_Click here for more details on_ [**_Critical Illness Insurance_**](https://www.getinsurancesmart.com/products/critical-illness-insurance) _by United Healthcare._
+*Click here for more details on* [**_Critical Illness Insurance_**](https://www.getinsurancesmart.com/products/critical-illness-insurance) *by United Healthcare.*

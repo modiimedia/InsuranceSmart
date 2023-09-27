@@ -2,84 +2,86 @@
 label: Homepage
 hide_body: true
 fields:
-- type: text
-  label: Title
-  name: title
-  description: ''
-  config:
-    required: true
-- type: field_group
-  label: SEO
-  name: seo
-  description: Search Engine Optimization
-  fields:
-  - type: text
-    name: social_title
-    label: Social Title
-    description: Page title to display when shared on social media sites (Will fall
-      back to regular page title if not set.)
-  - type: textarea
-    name: social_description
-    label: Social Description
-    description: Short description to display when shared on social media sites.
-  - type: file
-    name: open_graph_image
-    label: Open Graph Image
-    description: Image to display when shared on social media sites and other places
-      like RSS feed readers
-- type: text
-  name: banner_heading
-  label: Banner Heading
-  description: Main heading for the homepage
-  config:
-    required: true
-- type: textarea
-  label: Banner Text
-  name: banner_text
-  config:
-    wysiwyg: false
-    schema:
-      format: markdown
-- type: field_group
-  name: banner_media
-  label: Banner Media
-  description: Video and Images for your homepage
-  fields:
-  - type: select
-    config:
-      source:
-        type: simple
-      options:
-      - quote form
-      - video
-      required: true
-    label: Media Type
-    name: media_type
-    default: quote form
-  - type: select
-    name: video_type
-    config:
-      source:
-        type: simple
-      required: true
-      options:
-      - youtube
-    label: Video Type
-    default: youtube
-  - type: text
-    name: youtube_url
-    label: Youtube Url
-    description: Copy and paste the youtube video URL
-  - type: file
-    name: background_image
-    label: Background Image
-    description: Background video for the banner section of the homepage
-- type: blocks
-  name: components
-  label: Components
-  template_types:
-  - content-left
-  - contact-form-company-info
-  - testimony-slider
+    - type: text
+      label: Title
+      name: title
+      description: ''
+      config:
+          required: true
+    - type: field_group
+      label: SEO
+      name: seo
+      description: Search Engine Optimization
+      fields:
+          - type: text
+            name: social_title
+            label: Social Title
+            description:
+                Page title to display when shared on social media sites (Will fall
+                back to regular page title if not set.)
+          - type: textarea
+            name: social_description
+            label: Social Description
+            description: Short description to display when shared on social media sites.
+          - type: file
+            name: open_graph_image
+            label: Open Graph Image
+            description:
+                Image to display when shared on social media sites and other places
+                like RSS feed readers
+    - type: text
+      name: banner_heading
+      label: Banner Heading
+      description: Main heading for the homepage
+      config:
+          required: true
+    - type: textarea
+      label: Banner Text
+      name: banner_text
+      config:
+          wysiwyg: false
+          schema:
+              format: markdown
+    - type: field_group
+      name: banner_media
+      label: Banner Media
+      description: Video and Images for your homepage
+      fields:
+          - type: select
+            config:
+                source:
+                    type: simple
+                options:
+                    - quote form
+                    - video
+                required: true
+            label: Media Type
+            name: media_type
+            default: quote form
+          - type: select
+            name: video_type
+            config:
+                source:
+                    type: simple
+                required: true
+                options:
+                    - youtube
+            label: Video Type
+            default: youtube
+          - type: text
+            name: youtube_url
+            label: Youtube Url
+            description: Copy and paste the youtube video URL
+          - type: file
+            name: background_image
+            label: Background Image
+            description: Background video for the banner section of the homepage
+    - type: blocks
+      name: components
+      label: Components
+      template_types:
+          - content-left
+          - contact-form-company-info
+          - testimony-slider
 pages:
-- content/_index.md
+    - content/_index.md

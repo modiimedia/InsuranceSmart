@@ -22,9 +22,10 @@ options = ["Auto", "Boat or Watercraft", "RV", "Motorcycle", "Home", "Renters", 
 template = "safeco-quote-form"
 
 +++
-When you rent a house or an apartment, your landlord is not responsible for your personal belongings if they’re stolen or damaged. In order to protect your personal belongings you need to get renters insurance. Renters insurance also protects you against potential legal issues if another person or guest gets injured while they’re visiting your home. 
 
-[Contact an agent ](/contact "Contact us")and we can offer you personal advice about product availability and what kind of coverage is right for you and your situation.
+When you rent a house or an apartment, your landlord is not responsible for your personal belongings if they’re stolen or damaged. In order to protect your personal belongings you need to get renters insurance. Renters insurance also protects you against potential legal issues if another person or guest gets injured while they’re visiting your home.
+
+[Contact an agent ](/contact 'Contact us')and we can offer you personal advice about product availability and what kind of coverage is right for you and your situation.
 
 ## Renter's Insurance Costs and Discounts
 

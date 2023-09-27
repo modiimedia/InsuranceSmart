@@ -2,27 +2,27 @@
 label: Contact Form & Company Info
 hide_body: false
 fields:
-- type: boolean
-  name: hide
-  label: hide component
-- type: text
-  name: heading
-  label: Heading
-  default: Get In Touch With Us
-  config:
-    required: true
-- type: file
-  name: background_image
-  label: Background Image
-  default: https://res.cloudinary.com/modii/v1530413573/insurancesmart/pregnant-couple.jpg
-- type: select
-  name: style
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - dark
-    - light
-  label: Style
-  default: dark
+    - type: boolean
+      name: hide
+      label: hide component
+    - type: text
+      name: heading
+      label: Heading
+      default: Get In Touch With Us
+      config:
+          required: true
+    - type: file
+      name: background_image
+      label: Background Image
+      default: https://res.cloudinary.com/modii/v1530413573/insurancesmart/pregnant-couple.jpg
+    - type: select
+      name: style
+      config:
+          source:
+              type: simple
+          required: true
+          options:
+              - dark
+              - light
+      label: Style
+      default: dark

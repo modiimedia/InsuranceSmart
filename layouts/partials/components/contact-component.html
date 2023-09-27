@@ -8,51 +8,121 @@
 {{ $zip := .data.general_settings.contact_info.zip }}
 {{ $p := print $street "<br>" $street2 "<br>" $city ", " $state " " $zip }}
 
-<section class="section-dark" style="background-image: url({{ .cUrl }}w_1600,q_50,f_auto{{ .Params.background_image }})">
+
+<section
+    class="section-dark"
+    style="background-image: url({{ .cUrl }}w_1600,q_50,f_auto{{ .Params.background_image }})"
+>
     <div class="image-overlay"></div>
     <div class="container contact-form">
         <div class="flex-row reverse">
             <div class="form-block">
-                <form id="contact-form" method="POST" netlify netlify-honeypot="honeypot-field" name="contact-form">
-                    <input type="text" style="display:none" name="honeypot-field">
+                <form
+                    id="contact-form"
+                    method="POST"
+                    netlify
+                    netlify-honeypot="honeypot-field"
+                    name="contact-form"
+                >
+                    <input
+                        type="text"
+                        style="display:none"
+                        name="honeypot-field"
+                    />
                     <label for="name">Name:</label>
-                    <input type="text" class="text-field w-input" maxlength="256" name="Name" placeholder="Enter your name (Required)" id="name" required>
+                    <input
+                        type="text"
+                        class="text-field w-input"
+                        maxlength="256"
+                        name="Name"
+                        placeholder="Enter your name (Required)"
+                        id="name"
+                        required
+                    />
                     <label for="email">Email Address:</label>
-                    <input type="email" class="text-field w-input" maxlength="256" name="Email" placeholder="Enter your email (Required)"
-                        id="email" required>
+                    <input
+                        type="email"
+                        class="text-field w-input"
+                        maxlength="256"
+                        name="Email"
+                        placeholder="Enter your email (Required)"
+                        id="email"
+                        required
+                    />
                     <label for="Phone">Phone:</label>
-                    <input type="text" class="text-field w-input" maxlength="256" name="Phone" placeholder="Enter your phone number"
-                        id="Phone">
+                    <input
+                        type="text"
+                        class="text-field w-input"
+                        maxlength="256"
+                        name="Phone"
+                        placeholder="Enter your phone number"
+                        id="Phone"
+                    />
                     <label for="Gender">Sex:&nbsp;</label>
-                    <select id="Gender" name="Gender" required class="select-field w-select">
+                    <select
+                        id="Gender"
+                        name="Gender"
+                        required
+                        class="select-field w-select"
+                    >
                         <option value="">Select one...</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">Other</option>
                     </select>
                     <label for="Month">Birthday:</label>
-                        <div class="flex-fields">
-                            <select id="Month" name="Month" class="select-field flex w-select">
-                                {{ partial "forms/month-dropdown.html" . }}
-                            </select>
-                            <select id="Day" name="Day" class="select-field flex w-select">
-                                {{ partial "forms/day-dropdown.html" . }}
-                            </select>
-                            <select id="Year" name="Year" class="select-field flex w-select">
-                                {{ partial "forms/year-dropdown.html" . }}
-                            </select>
-                        </div>
-                    <label>I&nbsp;Am Interested In: (Check All That Apply)</label>
+                    <div class="flex-fields">
+                        <select
+                            id="Month"
+                            name="Month"
+                            class="select-field flex w-select"
+                        >
+                            {{ partial "forms/month-dropdown.html" . }}
+                        </select>
+                        <select
+                            id="Day"
+                            name="Day"
+                            class="select-field flex w-select"
+                        >
+                            {{ partial "forms/day-dropdown.html" . }}
+                        </select>
+                        <select
+                            id="Year"
+                            name="Year"
+                            class="select-field flex w-select"
+                        >
+                            {{ partial "forms/year-dropdown.html" . }}
+                        </select>
+                    </div>
+                    <label
+                        >I&nbsp;Am Interested In: (Check All That Apply)</label
+                    >
                     <div class="div-block-11">
                         {{ range .data.quote_forms.contact_form.insurance_choices }}
-                        <div class="checkbox-field w-checkbox">
-                            <input type="checkbox" id="contact_{{ .name | lower }}_field" name="{{ .name | title }}" class="w-checkbox-input">
-                            <label for="contact_{{ .name | lower }}_field" class="w-form-label">{{ .label }}</label>
-                        </div>
+                            <div class="checkbox-field w-checkbox">
+                                <input
+                                    type="checkbox"
+                                    id="contact_{{ .name | lower }}_field"
+                                    name="{{ .name | title }}"
+                                    class="w-checkbox-input"
+                                />
+                                <label
+                                    for="contact_{{ .name | lower }}_field"
+                                    class="w-form-label"
+                                    >{{ .label }}</label
+                                >
+                            </div>
                         {{ end }}
                     </div>
-                    <div data-netlify-recaptcha="true" style="margin-bottom: 30px"></div>
-                    <input type="submit" data-wait="Please wait..." class="submit-button w-button">
+                    <div
+                        data-netlify-recaptcha="true"
+                        style="margin-bottom: 30px"
+                    ></div>
+                    <input
+                        type="submit"
+                        data-wait="Please wait..."
+                        class="submit-button w-button"
+                    />
                 </form>
             </div>
             <address class="flex-grow contact">
@@ -62,12 +132,24 @@
                 {{ $faxlong := replace $fax "-" "" }}
                 <h1 class="dark-heading">{{ .Params.heading }}</h1>
                 <div class="text-block-5">
-                    {{- if $phone -}}<strong>Phone: </strong><a href="tel:{{ $phonelong }}" class="callNowButton">{{- $phoneclean -}}</a><br>{{- end -}}
-                    {{- if $fax -}}<strong>Fax:</strong>&nbsp;{{- $faxclean -}}<br>{{- end -}}
-                    {{- if $email -}}<strong>Email:</strong>&nbsp;<a href="mailto:{{ $email }}?subject=Questions about Insurance">{{- $email -}}</a><br>{{- end -}}
+                    {{- if $phone -}}
+                        <strong>Phone: </strong
+                        ><a href="tel:{{ $phonelong }}" class="callNowButton"
+                            >{{- $phoneclean -}}</a
+                        ><br />
+                    {{- end -}}
+                    {{- if $fax -}}
+                        <strong>Fax:</strong>&nbsp;{{- $faxclean -}}<br />
+                    {{- end -}}
+                    {{- if $email -}}
+                        <strong>Email:</strong>&nbsp;<a
+                            href="mailto:{{ $email }}?subject=Questions about Insurance"
+                            >{{- $email -}}</a
+                        ><br />
+                    {{- end -}}
                 </div>
                 <div class="text-block-5">
-                    <strong>InsuranceSmart&nbsp;Office:</strong><br>
+                    <strong>InsuranceSmart&nbsp;Office:</strong><br />
                     {{ $p | safeHTML }}
                 </div>
             </address>

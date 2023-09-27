@@ -1,6 +1,5 @@
-
-nav div:nth-of-type(2) .Navigation-m__nav-item___29fP-:nth-of-type(1), 
-nav div:nth-of-type(1) .Navigation-m__nav-item___29fP-:nth-of-type(3), 
+nav div:nth-of-type(2) .Navigation-m__nav-item___29fP-:nth-of-type(1),
+nav div:nth-of-type(1) .Navigation-m__nav-item___29fP-:nth-of-type(3),
 nav div:nth-of-type(1) .Navigation-m__nav-item___29fP-:nth-of-type(4) {
     display: none;
 }
@@ -8,7 +7,9 @@ nav div:nth-of-type(1) .Navigation-m__nav-item___29fP-:nth-of-type(4) {
 /* #notifications-container {
     display: none!important;
 } */
-.button.primary, button.button.primary, input.button.primary {
+.button.primary,
+button.button.primary,
+input.button.primary {
     background-color: #00ac6a;
 }
 
@@ -21,7 +22,9 @@ nav div:nth-of-type(1) .Navigation-m__nav-item___29fP-:nth-of-type(4) {
     color: #333;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     border-bottom: 1px solid #ffbc00;
 }
 a.active {
@@ -35,23 +38,25 @@ a.active {
     border-color: #ffbc00;
 }
 button {
-    background: #00ac6a!important;
-    border-color: #00ac6a!important;
+    background: #00ac6a !important;
+    border-color: #00ac6a !important;
 }
 button:disabled {
-    background: lightgray!important;
-    border-color: lightgray!important;
+    background: lightgray !important;
+    border-color: lightgray !important;
     color: white;
 }
 button.sc-jAaTju.dUwxnc {
-    background: transparent!important;
+    background: transparent !important;
 }
-.button.primary:hover, button.button.primary:hover, input.button.primary:hover {
+.button.primary:hover,
+button.button.primary:hover,
+input.button.primary:hover {
     background-color: #01945b;
 }
 button.sc-jAaTju.dirHKA {
-    background: lightgray!important;
-    border-color: lightgray!important;
+    background: lightgray !important;
+    border-color: lightgray !important;
     color: white;
 }
 .delete {
@@ -59,7 +64,7 @@ button.sc-jAaTju.dirHKA {
     font-size: 30px;
 }
 
-.sc-cMljjf.iUQcWm { 
+.sc-cMljjf.iUQcWm {
     border-left: 3px solid white;
     border-top: 5px solid #ffbc00;
     border-right: 3px solid white;
@@ -70,25 +75,27 @@ button.sc-jAaTju.dirHKA {
     color: #333;
 }
 .react-tagsinput--focused {
-    border: 1px solid #ffbc00!important;
+    border: 1px solid #ffbc00 !important;
 }
-.BoolField-m__switch___10gR0 input:checked+label .BoolField-m__card___2GHPj {
+.BoolField-m__switch___10gR0 input:checked + label .BoolField-m__card___2GHPj {
     background: #ffbc00;
 }
 
-.rdtPicker td.rdtActive, .rdtPicker td.rdtActive:hover {
+.rdtPicker td.rdtActive,
+.rdtPicker td.rdtActive:hover {
     background-color: #ffbc0099;
     color: #333;
 }
-.rdtPicker td.rdtActive:hover, .rdtPicker td.rdtActive:hover:hover {
-    background-color: #ffbc00!important;
+.rdtPicker td.rdtActive:hover,
+.rdtPicker td.rdtActive:hover:hover {
+    background-color: #ffbc00 !important;
 }
 
 .RichText-m__rich-text___3gGMQ a {
     color: #1989c1;
 }
 
-.RichText-m__rich-text___3gGMQ>[contenteditable]:focus {
+.RichText-m__rich-text___3gGMQ > [contenteditable]:focus {
     border-bottom: 1px solid #ffbc00;
 }
 
@@ -96,16 +103,17 @@ button.sc-jAaTju.dirHKA {
     display: none;
 }
 
-.sc-bnXvFD.difVtj h1, .sc-bnXvFD.difVtj p {
+.sc-bnXvFD.difVtj h1,
+.sc-bnXvFD.difVtj p {
     display: none;
-} 
+}
 
 .sc-bnXvFD.difVtj::after {
-    content: 'Welcome to your website editor. Navigate through the items on the left to edit the content on your website. 😎'
+    content: 'Welcome to your website editor. Navigate through the items on the left to edit the content on your website. 😎';
 }
 
 body ::selection {
-    background: #ffdb779e!important;
+    background: #ffdb779e !important;
 }
 
 .Sidebar-m__logo___30ARy img {

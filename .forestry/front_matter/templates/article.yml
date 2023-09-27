@@ -2,62 +2,62 @@
 label: Article
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: Title
-  config:
-    required: true
-- type: datetime
-  label: Date
-  name: date
-  config:
-    required: true
-    time_format: h:mm A
-    date_format: MM/DD/YYYY
-  default: now
-- type: include
-  name: seo
-  label: SEO
-  template: seo
-- type: select
-  name: author
-  config:
-    source:
-      type: pages
-      section: staff
-    required: true
-  label: Author
-  default: staff/mike.md
-- type: list
-  name: categories
-  label: Insurance Category
-  config:
-    use_select: true
-    source:
-      type: simple
-    options:
-    - featured
-    - auto
-    - home
-    - health
-    - life
-    - other
-  description: Choose a related category (or categories)
-  default: []
-- type: tag_list
-  label: Tags
-  name: tags
-  description: Choose some keywords related to this article
-- type: file
-  name: featured_image
-  label: Featured Image
-- type: blocks
-  label: Conversion Form
-  template_types:
-  - contact-us-popup
-  - safeco-quoter
-  name: form
-  config:
-    max: '1'
+    - type: text
+      name: title
+      label: Title
+      config:
+          required: true
+    - type: datetime
+      label: Date
+      name: date
+      config:
+          required: true
+          time_format: h:mm A
+          date_format: MM/DD/YYYY
+      default: now
+    - type: include
+      name: seo
+      label: SEO
+      template: seo
+    - type: select
+      name: author
+      config:
+          source:
+              type: pages
+              section: staff
+          required: true
+      label: Author
+      default: staff/mike.md
+    - type: list
+      name: categories
+      label: Insurance Category
+      config:
+          use_select: true
+          source:
+              type: simple
+          options:
+              - featured
+              - auto
+              - home
+              - health
+              - life
+              - other
+      description: Choose a related category (or categories)
+      default: []
+    - type: tag_list
+      label: Tags
+      name: tags
+      description: Choose some keywords related to this article
+    - type: file
+      name: featured_image
+      label: Featured Image
+    - type: blocks
+      label: Conversion Form
+      template_types:
+          - contact-us-popup
+          - safeco-quoter
+      name: form
+      config:
+          max: '1'
 pages:
-- content/posts/the-difference-between-medicare-advantage-and-traditional-medicare.md
+    - content/posts/the-difference-between-medicare-advantage-and-traditional-medicare.md

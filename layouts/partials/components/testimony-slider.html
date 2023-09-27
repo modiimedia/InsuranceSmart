@@ -1,11 +1,29 @@
-<div class="testimony-slide w-slide" style="transform: translateX(0px); opacity: 1;">
+<div
+    class="testimony-slide w-slide"
+    style="transform: translateX(0px); opacity: 1;"
+>
     <div style="color: #333">
         <div class="testimony-slide-content w-clearfix">
-            {{ with .Params.photo }}<div class="div-block-8" style="background-image: URL({{ $.Site.Params.cloudinary_url }}w_100,h_100,c_fill,g_faces,q_80,f_auto{{ . }})"></div>{{ end }}
+            {{ with .Params.photo }}
+                <div
+                    class="div-block-8"
+                    style="background-image: URL({{ $.Site.Params.cloudinary_url }}w_100,h_100,c_fill,g_faces,q_80,f_auto{{ . }})"
+                ></div>
+            {{ end }}
             <p class="testimony-slide-text">"{{ .Params.testimony }}"</p>
             <div class="div-block-9">
-                <h2 class="testimony-name">{{ .Title }} {{ if .Params.age }}({{ .Params.age }}){{ end }}</h2>
-                {{ if .Params.City }}<h3 class="testimony-meta">{{ .Params.City }}{{ if .Params.City }}, {{ .Params.State }}{{ end }}</h3>{{ end }}
+                <h2 class="testimony-name">
+                    {{ .Title }}
+                    {{ if .Params.age }}({{ .Params.age }}){{ end }}
+                </h2>
+                {{ if .Params.City }}
+                    <h3 class="testimony-meta">
+                        {{ .Params.City }}{{ if .Params.City }}
+                            ,
+                            {{ .Params.State }}
+                        {{ end }}
+                    </h3>
+                {{ end }}
             </div>
         </div>
     </div>

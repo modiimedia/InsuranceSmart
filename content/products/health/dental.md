@@ -32,6 +32,7 @@ name = "UHC Dental and Vision Brochure"
 template = "resource-document-image"
 
 +++
+
 Keep your smile healthy with this dental insurance plan provided by UnitedHealthCare! With this plan you can cover things like routine cleanings, x-ray, and basic services like fillings.
 
 ## No Age Limit
@@ -48,4 +49,4 @@ Find your dentist at [**myuhc.com**](https://myuhc.com/).
 
 Bundle vision benefits with your dental plan and start getting coverage for your vision care. From eye exams to contact lenses, we got you covered.
 
-[**GET A FREE QUOTE TODAY**](https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&ProductType=Dental "Get a quote")
+[**GET A FREE QUOTE TODAY**](https://www.uhone.com/Quote/GetQuote.ashx?BrokerID=AA3393615&ProductType=Dental 'Get a quote')

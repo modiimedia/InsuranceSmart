@@ -7,10 +7,10 @@ subheading: We can help you understand everything you need to know about Medicar
 phone: 210-699-0281
 email: info@getinsurancesmart.com
 address:
-  name: InsuranceSmart Office
-  line1: 8000 IH 10 West
-  line2: Suite 600
-  city: San Antonio
-  state: TX
-  zip: "78023"
+    name: InsuranceSmart Office
+    line1: 8000 IH 10 West
+    line2: Suite 600
+    city: San Antonio
+    state: TX
+    zip: '78023'
 ---

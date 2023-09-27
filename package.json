@@ -1,35 +1,35 @@
 {
-  "name": "insurancesmart",
-  "version": "1.0.0",
-  "description": "To initialize this site you need to install [hugo](https://gohugo.io/). After installing you can go to the project directory and run `hugo server` in the command line. This will launch a local version of the site at [http://localhost:1313](http://localhost:1313/).",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind.build.css",
-    "css:watch": "tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind.build.css --watch",
-    "hugo": "hugo --minify",
-    "hugo:watch": "hugo server -D",
-    "dev": "concurrently \"pnpm run css:watch\" \"pnpm run hugo:watch\"",
-    "build": "pnpm run css && pnpm run hugo",
-    "forestry-preview": "pnpm run css && hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ModiiMedia/InsuranceSmart.git"
-  },
-  "author": "",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/ModiiMedia/InsuranceSmart/issues"
-  },
-  "homepage": "https://github.com/ModiiMedia/InsuranceSmart#readme",
-  "dependencies": {
-    "hugo-bin": "^0.92.3",
-    "tailwindcss": "^3.2.4"
-  },
-  "devDependencies": {
-    "concurrently": "^7.6.0",
-    "prettier": "^2.8.2",
-    "prettier-plugin-go-template": "^0.0.13"
-  }
+    "name": "insurancesmart",
+    "version": "1.0.0",
+    "description": "To initialize this site you need to install [hugo](https://gohugo.io/). After installing you can go to the project directory and run `hugo server` in the command line. This will launch a local version of the site at [http://localhost:1313](http://localhost:1313/).",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "css": "tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind.build.css",
+        "css:watch": "tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind.build.css --watch",
+        "hugo": "hugo --minify",
+        "hugo:watch": "hugo server -D",
+        "dev": "concurrently \"pnpm run css:watch\" \"pnpm run hugo:watch\"",
+        "build": "pnpm run css && pnpm run hugo",
+        "forestry-preview": "pnpm run css && hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ModiiMedia/InsuranceSmart.git"
+    },
+    "author": "",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/ModiiMedia/InsuranceSmart/issues"
+    },
+    "homepage": "https://github.com/ModiiMedia/InsuranceSmart#readme",
+    "dependencies": {
+        "hugo-bin": "^0.92.3",
+        "tailwindcss": "^3.2.4"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.1",
+        "prettier": "^3.0.3",
+        "prettier-plugin-go-template": "^0.0.15"
+    }
 }

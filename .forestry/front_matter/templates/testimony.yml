@@ -2,42 +2,42 @@
 label: Testimony
 hide_body: true
 fields:
-- name: title
-  label: Name
-  type: text
-  hidden: false
-  default: ''
-  config:
-    required: true
-- name: age
-  type: text
-  config:
-    required: false
-  label: Age
-- name: city
-  label: City
-  type: text
-  hidden: false
-  default: ''
-- name: state
-  label: State
-  type: text
-  hidden: false
-  default: ''
-- type: textarea
-  label: Testimony
-  name: testimony
-  config:
-    wysiwyg: false
-    schema:
-      format: markdown
-- type: file
-  name: photo
-  label: Photo
-- type: include
-  template: seo
-  label: Seo
-  name: seo
+    - name: title
+      label: Name
+      type: text
+      hidden: false
+      default: ''
+      config:
+          required: true
+    - name: age
+      type: text
+      config:
+          required: false
+      label: Age
+    - name: city
+      label: City
+      type: text
+      hidden: false
+      default: ''
+    - name: state
+      label: State
+      type: text
+      hidden: false
+      default: ''
+    - type: textarea
+      label: Testimony
+      name: testimony
+      config:
+          wysiwyg: false
+          schema:
+              format: markdown
+    - type: file
+      name: photo
+      label: Photo
+    - type: include
+      template: seo
+      label: Seo
+      name: seo
 pages:
-- content/testimonies/carolyn-b.md
-- content/testimonies/diana.md
+    - content/testimonies/carolyn-b.md
+    - content/testimonies/diana.md

@@ -21,4 +21,5 @@ template = "contact-us-popup"
 title = "GET A FREE QUOTE"
 
 +++
+
 Hugo uses a set of factors to identify a page’s related content based on Front Matter parameters. This can be tuned to the desired set of indices and parameters or left to Hugo’s default [Related Content configuration](https://gohugo.io/content-management/related/#configure-related-content).

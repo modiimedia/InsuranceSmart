@@ -2,34 +2,34 @@
 label: Contact Us Popup
 hide_body: true
 fields:
-- name: title
-  type: text
-  config:
-    required: true
-  label: Title
-  default: GET A FREE QUOTE
-- name: subtitle
-  type: text
-  config:
-    required: false
-  label: Subtitle
-  default: Contact us today to get a free quote on your insurance plan
-- name: style
-  type: select
-  default: light
-  config:
-    required: true
-    options:
-    - light
-    - dark
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Style
-- name: background_image
-  type: file
-  config:
-    maxSize: '15'
-  label: Background Image
+    - name: title
+      type: text
+      config:
+          required: true
+      label: Title
+      default: GET A FREE QUOTE
+    - name: subtitle
+      type: text
+      config:
+          required: false
+      label: Subtitle
+      default: Contact us today to get a free quote on your insurance plan
+    - name: style
+      type: select
+      default: light
+      config:
+          required: true
+          options:
+              - light
+              - dark
+          source:
+              type: simple
+              section:
+              file:
+              path:
+      label: Style
+    - name: background_image
+      type: file
+      config:
+          maxSize: '15'
+      label: Background Image

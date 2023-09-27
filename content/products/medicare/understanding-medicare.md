@@ -44,6 +44,7 @@ name = "Getting Ready For Retirement.  Some things to consider."
 template = "resource-document-image"
 
 +++
+
 **3 Step Process to Make Medicare Enrollment Easy For You!**
 
 1. Help you understand Medicare A & B in simple terms. Then if you're not yet enrolled, we can show you how.
@@ -54,6 +55,6 @@ template = "resource-document-image"
 
 To talk with one of our Licensed Texas Medicare Insurance Specialists, give us a call or complete the contact form below and we will get right back to you.
 
-**CALL TODAY!**  [**(210) 699-0291**](tel:2106990281)
+**CALL TODAY!** [**(210) 699-0291**](tel:2106990281)
 
 #### [**Or Contact Us Today**](/contact)

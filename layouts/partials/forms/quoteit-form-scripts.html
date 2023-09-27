@@ -2,47 +2,46 @@
     <div class="image-overlay close-qt-modal"></div>
     <div class="qt-modal-content">
         <div class="close-qt-modal">
-            <div>
-                <i class="far fa-window-close"></i>&nbsp;close
-            </div>
+            <div><i class="far fa-window-close"></i>&nbsp;close</div>
         </div>
         <iframe src="" frameborder="0"></iframe>
     </div>
 </div>
 
 <script>
-    let quoteitForms = document.querySelectorAll("form.quoteit-form")
-    let qtZip = document.getElementById("qt-zip")
-    let qtZipValue = qtZip.value
-    let qtOption = document.getElementById("qt-option")
-    let qtOptionValue = qtOption.value
-    let qtModal = document.getElementById("quoteit-form-modal")
-    let qtIframe = document.querySelector("#quoteit-form-modal iframe")
-    let qtModalClose = document.querySelectorAll(".close-qt-modal")
+    let quoteitForms = document.querySelectorAll('form.quoteit-form');
+    let qtZip = document.getElementById('qt-zip');
+    let qtZipValue = qtZip.value;
+    let qtOption = document.getElementById('qt-option');
+    let qtOptionValue = qtOption.value;
+    let qtModal = document.getElementById('quoteit-form-modal');
+    let qtIframe = document.querySelector('#quoteit-form-modal iframe');
+    let qtModalClose = document.querySelectorAll('.close-qt-modal');
 
-    qtZip.addEventListener("keyup", function(){
-        qtZipValue = qtZip.value
-        qtOptionValue = qtOption.value
-    })
+    qtZip.addEventListener('keyup', function () {
+        qtZipValue = qtZip.value;
+        qtOptionValue = qtOption.value;
+    });
 
-    qtOption.addEventListener("keyup", function(){
-        qtZipValue = qtZip.value
-        qtOptionValue = qtOption.value
-    })
+    qtOption.addEventListener('keyup', function () {
+        qtZipValue = qtZip.value;
+        qtOptionValue = qtOption.value;
+    });
 
-    for(let i = 0; i < quoteitForms.length; i++) {
-        quoteitForms[i].addEventListener("submit", function(){
-            document.body.classList.add("no-scroll");
-            qtModal.classList.add("active")
-            document.querySelector('#quoteit-form-modal iframe').src = qtOptionValue + "&zipcode=" + qtZipValue
-            console.log(`${qtOptionValue}\n${qtZipValue}`)
-        })
+    for (let i = 0; i < quoteitForms.length; i++) {
+        quoteitForms[i].addEventListener('submit', function () {
+            document.body.classList.add('no-scroll');
+            qtModal.classList.add('active');
+            document.querySelector('#quoteit-form-modal iframe').src =
+                qtOptionValue + '&zipcode=' + qtZipValue;
+            console.log(`${qtOptionValue}\n${qtZipValue}`);
+        });
     }
 
-    for(let i = 0; i < qtModalClose.length; i++) {
-        qtModalClose[i].addEventListener("click", function(){
-            document.body.classList.remove("no-scroll");
-            qtModal.classList.remove("active");
-        })
+    for (let i = 0; i < qtModalClose.length; i++) {
+        qtModalClose[i].addEventListener('click', function () {
+            document.body.classList.remove('no-scroll');
+            qtModal.classList.remove('active');
+        });
     }
 </script>

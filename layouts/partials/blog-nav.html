@@ -4,16 +4,22 @@
     </a>
     {{ range $.Site.Taxonomies.categories.Alphabetical }}
         {{ if eq "featured" .Name }}
-        <a href="/categories/featured/" class="tab-link-tab-3 w-inline-block">
-            <div>Featured</div>
-        </a>
+            <a
+                href="/categories/featured/"
+                class="tab-link-tab-3 w-inline-block"
+            >
+                <div>Featured</div>
+            </a>
         {{ end }}
     {{ end }}
     {{ range $.Site.Taxonomies.categories.Alphabetical }}
         {{ if ne "featured" .Name }}
-        <a href="/categories/{{ .Name | urlize }}/" class="tab-link-tab-3 w-inline-block">
-            <div>{{ .Name | title }}</div>
-        </a>
+            <a
+                href="/categories/{{ .Name | urlize }}/"
+                class="tab-link-tab-3 w-inline-block"
+            >
+                <div>{{ .Name | title }}</div>
+            </a>
         {{ end }}
     {{ end }}
 </nav>

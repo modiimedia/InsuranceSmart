@@ -2,52 +2,52 @@
 label: Safeco
 hide_body: false
 fields:
-- type: select
-  name: default
-  config:
-    source:
-      type: simple
-      section: safeco-form
-    options:
-    - Auto
-    - Home
-    - Renters
-    - Condo
-    - Boat or Watercraft
-    - Motorcycle
-    - RV
-    - Umbrella
-    - Landlord Protection
-  label: Default Option
-  description: Leaving blank will show text saying "Choose insurance type"
-- type: list
-  config:
-    use_select: true
-    source:
-      type: simple
-      file: data-forms-quote_forms-yaml
-      path: ''
-      section: safeco-form
-    options:
-    - Auto
-    - Home
-    - Renters
-    - Condo
-    - Boat or Watercraft
-    - Motorcycle
-    - RV
-    - Umbrella
-    - Landlord Protection
-  label: Options to Display
-  name: options
-  description: Which products do you want to display on the form?
-  default:
-  - Auto
-  - Boat or Watercraft
-  - RV
-  - Motorcycle
-  - Home
-  - Renters
-  - Condo
-  - Landlord Protection
-  - Umbrella
+    - type: select
+      name: default
+      config:
+          source:
+              type: simple
+              section: safeco-form
+          options:
+              - Auto
+              - Home
+              - Renters
+              - Condo
+              - Boat or Watercraft
+              - Motorcycle
+              - RV
+              - Umbrella
+              - Landlord Protection
+      label: Default Option
+      description: Leaving blank will show text saying "Choose insurance type"
+    - type: list
+      config:
+          use_select: true
+          source:
+              type: simple
+              file: data-forms-quote_forms-yaml
+              path: ''
+              section: safeco-form
+          options:
+              - Auto
+              - Home
+              - Renters
+              - Condo
+              - Boat or Watercraft
+              - Motorcycle
+              - RV
+              - Umbrella
+              - Landlord Protection
+      label: Options to Display
+      name: options
+      description: Which products do you want to display on the form?
+      default:
+          - Auto
+          - Boat or Watercraft
+          - RV
+          - Motorcycle
+          - Home
+          - Renters
+          - Condo
+          - Landlord Protection
+          - Umbrella

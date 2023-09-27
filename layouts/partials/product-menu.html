@@ -1,70 +1,143 @@
 <div class="sidebar-content">
     {{ $link := .RelPermalink }}
-    {{ if eq .Section "products" }}    
+    {{ if eq .Section "products" }}
         {{ $category := .Params.category }}
         {{ $cat := replace .Params.category "insurancecategories/" "" }}
         {{ range where .Site.RegularPages "Section" "insurancecategories" }}
             {{ if eq .File.LogicalName $cat }}
-            <div class="sidebar-category">
-                <div class="text-block-17">Section: {{ .Title }}&nbsp;&nbsp;</div>
-                <div data-w-id="ad87ec45-3c28-7fd1-0a5c-f4a1d4bfc8f2" class="chevron-down"><i class="fas fa-chevron-down"></i></div>
-                <div data-w-id="dd30f1a3-1441-7a02-d9df-c0a920e6b2b8" class="chevron-left"><i class="fas fa-chevron-right"></i></div>
-            </div>
+                <div class="sidebar-category">
+                    <div class="text-block-17">
+                        Section: {{ .Title }}&nbsp;&nbsp;
+                    </div>
+                    <div
+                        data-w-id="ad87ec45-3c28-7fd1-0a5c-f4a1d4bfc8f2"
+                        class="chevron-down"
+                    >
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div
+                        data-w-id="dd30f1a3-1441-7a02-d9df-c0a920e6b2b8"
+                        class="chevron-left"
+                    >
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
             {{ end }}
         {{ end }}
         {{ range sort (where .Site.RegularPages.ByTitle "Section" "insurancecategories") "Params.weight" }}
-        {{ $f := .File.LogicalName }}
-        <div data-w-id="ad6c370b-e4af-00f1-d09f-50460c02b5ef" class="div-block-18 {{ if eq $cat $f -}}active{{- end -}}">
-            <a href="{{ .RelPermalink }}" class="sidebar-heading top w-inline-block" style="display:block">
-                <div class="text-block-17">{{ .Title }}</div>
-                <div class="text-block-11"><i style="margin-left: 10px" class="fas fa-{{ .Params.fa_icon }}"></i> </div>
-            </a>
-            {{ if eq $cat $f }}
-            <div class="product-content">
-                {{ range sort (where $.Site.RegularPages "Section" "products") ".Title" }}
-                    {{ if eq .Params.category $category }}
-                    <a href="{{ .RelPermalink }}" class="sidebar-heading sublink w-inline-block" style="width: 100%">
-                        <div>{{ if eq .RelPermalink $link }}<i style="color: #ffbc00" class="fas fa-chevron-right"></i>&nbsp;{{ end }}{{ .Title }}</div>
-                    </a>
-                    {{ end }}
+            {{ $f := .File.LogicalName }}
+            <div
+                data-w-id="ad6c370b-e4af-00f1-d09f-50460c02b5ef"
+                class="div-block-18 {{ if eq $cat $f -}}active{{- end -}}"
+            >
+                <a
+                    href="{{ .RelPermalink }}"
+                    class="sidebar-heading top w-inline-block"
+                    style="display:block"
+                >
+                    <div class="text-block-17">{{ .Title }}</div>
+                    <div class="text-block-11">
+                        <i
+                            style="margin-left: 10px"
+                            class="fas fa-{{ .Params.fa_icon }}"
+                        ></i>
+                    </div>
+                </a>
+                {{ if eq $cat $f }}
+                    <div class="product-content">
+                        {{ range sort (where $.Site.RegularPages "Section" "products") ".Title" }}
+                            {{ if eq .Params.category $category }}
+                                <a
+                                    href="{{ .RelPermalink }}"
+                                    class="sidebar-heading sublink w-inline-block"
+                                    style="width: 100%"
+                                >
+                                    <div>
+                                        {{ if eq .RelPermalink $link }}
+                                            <i
+                                                style="color: #ffbc00"
+                                                class="fas fa-chevron-right"
+                                            ></i
+                                            >&nbsp;
+                                        {{ end }}{{ .Title }}
+                                    </div>
+                                </a>
+                            {{ end }}
+                        {{ end }}
+                    </div>
                 {{ end }}
             </div>
-            {{ end }}
-        </div>
         {{ end }}
     {{ end }}
-    
+
     {{ if eq .Section "insurancecategories" }}
         {{ $cat := .File.LogicalName }}
         {{ $category := add "insurancecategories/" .File.LogicalName }}
         {{ range where .Site.RegularPages "Section" "insurancecategories" }}
             {{ if eq .File.LogicalName $cat }}
-            <div class="sidebar-category">
-                <div class="text-block-17">Section: {{ .Title }}&nbsp;&nbsp;</div>
-                <div data-w-id="ad87ec45-3c28-7fd1-0a5c-f4a1d4bfc8f2" class="chevron-down"><i class="fas fa-chevron-down"></i></div>
-                <div data-w-id="dd30f1a3-1441-7a02-d9df-c0a920e6b2b8" class="chevron-left"><i class="fas fa-chevron-right"></i></div>
-            </div>
+                <div class="sidebar-category">
+                    <div class="text-block-17">
+                        Section: {{ .Title }}&nbsp;&nbsp;
+                    </div>
+                    <div
+                        data-w-id="ad87ec45-3c28-7fd1-0a5c-f4a1d4bfc8f2"
+                        class="chevron-down"
+                    >
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div
+                        data-w-id="dd30f1a3-1441-7a02-d9df-c0a920e6b2b8"
+                        class="chevron-left"
+                    >
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
             {{ end }}
         {{ end }}
-    {{ range sort (where .Site.RegularPages.ByTitle "Section" "insurancecategories") "Params.weight" }}
-    {{ $f := .File.LogicalName }}
-    <div class="div-block-18 {{ if eq $cat $f -}}active{{- end -}}">
-        <a href="{{ .RelPermalink }}" class="sidebar-heading top w-inline-block">
-            <div class="text-block-17">{{ if eq .RelPermalink $link }}<i style="color: #ffbc00" class="fas fa-chevron-right"></i>&nbsp;{{ end }}{{ .Title }}</div>
-            <div class="text-block-11"><i style="margin-left: 10px" class="fas fa-{{ .Params.fa_icon }}"></i> </div>
-        </a>
-        {{ if eq $cat $f }}
-        <div class="product-content">
-            {{ range sort (where $.Site.RegularPages.ByTitle "Section" "products") ".Title" }}
-                {{ if eq .Params.category $category }}
-                <a href="{{ .RelPermalink }}" class="sidebar-heading sublink w-inline-block" style="width: 100%">
-                    <div>{{ if eq .RelPermalink $link }}<i class="fas fa-chevron-right"></i>&nbsp;{{ end }}{{ .Title }}</div>
+        {{ range sort (where .Site.RegularPages.ByTitle "Section" "insurancecategories") "Params.weight" }}
+            {{ $f := .File.LogicalName }}
+            <div class="div-block-18 {{ if eq $cat $f -}}active{{- end -}}">
+                <a
+                    href="{{ .RelPermalink }}"
+                    class="sidebar-heading top w-inline-block"
+                >
+                    <div class="text-block-17">
+                        {{ if eq .RelPermalink $link }}
+                            <i
+                                style="color: #ffbc00"
+                                class="fas fa-chevron-right"
+                            ></i
+                            >&nbsp;
+                        {{ end }}{{ .Title }}
+                    </div>
+                    <div class="text-block-11">
+                        <i
+                            style="margin-left: 10px"
+                            class="fas fa-{{ .Params.fa_icon }}"
+                        ></i>
+                    </div>
                 </a>
+                {{ if eq $cat $f }}
+                    <div class="product-content">
+                        {{ range sort (where $.Site.RegularPages.ByTitle "Section" "products") ".Title" }}
+                            {{ if eq .Params.category $category }}
+                                <a
+                                    href="{{ .RelPermalink }}"
+                                    class="sidebar-heading sublink w-inline-block"
+                                    style="width: 100%"
+                                >
+                                    <div>
+                                        {{ if eq .RelPermalink $link }}
+                                            <i class="fas fa-chevron-right"></i
+                                            >&nbsp;
+                                        {{ end }}{{ .Title }}
+                                    </div>
+                                </a>
+                            {{ end }}
+                        {{ end }}
+                    </div>
                 {{ end }}
-            {{ end }}
-        </div>
+            </div>
         {{ end }}
-    </div>
-    {{ end }}
     {{ end }}
 </div>

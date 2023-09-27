@@ -2,27 +2,27 @@
 label: Staff
 hide_body: true
 fields:
-- name: title
-  label: Title
-  type: text
-  hidden: false
-  default: ''
-  config:
-    required: true
-- name: position
-  label: Position
-  type: text
-  hidden: false
-  default: ''
-  config:
-    required: true
-- name: description
-  label: Description
-  type: text
-  hidden: false
-  default: ''
-- type: file
-  name: photo
-  label: photo
+    - name: title
+      label: Title
+      type: text
+      hidden: false
+      default: ''
+      config:
+          required: true
+    - name: position
+      label: Position
+      type: text
+      hidden: false
+      default: ''
+      config:
+          required: true
+    - name: description
+      label: Description
+      type: text
+      hidden: false
+      default: ''
+    - type: file
+      name: photo
+      label: photo
 pages:
-- content/staff/mike.md
+    - content/staff/mike.md

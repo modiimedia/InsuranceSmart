@@ -3,7 +3,11 @@
         <div class="header-content">
             <div class="div-block-3">
                 <a href="/" class="logo w-inline-block">
-                    <img src="{{ $.Site.Params.cloudinary_url }}w_250,q_60,f_auto{{ $.Site.Data.general_settings.website_settings.logo }}" title="Go Home" alt="Logo for InsuranceSmart insurance agency. We provide health insurance, life insurance, auto insurance, home insurance and more." />
+                    <img
+                        src="{{ $.Site.Params.cloudinary_url }}w_250,q_60,f_auto{{ $.Site.Data.general_settings.website_settings.logo }}"
+                        title="Go Home"
+                        alt="Logo for InsuranceSmart insurance agency. We provide health insurance, life insurance, auto insurance, home insurance and more."
+                    />
                 </a>
             </div>
             <nav class="nav-wrapper">
@@ -11,13 +15,22 @@
                 {{ partial "mobile-nav.html" . }}
                 {{ $phoneclean := replace $.Site.Data.general_settings.contact_info.phone "+1-" "" }}
                 {{ $phonelong := replace $.Site.Data.general_settings.contact_info.phone "-" "" }}
-                <a href="tel:{{ $phonelong }}" class="nav-link phone w-inline-block callNowButton">
+                <a
+                    href="tel:{{ $phonelong }}"
+                    class="nav-link phone w-inline-block callNowButton"
+                >
                     <div class="text-block-2"><i class="fas fa-phone"></i></div>
-                    <div class="text-block-3">&nbsp;&nbsp;{{ $phoneclean }}</div>
+                    <div class="text-block-3">
+                        &nbsp;&nbsp;{{ $phoneclean }}
+                    </div>
                     <div class="text-block-4">&nbsp;&nbsp;call us</div>
                 </a>
                 {{ partial "social-links.html" . }}
-                <a href="#" data-w-id="6714678d-cb9c-b655-5209-6473232315fb" class="link-block-2 w-inline-block">
+                <a
+                    href="#"
+                    data-w-id="6714678d-cb9c-b655-5209-6473232315fb"
+                    class="link-block-2 w-inline-block"
+                >
                     <i class="fas fa-bars"></i>
                 </a>
             </nav>

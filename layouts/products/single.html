@@ -1,80 +1,194 @@
-{{ define "main"}}
-{{- $phone := $.Site.Data.general_settings.contact_info.phone -}}
-<section style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_80,f_auto{{ .Params.Featured_Image }})"
-    class="page-banner-copy2-copy">
-    <div class="container" id="quote">
-        <div class="product-quote-box">
-            <h1 class="quote-box-heading">{{ .Title }}</h1>
-            <p class="quote-box-text">{{ .Params.Description }}</p>
-            {{ if .Params.quote }}
-                {{ range first 1 .Params.quote }}
-                    <div id="quote-form">
-                        {{ if eq .template "safeco-quote-form" }}
-                        {{ $d := .default | lower }}
-                        <div class="w-embed w-script">
-                                <form name="gaqList" id="gaqList" onsubmit="return submitForm();">
-                                    <div class="quote-form-wrap" onload="setProduct();">
-                                        <input id="zip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
-                                        <select id="subMenu" required="" name="subMenu" class="insurance-select w-select">
-                                            {{ if $d }}{{ else }}<option id="defaultoption" value="">Select Insurance Type</option>{{ end }}
-                                            {{- range .options -}}
+{{ define "main" }}
+    {{- $phone := $.Site.Data.general_settings.contact_info.phone -}}
+    <section
+        style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_80,f_auto{{ .Params.Featured_Image }})"
+        class="page-banner-copy2-copy"
+    >
+        <div class="container" id="quote">
+            <div class="product-quote-box">
+                <h1 class="quote-box-heading">{{ .Title }}</h1>
+                <p class="quote-box-text">{{ .Params.Description }}</p>
+                {{ if .Params.quote }}
+                    {{ range first 1 .Params.quote }}
+                        <div id="quote-form">
+                            {{ if eq .template "safeco-quote-form" }}
+                                {{ $d := .default | lower }}
+                                <div class="w-embed w-script">
+                                    <form
+                                        name="gaqList"
+                                        id="gaqList"
+                                        onsubmit="return submitForm();"
+                                    >
+                                        <div
+                                            class="quote-form-wrap"
+                                            onload="setProduct();"
+                                        >
+                                            <input
+                                                id="zip"
+                                                required=""
+                                                type="text"
+                                                name="zip"
+                                                maxlength="5"
+                                                placeholder="Enter Zip Code"
+                                                class="zip-field w-input"
+                                            />
+                                            <select
+                                                id="subMenu"
+                                                required=""
+                                                name="subMenu"
+                                                class="insurance-select w-select"
+                                            >
+                                                {{ if $d }}
+                                                {{ else }}
+                                                    <option
+                                                        id="defaultoption"
+                                                        value=""
+                                                    >
+                                                        Select Insurance Type
+                                                    </option>
+                                                {{ end }}
+                                                {{- range .options -}}
+                                                    {{ $id := . | lower }}
+                                                    {{ range $.Site.Data.quote_forms.safeco }}
+                                                        {{ $l := .display | lower }}
+                                                        {{ if eq $id $l }}
+                                                            <option
+                                                                id="{{ .id }}"
+                                                                {{ if eq $d $l }}
+                                                                    selected
+                                                                {{ end }}
+                                                                value="{{ .value }}"
+                                                                data-zip="zip"
+                                                            >
+                                                                {{ .display }}
+                                                            </option>
+                                                        {{ end }}
+                                                    {{ end }}
+                                                {{ end }}
+                                            </select>
+                                            <input
+                                                type="submit"
+                                                value="Get a Quote"
+                                                id="fakeBtn"
+                                                class="get-a-quote w-button"
+                                            />
+                                            <input
+                                                type="submit"
+                                                value="Get a Quote"
+                                                id="startBtn"
+                                                onclick="submitForm();"
+                                                class="get-a-quote w-button"
+                                                style="display:none"
+                                            />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="quote-box-disclaimer">
+                                    Insurance quoting provided by SafeCo
+                                </div>
+                            {{ else if eq .template "unitedhealthcare-quote-form" }}
+                                <form
+                                    name="unitedhform"
+                                    id="unitedhform"
+                                    onsubmit="getquote()"
+                                >
+                                    <div class="quote-form-wrap">
+                                        <input
+                                            id="uhZip"
+                                            required=""
+                                            type="text"
+                                            name="zip"
+                                            maxlength="5"
+                                            placeholder="Enter Zip Code"
+                                            class="zip-field w-input"
+                                        />
+                                        <select
+                                            id="uhProduct"
+                                            required=""
+                                            name="Product"
+                                            class="insurance-select w-select"
+                                        >
+                                            {{ if .default }}
+                                            {{ else }}
+                                                <option value="">
+                                                    Select insurance type
+                                                </option>
+                                            {{ end }}
+                                            {{ $def := .default | lower }}
+                                            {{ range .options }}
                                                 {{ $id := . | lower }}
-                                                {{ range $.Site.Data.quote_forms.safeco }}
+                                                {{ range $.Site.Data.quote_forms.unitedhealthcare }}
                                                     {{ $l := .display | lower }}
                                                     {{ if eq $id $l }}
-                                                    <option id="{{ .id }}" {{ if eq $d $l }}selected{{ end }} value="{{ .value }}" data-zip="zip">{{ .display }}</option>
+                                                        <option
+                                                            {{ if eq $def $l -}}
+                                                                selected
+                                                            {{- end }}
+                                                            value="{{ .value }}"
+                                                        >
+                                                            {{ .display }}
+                                                        </option>
                                                     {{ end }}
                                                 {{ end }}
                                             {{ end }}
                                         </select>
-                                        <input type="submit" value="Get a Quote" id="fakeBtn" class="get-a-quote w-button">
-                                        <input type="submit" value="Get a Quote" id="startBtn" onclick="submitForm();" class="get-a-quote w-button" style="display:none">
+                                        <input
+                                            type="submit"
+                                            id="uhFakeBtn"
+                                            value="Get a Quote"
+                                            class="get-a-quote w-button"
+                                        />
+                                        <!--<a href="#" target="_blank" id="uhQuoteBtn" class="get-a-quote w-button" style="display:none">Get A Quote</a>-->
+                                        <input
+                                            type="submit"
+                                            id="uhQuoteBtn"
+                                            class="get-a-quote w-button"
+                                            onclick="submit"
+                                            value="Get a Quote"
+                                            style="display:none"
+                                        />
                                     </div>
                                 </form>
-                        </div>
-                        <div class="quote-box-disclaimer">Insurance quoting provided by SafeCo</div>
-                        {{ else if eq .template "unitedhealthcare-quote-form" }}
-                        <form name="unitedhform" id="unitedhform" onsubmit="getquote()">
-                            <div class="quote-form-wrap">
-                                <input id="uhZip" required="" type="text" name="zip" maxlength="5" placeholder="Enter Zip Code" class="zip-field w-input">
-                                <select id="uhProduct" required="" name="Product" class="insurance-select w-select">
-                                    {{ if .default }}{{ else }}<option value="">Select insurance type</option>{{ end }}
-                                    {{ $def := .default | lower }}
-                                    {{ range .options }}
-                                        {{ $id := . | lower }}
-                                        {{ range $.Site.Data.quote_forms.unitedhealthcare }}
-                                            {{ $l := .display | lower }}
-                                            {{ if eq $id $l }}<option {{ if eq $def $l -}}selected{{- end }} value="{{ .value }}">{{ .display }}</option>{{ end }}
+                            {{ else if eq .template "quoteit-quote-form" }}
+                                {{ partial "forms/quoteit-quote-form.html" (dict "context" . "data" $.Site.Data ) }}
+                            {{ else if eq .template "custom-link" }}
+                                <a
+                                    class="get-a-quote"
+                                    target="_blank"
+                                    href="{{ .button_link }}"
+                                    >{{ .button_text }}</a
+                                >
+                            {{ else if eq .template "call-for-a-quote" }}
+                                <a
+                                    class="link-block-3 w-inline-block"
+                                    href="tel:{{- if .phone_number -}}
+                                        {{- .phone_number -}}
+                                    {{- else -}}
+                                        {{- $phone -}}
+                                    {{- end -}}"
+                                >
+                                    <div class="call-us-large">
+                                        {{ .heading }}<br />{{- if .phone_number -}}
+                                            {{- .phone_number -}}
+                                        {{- else -}}
+                                            {{ $phone }}
                                         {{ end }}
-                                    {{ end }}
-                                </select>
-                                <input type="submit" id="uhFakeBtn" value="Get a Quote" class="get-a-quote w-button">
-                                <!--<a href="#" target="_blank" id="uhQuoteBtn" class="get-a-quote w-button" style="display:none">Get A Quote</a>-->
-                                <input type=submit id="uhQuoteBtn" class="get-a-quote w-button" onclick="submit" value="Get a Quote" style="display:none"/>
-                            </div>
-                        </form>
-                        {{ else if eq .template "quoteit-quote-form" }}
-                            {{ partial "forms/quoteit-quote-form.html" (dict "context" . "data" $.Site.Data ) }}
-                        {{ else if eq .template "custom-link" }}
-                            <a class="get-a-quote" target="_blank" href="{{ .button_link }}">{{ .button_text }}</a>
-                        {{ else if eq .template "call-for-a-quote" }}
-                            <a class="link-block-3 w-inline-block" href="tel:{{- if .phone_number -}}{{- .phone_number -}}{{- else -}}{{- $phone -}}{{- end -}}">
-                                <div class="call-us-large">{{ .heading }}<br/>{{- if .phone_number -}}{{- .phone_number -}}{{- else -}}{{ $phone }}{{ end }}</div>
-                            </a>
-                        {{ end }}
-                    </div>
+                                    </div>
+                                </a>
+                            {{ end }}
+                        </div>
+                    {{ end }}
                 {{ end }}
-            {{ end }}
+            </div>
         </div>
-    </div>
-    <div class="div-block-16"></div>
-</section>
-<section class="main-content product">
-    <div class="container">
-        <div class="flex-row product">
-            <aside class="sidebar">
-                {{ partial "product-menu.html" . }}
-                <!-- <div class="sidebar-section">Suggested Readings</div>
+        <div class="div-block-16"></div>
+    </section>
+    <section class="main-content product">
+        <div class="container">
+            <div class="flex-row product">
+                <aside class="sidebar">
+                    {{ partial "product-menu.html" . }}
+                    <!-- <div class="sidebar-section">Suggested Readings</div>
                 <div>
                     <div class="collection-list-wrapper w-dyn-list">
                         <div class="w-dyn-items">
@@ -126,89 +240,132 @@
                         </div>
                     </div>
                 </div> -->
-            </aside>
-            <main class="flex-grow product">
-                {{ if .Params.mikes_take }}
-                    <div class="div-block-19 w-clearfix">
-                        <h1 class="mikes-take">Mike&#x27;s Take</h1>
-                        <div class="take-title">Founder &amp; CEO</div>
-                        <div class="div-block-20" 
-                            {{- with $.Site.GetPage "/staff/mike.md" -}}
-                                style="background-image: url({{ $.Site.Params.cloudinary_url }}w_100,h_100,c_fill,q_80,f_auto{{ .Params.photo }})"
-                            {{- end -}}></div>
-                        {{ .Params.mikes_take }}
-                    </div>
-                {{ end }}
-                <div>
-                    <div data-duration-in="300" data-duration-out="100" class="w-tabs">
-                        <div class="tabs-menu w-tab-menu">
-                            <a data-w-tab="Tab 4" class="tab-link-tab-2 w-inline-block w-tab-link w--current">
-                                <div>Details</div>
-                            </a>
-                            {{ if .Params.faqs }}
-                            <a data-w-tab="Tab 2" class="tab-link-tab-2 w-inline-block w-tab-link">
-                                <div>Frequently Asked Questions</div>
-                            </a>
-                            {{ end }}
-                            {{ if .Params.resources }}
-                            <a data-w-tab="Tab 3" class="tab-link-tab-2 w-inline-block w-tab-link">
-                                <div>Resources</div>
-                            </a>
-                            {{ end }}
+                </aside>
+                <main class="flex-grow product">
+                    {{ if .Params.mikes_take }}
+                        <div class="div-block-19 w-clearfix">
+                            <h1 class="mikes-take">Mike&#x27;s Take</h1>
+                            <div class="take-title">Founder &amp; CEO</div>
+                            <div
+                                class="div-block-20"
+                                {{- with $.Site.GetPage "/staff/mike.md" -}}
+                                    style="background-image:
+                                    url({{ $.Site.Params.cloudinary_url }}w_100,h_100,c_fill,q_80,f_auto{{ .Params.photo }})"
+                                {{- end -}}
+                            ></div>
+                            {{ .Params.mikes_take }}
                         </div>
-                        <div class="product-details w-tab-content">
-                            <div data-w-tab="Tab 4" class="w-tab-pane w--tab-active">
-                                <div class="w-richtext">
-                                    {{ replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50,f_auto/" | safeHTML }}
-                                </div>
-                            </div>
-                            <div data-w-tab="Tab 2" class="w-tab-pane">
-                                {{ range .Params.faqs }}
-                                <div class="faq">
-                                    <div class="faq-header">
-                                        <div class="chevron-left"><i class="fas fa-chevron-right"></i></div>
-                                        <div class="chevron-down"><i class="fas fa-chevron-down"></i> </div>
-                                        <h2 class="heading-11">{{ .question }}</h2>
-                                    </div>
-                                    <div class="faq-answer">
-                                        {{ .answer | markdownify }}
-                                    </div>
-                                </div>
+                    {{ end }}
+                    <div>
+                        <div
+                            data-duration-in="300"
+                            data-duration-out="100"
+                            class="w-tabs"
+                        >
+                            <div class="tabs-menu w-tab-menu">
+                                <a
+                                    data-w-tab="Tab 4"
+                                    class="tab-link-tab-2 w-inline-block w-tab-link w--current"
+                                >
+                                    <div>Details</div>
+                                </a>
+                                {{ if .Params.faqs }}
+                                    <a
+                                        data-w-tab="Tab 2"
+                                        class="tab-link-tab-2 w-inline-block w-tab-link"
+                                    >
+                                        <div>Frequently Asked Questions</div>
+                                    </a>
+                                {{ end }}
+                                {{ if .Params.resources }}
+                                    <a
+                                        data-w-tab="Tab 3"
+                                        class="tab-link-tab-2 w-inline-block w-tab-link"
+                                    >
+                                        <div>Resources</div>
+                                    </a>
                                 {{ end }}
                             </div>
-                            <div data-w-tab="Tab 3" class="w-tab-pane">
-                                <ul class="unordered-list">
-                                    {{ range .Params.resources }}
-                                    <li>
-                                        <a target="_blank" class="w-inline-block" {{ if .file -}}href="{{- $.Site.Params.cloudinary_url -}}{{- .file -}}" {{ else -}}href="{{- .url -}}"{{- end -}}>
-                                            <div>{{- if .name -}}{{- .name -}}{{- else -}}{{- .file -}}{{- end -}}</div>
-                                        </a>
-                                    </li>
+                            <div class="product-details w-tab-content">
+                                <div
+                                    data-w-tab="Tab 4"
+                                    class="w-tab-pane w--tab-active"
+                                >
+                                    <div class="w-richtext">
+                                        {{ replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50,f_auto/" | safeHTML }}
+                                    </div>
+                                </div>
+                                <div data-w-tab="Tab 2" class="w-tab-pane">
+                                    {{ range .Params.faqs }}
+                                        <div class="faq">
+                                            <div class="faq-header">
+                                                <div class="chevron-left">
+                                                    <i
+                                                        class="fas fa-chevron-right"
+                                                    ></i>
+                                                </div>
+                                                <div class="chevron-down">
+                                                    <i
+                                                        class="fas fa-chevron-down"
+                                                    ></i>
+                                                </div>
+                                                <h2 class="heading-11">
+                                                    {{ .question }}
+                                                </h2>
+                                            </div>
+                                            <div class="faq-answer">
+                                                {{ .answer | markdownify }}
+                                            </div>
+                                        </div>
                                     {{ end }}
-                                </ul>
+                                </div>
+                                <div data-w-tab="Tab 3" class="w-tab-pane">
+                                    <ul class="unordered-list">
+                                        {{ range .Params.resources }}
+                                            <li>
+                                                <a
+                                                    target="_blank"
+                                                    class="w-inline-block"
+                                                    {{ if .file -}}
+                                                        href="{{- $.Site.Params.cloudinary_url -}}{{- .file -}}"
+                                                    {{ else -}}
+                                                        href="{{- .url -}}"
+                                                    {{- end -}}
+                                                >
+                                                    <div>
+                                                        {{- if .name -}}
+                                                            {{- .name -}}
+                                                        {{- else -}}
+                                                            {{- .file -}}
+                                                        {{- end -}}
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        {{ end }}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 {{ end }}
 
 {{ define "addscripts" }}
     <!--uhc = UnitedHealthCare -->
     <script>
-    // script for in content content blocks
+        // script for in content content blocks
 
-    let quoter = document.getElementById("quote-form").innerHTML;
-    let contentQuoters = document.querySelectorAll(".blog-quote-box > .blog-quote-box-form");
+        let quoter = document.getElementById('quote-form').innerHTML;
+        let contentQuoters = document.querySelectorAll(
+            '.blog-quote-box > .blog-quote-box-form',
+        );
 
-    for(let i = 0; i < contentQuoters.length; i++) {
-        contentQuoters[i].innerHTML = quoter
-    }
-
-
+        for (let i = 0; i < contentQuoters.length; i++) {
+            contentQuoters[i].innerHTML = quoter;
+        }
     </script>
 
     {{ if .Params.quote }}

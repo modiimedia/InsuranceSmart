@@ -2,31 +2,31 @@
 label: UnitedHealthCare
 hide_body: false
 fields:
-- type: list
-  name: options
-  label: options
-  config:
-    use_select: true
-    source:
-      type: simple
-    options:
-    - Health ProtectorGuard (Fixed Indemnity)
-    - Critical Illness
-    - Dental
-    - Term Life Safeguard
-  default:
-  - Health ProtectorGuard (Fixed Indemnity)
-  - Critical Illness
-  - Term Life Safeguard
-  - Dental
-- type: select
-  name: default
-  config:
-    source:
-      type: simple
-    options:
-    - Health ProtectorGuard (Fixed Indemnity)
-    - Critical Illness
-    - Dental
-    - Term Life Safeguard
-  label: Default Option
+    - type: list
+      name: options
+      label: options
+      config:
+          use_select: true
+          source:
+              type: simple
+          options:
+              - Health ProtectorGuard (Fixed Indemnity)
+              - Critical Illness
+              - Dental
+              - Term Life Safeguard
+      default:
+          - Health ProtectorGuard (Fixed Indemnity)
+          - Critical Illness
+          - Term Life Safeguard
+          - Dental
+    - type: select
+      name: default
+      config:
+          source:
+              type: simple
+          options:
+              - Health ProtectorGuard (Fixed Indemnity)
+              - Critical Illness
+              - Dental
+              - Term Life Safeguard
+      label: Default Option

@@ -1,17 +1,20 @@
 {{ define "main" }}
-<section style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_50,f_auto{{ .Params.Featured_image }})" class="blog-banner">
-    <div class="div-block-16-copy"></div>
-    <div class="container"></div>
-</section>
-<section>
-    <div class="container">
-        <div class="form-block">
-            <form class="form">
-                <div class="control">
-                    <input type="text-field" name="" id="">
-                </div>
-            </form>            
+    <section
+        style="background-image:url({{ .Site.Params.cloudinary_url }}w_1600,q_50,f_auto{{ .Params.Featured_image }})"
+        class="blog-banner"
+    >
+        <div class="div-block-16-copy"></div>
+        <div class="container"></div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="form-block">
+                <form class="form">
+                    <div class="control">
+                        <input type="text-field" name="" id="" />
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-  </section>
+    </section>
 {{ end }}

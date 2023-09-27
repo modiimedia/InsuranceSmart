@@ -2,106 +2,109 @@
 label: Product
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: Title
-  config:
-    required: true
-- type: include
-  template: seo
-  label: SEO
-  name: seo
-- type: select
-  name: category
-  config:
-    source:
-      type: pages
-      section: insurancecategories
-    required: false
-  label: Product Category
-  description: Select the main category for this product
-- type: file
-  name: featured_image
-  label: Banner Image
-  description: Large image to be featured on the page.
-- type: text
-  name: description
-  label: Short Description
-  description: This is a short description that will appear at the top of the page
-  config:
-    required: true
-- type: blocks
-  name: quote
-  label: Quote Block
-  template_types:
-  - quoteit-quote-form
-  - unitedhealthcare-quote-form
-  - safeco-quote-form
-  - call-for-a-quote
-  - custom-link
-  description: Choose what quote form to display on this page. You want to choose
-    whichever one is relevant to the product. (Only the first item in the list will
-    be displayed)
-  config:
-    max: '1'
-- type: field_group_list
-  name: faqs
-  label: Frequently Asked Questions
-  fields:
-  - type: text
-    name: question
-    label: Question
-    config:
-      required: true
-  - type: textarea
-    name: answer
-    label: Answer
-    config:
-      required: true
-      wysiwyg: true
-      schema:
-        format: markdown
-  config:
-    labelField: question
-- type: blocks
-  name: resources
-  label: Resources
-  description: If you have any additional resources regarding the product (i.e. brochures,
-    graphs, images, information websites) you can upload/link them here.
-  template_types:
-  - resource-external-link
-  - resource-document-image
-- type: textarea
-  name: mikes_take
-  label: Mike's Take
-  description: Product advice from the InsuranceSmart founding
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
-- type: select
-  name: recommended_articles
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - choose automatically
-    - let me choose
-  label: Recommended Articles
-  default: choose automatically
-- type: list
-  name: custom_article_list
-  label: Article Selection
-  description: Manually select the articles you want to feature (must select "let
-    me choose" above for these articles to display.
-  config:
-    use_select: true
-    source:
-      type: pages
+    - type: text
+      name: title
+      label: Title
+      config:
+          required: true
+    - type: include
+      template: seo
+      label: SEO
+      name: seo
+    - type: select
+      name: category
+      config:
+          source:
+              type: pages
+              section: insurancecategories
+          required: false
+      label: Product Category
+      description: Select the main category for this product
+    - type: file
+      name: featured_image
+      label: Banner Image
+      description: Large image to be featured on the page.
+    - type: text
+      name: description
+      label: Short Description
+      description: This is a short description that will appear at the top of the page
+      config:
+          required: true
+    - type: blocks
+      name: quote
+      label: Quote Block
+      template_types:
+          - quoteit-quote-form
+          - unitedhealthcare-quote-form
+          - safeco-quote-form
+          - call-for-a-quote
+          - custom-link
+      description:
+          Choose what quote form to display on this page. You want to choose
+          whichever one is relevant to the product. (Only the first item in the list will
+          be displayed)
+      config:
+          max: '1'
+    - type: field_group_list
+      name: faqs
+      label: Frequently Asked Questions
+      fields:
+          - type: text
+            name: question
+            label: Question
+            config:
+                required: true
+          - type: textarea
+            name: answer
+            label: Answer
+            config:
+                required: true
+                wysiwyg: true
+                schema:
+                    format: markdown
+      config:
+          labelField: question
+    - type: blocks
+      name: resources
+      label: Resources
+      description:
+          If you have any additional resources regarding the product (i.e. brochures,
+          graphs, images, information websites) you can upload/link them here.
+      template_types:
+          - resource-external-link
+          - resource-document-image
+    - type: textarea
+      name: mikes_take
+      label: Mike's Take
+      description: Product advice from the InsuranceSmart founding
+      config:
+          wysiwyg: true
+          schema:
+              format: markdown
+    - type: select
+      name: recommended_articles
+      config:
+          source:
+              type: simple
+          required: true
+          options:
+              - choose automatically
+              - let me choose
+      label: Recommended Articles
+      default: choose automatically
+    - type: list
+      name: custom_article_list
+      label: Article Selection
+      description:
+          Manually select the articles you want to feature (must select "let
+          me choose" above for these articles to display.
+      config:
+          use_select: true
+          source:
+              type: pages
 pages:
-- content/products/health/covid-19-protection-short-term-major-medical.md
-- content/products/health/major-medical-aca-compliant.md
-- content/products/medicare/new-to-medicare-we-make-it-easy.md
-- content/products/other/travel-insurance.md
-- content/products/short-term-medical-coverage.md
+    - content/products/health/covid-19-protection-short-term-major-medical.md
+    - content/products/health/major-medical-aca-compliant.md
+    - content/products/medicare/new-to-medicare-we-make-it-easy.md
+    - content/products/other/travel-insurance.md
+    - content/products/short-term-medical-coverage.md

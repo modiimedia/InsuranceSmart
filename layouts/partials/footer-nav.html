@@ -1,28 +1,38 @@
-<div class="footer-heading">{{ $.Site.Data.menus.footer_menu.menu_1.name }}</div>
+<div class="footer-heading">
+    {{ $.Site.Data.menus.footer_menu.menu_1.name }}
+</div>
 <div class="div-block-12">
     {{ range $.Site.Data.menus.footer_menu.menu_1.children }}
-    {{ $url := print .url }}
-    <a href="
+        {{ $url := print .url }}
+        <a
+            href="
     {{- if .external_url -}}
-        {{- .external_url -}}
-    {{- else -}}
-        {{- with $.Site.GetPage $url -}}{{- .RelPermalink -}}{{- end -}}
-    {{- end -}}" class="footer-link w-inline-block">
-        <div>{{ .name }}</div>
-    </a>
+                {{- .external_url -}}
+            {{- else -}}
+                {{- with $.Site.GetPage $url -}}{{- .RelPermalink -}}{{- end -}}
+            {{- end -}}"
+            class="footer-link w-inline-block"
+        >
+            <div>{{ .name }}</div>
+        </a>
     {{ end }}
 </div>
-<div class="footer-heading">{{ $.Site.Data.menus.footer_menu.menu_2.name }}</div>
+<div class="footer-heading">
+    {{ $.Site.Data.menus.footer_menu.menu_2.name }}
+</div>
 <div class="div-block-12">
     {{ range $.Site.Data.menus.footer_menu.menu_2.children }}
-    {{ $url := print .url }}
-    <a href="
+        {{ $url := print .url }}
+        <a
+            href="
     {{- if .external_url -}}
-        {{- .external_url -}}
-    {{- else -}}
-        {{- with $.Site.GetPage $url -}}{{- .RelPermalink -}}{{- end -}}
-    {{- end -}}" class="footer-link w-inline-block">
-        <div>{{ .name }}</div>
-    </a>
+                {{- .external_url -}}
+            {{- else -}}
+                {{- with $.Site.GetPage $url -}}{{- .RelPermalink -}}{{- end -}}
+            {{- end -}}"
+            class="footer-link w-inline-block"
+        >
+            <div>{{ .name }}</div>
+        </a>
     {{ end }}
 </div>

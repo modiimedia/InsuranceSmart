@@ -3,13 +3,13 @@ label: Resource (External Link)
 hide_body: false
 display_field: name
 fields:
-- type: text
-  name: name
-  label: Link Text
-  description: Write text link will display
-  config:
-    required: false
-- type: text
-  name: url
-  label: Link URL
-  description: copy and paste the url to the website / webpage you are linking to
+    - type: text
+      name: name
+      label: Link Text
+      description: Write text link will display
+      config:
+          required: false
+    - type: text
+      name: url
+      label: Link URL
+      description: copy and paste the url to the website / webpage you are linking to

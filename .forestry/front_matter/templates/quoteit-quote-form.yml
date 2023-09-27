@@ -2,40 +2,40 @@
 label: Quoteit
 hide_body: false
 fields:
-- type: list
-  name: options
-  label: Options
-  config:
-    use_select: true
-    source:
-      type: simple
-      section: ''
-    options:
-    - Health Insurance
-    - Health Insurance - Child Only
-    - Short-Term Health Insurance
-    - Dental Insurance
-    - Medicare Supplements
-    - Accident
-    - Critical Illness
-    - Cancer
-    - Term Life
-    - WBE Health On Exchange
-  default: []
-- type: select
-  name: default
-  config:
-    source:
-      type: simple
-    options:
-    - Health Insurance
-    - Health Insurance - Child Only
-    - Short-Term Health Insurance
-    - Dental Insurance
-    - Medicare Supplements
-    - Accident
-    - Critical Illness
-    - Cancer
-    - Term Life
-    - WBE Health On Exchange
-  label: Default
+    - type: list
+      name: options
+      label: Options
+      config:
+          use_select: true
+          source:
+              type: simple
+              section: ''
+          options:
+              - Health Insurance
+              - Health Insurance - Child Only
+              - Short-Term Health Insurance
+              - Dental Insurance
+              - Medicare Supplements
+              - Accident
+              - Critical Illness
+              - Cancer
+              - Term Life
+              - WBE Health On Exchange
+      default: []
+    - type: select
+      name: default
+      config:
+          source:
+              type: simple
+          options:
+              - Health Insurance
+              - Health Insurance - Child Only
+              - Short-Term Health Insurance
+              - Dental Insurance
+              - Medicare Supplements
+              - Accident
+              - Critical Illness
+              - Cancer
+              - Term Life
+              - WBE Health On Exchange
+      label: Default

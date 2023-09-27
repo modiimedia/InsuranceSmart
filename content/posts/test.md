@@ -21,16 +21,17 @@ template = "contact-us-popup"
 title = "GET A FREE QUOTE"
 
 +++
-There are so many things to consider when purchasing life insurance.  The first is to understand that Life Insurance was orignally designed to pay a stated cash benefit to protect from  financial loss that occurs in the event of the insured's death.  Since its inception however, life insurance companies have added many additional benefits to policies to include benefits that can be accessed by the insured while they are living and prior to thier death.  Among these Living Benefits are Cash Value Accumulation, Critical and Chronic Illness Acceleration benefits as well as Disability Income Riders and many more.  Be sure to connect with a seasoned and qualified Life Insurance Agent that understands all the many options available so you are sure to get the very best product to meet your need and budget.  In addition specify the exact need when speaking to your qualified sability in, , that can be accessed allow and insured to acc
+
+There are so many things to consider when purchasing life insurance. The first is to understand that Life Insurance was orignally designed to pay a stated cash benefit to protect from financial loss that occurs in the event of the insured's death. Since its inception however, life insurance companies have added many additional benefits to policies to include benefits that can be accessed by the insured while they are living and prior to thier death. Among these Living Benefits are Cash Value Accumulation, Critical and Chronic Illness Acceleration benefits as well as Disability Income Riders and many more. Be sure to connect with a seasoned and qualified Life Insurance Agent that understands all the many options available so you are sure to get the very best product to meet your need and budget. In addition specify the exact need when speaking to your qualified sability in, , that can be accessed allow and insured to acc
 
 , the declared benefit Lorem markdownum quaeque et lenimen Cadme resupinum tuoque! Quamquam patienda maiora, profanam parvis et ille rapuere? Quid **cum** videntur tamen quoniam formae diras est muneris passu: arcana. Moles essent. In haec si quam, velaque et Styge inpar; nare.
 
-* Timore ut omni
-* Sic publica ipsum celsum vendit frondescere Venus
-* Rabiem sit quater saxum patrios errabat perdiderat
-* Deae fide templi
-* Ipsosque respice concussit secretaque obstitit sed
-* Ratione erat modo sonanti utentem iustius armis
+-   Timore ut omni
+-   Sic publica ipsum celsum vendit frondescere Venus
+-   Rabiem sit quater saxum patrios errabat perdiderat
+-   Deae fide templi
+-   Ipsosque respice concussit secretaque obstitit sed
+-   Ratione erat modo sonanti utentem iustius armis
 
 ## Hanc ira fatentem alternis
 
@@ -54,9 +55,9 @@ Colantur mortalia, ad placere erat, decutit **et mundus**. In tibi coniuge **con
 
 Dei plus uterque; illa rector quare. Quae arsit ne capax penetravit Phrygiis, tale [enim](http://www.duce.net/); bene audita: nisi. Non Eurydicenque idem macies pingit haud: ultaque ipsi Denique deus est per radices! Est de cui iecit talaribus amans, sed hunc quae nactusque hospes, adiit tincta? Ferro artes laedit; precaria prece coeperat comparat fumi.
 
-* Mirabere erat sub solvit
-* Fallere poenam origo traxit erat indigenaene sumus
-* Prementem Turno silentum relinquit eadem erat fecit
-* Qui expers pulsarunt grata commissaque domos limine
-* Freta locis promptu sol de profusis non
-* Quae veste siquis spatium undarum inopem
+-   Mirabere erat sub solvit
+-   Fallere poenam origo traxit erat indigenaene sumus
+-   Prementem Turno silentum relinquit eadem erat fecit
+-   Qui expers pulsarunt grata commissaque domos limine
+-   Freta locis promptu sol de profusis non
+-   Quae veste siquis spatium undarum inopem

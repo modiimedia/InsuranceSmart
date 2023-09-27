@@ -1,10 +1,19 @@
+/**
+ * @type {import('prettier').Config}
+ */
 module.exports = {
-  overrides: [
-    {
-      files: ["*.html"],
-      options: {
-        parser: "go-template",
-      },
-    },
-  ],
+    tabWidth: 4,
+    endOfLine: 'lf',
+    semi: true,
+    singleQuote: true,
+    trailingComma: 'all',
+    plugins: ['prettier-plugin-go-template'],
+    overrides: [
+        {
+            files: ['*.html'],
+            options: {
+                parser: 'go-template',
+            },
+        },
+    ],
 };

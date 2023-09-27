@@ -2,31 +2,34 @@
 label: SEO
 hide_body: false
 fields:
-- type: field_group
-  name: seo
-  label: SEO
-  description: Search Engine Optimization
-  fields:
-  - type: text
-    name: meta_title
-    label: Meta Title
-    description: Page title to display in search engines. (Will fall back on regular
-      page title if nothing is set.)
-  - type: textarea
-    label: Meta Description
-    name: meta_description
-    description: Page description to display in search engines.
-  - type: text
-    name: social_title
-    label: Social Title
-    description: Title to display when shared on social media sites. (Will fall back
-      to Meta Title if not set)
-  - type: textarea
-    name: social_description
-    label: Social Description
-    description: Short description to display when shared on social media sites. (Will
-      fall back to Meta Description if not set)
-  - type: file
-    name: open_graph_image
-    label: Open Graph Image
-    description: Image to display when shared on social media sites, and in feed readers.
+    - type: field_group
+      name: seo
+      label: SEO
+      description: Search Engine Optimization
+      fields:
+          - type: text
+            name: meta_title
+            label: Meta Title
+            description:
+                Page title to display in search engines. (Will fall back on regular
+                page title if nothing is set.)
+          - type: textarea
+            label: Meta Description
+            name: meta_description
+            description: Page description to display in search engines.
+          - type: text
+            name: social_title
+            label: Social Title
+            description:
+                Title to display when shared on social media sites. (Will fall back
+                to Meta Title if not set)
+          - type: textarea
+            name: social_description
+            label: Social Description
+            description:
+                Short description to display when shared on social media sites. (Will
+                fall back to Meta Description if not set)
+          - type: file
+            name: open_graph_image
+            label: Open Graph Image
+            description: Image to display when shared on social media sites, and in feed readers.

@@ -2,13 +2,13 @@
 label: Call For A Quote
 hide_body: false
 fields:
-- type: text
-  label: heading
-  name: heading
-  config:
-    required: true
-  default: 'Call for a Free Quote:'
-- type: text
-  name: phone_number
-  label: Phone Number
-  description: Leaving blank will display your default number (in General Settings)
+    - type: text
+      label: heading
+      name: heading
+      config:
+          required: true
+      default: 'Call for a Free Quote:'
+    - type: text
+      name: phone_number
+      label: Phone Number
+      description: Leaving blank will display your default number (in General Settings)

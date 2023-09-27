@@ -2,15 +2,15 @@
 label: Custom Link
 hide_body: false
 fields:
-- type: text
-  name: button_text
-  label: Button Text
-  default: Get A Quote
-  config:
-    required: true
-- type: text
-  name: button_link
-  label: Button Link
-  config:
-    required: true
-  description: Copy and Paste the link here
+    - type: text
+      name: button_text
+      label: Button Text
+      default: Get A Quote
+      config:
+          required: true
+    - type: text
+      name: button_link
+      label: Button Link
+      config:
+          required: true
+      description: Copy and Paste the link here

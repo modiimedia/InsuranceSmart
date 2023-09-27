@@ -1,72 +1,72 @@
 ---
 shop_menu:
-- name: Column 1
-  children:
-  - name: Life
-    url: insurancecategories/life.md
-    icon: <i class="fas fa-heartbeat"></i>
-    children: []
-    external_url: ''
-- name: Column 2
-  children:
-  - name: Health
-    url: insurancecategories/health.md
-    icon: <i class="fas fa-medkit"></i>
-    children:
-    - name: Hospital & Doctor
-      url: products/health/hospital-doctor.md
-      external_url: ''
-    - name: Critical Illness
-      url: products/health/critical-illness.md
-      external_url: ''
-    - name: Dental
-      url: products/health/dental.md
-      external_url: ''
-    external_url: ''
-- name: Column 3
-  children:
-  - name: Medicare
-    url: insurancecategories/medicare.md
-    external_url: ''
-    icon: ''
-    children:
-    - name: New To Medicare
-      url: products/medicare/new-to-medicare-we-make-it-easy.md
-      external_url: ''
-    - url: products/medicare/understanding-medicare.md
-      external_url: ''
-      name: Understanding Medicare
-  - name: Travel
-    url: products/other/travel-insurance.md
-    external_url: ''
-    icon: ''
-    children: []
+    - name: Column 1
+      children:
+          - name: Life
+            url: insurancecategories/life.md
+            icon: <i class="fas fa-heartbeat"></i>
+            children: []
+            external_url: ''
+    - name: Column 2
+      children:
+          - name: Health
+            url: insurancecategories/health.md
+            icon: <i class="fas fa-medkit"></i>
+            children:
+                - name: Hospital & Doctor
+                  url: products/health/hospital-doctor.md
+                  external_url: ''
+                - name: Critical Illness
+                  url: products/health/critical-illness.md
+                  external_url: ''
+                - name: Dental
+                  url: products/health/dental.md
+                  external_url: ''
+            external_url: ''
+    - name: Column 3
+      children:
+          - name: Medicare
+            url: insurancecategories/medicare.md
+            external_url: ''
+            icon: ''
+            children:
+                - name: New To Medicare
+                  url: products/medicare/new-to-medicare-we-make-it-easy.md
+                  external_url: ''
+                - url: products/medicare/understanding-medicare.md
+                  external_url: ''
+                  name: Understanding Medicare
+          - name: Travel
+            url: products/other/travel-insurance.md
+            external_url: ''
+            icon: ''
+            children: []
 explore_menu:
-- name: Blog
-  url: ''
-  external_url: "/posts"
-- name: Contact
-  url: ''
-  external_url: "/contact"
-footer_menu:
-  menu_1:
-    name: Useful Links
-    children:
-    - name: Home
-      url: _index.md
-      external_url: ''
-    - name: Contact
-      url: contact.md
-      external_url: ''
-  menu_2:
-    name: Shop Insurance
-    children:
-    - name: Life
-      url: products/life/life.md
-      external_url: ''
-    - name: Health
-      url: insurancecategories/health.md
-      external_url: ''
-    - name: View All
+    - name: Blog
       url: ''
-      external_url: "/products"
+      external_url: '/posts'
+    - name: Contact
+      url: ''
+      external_url: '/contact'
+footer_menu:
+    menu_1:
+        name: Useful Links
+        children:
+            - name: Home
+              url: _index.md
+              external_url: ''
+            - name: Contact
+              url: contact.md
+              external_url: ''
+    menu_2:
+        name: Shop Insurance
+        children:
+            - name: Life
+              url: products/life/life.md
+              external_url: ''
+            - name: Health
+              url: insurancecategories/health.md
+              external_url: ''
+            - name: View All
+              url: ''
+              external_url: '/products'

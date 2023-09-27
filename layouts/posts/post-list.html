@@ -1,21 +1,21 @@
 {{ define "main" }}
-<section class="main-content blog-home">
-    <div class="polygon-small-to-large blog"></div>
-    <div class="polygon-small-to-large blog-copy"></div>
-    <div class="container">
-        {{ partial "forms/mailchimp-form.html" . }}
-        {{ partial "blog-nav.html" . }}
-        <div class="card-grid w-dyn-items">
-            {{ if eq .Params.showfeatured true }}
-                {{ range where (where $.Site.RegularPages "Section" "posts") ".Params.featured" "=" true }}
-                    {{ partial "post-card.html" . }}
+    <section class="main-content blog-home">
+        <div class="polygon-small-to-large blog"></div>
+        <div class="polygon-small-to-large blog-copy"></div>
+        <div class="container">
+            {{ partial "forms/mailchimp-form.html" . }}
+            {{ partial "blog-nav.html" . }}
+            <div class="card-grid w-dyn-items">
+                {{ if eq .Params.showfeatured true }}
+                    {{ range where (where $.Site.RegularPages "Section" "posts") ".Params.featured" "=" true }}
+                        {{ partial "post-card.html" . }}
+                    {{ end }}
+                {{ else }}
+                    {{ range where $.Site.RegularPages "Section" "posts" }}
+                        {{ partial "post-card.html" . }}
+                    {{ end }}
                 {{ end }}
-            {{ else }}
-                {{ range where $.Site.RegularPages "Section" "posts" }}
-                    {{ partial "post-card.html" . }}
-                {{ end }}
-            {{ end }}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 {{ end }}

@@ -2,82 +2,82 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: static/elhefe
-webhook_url: 
+webhook_url:
 sections:
-- type: heading
-  label: Pages
-- type: document
-  path: content/_index.md
-  label: Homepage
-- type: directory
-  path: content
-  label: Other Pages
-  create: documents
-  match: "*"
-  exclude: _index.md
-- type: heading
-  label: Content
-- type: directory
-  path: content/products
-  label: Products
-  create: all
-  match: "**/*"
-  exclude: "**/_index.md"
-  templates:
-  - product
-- type: directory
-  path: content/insurancecategories
-  label: Product Categories
-  create: all
-  match: "**/*"
-  templates:
-  - product-category
-- type: directory
-  path: content/testimonies
-  label: Testimonies
-  create: all
-  match: "**/*"
-  exclude: "**/_*"
-  templates:
-  - testimony
-- type: heading
-  label: Blog
-- type: directory
-  path: content/posts
-  label: Posts
-  create: documents
-  match: "*/"
-  templates:
-  - article
-- type: directory
-  path: content/staff
-  label: Staff
-  create: all
-  match: "**/*"
-  templates:
-  - staff
-- type: heading
-  label: Settings
-- type: document
-  path: data/general_settings.yaml
-  label: General
-- type: document
-  path: data/menus.yaml
-  label: Menus
+    - type: heading
+      label: Pages
+    - type: document
+      path: content/_index.md
+      label: Homepage
+    - type: directory
+      path: content
+      label: Other Pages
+      create: documents
+      match: '*'
+      exclude: _index.md
+    - type: heading
+      label: Content
+    - type: directory
+      path: content/products
+      label: Products
+      create: all
+      match: '**/*'
+      exclude: '**/_index.md'
+      templates:
+          - product
+    - type: directory
+      path: content/insurancecategories
+      label: Product Categories
+      create: all
+      match: '**/*'
+      templates:
+          - product-category
+    - type: directory
+      path: content/testimonies
+      label: Testimonies
+      create: all
+      match: '**/*'
+      exclude: '**/_*'
+      templates:
+          - testimony
+    - type: heading
+      label: Blog
+    - type: directory
+      path: content/posts
+      label: Posts
+      create: documents
+      match: '*/'
+      templates:
+          - article
+    - type: directory
+      path: content/staff
+      label: Staff
+      create: all
+      match: '**/*'
+      templates:
+          - staff
+    - type: heading
+      label: Settings
+    - type: document
+      path: data/general_settings.yaml
+      label: General
+    - type: document
+      path: data/menus.yaml
+      label: Menus
 upload_dir: insurancesmart
 public_path: https://res.cloudinary.com/modii
 front_matter_path: ''
 use_front_matter_path: true
-file_template: ":filename:"
+file_template: ':filename:'
 build:
-  preview_env:
-  - HUGO_ENV=staging
-  - HUGO_VERSION=0.101.0
-  - NPM_VERSION=8.15.1
-  preview_output_directory: public
-  install_dependencies_command: npm install
-  preview_docker_image: forestryio/hugo:node16
-  mount_path: "/srv"
-  working_dir: "/srv"
-  instant_preview_command: npm run forestry-preview
+    preview_env:
+        - HUGO_ENV=staging
+        - HUGO_VERSION=0.101.0
+        - NPM_VERSION=8.15.1
+    preview_output_directory: public
+    install_dependencies_command: npm install
+    preview_docker_image: forestryio/hugo:node16
+    mount_path: '/srv'
+    working_dir: '/srv'
+    instant_preview_command: npm run forestry-preview
 version: '0.49'

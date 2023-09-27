@@ -1,6 +1,6 @@
-{{ $n := now.Format "2006"}}
+{{ $n := now.Format "2006" }}
 {{ $s := seq $n "1930" }}
-<option value="">Select a year </option>
+<option value="">Select a year</option>
 {{ range $s }}
     <option value="{{ . }}">{{ . }}</option>
 {{ end }}

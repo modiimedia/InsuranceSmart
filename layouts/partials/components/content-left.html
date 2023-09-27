@@ -1,6 +1,13 @@
 <section class="section-light">
     {{ $m := .cLeft.style.mask }}
-    <div {{ if eq $m "large to small" -}}class="polygon-large-to-small"{{- end }}{{ if eq $m "small to large" -}}class="polygon-small-to-large"{{- end }} style="background-image: url({{ .cUrl }}w_1600,q_50,f_auto{{ .cLeft.style.background_image }})">
+    <div
+        {{ if eq $m "large to small" -}}
+            class="polygon-large-to-small"
+        {{- end }}{{ if eq $m "small to large" -}}
+            class="polygon-small-to-large"
+        {{- end }}
+        style="background-image: url({{ .cUrl }}w_1600,q_50,f_auto{{ .cLeft.style.background_image }})"
+    >
         <div class="div-block _2"></div>
     </div>
     <div class="container">
@@ -9,21 +16,37 @@
                 {{ $c := .cLeft.content | markdownify }}
                 {{ replace $c "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50,f_auto/" | safeHTML }}
                 {{ if eq .cLeft.button_settings.show true }}
-                {{ $l := replace .cLeft.button_settings.link ".md" "" }}
-                <a href="{{ $l }}" class="hero-button w-inline-block">
-                    <div class="text-block">{{ .cLeft.button_settings.text }}</div>
-                </a>
+                    {{ $l := replace .cLeft.button_settings.link ".md" "" }}
+                    <a href="{{ $l }}" class="hero-button w-inline-block">
+                        <div class="text-block">
+                            {{ .cLeft.button_settings.text }}
+                        </div>
+                    </a>
                 {{ end }}
             </div>
             {{ if ne .cLeft.media.media_type "none" }}
-            <div class="hero-content flex-grow hero-video-container">
-                {{ if eq .cLeft.media.media_type "photo" }}
-                    <img {{ if eq .cLeft.media._3d true -}}class="_3d"{{- end }} src="{{ .cUrl }}w_700,q_80,f_auto{{ .cLeft.media.image }}"/>
-                {{ end }}
-                {{ if eq .cLeft.media.media_type "youtube video"}}
-                {{- $v := replace .cLeft.media.youtube_url "https://www.youtube.com/watch?v=" "" -}} {{- $v2 := replace $v "https://youtu.be/" "" -}}
-                <a href="#" class="lightbox-link {{ if eq .cLeft.media._3d true -}}_3d{{- end }} w-inline-block w-lightbox" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://img.youtube.com/vi/{{ $v2 }}/maxresdefault.jpg')">
-                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                <div class="hero-content flex-grow hero-video-container">
+                    {{ if eq .cLeft.media.media_type "photo" }}
+                        <img
+                            {{ if eq .cLeft.media._3d true -}}
+                                class="_3d"
+                            {{- end }}
+                            src="{{ .cUrl }}w_700,q_80,f_auto{{ .cLeft.media.image }}"
+                        />
+                    {{ end }}
+                    {{ if eq .cLeft.media.media_type "youtube video" }}
+                        {{- $v := replace .cLeft.media.youtube_url "https://www.youtube.com/watch?v=" "" -}}
+                        {{- $v2 := replace $v "https://youtu.be/" "" -}}
+                        <a
+                            href="#"
+                            class="lightbox-link {{ if eq .cLeft.media._3d true -}}
+                                _3d
+                            {{- end }} w-inline-block w-lightbox"
+                            style="background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://img.youtube.com/vi/{{ $v2 }}/maxresdefault.jpg')"
+                        >
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
                     <script type="application/json" class="w-json">
                           {
                             "items": [{
@@ -37,9 +60,9 @@
                             }]
                           }
                         </script>
-                </a>
-                {{ end }}
-            </div>
+                        </a>
+                    {{ end }}
+                </div>
             {{ end }}
         </div>
     </div>

@@ -23,9 +23,10 @@ template = "resource-external-link"
 url = "https://www.geobluetravelinsurance.com/product_overview.cfm?link_id=274777&personalized=y&header=y"
 
 +++
+
 ## Travel Medical Insurance 101
 
-A record number of Americans traveled abroad in 2016 for leisure, business, study abroad and missionary work- to the tune of 67 million. Given recent epidemics, natural disasters and security threats around the world- coupled with run-of-the-mill medical issues- travelers have more reason than ever to ensure their health and safety are fully covered prior to embarking on any trip. Americans are dedicating more and more time to preparing for their trips and researching coverage options available, and with good reason because many plans sound good, but don't really deliver when you need it. That's why we recommend GeoBlue to our clients as one of the best. 
+A record number of Americans traveled abroad in 2016 for leisure, business, study abroad and missionary work- to the tune of 67 million. Given recent epidemics, natural disasters and security threats around the world- coupled with run-of-the-mill medical issues- travelers have more reason than ever to ensure their health and safety are fully covered prior to embarking on any trip. Americans are dedicating more and more time to preparing for their trips and researching coverage options available, and with good reason because many plans sound good, but don't really deliver when you need it. That's why we recommend GeoBlue to our clients as one of the best.
 
 ### Why Has Travel Medical Insurance Increased in Popularity?
 
@@ -37,17 +38,17 @@ A good travel medical policy is designed to pick up where your primary domestic 
 
 #### Global Provider Networks
 
-You want a plan that gives you access and direct pay to the best providers and include resources to find primary and specialists that have been vetted and you can trust, regardless of how remote your location may be. You want a plan where providers are selected based on their medical credentials, language proficiency and more.  What good is insurance if you can't find a doctor you can trust? Always ask the insurer what their vetting process entails and the certifications necessary for induction into their physician network.
+You want a plan that gives you access and direct pay to the best providers and include resources to find primary and specialists that have been vetted and you can trust, regardless of how remote your location may be. You want a plan where providers are selected based on their medical credentials, language proficiency and more. What good is insurance if you can't find a doctor you can trust? Always ask the insurer what their vetting process entails and the certifications necessary for induction into their physician network.
 
 #### Richer Benefits
 
 For broader and deeper coverage, with fewer surprises at the time of claim, make sure to inquire whether coverage includes:
 
-* Pre-existing conditions covered to policy limit
-* Terrorism covered with no excluded countries
-* Cashless access to profiled physicians and hospitals in 180 countries
-* Coverage for medical evacuation
+-   Pre-existing conditions covered to policy limit
+-   Terrorism covered with no excluded countries
+-   Cashless access to profiled physicians and hospitals in 180 countries
+-   Coverage for medical evacuation
 
 #### Healthy, Safe Travel
 
-You can have real peace of mind with a well-built travel medical insurance plan that allows you to keep your focus on your work, studies, missions or just having enjoying your travel destination. When reviewing coverage, price is important but should not be the main issue because you want coverage that will actually protect you.  So make sure to read the fine print rather than jus scanning a benefit schedule and ask the important questions. It's a good idea is to download a sample policy to review from the portal before you purchase so that you can get a complete picture of what you are purchasing.
+You can have real peace of mind with a well-built travel medical insurance plan that allows you to keep your focus on your work, studies, missions or just having enjoying your travel destination. When reviewing coverage, price is important but should not be the main issue because you want coverage that will actually protect you. So make sure to read the fine print rather than jus scanning a benefit schedule and ask the important questions. It's a good idea is to download a sample policy to review from the portal before you purchase so that you can get a complete picture of what you are purchasing.

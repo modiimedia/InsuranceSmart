@@ -2,97 +2,98 @@
 label: Content (Left)
 hide_body: false
 fields:
-- type: boolean
-  label: Hide Component
-  name: hide
-- type: textarea
-  name: content
-  label: Content
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
-    required: true
-- type: field_group
-  name: media
-  label: Media
-  description: Media for the right side of the section.
-  fields:
-  - type: select
-    name: media_type
-    config:
-      source:
-        type: simple
-      required: true
-      options:
-      - none
-      - photo
-      - youtube video
-    label: Media Type
-    default: none
-  - type: file
-    label: Image
-    name: image
-    description: Be sure to select "image" in the dropdown above to display this.
-  - type: text
-    name: youtube_url
-    label: Youtube Video URL
-    description: Copy and Paste your youtube video URL here. Be sure to select "youtube
-      video" in the dropdown above to display this.
-  - type: boolean
-    name: _3d
-    label: 3d Effect
-    default: false
-- type: field_group
-  name: style
-  label: Style Settings
-  fields:
-  - type: file
-    default: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
-    label: Background Image
-    name: background_image
-  - type: select
-    name: mask
-    config:
-      source:
-        type: simple
-      required: true
-      options:
-      - large to small
-      - small to large
-    label: Background Image Mask
-    default: large to small
-    description: Only applies to light background style
-  - type: select
-    name: background_style
-    config:
-      source:
-        type: simple
-      required: true
-      options:
-      - light
-      - dark
-    label: Background Style
-    default: light
-- type: field_group
-  name: button_settings
-  label: Button Settings
-  fields:
-  - type: boolean
-    name: show
-    label: Show Button
-    default: false
-  - type: text
-    name: text
-    label: Button Text
-    config:
-      required: true
-    default: Learn More
-  - type: select
-    name: link
-    config:
-      source:
-        type: pages
-      required: false
-    label: Button Link
-    description: Choose where you want the button to link to.
+    - type: boolean
+      label: Hide Component
+      name: hide
+    - type: textarea
+      name: content
+      label: Content
+      config:
+          wysiwyg: true
+          schema:
+              format: markdown
+          required: true
+    - type: field_group
+      name: media
+      label: Media
+      description: Media for the right side of the section.
+      fields:
+          - type: select
+            name: media_type
+            config:
+                source:
+                    type: simple
+                required: true
+                options:
+                    - none
+                    - photo
+                    - youtube video
+            label: Media Type
+            default: none
+          - type: file
+            label: Image
+            name: image
+            description: Be sure to select "image" in the dropdown above to display this.
+          - type: text
+            name: youtube_url
+            label: Youtube Video URL
+            description:
+                Copy and Paste your youtube video URL here. Be sure to select "youtube
+                video" in the dropdown above to display this.
+          - type: boolean
+            name: _3d
+            label: 3d Effect
+            default: false
+    - type: field_group
+      name: style
+      label: Style Settings
+      fields:
+          - type: file
+            default: https://res.cloudinary.com/modii/v1530419492/insurancesmart/woman-hiking-compressor.jpg
+            label: Background Image
+            name: background_image
+          - type: select
+            name: mask
+            config:
+                source:
+                    type: simple
+                required: true
+                options:
+                    - large to small
+                    - small to large
+            label: Background Image Mask
+            default: large to small
+            description: Only applies to light background style
+          - type: select
+            name: background_style
+            config:
+                source:
+                    type: simple
+                required: true
+                options:
+                    - light
+                    - dark
+            label: Background Style
+            default: light
+    - type: field_group
+      name: button_settings
+      label: Button Settings
+      fields:
+          - type: boolean
+            name: show
+            label: Show Button
+            default: false
+          - type: text
+            name: text
+            label: Button Text
+            config:
+                required: true
+            default: Learn More
+          - type: select
+            name: link
+            config:
+                source:
+                    type: pages
+                required: false
+            label: Button Link
+            description: Choose where you want the button to link to.

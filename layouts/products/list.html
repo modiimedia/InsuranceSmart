@@ -1,29 +1,36 @@
 {{ define "main" }}
-<section class="misc-page-banner _2" style="background-image:url({{$.Site.Params.Cloudinary_url }}w_1600,q_50,f_auto{{ .Params.Featured_image }})">
-    <div class="div-block-16"></div>
-    <div class="container flex-center">
-        <h1 class="misc-page-heading">{{ .Title }}</h1>
-    </div>
-</section>
-<section class="main-content">
-    <div class="container">
-        {{ if .Content }}
-        <div class="div-block-27">
-            {{ .Content }}
+    <section
+        class="misc-page-banner _2"
+        style="background-image:url({{ $.Site.Params.Cloudinary_url }}w_1600,q_50,f_auto{{ .Params.Featured_image }})"
+    >
+        <div class="div-block-16"></div>
+        <div class="container flex-center">
+            <h1 class="misc-page-heading">{{ .Title }}</h1>
         </div>
-        {{ end }}
-        <div class="div-block-25">
-            {{ range where $.Site.RegularPages "Section" "insurancecategories" }}
-            <div class="div-block-29">
-                <a href="{{ .RelPermalink }}" class="product-category-link w-inline-block" style="background-image: URL({{ $.Site.Params.Cloudinary_url }}w_450,q_70,f_auto{{ .Params.Featured_Image }})">
-                    <div class="image-overlay"></div>
-                    <div class="div-block-30">
-                        <h2 class="heading-17">{{ .Title }}</h2>
-                    </div>
-                </a>
-            </div>
+    </section>
+    <section class="main-content">
+        <div class="container">
+            {{ if .Content }}
+                <div class="div-block-27">
+                    {{ .Content }}
+                </div>
             {{ end }}
+            <div class="div-block-25">
+                {{ range where $.Site.RegularPages "Section" "insurancecategories" }}
+                    <div class="div-block-29">
+                        <a
+                            href="{{ .RelPermalink }}"
+                            class="product-category-link w-inline-block"
+                            style="background-image: URL({{ $.Site.Params.Cloudinary_url }}w_450,q_70,f_auto{{ .Params.Featured_Image }})"
+                        >
+                            <div class="image-overlay"></div>
+                            <div class="div-block-30">
+                                <h2 class="heading-17">{{ .Title }}</h2>
+                            </div>
+                        </a>
+                    </div>
+                {{ end }}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 {{ end }}
