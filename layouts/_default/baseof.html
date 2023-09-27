@@ -113,7 +113,9 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     {{- end -}}
-    {{- partial "header.html" . -}}
+    {{- block "header" . }}
+        {{- partial "header.html" . -}}
+    {{- end -}}
 
     {{- block "main" . -}}{{- end -}}
 
