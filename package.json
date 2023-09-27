@@ -9,9 +9,9 @@
     "css:watch": "tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind.build.css --watch",
     "hugo": "hugo --minify",
     "hugo:watch": "hugo server -D",
-    "dev": "concurrently \"npm run css:watch\" \"npm run hugo:watch\"",
-    "build": "npm run css && npm run hugo",
-    "forestry-preview": "npm run css && hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public"
+    "dev": "concurrently \"pnpm run css:watch\" \"pnpm run hugo:watch\"",
+    "build": "pnpm run css && pnpm run hugo",
+    "forestry-preview": "pnpm run css && hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public"
   },
   "repository": {
     "type": "git",
