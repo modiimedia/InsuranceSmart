@@ -242,20 +242,6 @@
                 </div> -->
                 </aside>
                 <main class="flex-grow product">
-                    {{ if .Params.mikes_take }}
-                        <div class="div-block-19 w-clearfix">
-                            <h1 class="mikes-take">Mike&#x27;s Take</h1>
-                            <div class="take-title">Founder &amp; CEO</div>
-                            <div
-                                class="div-block-20"
-                                {{- with $.Site.GetPage "/staff/mike.md" -}}
-                                    style="background-image:
-                                    url({{ $.Site.Params.cloudinary_url }}w_100,h_100,c_fill,q_80,f_auto{{ .Params.photo }})"
-                                {{- end -}}
-                            ></div>
-                            {{ .Params.mikes_take }}
-                        </div>
-                    {{ end }}
                     <div>
                         <div
                             data-duration-in="300"
@@ -347,6 +333,25 @@
                             </div>
                         </div>
                     </div>
+                    {{ if .Params.mikes_take }}
+                        <div
+                            class="mt-10 p-6 md:p-10 bg-white shadow-sm"
+                            style="border: 1px solid #d8d8d8"
+                        >
+                            <div class="w-clearfix">
+                                <h1 class="mikes-take">Mike&#x27;s Take</h1>
+                                <div class="take-title">Founder &amp; CEO</div>
+                                <div
+                                    class="div-block-20"
+                                    {{- with $.Site.GetPage "/staff/mike.md" -}}
+                                        style="background-image:
+                                        url({{ $.Site.Params.cloudinary_url }}w_100,h_100,c_fill,q_80,f_auto{{ .Params.photo }})"
+                                    {{- end -}}
+                                ></div>
+                                {{ .Params.mikes_take }}
+                            </div>
+                        </div>
+                    {{ end }}
                 </main>
             </div>
         </div>
