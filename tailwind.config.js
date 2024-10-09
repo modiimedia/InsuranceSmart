@@ -4,7 +4,10 @@ module.exports = {
     theme: {
         colors: {
             primary: {
-                default: '#ffbc00',
+                DEFAULT: '#ffbc00',
+            },
+            secondary: {
+                DEFAULT: '#274f63',
             },
             gray: {
                 text: '#333333',

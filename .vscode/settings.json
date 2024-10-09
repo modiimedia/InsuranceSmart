@@ -1,0 +1,24 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[go-template]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "css.validate": false,
+    "files.associations": {
+        "*.html": "html"
+    },
+    "[markdown]": {
+        "editor.fontSize": 14,
+        "editor.lineHeight": 26,
+        "editor.lineNumbers": "off",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
+        "editor.minimap.enabled": false
+    },
+    "cSpell.words": ["Helotes", "preauthorization", "Sosso"]
+}

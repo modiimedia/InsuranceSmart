@@ -44,15 +44,21 @@
                             {{- end -}}
                         {{- end -}}
                     {{- end -}}
-                    <img
-                        src="{{ .Site.Params.cloudinary_url }}w_750,q_80{{ .Params.Featured_image }}"
-                    />
-                    <div class="w-richtext">
+                    {{- $cloudinary := .Site.Params.cloudinary_url }}
+                    {{ with .Params.Featured_image }}
+                        <img src="{{ $cloudinary }}w_750,q_80{{ . }}" />
+                    {{ end }}
+                    <div
+                        class="w-richtext
+                        {{ if eq .Params.Featured_image nil }}
+                            mt-10
+                        {{ end }}"
+                    >
                         {{- replace .Content "https://res.cloudinary.com/modii/" "https://res.cloudinary.com/modii/w_750,q_50,f_auto/" | safeHTML -}}
                     </div>
                 </div>
                 <div class="flex-grow">
-                    <div class="div-block-45">
+                    <div>
                         <p>Share This:</p>
                         <a
                             href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | safeURL }}"
@@ -67,11 +73,11 @@
                             <i class="fab fa-twitter"></i>
                         </a>
                         <!-- <a
-              href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | safeHTML }}"
-              class="share-button w-inline-block"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a> -->
+                        href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | safeHTML }}"
+                        class="share-button w-inline-block"
+                        >
+                           <i class="fab fa-linkedin"></i>
+                        </a> -->
                         <a
                             href="https://www.reddit.com/submit?url={{ .Permalink | safeURL }}"
                             class="share-button w-inline-block"
@@ -85,7 +91,7 @@
               <i class="fab fa-google-plus"></i>
             </a> -->
                     </div>
-                    <div class="div-block-45">
+                    <div class="md:block hidden pt-8">
                         <p>Tags:</p>
                         {{- range .Params.Tags -}}
                             <a
@@ -96,8 +102,8 @@
                             </a>
                         {{- end -}}
                     </div>
-                    <div class="div-block-43-copy">
-                        <div class="div-block-44">
+                    <div class="md:block hidden pt-8">
+                        <div class="bg-secondary text-white p-6">
                             <h1 class="heading-22-copy">Get Email Updates</h1>
                             <div class="quote-box-copy">
                                 <div class="quote-form-wrap-copy-copy">
@@ -182,10 +188,12 @@
                             dark
                         {{ end }}"
                     >
-                        <div
-                            class="image-overlay"
-                            style="background-image: url({{ $cloudinary }}w_1000{{ .background_image }})"
-                        ></div>
+                        {{ with .background_image }}
+                            <div
+                                class="image-overlay"
+                                style="background-image: url({{ $cloudinary }}w_1000{{ . }})"
+                            ></div>
+                        {{ end }}
                         <div class="heading">
                             <div class="title">GET A FREE QUOTE</div>
                             <div class="subtitle">
@@ -248,10 +256,14 @@
                 {{- end -}}
                 {{- if eq .template "safeco-quoter" -}}
                     {{ $d := .default }}
+                    {{ $cloudinary := $.Site.Params.cloudinary_url }}
                     <div class="div-block-48">
                         <div
                             class="blog-quote-box"
-                            style="background-image: url({{ $.Site.Params.cloudinary_url }}w_1050,h_400,q_70,c_fill,f_auto{{ .background_image }})"
+                            {{ with .background_image }}
+                                style="background-image:
+                                url({{ $cloudinary }}w_1050,h_400,q_70,c_fill,f_auto{{ . }})"
+                            {{ end }}
                         >
                             <div class="image-overlay"></div>
                             <h1 class="quote-box-heading">{{ .heading }}</h1>
@@ -370,7 +382,8 @@
                                                         <div
                                                             class="author-text"
                                                         >
-                                                            by {{ .Title }}
+                                                            by
+                                                            {{ .Title }}
                                                         </div>
                                                     </div>
                                                 {{ end }}

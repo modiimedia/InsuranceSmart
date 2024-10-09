@@ -1,13 +1,18 @@
-<div class="card-grid-item-4th w-dyn-item">
+<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 p-2">
     <a href="{{ .RelPermalink }}" class="card-link w-inline-block">
-        {{ if .Params.featured_image }}
-            <div
+        <div
+            {{ if .Params.featured_image }}
                 style="background-image:url({{ $.Site.Params.cloudinary_url }}w_350,q_60,f_auto{{ .Params.featured_image }})"
-                class="blog-card-image"
-            >
-                <div class="image-overlay"></div>
-            </div>
-        {{ end }}
+            {{ end }}
+            class="
+                blog-card-image bg-secondary
+            {{ if eq .Params.featured_image nil }}
+                md:block hidden
+            {{ end }}
+            "
+        >
+            <div class="image-overlay"></div>
+        </div>
         <div class="blog-card-content w-clearfix">
             <h1 class="blog-card-title">{{ .Title }}</h1>
             {{- $a := replace .Params.Author "staff/" "" -}}

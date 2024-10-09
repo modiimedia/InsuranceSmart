@@ -84,7 +84,8 @@
                                                         <div
                                                             class="author-text"
                                                         >
-                                                            by {{ .Title }}
+                                                            by
+                                                            {{ .Title }}
                                                         </div>
                                                     </div>
                                                 {{ end }}
@@ -136,8 +137,10 @@
                                                 class="card-link w-inline-block"
                                             >
                                                 <div
-                                                    style="background-image:url({{ $.Site.Params.cloudinary_url }}w_350,q_60,f_auto{{ .Params.Featured_image }})"
-                                                    class="blog-card-image"
+                                                    {{ if .Params.featured_image }}
+                                                        style="background-image:url({{ $.Site.Params.cloudinary_url }}w_350,q_60,f_auto{{ .Params.featured_image }})"
+                                                    {{ end }}
+                                                    class="blog-card-image bg-secondary"
                                                 >
                                                     <div
                                                         class="image-overlay"
