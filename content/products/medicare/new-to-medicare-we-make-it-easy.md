@@ -19,14 +19,21 @@ question = "When do I have to enroll in Medicare?"
 answer = "Part A which covers costs when you are confined to in a hospital or skilled nursing facility and is typically provided at no cost if you payed adequate Social Security taxes through your working years.  Part B which covers non confined medical coverage to include doctor visits, and any out patient test, visit or procedure and cost $170.10 per month in 2022 for most individuals.  Higher income individuals are required to pay a higher premium.  Contact us to get more specifics of what Medicare may cost you or you can go the [**Medicare website to get details**](https://www.medicare.gov/basics/get-started-with-medicare/medicare-basics/what-does-medicare-cost \"What Medicare Costs\")****"
 question = "How much does it cost?"
 [[quote]]
-button_link = "https://letsmeet.io/insurancesmart/new-to-medicare"
-button_text = "Book An Intro To Medicare Quick Start"
+button_link = "Tel:2106990291"
+button_text = "Call Today!"
 template = "custom-link"
 [[resources]]
-file = "/v1661830550/insurancesmart/Medicare_and_You_2022_xku83k.pdf"
-name = "2022 Understanding Medicare"
+file  ="/v1661830550/insurancesmart/qwbclof5nfg6iixbe7ui"
+name = "2025 Medicare & You"
 template = "resource-document-image"
-
+[[resources]]
+file  ="/v1661830550/insurancesmart/tpgezflpiwhardxjdegl"
+name = "2025 Difference between Original Medicare and Medicare Advantage"
+template = "resource-document-image"
+[[resources]]
+file  ="/v1661830550/insurancesmart/bqhhash0gl3zdp9il4jr"
+name = "2025 Understanding Original Medicare Vs Medicare Advantage"
+template = "resource-document-image"
 +++
 
 If you are new to Medicare and need to enroll we can help! We've been helping folks understand and enroll in Medicare since 2005. Our service is free, and there is absolutely no cost or obligation to purchase anything. So to make it easy, give us a call and talk to one of our licensed Medicare specialists. Or fill out our contact form and we will get right back to you.
