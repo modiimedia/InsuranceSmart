@@ -16,8 +16,8 @@ open_graph_image = ""
 social_description = ""
 social_title = ""
 [[quote]]
-button_link = "https://portal.benefitalign.com/brokerengage/InsuranceSmart/home/MarketingInd?id=D16A400859EAB71B7344718DBBE6E90A&PID=14&SourceChannel=&CampaignID=&BussinessType=Individual&lob=Short Term Medical"
-button_text = "Get A Quote On Short Term Major Medical"
+button_link = "Tel:2106990281"
+button_text = "Call Today!"
 template = "custom-link"
 
 +++

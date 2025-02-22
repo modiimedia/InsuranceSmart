@@ -22,9 +22,9 @@ question = "I'm a new rider. Can I still be covered?"
 answer = "No. We currently do not cover motorcycles used for racing or speed contests or those with nitrous oxide kits installed."
 question = "I race my motorcycle. Does this policy suit my needs?"
 [[quote]]
-default = "Motorcycle"
-options = ["Auto", "Boat or Watercraft", "RV", "Motorcycle", "Home", "Renters", "Condo", "Landlord Protection", "Umbrella"]
-template = "safeco-quote-form"
+template = "custom-link"
+button_text = "Call Today!"
+button_link = "tel:+12106990281"
 
 +++
 

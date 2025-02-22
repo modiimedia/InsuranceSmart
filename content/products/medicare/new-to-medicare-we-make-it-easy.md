@@ -19,7 +19,7 @@ question = "When do I have to enroll in Medicare?"
 answer = "Part A which covers costs when you are confined to in a hospital or skilled nursing facility and is typically provided at no cost if you payed adequate Social Security taxes through your working years.  Part B which covers non confined medical coverage to include doctor visits, and any out patient test, visit or procedure and cost $170.10 per month in 2022 for most individuals.  Higher income individuals are required to pay a higher premium.  Contact us to get more specifics of what Medicare may cost you or you can go the [**Medicare website to get details**](https://www.medicare.gov/basics/get-started-with-medicare/medicare-basics/what-does-medicare-cost \"What Medicare Costs\")****"
 question = "How much does it cost?"
 [[quote]]
-button_link = "Tel:2106990291"
+button_link = "Tel:2106990281"
 button_text = "Call Today!"
 template = "custom-link"
 [[resources]]

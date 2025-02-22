@@ -19,8 +19,8 @@ social_title = ""
 answer = "You can quickly quote up to 4 rental units on this platform.  If you have additional units, please contact one of our [Independent Insurance Agents](/Contact) for a customized solution."
 question = "How many rental units can I own to receive a quick quote on this site?"
 [[quote]]
-default = "Landlord Protection"
-options = ["Auto", "Boat or Watercraft", "RV", "Motorcycle", "Home", "Renters", "Condo", "Landlord Protection", "Umbrella"]
-template = "safeco-quote-form"
+template = "custom-link"
+button_text = "Call Today!"
+button_link = "Tel:2106990281"
 
 +++

@@ -15,10 +15,9 @@ seo:
     open_graph_image: ''
 featured_image: '/v1530823666/insurancesmart/robson-hatsukami-morgan-275558-unsplash%20%281%29.jpg'
 quote:
-    - template: safeco-quote-form
-      options:
-          - Umbrella
-      default: Umbrella
+    - template: custom-link
+      button_text: Call Today!
+      button_link: Tel:2106990281
 faqs: []
 resources: []
 mikes_take: ''

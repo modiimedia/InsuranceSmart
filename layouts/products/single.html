@@ -155,7 +155,7 @@
                                 <a
                                     class="get-a-quote"
                                     target="_blank"
-                                    href="{{ .button_link }}"
+                                    href="{{ .button_link | safeURL }}"
                                     >{{ .button_text }}</a
                                 >
                             {{ else if eq .template "call-for-a-quote" }}

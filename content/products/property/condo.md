@@ -17,8 +17,8 @@ open_graph_image = ""
 social_description = ""
 social_title = ""
 [[quote]]
-default = "Condo"
-options = ["Auto", "Boat or Watercraft", "RV", "Motorcycle", "Home", "Renters", "Condo", "Landlord Protection", "Umbrella"]
-template = "safeco-quote-form"
+button_link = "Tel:2106990281"
+button_text = "Call Today!"
+template = "custom-link"
 
 +++

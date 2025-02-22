@@ -42,13 +42,9 @@ faqs:
           initial 12 month period the preexisting condition limitations will not apply.
           See brochure for details.
 quote:
-    - template: unitedhealthcare-quote-form
-      options:
-          - Health ProtectorGuard (Fixed Indemnity)
-          - Critical Illness
-          - Term Life Safeguard
-          - Dental
-      default: Critical Illness
+    - template: custom-link
+      button_text: Call Today!
+      button_link: tel:+12106990281
 seo:
     meta_title: ''
     meta_description: ''

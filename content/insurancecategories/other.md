@@ -2,10 +2,9 @@
 title: Other Insurance
 draft: false
 quote:
-    - template: safeco-quote-form
-      options:
-          - Umbrella
-      default: Umbrella
+    - template: "custom-link"
+      button_text: "Call Today!"
+      button_link: "Tel:2106990281"
 weight: 10
 featured_image: '/v1530419492/insurancesmart/woman-hiking-compressor.jpg'
 fa_icon: umbrella

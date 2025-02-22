@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{- $phone := $.Site.Data.general_settings.contact_info.phone -}}
 <section class="page-banner-copy2-copy" style="background-image: URL({{ .Site.Params.cloudinary_url }}w_1600,q_50,f_auto{{ .Params.Featured_image }})">
     <div class="div-block-16"></div>
     <div class="container flex-left">
@@ -8,7 +9,32 @@
             {{ $data := $.Site.Data }}
             {{ if .Params.Quote }}
                 {{ range first 1 .Params.quote }}
-                    {{ if eq .template "safeco-quote-form" }}
+                    {{ if eq .template "custom-link"}}
+                        <a
+                            class="get-a-quote"
+                            target="_blank"
+                            href="{{ .button_link | safeURL }}"
+                            >
+                            {{ .button_text }}
+                        </a>
+                    {{ else if eq .template "call-for-a-quote" }}
+                        <a
+                            class="link-block-3 w-inline-block"
+                            href="tel:{{- if .phone_number -}}
+                                {{- .phone_number -}}
+                            {{- else -}}
+                                {{- $phone -}}
+                            {{- end -}}"
+                        >
+                            <div class="call-us-large">
+                                {{ .heading }}<br />{{- if .phone_number -}}
+                                    {{- .phone_number -}}
+                                {{- else -}}
+                                    {{ $phone }}
+                                {{ end }}
+                            </div>
+                        </a>
+                    {{ else if eq .template "safeco-quote-form" }}
                         {{ partial "forms/safeco-quote-form.html" (dict "context" . "data" $data ) }}
                     {{ else if eq .template "unitedhealthcare-quote-form" }}
                     <form name="unitedhform" id="unitedhform" onsubmit="getquote()">
