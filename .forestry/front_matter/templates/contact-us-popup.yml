@@ -7,13 +7,13 @@ fields:
       config:
           required: true
       label: Title
-      default: GET A FREE QUOTE
+      default: SCHEDULE A FREE CONSULTATION
     - name: subtitle
       type: text
       config:
           required: false
       label: Subtitle
-      default: Contact us today to get a free quote on your insurance plan
+      default: Contact us today to get expert advice concerning your insurance goals
     - name: style
       type: select
       default: light
