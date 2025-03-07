@@ -16,7 +16,7 @@ open_graph_image = "/v1575340666/insurancesmart/Happy_Family_r1uvkl.png"
 social_description = ""
 social_title = ""
 [[quote]]
-button_link = "Tel:2106990281"
+button_link = "Tel:2109729035"
 button_text = "Call Today!"
 template = "custom-link"
 

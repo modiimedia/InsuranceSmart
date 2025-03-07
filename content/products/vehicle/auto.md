@@ -7,7 +7,7 @@ featured_image: '/v1530577861/insurancesmart/5b2d4e30525acce3704fe325_cam-bowers
 quote:
     - template: custom-link
       button_text: Call Today!
-      button_link: Tel:+12106990281
+      button_link: Tel:+12109729035
 seo:
     meta_title: Affordable Auto Insurance For Texas Residence
     meta_description: ''

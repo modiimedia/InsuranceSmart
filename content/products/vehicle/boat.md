@@ -6,7 +6,7 @@ featured_image: '/v1530578065/insurancesmart/5b2d4a57f91bff2929497ac9_eric-ward-
 quote:
     - template: custom-link
       button_text: Call Today!
-      button_link: Tel:+12106990281
+      button_link: Tel:+12109729035
 description:
     Watercraft Coverage can often be bundled with your home or auto to give
     you exceptional coverage and save you even more money!

@@ -4,7 +4,7 @@ subheading: 'Affordable Health Insurance! '
 quote:
     - template: call-for-a-quote
       heading: 'Call for Free Consulation:'
-      phone_number: '2106990281'
+      phone_number: '2109729035'
 featured_image: '/v1584128394/insurancesmart/grayscale-photo-of-woman-lying-on-hospital-bed-3470032_nwldof.jpg'
 weight: 5
 fa_icon: medkit

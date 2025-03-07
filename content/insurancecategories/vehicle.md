@@ -5,7 +5,7 @@ subheading: Get Affordable Auto Coverage From Premium Carriers To Keep You Well 
 quote:
     - template: "custom-link"
       button_text: "Call Today!"
-      button_link: "Tel:2106990281"
+      button_link: "Tel:2109729035"
 featured_image: '/v1530419488/insurancesmart/jon-flobrant-230583-unsplash-1.jpg'
 weight: 1
 fa_icon: car

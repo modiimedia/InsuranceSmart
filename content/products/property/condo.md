@@ -17,7 +17,7 @@ open_graph_image = ""
 social_description = ""
 social_title = ""
 [[quote]]
-button_link = "Tel:2106990281"
+button_link = "Tel:2109729035"
 button_text = "Call Today!"
 template = "custom-link"
 

@@ -35,7 +35,7 @@ faqs:
 quote:
     - template: custom-link
       button_text: Call Today!
-      button_link: tel:+12106990281
+      button_link: tel:+12109729035
 seo:
     meta_title: ''
     meta_description: ''

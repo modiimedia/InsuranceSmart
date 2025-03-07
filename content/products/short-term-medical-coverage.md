@@ -16,7 +16,7 @@ open_graph_image = "/v1584675394/insurancesmart/grayscale-photo-of-woman-lying-o
 social_description = ""
 social_title = "Get Short Term Medical Protection During COVID-19 Outbreak"
 [[quote]]
-button_link = "Tel:2106990281"
+button_link = "Tel:2109729035"
 button_text = "Call Today!"
 template = "custom-link"
 

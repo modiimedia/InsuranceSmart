@@ -4,7 +4,7 @@ draft: false
 quote:
     - template: "custom-link"
       button_text: "Call Today!"
-      button_link: "Tel:2106990281"
+      button_link: "Tel:2109729035"
 weight: 10
 featured_image: '/v1530419492/insurancesmart/woman-hiking-compressor.jpg'
 fa_icon: umbrella

@@ -21,6 +21,6 @@ question = "How many rental units can I own to receive a quick quote on this sit
 [[quote]]
 template = "custom-link"
 button_text = "Call Today!"
-button_link = "Tel:2106990281"
+button_link = "Tel:2109729035"
 
 +++

@@ -25,7 +25,7 @@ question = "What if I use a non-network provider?"
 [[quote]]
 template = "custom-link"
 button_text = "Call Today!"
-button_link = "tel:+12106990281"
+button_link = "tel:+12109729035"
 [[resources]]
 file = "/v1530817139/insurancesmart/UHC%20Dental%20-%20Vision%20Brochure.pdf"
 name = "UHC Dental and Vision Brochure"
