@@ -400,6 +400,9 @@ input:checked + label > span > .fa-check {
 .w-richtext h2 {
     margin-top: 70px;
 }
+.w-richtext :first-child {
+    margin-top: 0px;
+}
 .w-richtext h3 {
     opacity: 0.85;
 }

@@ -14,8 +14,8 @@ open_graph_image = ""
 social_description = ""
 social_title = ""
 [[quote]]
-button_link = "Tel:2109729035"
-button_text = "Call Today!"
+button_link = "https://www.geobluetravelinsurance.com/product_overview.cfm?link_id=274777&personalized=y&header=y"
+button_text = "Explore Plans"
 template = "custom-link"
 [[resources]]
 name = "GeoBlue Travel Plans & Options"
