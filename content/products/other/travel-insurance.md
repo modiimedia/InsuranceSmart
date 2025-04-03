@@ -18,10 +18,13 @@ button_link = "Tel:2109729035"
 button_text = "Call Today!"
 template = "custom-link"
 [[resources]]
-name = "Review Plans & Options"
+name = "GeoBlue Travel Plans & Options"
 template = "resource-external-link"
 url = "https://www.geobluetravelinsurance.com/product_overview.cfm?link_id=274777&personalized=y&header=y"
-
+[[resources]]
+name = "HTH Worldwide Travel Plans"
+template = "resources-external-link"
+url = "https://www.hthtravelinsurance.com/insurance_landing.cfm?link_id=274777"
 +++
 
 ## Travel Medical Insurance 101

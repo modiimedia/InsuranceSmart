@@ -9,7 +9,9 @@
         "css:watch": "tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind.build.css --watch",
         "hugo": "hugo --minify",
         "hugo:watch": "hugo server -D --disableFastRender",
+        "hugo:watch:no-drafts":"hugo server --disableFastRender",
         "dev": "concurrently \"pnpm run css:watch\" \"pnpm run hugo:watch\"",
+        "dev:no-drafts": "concurrently \"pnpm run css:watch\" \"pnpm run hugo:watch:no-drafts\"",
         "build": "pnpm run css && pnpm run hugo",
         "forestry-preview": "pnpm run css && hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public"
     },
